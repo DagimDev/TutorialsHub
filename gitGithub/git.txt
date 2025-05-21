@@ -6,3 +6,9 @@ if i need any help with git i can simply ask for help
 git config -h 
 or
 git help config
+
+to get fresh view 
+clear
+
+to initialize the repository 
+git init 
