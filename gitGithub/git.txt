@@ -1,3 +1,8 @@
 git config --global user.name "name"
 git config --global user.email "email"
 git config --global init.default branch main
+
+if i need any help with git i can simply ask for help
+git config -h 
+or
+git help config
