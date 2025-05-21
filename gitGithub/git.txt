@@ -12,3 +12,6 @@ clear
 
 to initialize the repository 
 git init 
+
+to see the repository status
+git status
