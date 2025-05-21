@@ -99,3 +99,15 @@ git branch -d <branchname>
 to have new branch and swiched into it simply write
 
 git switch -c <branchname>
+
+Rename the current branch
+bash
+git branch -m new-branch-name
+Rename a different branch (not checked out)
+bash
+git branch -m old-branch-name new-branch-name
+If the branch has already been pushed to a remote (like GitHub):
+
+
+If the branch has already been pushed to a remote (like GitHub):
+Rename locally (as above),
