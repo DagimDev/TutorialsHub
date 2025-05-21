@@ -95,3 +95,7 @@ git merge -m "text" <branchname>
 to delete the branch 
 
 git branch -d <branchname>
+
+to have new branch and swiched into it simply write
+
+git switch -c <branchname>
