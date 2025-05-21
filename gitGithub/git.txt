@@ -35,3 +35,7 @@ the i can type
 #.ignore all txt files
 or
 *.txt
+
+
+to commit the changes
+git commit -m <name>
