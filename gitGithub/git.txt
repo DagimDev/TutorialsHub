@@ -39,3 +39,8 @@ or
 
 to commit the changes
 git commit -m <name>
+
+after commit the changes if i want modify spesific file and  commit the change 
+and see the diffrence between old version and new simply write 
+
+git diff
