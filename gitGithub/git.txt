@@ -111,3 +111,13 @@ If the branch has already been pushed to a remote (like GitHub):
 
 If the branch has already been pushed to a remote (like GitHub):
 Rename locally (as above),
+
+Delete the old branch on the remote:
+bash
+git push origin --delete old-branch-name
+Push the new branch:
+bash
+git push origin new-branch-name
+Reset upstream branch:
+bash
+git push --set-upstream origin new-branch-name
