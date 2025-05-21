@@ -56,3 +56,6 @@ Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
 
+to change file name the the new name 
+
+git mv "oldFilename" "newFilename"
