@@ -29,3 +29,9 @@ git add .
 
 to unstage files 
 git rm --cached <filename>
+
+to ignore files create ".gitignore" file in the project folder
+the i can type 
+#.ignore all txt files
+or
+*.txt
