@@ -90,3 +90,8 @@ so if i want to back in the main branch
 
 git merge -m "text" <branchname>
 (git merge <branchname>)
+
+
+to delete the branch 
+
+git branch -d <branchname>
