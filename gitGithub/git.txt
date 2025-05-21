@@ -44,3 +44,15 @@ after commit the changes if i want modify spesific file and  commit the change
 and see the diffrence between old version and new simply write 
 
 git diff
+
+if once i make the change i can restore it to do that 
+
+if <git add <specificFilename>>
+but i want unstage the changes i can simply write
+
+git restore --staged <filename>
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+
