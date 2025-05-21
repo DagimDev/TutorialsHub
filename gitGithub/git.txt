@@ -59,3 +59,16 @@ Changes not staged for commit:
 to change file name the the new name 
 
 git mv "oldFilename" "newFilename"
+
+
+to see all commited i have ever done so far 
+
+git log
+
+if i want only one 
+
+git log --oneLine
+
+to see all the diffrent chages made so far
+
+git log -p
