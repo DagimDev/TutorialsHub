@@ -85,3 +85,8 @@ git branch  => Tip to know the current branch it shows the * sign
 to switch in the new branch
 
 git switch <'name'>
+
+so if i want to back in the main branch
+
+git merge -m "text" <branchname>
+(git merge <branchname>)
