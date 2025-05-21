@@ -80,3 +80,8 @@ git branch <name>
 to see how many branch do i have 
 
 git branch  => Tip to know the current branch it shows the * sign
+
+
+to switch in the new branch
+
+git switch <'name'>
