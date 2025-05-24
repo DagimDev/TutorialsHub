@@ -55,6 +55,18 @@ var firstCar = "Toyota"; // has function Scope
 let secondCar = "Honda"; // has function Scope
 var thirdCar = "Volvo"; // has function Scope
  }
-console.log(myCar(firstCar));;// prints “firstCar is
+//console.log(myCar(firstCar));;// prints “firstCar is
 // not defined” because variables declared within a
 // function are only accessible in the function only.
+
+
+// Global scope: The global scope is the outermost scope. Variables declared
+// globally (outside any function), are recognized by everyone and accessible from
+// any inner (local) scope.
+let firstName = 2;
+function myFirstName() {
+firstName += 10; 
+return firstName
+}
+
+console.log(myFirstName())
