@@ -52,3 +52,15 @@ console.log(person.firstName);
 // it will return the function definition.
 // • console.log (person. SomeFunction) will print the
 // SomeFunction function, not the Abebe value
+
+// Accessing Nested Objects: An object can be a property of another
+// object. It is called a nested object.
+var person2 = {
+firstName: "James",
+lastName: "Bond",
+address: {
+city: "London",
+country:"UK"
+}
+};
+person.address.city; // returns "London"
