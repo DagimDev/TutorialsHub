@@ -22,3 +22,11 @@ console.log(counter); // prints numbers 1 to 4
  console.log(counter); //prints “ReferenceError:
 // counter is not defined” because we used let
 // to define counter
+
+// the codition is optional
+for (let counter = 1;; counter ++) {
+console.log(counter);
+if (counter >= 10) {
+break;
+}
+}
