@@ -39,3 +39,22 @@ console.log ("Hello World!");// prints Hello world
 // • Example: When we invoke the myFunction function above, we will need
 // to pass an argument like this
 myFunction ("Hello world")// prints Hello world
+
+
+// The different forms of variable scoping in JavaScript
+// ▪ Function scope:
+// • Each JavaScript function creates a new scope. Variables declared within a
+// JavaScript function become LOCAL to the function, meaning variables
+// within a function are only recognized in that function. That is why function
+// parameters are always local to that function.
+// • Variables declared with var, let and const are quite similar when declared
+// inside a function
+
+function myCar () {
+var firstCar = "Toyota"; // has function Scope
+let secondCar = "Honda"; // has function Scope
+var thirdCar = "Volvo"; // has function Scope
+ }
+console.log(myCar(firstCar));;// prints “firstCar is
+// not defined” because variables declared within a
+// function are only accessible in the function only.
