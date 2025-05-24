@@ -31,3 +31,18 @@ if (condition) {
 // write the code you want to be executed if
 // condition is false
 }
+
+// The “else … if” statement
+// ▪ Definition: There will be times where you want to test multiple conditions. That
+// is where the else if block comes in. When the “if” statement (the first statement) is
+// false, the computer will move onto the “else if” statement and executes it.
+// Syntax 1: 
+ if (true) {
+    // condition 1 is true
+// code is executed
+} else if (true) {
+    // condition2 is true
+// code is executed
+} else {
+// code is executed
+}
