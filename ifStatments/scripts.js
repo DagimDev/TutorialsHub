@@ -19,3 +19,15 @@ console.log("Hey you passed");
 if (score <= pass) {
 console.log("You failed");
 }
+
+// The “else” statement
+// ▪ Definition: We use the “else” statement to specify a block of code to be executed
+// when the condition under the “if” statement is false.
+// Syntax: 
+if (condition) {
+// write the code you want to be executed if the
+// condition is true
+} else {
+// write the code you want to be executed if
+// condition is false
+}
