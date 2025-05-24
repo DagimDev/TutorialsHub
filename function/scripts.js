@@ -86,3 +86,27 @@ console.log(message); // throws ReferenceError because
 // console.log(otherMessage); // no error and logs “hi”
 // because variables declared with var inside a block are
 // available outside the block
+
+
+// Arrow functions
+// • Arrow functions were introduced in ES6. An arrow function is an alternative to a traditional
+// function expression but is limited and can't be used in all situations. Arrow functions allow
+// us to write shorter function syntax.
+// ▪ Syntax: const myFunction = (a, b) => a * b;
+// • Arrow function vs traditional function:
+// Traditional:
+const hello = function() {
+return "Hello World!";
+}
+Arrow:
+const hello1 = () => {
+return "Hello World!";
+}
+// Arrow function with ONLY one statement and ONLY one return value: In this
+// case, you can remove the brackets as well as the return keyword:
+const hello2 = () => "Hello World!";
+// o Arrow Function with Parameters: Look at the function below that has one parameter
+// called val
+const hello3 = (val) => "Hello " + val;
+// ▪ In fact, if you have only one parameter, you can skip the parentheses as well:
+const hello4 = val => "Hello " + val;
