@@ -31,3 +31,11 @@ console.log (a);
 function mySecondFunction () {
 console.log ("Hello World!");// prints Hello world
 }
+
+
+// Function arguments: Arguments are the actual value of the parameter passed to
+// and received by the function. Arguments are values we supply when we
+// call/use/invoke a function.
+// • Example: When we invoke the myFunction function above, we will need
+// to pass an argument like this
+myFunction ("Hello world")// prints Hello world
