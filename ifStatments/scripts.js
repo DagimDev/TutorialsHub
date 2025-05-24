@@ -61,3 +61,58 @@ theDrink = (age >= 18) ? "Alcohol is allowed" :
 "Only juice or water";
 console.log(theDrink); // "Alcohol is allowed”
 // prints because 43 >= 18
+
+// Switch statements
+// • Definition: instead of using this long if else statement, you might choose to go with an
+// easier to read switch statement. The switch statement starts with a variable called the switch
+// value. Each case in “switch statement” indicates the possible value and if there is a match
+// when comparing the input value with values of a case, the code associated with the match
+// will run.
+// Syntax:
+switch(expression) {
+case x:
+// the code you want to be executed if expression
+// matches value of the case
+break;
+case y:
+// the code you want to be executed if expression
+// matches value of the case
+break;
+default:
+// the code you want to be executed if expression
+// matches value of the case
+}
+
+// Notes on how “switch statements” work
+// • The expression in a “switch statement” is evaluated only once with each
+// case
+// • In a “switch statement”, the comparison is between the expression and the
+// values under each case
+// • If there is a match between the expression and the value of any of the cases,
+// the code block associated will be the one to be executed
+// • If multiple cases match a case value, the first case is selected.
+// • If there is no match while comparing the expression and the value of each
+// case, the default code will be executed
+// Example for “switch statements”:
+var greetings; 
+var timeOfDay; timeOfDay =
+"afternoon";
+switch (timeOfDay) {
+case "morning":
+greetings = "Good morning";
+break;
+case "afternoon":
+greetings = "Good afternoon";
+break;
+case "evening":
+greetings = "Good evening";
+break;
+default:
+greetings = "Hi there";
+break;
+}
+console.log(greetings); //
+// ▪ This prints in the console "Good afternoon" after comparing the expression value
+// in the switch statement (value of timeOfDay) with each case. We see that there is
+// a match when the case is “afternoon”. Therefore, the code in that associated with
+// the matching case has executed
