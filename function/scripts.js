@@ -70,3 +70,19 @@ return firstName
 }
 
 console.log(myFirstName())
+
+// Variables declared with const: const is like let but the value remains
+// constant always and you cannot reassign the value. const variables need to
+// be declared using an initializer, or it will generate an error 
+
+if (true) {
+const message = "Hello";
+var otherMessage = 'Hi'
+console.log(message); // 'Hello' // message is accessible
+}
+
+console.log(message); // throws ReferenceError because
+// message is not available outside the block
+// console.log(otherMessage); // no error and logs “hi”
+// because variables declared with var inside a block are
+// available outside the block
