@@ -17,3 +17,17 @@ return number3 + number4
 // variable name
 // • You can call/invoke function x above like this:
 // ▪ x (9, 11) // this will return 20, because of 9 + 11
+
+// Function parameters are the names/variables given inputs when we define/create the function
+
+function myFunction (a) {
+console.log (a);
+}
+
+// n the above example, “a” is the input/parameter that we gave for the
+// function called, myFunction
+// • JavaScript function definitions do not specify data types for parameters.
+// • Note: Functions can be declared wihtout parametes as well
+function mySecondFunction () {
+console.log ("Hello World!");// prints Hello world
+}
