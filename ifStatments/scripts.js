@@ -46,3 +46,18 @@ if (condition) {
 } else {
 // code is executed
 }
+
+
+// Syntax 2 (conditional or ternary operator/ alternative for if ... else): The
+// conditional (ternary) operator is the only JavaScript operator that takes three
+// operands: a condition followed by a question mark (?), then an expression to
+// execute if the condition is truthy followed by a colon (:), and finally the expression
+// to execute if the condition is falsy. This operator is frequently used as alternative
+// to an if...else statement.
+condition ? expressionIfTrue: expressionIfTrue
+Example: var age = 43;
+// var theDrink= “ ”;
+theDrink = (age >= 18) ? "Alcohol is allowed" :
+"Only juice or water";
+console.log(theDrink); // "Alcohol is allowed”
+// prints because 43 >= 18
