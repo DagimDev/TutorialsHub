@@ -30,3 +30,18 @@ if (counter >= 10) {
 break;
 }
 }
+
+// While loop
+while (expression) {
+// statement (code block to beexecuted)
+}
+
+// The while loop evaluates the expression before each iteration, therefore, the
+// while loop is known as a pretest loop. For this reason, it is possible that the
+// statement inside the while loop is never executed.
+
+var f = 0;
+while (f < 3) {
+console.log(f); // prints the numbers 0 to 2
+f++;
+}
