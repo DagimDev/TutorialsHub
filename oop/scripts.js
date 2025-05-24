@@ -25,3 +25,30 @@ return this.firstName;
 // person object
 // o Abebe, Kebede and function () {return this.firstName;} are
 // property values
+
+
+// Accessing object properties: Here the property_name is just a string or
+// symbol. So, it can be any string, including '1foo', '!bar!', or even ' ' (a space)
+// o The dot (.) notation
+// ▪ Syntax: objectName.propertyName
+// ▪ Example:
+let person1 = {
+firstName: 'Abebe',
+lastName: 'Kebede',
+someFunction: function () {
+return this.firstName;
+}
+};
+console.log(person.firstName);
+// o Bracket notation (array-like notation) ([ ]):
+// ▪ Syntax: objectName['propertyName'];
+// ▪ Example: console.log(person['firstName']); //prints
+// Abebe in the console
+
+// Accessing object methods ()
+// ▪ Syntax: objectName.methodName()
+// ▪ Example: console.log (person. SomeFunction())
+// ▪ Note: If you access a method without the () parentheses,
+// it will return the function definition.
+// • console.log (person. SomeFunction) will print the
+// SomeFunction function, not the Abebe value
