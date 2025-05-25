@@ -414,3 +414,22 @@ console.log(`Maximum value: ${max}`);
 // 3. matrix[row][col]: This is how you access individual elements
 // 4. matrix.length: Gives number of rows
 // 5. matrix[row].length: Gives number of columns in that row (for jagged arrays)
+
+
+// Special Case: Jagged Matrices
+
+// Matrices don't have to be perfect rectangles - rows can have different lengths:
+
+const jaggedMatrix = [
+  [1, 2, 3],
+  [4, 5],
+  [6, 7, 8, 9]
+];
+
+for (let row = 0; row < jaggedMatrix.length; row++) {
+  for (let col = 0; col < jaggedMatrix[row].length; col++) {
+    console.log(jaggedMatrix[row][col]);
+  }
+}
+// This flexibility makes nested loops essential for working with real-world matrix data that might not 
+// be perfectly rectangular.
