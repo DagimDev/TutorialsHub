@@ -78,3 +78,34 @@ for (let i = 1; i <= 10; i++) {
   }
   console.log('----------'); // separator between tables
 }
+
+
+// Working with 2D Arrays
+
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+for (let row = 0; row < matrix.length; row++) {
+  for (let col = 0; col < matrix[row].length; col++) {
+    console.log(`Element at [${row}][${col}] is ${matrix[row][col]}`);
+  }
+}
+// ## Performance Considerations
+
+// - Nested loops have O(n²) time complexity in worst-case scenarios
+// - Be cautious with large datasets as performance can degrade quickly
+// - Consider alternatives like map, reduce, or forEach when appropriate
+
+// ## Common Use Cases
+
+// 1. Processing multi-dimensional arrays
+// 2. Generating combinations or permutations
+// 3. Implementing sorting algorithms
+// 4. Working with grid-based systems
+// 5. Creating patterns or matrices
+
+// Remember that each level of nesting adds complexity to your code, so use nested loops judiciously 
+// and consider if there are simpler alternatives for your specific use case.
