@@ -246,3 +246,20 @@ while (outerCount < 3) {
      }
      batchesRemaining--;
    }
+
+//    Game Loops:
+  
+   let gameActive = true;
+   while (gameActive) {
+     for (let frame = 0; frame < 60; frame++) {
+       updateGameState();
+       renderFrame();
+     }
+     gameActive = checkGameOver();
+   }
+   
+// ## Performance Considerations
+
+// - Each while iteration triggers a complete for loop execution
+// - Avoid infinite loops by ensuring while condition eventually becomes false
+// - Complex nested loops can impact performance with large iterations
