@@ -371,3 +371,16 @@ for (let col = 0; col < matrix[0].length; col++) {
 // matrix[0][2] = 3
 // matrix[1][2] = 6
 // matrix[2][2] = 9
+
+// Practical Matrix Operations
+
+// ### 1. Matrix Transposition (Swapping Rows and Columns)
+
+const transposed = [];
+for (let col = 0; col < matrix[0].length; col++) {
+  transposed[col] = [];
+  for (let row = 0; row < matrix.length; row++) {
+    transposed[col][row] = matrix[row][col];
+  }
+}
+console.log(transposed);
