@@ -236,3 +236,13 @@ while (outerCount < 3) {
      }
      // Handle user input
    }
+
+//    2. Batch Processing:
+  
+   let batchesRemaining = 5;
+   while (batchesRemaining > 0) {
+     for (let i = 0; i < 10; i++) {
+       processItem(batchesRemaining * 10 + i);
+     }
+     batchesRemaining--;
+   }
