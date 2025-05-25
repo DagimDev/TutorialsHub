@@ -224,3 +224,15 @@ while (outerCount < 3) {
 // 3. Flow Control:
 //    - break in for only exits the for loop
 //    - break in while exits both loops
+
+// Common Use Cases
+
+// 1. Menu Systems:
+  
+   let programRunning = true;
+   while (programRunning) {
+     for (let i = 0; i < menuOptions.length; i++) {
+       console.log(`${i + 1}. ${menuOptions[i]}`);
+     }
+     // Handle user input
+   }
