@@ -157,3 +157,70 @@ for (let row = 1; row <= 3; row++) {
 // - 2D Arrays (e.g., accessing matrix[i][j])
 // - Pattern Printing (e.g., stars, numbers in a pyramid shape)
 // - Combinations (e.g., pairing elements from two lists)
+
+
+// How For Loops Work Inside While Loops in JavaScript
+
+// Combining for loops inside while loops creates a powerful control flow structure where the while loop controls the outer repetition and the for loop handles inner iterations. Here's how they work together:
+
+// ## Basic Structure
+
+while (condition) {
+  // While loop body
+  for (initialization; condition; update) {
+    // For loop body
+  }
+  // More while loop code
+}
+// ## How It Works
+
+// 1. While loop evaluates its condition first
+//    - If true, enters the while loop body
+//    - If false, skips the entire block
+
+// 2. For loop executes completely on each while iteration:
+//    - Initialization runs
+//    - Condition checked
+//    - Body executes
+//    - Update occurs
+//    - Repeats until for condition is false
+
+// 3. Control returns to while loop after for loop completes
+//    - While loop can update variables
+//    - While condition re-evaluated
+
+// ## Practical Example
+
+let outerCount = 0;
+while (outerCount < 3) {
+  console.log(`While loop iteration ${outerCount + 1}`);
+  
+  for (let innerCount = 0; innerCount < 2; innerCount++) {
+    console.log(`  For loop iteration ${innerCount + 1}`);
+  }
+  
+  outerCount++;
+  console.log("---");
+}
+// ### Output:
+// While loop iteration 1
+//   For loop iteration 1
+//   For loop iteration 2
+// ---
+// While loop iteration 2
+//   For loop iteration 1
+//   For loop iteration 2
+// ---
+// While loop iteration 3
+//   For loop iteration 1
+//   For loop iteration 2
+// ---
+// ## Key Characteristics
+
+// 1. Complete Execution: The inner for loop runs to completion on each while iteration
+// 2. Variable Scope: 
+//    - while variables persist between for executions
+//    - for variables are recreated each for loop start
+// 3. Flow Control:
+//    - break in for only exits the for loop
+//    - break in while exits both loops
