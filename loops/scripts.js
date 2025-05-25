@@ -263,3 +263,60 @@ while (outerCount < 3) {
 // - Each while iteration triggers a complete for loop execution
 // - Avoid infinite loops by ensuring while condition eventually becomes false
 // - Complex nested loops can impact performance with large iterations
+
+// Example: Counting Down and Printing Numbers
+
+let countDown = 3;  // Initialize our while loop counter
+
+while (countDown > 0) {  // While condition
+  console.log(`--- Countdown: ${countDown} ---`);
+  
+  // For loop that runs completely each while iteration
+  for (let number = 1; number <= countDown; number++) {
+    console.log(`Printing number ${number}`);
+  }
+  
+  countDown--;  // Decrement while counter
+  console.log('');  // Empty line for spacing
+}
+// ### Output:
+// --- Countdown: 3 ---
+// Printing number 1
+// Printing number 2
+// Printing number 3
+
+// --- Countdown: 2 ---
+// Printing number 1
+// Printing number 2
+
+// --- Countdown: 1 ---
+// Printing number 1
+// ## Step-by-Step Execution:
+
+// 1. First While Loop (countDown = 3)
+//    - Prints "--- Countdown: 3 ---"
+//    - For loop runs 3 times (1, 2, 3)
+//    - Decrements countDown to 2
+
+// 2. Second While Loop (countDown = 2)
+//    - Prints "--- Countdown: 2 ---"
+//    - For loop runs 2 times (1, 2)
+//    - Decrements countDown to 1
+
+// 3. Third While Loop (countDown = 1)
+//    - Prints "--- Countdown: 1 ---"
+//    - For loop runs 1 time (1)
+//    - Decrements countDown to 0
+
+// 4. Loop Ends because countDown (0) is no longer > 0
+
+// ## Key Points:
+// - The while loop controls how many times we repeat the entire process
+// - The for loop runs completely each time the while loop runs
+// - The for loop's condition can even depend on the while counter (as in this example)
+// - Each time the while loop runs again, the for loop starts fresh from its initial value
+
+// This structure is useful when you need to:
+// - Repeat a multi-step process
+// - Process data in batches
+// - Run something until a condition is met, with internal repetitions each time
