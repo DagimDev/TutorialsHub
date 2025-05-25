@@ -109,3 +109,51 @@ for (let row = 0; row < matrix.length; row++) {
 
 // Remember that each level of nesting adds complexity to your code, so use nested loops judiciously 
 // and consider if there are simpler alternatives for your specific use case.
+
+// Nested Loop Example with Detailed 
+// Outer loop (rows)
+for (let row = 1; row <= 3; row++) {
+  console.log(`--- Outer loop: row = ${row} ---`);
+  
+  // Inner loop (columns)
+  for (let col = 1; col <= 3; col++) {
+    console.log(`Row ${row}, Column ${col}: Printing *`);
+  }
+  
+  console.log("End of row " + row + "\n");
+}
+// ---
+
+// ### Console Output:
+// --- Outer loop: row = 1 ---
+// Row 1, Column 1: Printing *
+// Row 1, Column 2: Printing *
+// Row 1, Column 3: Printing *
+// End of row 1
+
+// --- Outer loop: row = 2 ---
+// Row 2, Column 1: Printing *
+// Row 2, Column 2: Printing *
+// Row 2, Column 3: Printing *
+// End of row 2
+
+// --- Outer loop: row = 3 ---
+// Row 3, Column 1: Printing *
+// Row 3, Column 2: Printing *
+// Row 3, Column 3: Printing *
+// End of row 3
+// ---
+
+// ### Key Observations:
+// 1. Outer Loop Runs First (row = 1), then the inner loop runs completely (col = 1, 2, 3).  
+// 2. After the inner loop finishes, the outer loop moves to the next iteration (row = 2).  
+// 3. The inner loop restarts from scratch (col = 1 again) for each new row.  
+// 4. This continues until the outer loop condition (row <= 3) becomes false.
+
+// ---
+
+// ### When to Use Nested Loops?
+// - Grids/Tables (e.g., printing a multiplication table)
+// - 2D Arrays (e.g., accessing matrix[i][j])
+// - Pattern Printing (e.g., stars, numbers in a pyramid shape)
+// - Combinations (e.g., pairing elements from two lists)
