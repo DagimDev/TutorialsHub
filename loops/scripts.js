@@ -384,3 +384,14 @@ for (let col = 0; col < matrix[0].length; col++) {
   }
 }
 console.log(transposed);
+
+
+// 2. Matrix Summation
+
+let sum = 0;
+for (let row = 0; row < matrix.length; row++) {
+  for (let col = 0; col < matrix[row].length; col++) {
+    sum += matrix[row][col];
+  }
+}
+console.log(`Total sum: ${sum}`);
