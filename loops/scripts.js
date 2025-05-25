@@ -395,3 +395,22 @@ for (let row = 0; row < matrix.length; row++) {
   }
 }
 console.log(`Total sum: ${sum}`);
+
+// 3. Finding Maximum Value
+
+let max = matrix[0][0];
+for (let row = 0; row < matrix.length; row++) {
+  for (let col = 0; col < matrix[row].length; col++) {
+    if (matrix[row][col] > max) {
+      max = matrix[row][col];
+    }
+  }
+}
+console.log(`Maximum value: ${max}`);
+// ## Key Concepts to Remember
+
+// 1. Outer Loop Controls Rows: Typically, the first loop index represents rows
+// 2. Inner Loop Controls Columns: The nested loop index represents columns
+// 3. matrix[row][col]: This is how you access individual elements
+// 4. matrix.length: Gives number of rows
+// 5. matrix[row].length: Gives number of columns in that row (for jagged arrays)
