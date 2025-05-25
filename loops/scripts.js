@@ -320,3 +320,36 @@ while (countDown > 0) {  // While condition
 // - Repeat a multi-step process
 // - Process data in batches
 // - Run something until a condition is met, with internal repetitions each time
+
+// How Matrices Work with Nested For Loops in JavaScript
+
+// Matrices (2D arrays) are perfectly suited for nested loops because they have both rows and columns that need to be processed. Let me explain how this works with clear examples.
+
+// ## Basic Matrix Structure
+
+// A matrix in JavaScript is simply an array of arrays:
+
+const matrix1 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+// ## Accessing Matrix Elements with Nested Loops
+
+// ### 1. Row-Major Traversal (Left to Right, Top to Bottom)
+
+for (let row = 0; row < matrix.length; row++) {
+  for (let col = 0; col < matrix[row].length; col++) {
+    console.log(`matrix[${row}][${col}] = ${matrix[row][col]}`);
+  }
+}
+Output:
+matrix1[0][0] = 1
+matrix1[0][1] = 2
+matrix1[0][2] = 3
+matrix1[1][0] = 4
+matrix1[1][1] = 5
+matrix1[1][2] = 6
+matrix1[2][0] = 7
+matrix1[2][1] = 8
+matrix1[2][2] = 9
