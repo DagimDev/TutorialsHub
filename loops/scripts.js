@@ -343,13 +343,31 @@ for (let row = 0; row < matrix.length; row++) {
     console.log(`matrix[${row}][${col}] = ${matrix[row][col]}`);
   }
 }
-Output:
-matrix1[0][0] = 1
-matrix1[0][1] = 2
-matrix1[0][2] = 3
-matrix1[1][0] = 4
-matrix1[1][1] = 5
-matrix1[1][2] = 6
-matrix1[2][0] = 7
-matrix1[2][1] = 8
-matrix1[2][2] = 9
+// Output:
+// matrix1[0][0] = 1
+// matrix1[0][1] = 2
+// matrix1[0][2] = 3
+// matrix1[1][0] = 4
+// matrix1[1][1] = 5
+// matrix1[1][2] = 6
+// matrix1[2][0] = 7
+// matrix1[2][1] = 8
+// matrix1[2][2] = 9
+
+//  2. Column-Major Traversal (Top to Bottom, Left to Right)
+
+for (let col = 0; col < matrix[0].length; col++) {
+  for (let row = 0; row < matrix.length; row++) {
+    console.log(`matrix[${row}][${col}] = ${matrix[row][col]}`);
+  }
+}
+// Output:
+// matrix[0][0] = 1
+// matrix[1][0] = 4
+// matrix[2][0] = 7
+// matrix[0][1] = 2
+// matrix[1][1] = 5
+// matrix[2][1] = 8
+// matrix[0][2] = 3
+// matrix[1][2] = 6
+// matrix[2][2] = 9
