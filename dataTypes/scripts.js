@@ -134,3 +134,11 @@ var x = 10;
 var y = 5;
 var z = x/ y;
 z = 2;
+
+// The modulus (remainder) operator (%): returns the remaining amount after
+// dividing one operand by a second operand.
+// Example:
+var x = 10;
+var y = 4;
+var z = x % y;
+z = 2; // remainder is 2 because 10 = (4 * 2) + 2
