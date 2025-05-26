@@ -64,3 +64,16 @@ console.log("Data Type");
 // • Linked List: A linked list stores a collection of items in a linear/sequential
 // order. Hence, you must access data sequentially and random access is not
 // possible.
+
+// Nonlinear data structure: If the non-primitive data aren’t grouped in a sequential
+// order, they are called Nonlinear. Example:
+// • Tree: A tree is a hierarchical structure where data is organized
+// hierarchically and are linked together.
+// • Graph: A graph stores a collection of items in a nonlinear fashion. Graphs
+// are made up vertices, and lines that connect them, also known as edges.
+// These are useful for representing real-world systems such as computer
+// networks.
+// • Hash table: A hash table, also known as a hash map, stores a collection of
+// items in an associative array that plots keys to values. A hash table uses a
+// hash function to convert an index into an array of buckets that contain the
+// desired data item.
