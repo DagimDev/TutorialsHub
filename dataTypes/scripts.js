@@ -77,3 +77,11 @@ console.log("Data Type");
 // items in an associative array that plots keys to values. A hash table uses a
 // hash function to convert an index into an array of buckets that contain the
 // desired data item.
+
+
+// Operators: arithmetic operators and assignment operators
+// • Operators and Operands:
+// o Operands: The numbers (in an arithmetic operation) are called operands
+// o Operator: Operator defines the operation that will be performed between the two
+// operands
+// o Example: 20 + 50 (20 and 50 are operands whereas (+) is the operator)
