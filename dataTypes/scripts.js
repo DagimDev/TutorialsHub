@@ -106,3 +106,11 @@ b+= 'world'; // concatenation this means b= b +“world”, means b= “hello”
 let aa = 2;
 aa -= 3; // means a = a - 3, means a = 2 - 3. So, awill be -1
 
+// Arithmetic operators ( + ), ( - ), ( * ), ( / ), (%) (++), (--) : Arithmetic operators perform
+// arithmetic on numbers, meaning, they work in a similar way we use them in math.
+// o The addition operator (+): adds numbers.
+// Example:
+var x = 10;
+var y = 5;
+var z = x + y;
+z = 15;
