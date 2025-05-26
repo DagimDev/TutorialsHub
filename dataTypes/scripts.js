@@ -85,3 +85,6 @@ console.log("Data Type");
 // o Operator: Operator defines the operation that will be performed between the two
 // operands
 // o Example: 20 + 50 (20 and 50 are operands whereas (+) is the operator)
+
+// Assignment operator ( = ): It is used to assign value or change value of a variable.
+// o Example: var x = 10;
