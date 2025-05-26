@@ -114,3 +114,23 @@ var x = 10;
 var y = 5;
 var z = x + y;
 z = 15;
+
+
+// The subtraction operator (-): subtracts one number from another.
+// Example:
+var x = 10;
+var y = 5;
+var z = x - y;
+z = 5;
+// o The multiplication operator (*): multiplies numbers.
+// Example:
+var x = 10;
+var y = 5;
+var z = x * y;
+z = 50;
+// o The division operator (/): divides a number by another one.
+// Example:
+var x = 10;
+var y = 5;
+var z = x/ y;
+z = 2;
