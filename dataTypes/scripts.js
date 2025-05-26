@@ -10,3 +10,6 @@ console.log("Data Type");
 //  ▪ Data structures are the building blocks of algorithms and computer programs. It is
 // a key topic when it comes to Software Engineering interview questions. Hence as
 // developers, we must have good knowledge about data structures
+
+// Data structure types: There are two types of data structure available for the programming
+// purpose, primitive data structure and non-primitive data structure. 
