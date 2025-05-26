@@ -98,3 +98,11 @@ let b = 'hello';
 a += 3; // means a = a +3, means a = 2+3. So, awill be 5
 b+= 'world'; // concatenation this means b= b +“world”, means b= “hello” + “world”, so b will be
 // “hello world”
+
+// Subtraction assignment operator (-=): This operator subtracts the value of the right
+// operand from a variable and assigns the result to the variable.
+// o The syntax for (-=) operator is: x -= y this means x = x - y
+// Example:
+let aa = 2;
+aa -= 3; // means a = a - 3, means a = 2 - 3. So, awill be -1
+
