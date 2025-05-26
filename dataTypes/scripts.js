@@ -42,3 +42,10 @@ console.log("Data Type");
 // -1. So, it means, with BigInts, you can
 // safely store and operate on large integers even beyond the safe integer limit for
 // Numbers.
+
+
+
+// Non-primitive data structure: These are structures created by grouping primitive data
+// together. Non-primitive data structure is a type of data structure that can store the data of
+// more than one type. The way they are grouped together varies depending on the kind of
+// task we are trying to accomplish
