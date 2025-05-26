@@ -49,3 +49,18 @@ console.log("Data Type");
 // together. Non-primitive data structure is a type of data structure that can store the data of
 // more than one type. The way they are grouped together varies depending on the kind of
 // task we are trying to accomplish
+
+// Linear data structures: If the non-primitive data are grouped in a sequential
+// order, they are called Linear. Example:
+// • Array: An array stores a collection of items in a manner that the position
+// of each element can be calculated or retrieved easily by an index.
+// • Stack: A stack stores a collection of items in the linear order that
+// operations are applied. This structure is named as “stack” because it
+// resembles a real-world stack — a stack of plates.
+// • Queue: A queue stores a collection of items like a stack; however, the
+// operation order can only be first in, first out. This structure is named as
+// “queue” because it resembles a real-world queue — people waiting in a
+// queue.
+// • Linked List: A linked list stores a collection of items in a linear/sequential
+// order. Hence, you must access data sequentially and random access is not
+// possible.
