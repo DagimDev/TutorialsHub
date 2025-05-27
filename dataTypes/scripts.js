@@ -142,3 +142,16 @@ var x = 10;
 var y = 4;
 var z = x % y;
 z = 2; // remainder is 2 because 10 = (4 * 2) + 2
+
+
+// Comparison operators: Comparison operators are used in logical statements to determine
+// equality or difference between variables or values. Comparison operators always return a
+// Boolean value of true or false.
+// • (==) Equals to: This operator measures(checks) whether its two operands are
+// equal, returning Boolean result .
+// Example:
+var x = 5;
+var y = "5";
+x == y; // true, because (==) it converts data type
+// to number and compares only values and both values are
+// equal here
