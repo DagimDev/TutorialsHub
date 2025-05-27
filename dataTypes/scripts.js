@@ -196,3 +196,8 @@ m === n; //false, because (===) compares both value
 // true || true = true
 // true || false = true
 // false || false = false
+
+// Logical not (!): This returns true if operand is false and vice versa.
+// ! False = True
+// ! True = False
+// ! (1==1 || 3==2) // returns False 
