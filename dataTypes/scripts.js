@@ -155,3 +155,12 @@ var y = "5";
 x == y; // true, because (==) it converts data type
 // to number and compares only values and both values are
 // equal here
+
+
+// (===) identity/strict equality: This operator always checks the value and type of
+// the two operands are the same or different, returning Boolean result.
+// Example:
+var m = 5;
+var n = "5";
+m === n; //false, because (===) compares both value
+// and data type and the data type is not equal here
