@@ -164,3 +164,11 @@ var m = 5;
 var n = "5";
 m === n; //false, because (===) compares both value
 // and data type and the data type is not equal here
+
+// (! =) Not equal/ Inequality: This operator tests inequality, to determine whether
+// the values on either side of the operator are not equal. This operator is basically
+// saying the two values on the left and right are not even loosely equal in value
+// • (! ==) not identity/ Strictly unequal to with no type conversion: This operator
+// evaluates a strict inequality, which considers both the value and the type of the
+// operands on either side of the operator. This operator is basically saying the two
+// values are not equal in value or not equal in data type
