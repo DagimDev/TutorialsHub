@@ -216,3 +216,12 @@ m === n; //false, because (===) compares both value
 // Example of declaring variables in a weakly typed way
 var someText = "‘Hello World’";
 var someNumber = 121;
+
+
+// Strong Typing: In strongly typed languages, variables have definitive data types
+// and operations between different data types are usually not permitted. Here
+// strongly typed and require you to declare a variable’s type, such as int, float,
+// Boolean, or String.
+// Example of declaring variables in a strongly typed way
+// String someText = ‘Hello World’;
+// int someNumber = 121;
