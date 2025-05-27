@@ -172,3 +172,9 @@ m === n; //false, because (===) compares both value
 // evaluates a strict inequality, which considers both the value and the type of the
 // operands on either side of the operator. This operator is basically saying the two
 // values are not equal in value or not equal in data type
+
+// Operators: logical operators
+// • Logical operators:
+// ▪ Logical operators are used to determine the logic between variables or values.
+// ▪ We use these operators when we want to write conditional statements. We will
+// learn about conditional statements later. For now, let's just focus on the operators.
