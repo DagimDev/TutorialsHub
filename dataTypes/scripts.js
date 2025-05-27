@@ -225,3 +225,15 @@ var someNumber = 121;
 // Example of declaring variables in a strongly typed way
 // String someText = ‘Hello World’;
 // int someNumber = 121;
+
+
+// Why is JavaScript a “weakly/loosely typed” language? This is because JavaScript does
+// not require us to specify a string is a string, or a number is a number when declaring a
+// variable. JavaScript is smart enough to figure out what type of data you have and make the
+// necessary adjustments so that you don't have to redefine your different types of data.
+// Example:
+var first = 123
+var second = "four"
+// first + second // output is "123four". Because JS is
+// weakly typed, when adding a sting to a number, it
+// changes the number to a string and concatenates them.
