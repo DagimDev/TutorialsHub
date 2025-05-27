@@ -201,3 +201,18 @@ m === n; //false, because (===) compares both value
 // ! False = True
 // ! True = False
 // ! (1==1 || 3==2) // returns False 
+
+
+
+// Weak typing
+// • Strong/Weak Typing: is about how strictly data types are distinguished in a programming
+// language (example, whether the language tries to do an implicit conversion from strings to
+// numbers).
+// ▪ Weak Typing: Weakly typed languages do not require you to specify what type
+// of data will be stored when you create a variable or an object. In weakly typed
+// languages, operations between variables of different data types are legal because
+// variables can be implicitly converted to other data types.
+// • Example of declaring variables in a weakly typed way
+// Example of declaring variables in a weakly typed way
+var someText = "‘Hello World’";
+var someNumber = 121;
