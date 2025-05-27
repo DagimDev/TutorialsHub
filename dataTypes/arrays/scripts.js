@@ -18,3 +18,13 @@ var gradeResults = [ ];
 // ▪ Declaring and adding value to an array at the same time is also possible:
 var myCar = ["“BMW”", "“Honda”", "“Ford”"];
 var x = ["TV", 99, "“phone”"];
+
+// Accessing array elements: You access an array element by referring to the index number.
+// Index is basically the location of an element of an array. In JavaScript, the first element of
+// an array is at index 0.
+// Example:
+var myCar = ["BMW", "Honda", "Ford"];
+MyCar[0] // output will be BMW
+// [0] is the first element/ BMW
+// [1] is the second element/ Honda
+// [2] is the third element/ Ford
