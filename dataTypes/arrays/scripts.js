@@ -10,3 +10,11 @@ console.log("Arrays")
 // Sytax to declare an array: var arrayName = [ ];
 // Example: 
 var gradeResults = [ ];
+
+// Populating/adding values to an array: You can populate an array by assigning values to
+// its elements. Let’s add values to the example array we declared above:
+// Sytax to add value into an array: arrayName = [item1, item2, ...];
+// Example: gradeResults = [55, 99, 73];
+// ▪ Declaring and adding value to an array at the same time is also possible:
+var myCar = ["“BMW”", "“Honda”", "“Ford”"];
+var x = ["TV", 99, "“phone”"];
