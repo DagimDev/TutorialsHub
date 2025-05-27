@@ -189,3 +189,10 @@ m === n; //false, because (===) compares both value
     // false && false = false
     // false && true = false
 // (1==1 && 2==2 && 3==7) // returns False 
+
+
+// Logical OR (| |): The OR operator, represented by two pipes, returns true if one
+// operand is true
+// true || true = true
+// true || false = true
+// false || false = false
