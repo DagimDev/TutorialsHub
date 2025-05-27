@@ -178,3 +178,14 @@ m === n; //false, because (===) compares both value
 // ▪ Logical operators are used to determine the logic between variables or values.
 // ▪ We use these operators when we want to write conditional statements. We will
 // learn about conditional statements later. For now, let's just focus on the operators.
+
+
+// There are three logical operators in JavaScript:
+// ▪ Logical AND (&&): This returns true if both operands are true. Meaning, if either
+// one of the variables were initialized as false, the && expression would evaluate to
+// false.
+    // true && true = true
+    // true && false = false
+    // false && false = false
+    // false && true = false
+// (1==1 && 2==2 && 3==7) // returns False 
