@@ -208,3 +208,18 @@ console.log(reverseString("hello")); // "olleh"
 // Checking palindromes ("madam")
 // Generating string permutations
 // Parsing grammar (e.g., compiler design)
+
+// 3. Recursion with Numbers
+// Best for: Mathematical sequences, digit operations
+// Example: Calculate factorial
+
+// javascript
+function factorial(n) {
+  if (n === 0) return 1; // Base case
+  return n * factorial(n - 1); // Recursive case
+}
+console.log(factorial(5)); // 120
+// Key Use Cases:
+// Fibonacci sequence
+// Power calculations (x^n)
+// Digit sum (e.g., sumDigits(123) → 6)
