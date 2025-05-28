@@ -110,3 +110,9 @@ const hello2 = () => "Hello World!";
 const hello3 = (val) => "Hello " + val;
 // ▪ In fact, if you have only one parameter, you can skip the parentheses as well:
 const hello4 = val => "Hello " + val;
+
+
+// Recursion in JavaScript Explained Simply
+// Recursion is a programming technique where a function calls itself to solve a problem by breaking it 
+// down into smaller, similar subproblems. It's like a Russian nesting doll - each doll opens to reveal a 
+// smaller version of itself until you reach the smallest one.
