@@ -144,3 +144,13 @@ console.log(factorial(5)); // 120 (5 × 4 × 3 × 2 × 1)
 factorial(3)	// 3 * factorial(2)	// 3 * 2 = 6
 factorial(2)	// 2 * factorial(1)	// 2 * 1 = 2
 factorial(1)	// Base case reached	// 1
+
+
+// Common Recursion Examples
+// 1. Fibonacci Sequence
+// javascript
+function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+console.log(fibonacci(6)); // 8 (0, 1, 1, 2, 3, 5, 8)
