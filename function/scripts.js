@@ -192,3 +192,19 @@ console.log(sumArray([1, 2, 3])); // 6
 // Flattening nested arrays
 // Traversing tree-like structures\
 // Divide-and-conquer algorithms (e.g., merge sort)
+
+
+// 2. Recursion with Strings
+// Best for: Palindromes, reversing, permutations
+// Example: Reverse a string
+
+// javascript
+function reverseString(str) {
+  if (str === "") return ""; // Base case
+  return reverseString(str.slice(1)) + str[0]; // Recursive case
+}
+console.log(reverseString("hello")); // "olleh"
+// Key Use Cases:
+// Checking palindromes ("madam")
+// Generating string permutations
+// Parsing grammar (e.g., compiler design)
