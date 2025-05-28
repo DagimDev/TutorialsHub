@@ -223,3 +223,17 @@ console.log(factorial(5)); // 120
 // Fibonacci sequence
 // Power calculations (x^n)
 // Digit sum (e.g., sumDigits(123) → 6)
+
+// 4. Recursion with Booleans
+// Best for: Validation, condition checks
+// Example: Check if all array elements are even
+// javascript
+function allEven(arr, index = 0) {
+  if (index === arr.length) return true; // Base case (empty array)
+  if (arr[index] % 2 !== 0) return false; // Early termination
+  return allEven(arr, index + 1); // Recursive case
+}
+console.log(allEven([2, 4, 6])); // true
+// Key Use Cases:
+// Validating nested conditions
+// Early-exit checks (like the example above)
