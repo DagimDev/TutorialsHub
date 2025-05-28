@@ -116,3 +116,11 @@ const hello4 = val => "Hello " + val;
 // Recursion is a programming technique where a function calls itself to solve a problem by breaking it 
 // down into smaller, similar subproblems. It's like a Russian nesting doll - each doll opens to reveal a 
 // smaller version of itself until you reach the smallest one.
+
+
+// How Recursion Works
+// A recursive function has two key parts:
+
+// Base Case - The condition that stops the recursion (like the smallest doll).
+
+// Recursive Case - The function calls itself with a modified input.
