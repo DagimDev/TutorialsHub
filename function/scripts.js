@@ -237,3 +237,23 @@ console.log(allEven([2, 4, 6])); // true
 // Key Use Cases:
 // Validating nested conditions
 // Early-exit checks (like the example above)
+
+// 5. Recursion with Objects
+// Best for: Deep cloning, nested property access
+// Example: Deep clone an object
+
+// javascript
+function deepClone(obj) {
+  if (typeof obj !== "object" || obj === null) return obj; // Base case
+  const clone = Array.isArray(obj) ? [] : {};
+  for (const key in obj) {
+    clone[key] = deepClone(obj[key]); // Recursive case
+  }
+  return clone;
+}
+const original = { a: 1, b: { c: 2 } };
+const cloned = deepClone(original);
+// Key Use Cases:
+// Deep object comparisons
+// Tree traversal (e.g., DOM manipulation)
+// JSON parsing/processing
