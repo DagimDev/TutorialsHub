@@ -177,3 +177,18 @@ function flatten(arr) {
 // Readability	    Often cleaner for some problems	        Can be more straightforward
 // Performance	    Slower (call stack overhead)	        Faster (no function calls)
 // Stack Limit	    Risk of stack overflow	                No stack limit issues
+
+// Recursion with Arrays
+// Best for: Nested structures, flattening, searching, sorting
+// Example: Sum all elements in an array
+
+javascript
+function sumArray(arr, index = 0) {
+  if (index === arr.length) return 0; // Base case
+  return arr[index] + sumArray(arr, index + 1); // Recursive case
+}
+console.log(sumArray([1, 2, 3])); // 6
+// Key Use Cases:
+// Flattening nested arrays
+// Traversing tree-like structures\
+// Divide-and-conquer algorithms (e.g., merge sort)
