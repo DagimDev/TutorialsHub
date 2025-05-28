@@ -170,3 +170,10 @@ function flatten(arr) {
     Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val), []);
 }
 // console.log(flatten([1, [2, [3]])); // [1, 2, 3]
+
+
+// Recursion vs. Iteration
+// Feature	        Recursion	                            Iteration (Loops)
+// Readability	    Often cleaner for some problems	        Can be more straightforward
+// Performance	    Slower (call stack overhead)	        Faster (no function calls)
+// Stack Limit	    Risk of stack overflow	                No stack limit issues
