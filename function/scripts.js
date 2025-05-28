@@ -154,3 +154,11 @@ function fibonacci(n) {
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 console.log(fibonacci(6)); // 8 (0, 1, 1, 2, 3, 5, 8)
+
+// 2. Sum of an Array
+// javascript
+function sumArray(arr, index = 0) {
+  if (index === arr.length) return 0;
+  return arr[index] + sumArray(arr, index + 1);
+}
+console.log(sumArray([1, 2, 3])); // 6
