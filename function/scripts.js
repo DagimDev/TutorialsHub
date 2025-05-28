@@ -162,3 +162,11 @@ function sumArray(arr, index = 0) {
   return arr[index] + sumArray(arr, index + 1);
 }
 console.log(sumArray([1, 2, 3])); // 6
+
+// 3. Flatten a Nested Array
+// javascript
+function flatten(arr) {
+  return arr.reduce((acc, val) => 
+    Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val), []);
+}
+// console.log(flatten([1, [2, [3]])); // [1, 2, 3]
