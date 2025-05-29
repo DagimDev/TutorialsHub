@@ -30,3 +30,12 @@
 Rule: Shifts right, preserves the sign bit.
 -5 >> 1 → 11111011 >> 1 = 11111101 (-3)
 Use Case: Fast division by powers of 2 (with sign).
+
+7. Unsigned Right Shift (>>>)
+Rule: Shifts right, fills with 0 (ignores sign).
+
+Example:
+
+javascript
+-5 >>> 1 → 11111011 >>> 1 = 01111101 (125)
+Use Case: Working with unsigned numbers.
