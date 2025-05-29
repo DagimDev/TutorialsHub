@@ -1,0 +1,17 @@
+3. The 7 Bitwise Operators in JavaScript
+
+Operator	    Name	                Example	What It Does
+
+&	            AND	a & b	            Sets bit to 1 only if both bits are 1
+
+`	            `	OR	`a	b`	        Sets bit to 1 if either bit is 1
+
+^	            XOR	a ^ b	            Sets bit to 1 if bits are different
+
+~	            NOT	~a	                Flips all bits (1→0, 0→1)
+
+<<	            Left Shift	            a << b	Shifts bits left, fills with 0
+
+>>	            Right Shift	            a >> b	Shifts right, preserves sign bit
+
+>>>	            Unsigned Shift	        a >>> b	Shifts right, fills with 0
