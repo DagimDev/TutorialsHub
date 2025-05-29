@@ -1,0 +1,31 @@
+1. What Are Bitwise Operators?
+Bitwise operators perform operations on the individual bits (0s and 1s) of integer numbers. They are used for:
+
+Low-level optimizations (faster than arithmetic operations)
+
+Memory-efficient data storage (flags, permissions)
+
+Cryptography & compression algorithms
+
+Hardware programming (embedded systems)
+
+2. How Numbers Are Stored in Binary
+Before using bitwise operators, you must understand:
+
+Computers store numbers in binary (base-2).
+
+Each digit is called a bit (0 or 1).
+
+Example: 5 in binary is 0101 (4 bits).
+
+Binary Representation of Common Numbers
+Decimal	Binary (4-bit)
+0   0000
+1   0001
+2   0010
+3   0011
+4   0100
+5   0101
+6   0110
+7   0111
+8   1000
