@@ -15,3 +15,8 @@
 
 // 5 ^ 3 → 0101 ^ 0011 = 0110 (6)
 // Use Case: Swapping variables without a temporary variable.
+
+// 4. Bitwise NOT (~)
+// Rule: Flips all bits (0→1, 1→0).
+// ~5 → ~0101 = 1010 (-6 in two's complement)
+// Note: Results in negative numbers due to two's complement representation.
