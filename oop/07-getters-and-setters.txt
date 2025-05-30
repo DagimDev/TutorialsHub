@@ -1,0 +1,25 @@
+2. 🧩 Getters and Setters
+Control access to object properties.
+
+Help with validation, computed values, or read-only access.
+
+javascript
+Copy
+Edit
+class User {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name.toUpperCase();
+  }
+
+  set name(newName) {
+    if (newName.length > 0) this._name = newName;
+  }
+}
+
+const u = new User("Alex");
+console.log(u.name); // ALEX
+u.name = "Ben"; // Setter
