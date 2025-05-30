@@ -1,0 +1,33 @@
+4. 🕵️ Abstraction
+Definition: Hiding complex implementation details and exposing only the necessary parts.
+
+🔒 JavaScript doesn’t have true abstract classes, but we can simulate them:
+
+javascript
+Copy
+Edit
+class Shape {
+  constructor() {
+    if (new.target === Shape) {
+      throw new Error("Cannot instantiate abstract class Shape");
+    }
+  }
+
+  area() {
+    throw new Error("Must implement area method");
+  }
+}
+
+class Square extends Shape {
+  constructor(side) {
+    super();
+    this.side = side;
+  }
+
+  area() {
+    return this.side * this.side;
+  }
+}
+
+const s = new Square(4);
+console.log(s.area()); // 16
