@@ -1,0 +1,14 @@
+4. 🛠️ Constructor Overloading?
+JavaScript doesn't support true overloading.
+
+Use default values or object destructuring for flexible constructors.
+
+javascript
+Copy
+Edit
+class Book {
+  constructor(title = "Unknown", author = "Anonymous") {
+    this.title = title;
+    this.author = author;
+  }
+}
