@@ -1,0 +1,24 @@
+1. ✅ Encapsulation
+Definition: Bundling data and methods inside a class and hiding internal implementation details.
+
+🔐 Private fields (since ES2020) use #:
+
+javascript
+Copy
+Edit
+class User {
+  #password;
+
+  constructor(name, password) {
+    this.name = name;
+    this.#password = password;
+  }
+
+  checkPassword(input) {
+    return this.#password === input;
+  }
+}
+
+const u = new User("Alex", "1234");
+console.log(u.checkPassword("1234")); // true
+// console.log(u.#password); ❌ Error: private field
