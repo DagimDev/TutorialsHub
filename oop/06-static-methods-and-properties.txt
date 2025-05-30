@@ -1,0 +1,15 @@
+ Static Methods and Properties
+Belong to the class itself, not the instance.
+
+Useful for utility functions or shared logic.
+
+javascript
+Copy
+Edit
+class MathHelper {
+  static square(n) {
+    return n * n;
+  }
+}
+
+console.log(MathHelper.square(5)); // 25
