@@ -1,0 +1,51 @@
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which can 
+contain data (properties or attributes) and methods (functions or behaviors). The main goal of OOP is to 
+structure code in a modular, reusable, and organized way, especially when building large applications.
+
+Introduction to object-oriented programing
+6.1 The object-oriented data model
+• Using structured data like array is very helpful. But not enough to effectively describe real
+objects to computers. For that we use data models to better describe entities.
+• Data model: A model that organizes elements of data and standardizes how they relate to
+one. Since data elements document real life, people, places and things and the events
+between them, the data model represents reality. For example, a car has tires, or cows have
+four legs. One of the most commonly used data model is the Object-Oriented Data Model
+• What is Object Oriented Data Model?
+    ▪ We know that humans understand real word situations like people, places and
+things in general as objects. Object oriented data modeling is way by which these
+real-world situations are explained/represented as objects to computers.
+• Components of object-oriented data model: The structure, or building blocks, of objectoriented programming include the following:
+    ▪ Objects: objects are things obtained from a real-world entity. Objects in
+programming language can correspond to real-world objects or an abstract entity.
+Objects are the things we are trying to explain to the computer.
+    ▪ Attribute: describes the properties of an object. Properties are characteristics of
+the thing we are describing. For example, a PERSON object includes the attributes
+Name, Social Security Number, and Date of Birth
+    ▪ Method/function(action): Method represents the behavior of an object. Basically,
+it represents the real-world action. It answers the question “what does the object
+do?”
+    ▪ Events: How does an object/thing interact with other things and what happens to
+the thing when things interact with it?
+    ▪ Class: means of grouping all the objects which share the same set of attributes and
+methods. For example, if we have a PERSON class, a CUSTOMER class or an
+EMPLOYEE class share a parent PERSON class. Note that an object is an instance
+of a class (e.g., a particular person, place, or thing)
+    • Note: we should know unlike other object-oriented languages, there is no
+classes in JavaScript, only object. To be more precise, JavaScript is a
+prototype-based object-oriented language, which means it doesn’t have
+classes rather it defines behaviors using constructor function and then
+reuse it using the prototype. We will discuss this later.
+    ▪ Inheritance: By using inheritance, new class can inherit the attributes and methods
+of the old class i.e., base class. Unlike most of the object-oriented programming
+languages where classes inherit classes, JavaScript object inherits Object i.e.,
+certain features (property and methods) of one object can be reused by other
+objects.
+o Example to describe a Car using the object-oriented data model
+    ▪ Object: Let’s assume we have a “car” object
+    ▪ Properties of the object: model, make, color, doors
+    ▪ Methods/Actions: Car Starts (startCar), Car Accelerates (accelerate), Car
+Decelerates (decelerate)
+    ▪ Events: enter > startCar, up arrow > accelerate, down arrow > decelerate
+    • Note: At this point, the computer would have some understanding of what
+a car is. It still doesn't know everything about a car. For example, it doesn't
+know it has windows or tire 
