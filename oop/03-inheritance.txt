@@ -1,0 +1,26 @@
+2. 🧬 Inheritance
+Definition: A class (child/subclass) can inherit properties and methods from another class (parent/superclass).
+
+🔁 Promotes code reuse.
+
+javascript
+Copy
+Edit
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+
+const d = new Dog("Max");
+d.speak(); // Max barks.
