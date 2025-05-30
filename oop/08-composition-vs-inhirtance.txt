@@ -1,0 +1,24 @@
+3. 🧱 Composition vs Inheritance
+Inheritance uses extends, but sometimes it's better to use composition (i.e., "has-a" instead of "is-a").
+
+Composition means combining smaller parts (objects) to build more complex ones.
+
+javascript
+Copy
+Edit
+class Engine {
+  start() {
+    console.log("Engine started");
+  }
+}
+
+class Car {
+  constructor() {
+    this.engine = new Engine(); // Composition
+  }
+
+  drive() {
+    this.engine.start();
+    console.log("Car is moving");
+  }
+}
