@@ -1,0 +1,23 @@
+5. ♻️ Method Chaining
+Return this from methods so multiple calls can be chained together.
+
+javascript
+Copy
+Edit
+class Counter {
+  constructor() {
+    this.count = 0;
+  }
+
+  increment() {
+    this.count++;
+    return this;
+  }
+
+  display() {
+    console.log(this.count);
+    return this;
+  }
+}
+
+new Counter().increment().increment().display(); // 2
