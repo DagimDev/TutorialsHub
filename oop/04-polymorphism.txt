@@ -1,0 +1,22 @@
+3. 🧠 Polymorphism
+Definition: Methods can behave differently based on the object that calls them.
+
+🧬 Usually done via method overriding.
+
+javascript
+Copy
+Edit
+class Vehicle {
+  move() {
+    console.log("The vehicle moves.");
+  }
+}
+
+class Car extends Vehicle {
+  move() {
+    console.log("The car drives.");
+  }
+}
+
+const c = new Car();
+c.move(); // The car drives.
