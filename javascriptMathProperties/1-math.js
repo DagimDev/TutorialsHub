@@ -48,3 +48,10 @@ Math.asin(x)    // Arcsine (angle from ratio)
 Math.acos(x)    // Arccosine (angle from ratio)
 Math.atan(x)    // Arctangent (angle from slope)
 Math.atan2(y,x) // Arctangent of y/x (proper angle in all quadrants)
+
+// Random Numbers
+Math.random()   // Random float 0-1 (games, simulations, sampling)
+// Practical example for random integers:
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
