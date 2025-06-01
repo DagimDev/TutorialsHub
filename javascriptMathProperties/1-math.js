@@ -9,3 +9,9 @@ Math.LOG2E      // 1.442... - Logarithm base conversions
 Math.LOG10E     // 0.434... - Logarithm base conversions
 Math.SQRT2      // 1.414... - Diagonal calculations
 Math.SQRT1_2    // 0.707... - Normalization factors
+
+// Essential Math Methods
+// Basic Operations
+javascript
+Math.abs(x)     // Absolute value (distance calculations, input validation)
+Math.sign(x)    // Returns sign as 1, -1 or 0 (direction detection)
