@@ -85,3 +85,19 @@ console.log(randomValue);
 Math.sinh(x)    // Hyperbolic sine - ES6
 Math.cosh(x)    // Hyperbolic cosine - ES6
 Math.tanh(x)    // Hyperbolic tangent - ES6
+
+
+// Practical Applications
+// Financial Calculations: round(), pow() for compound interest
+
+// Games/Animations: random(), trigonometric functions for movement
+
+// Data Visualization: max(), min() for scaling data
+
+// Geometry: PI, sqrt() for distances and areas
+
+// Machine Learning: exp(), log() for activation functions
+
+// Security: random() for generating tokens (combined with crypto APIs)
+
+// UI Development: floor(), ceil() for responsive layouts
