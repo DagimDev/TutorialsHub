@@ -122,3 +122,9 @@ Math.tanh(x)    // Hyperbolic tangent - ES6
 // Math.SQRT1_2
 // Square root of ½ (~0.707).
 // Used in normalization (e.g., signal processing).
+
+Math.clz32(x) (ES6)
+// Counts leading zero bits in a 32-bit integer.
+// Useful in low-level bit manipulation (e.g., hashing algorithms).
+
+Math.clz32(1); // 31 (binary: 000...0001 → 31 leading zeros)
