@@ -55,3 +55,27 @@ Math.random()   // Random float 0-1 (games, simulations, sampling)
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+// To pick a random value from an array in JavaScript, you can use this one-liner:
+
+
+const arr = [10, 20, 30, 40, 50];
+const randomValue = arr[Math.floor(Math.random() * arr.length)];
+console.log(randomValue);
+// 🔍 How it Works:
+// Math.random() → returns a random number between 0 (inclusive) and 1 (exclusive), e.g., 0.567.
+
+// Multiply by arr.length → scales the random number to the array's size.
+
+// Math.floor() → converts the decimal into a whole number (index).
+
+// Use that index to access the array.
+
+// 🔁 Example Run:
+ arr = ['apple', 'banana', 'cherry'], //it might randomly pick:
+
+// Possible outputs:
+'apple'   // or
+'banana'  // or
+'cherry'
