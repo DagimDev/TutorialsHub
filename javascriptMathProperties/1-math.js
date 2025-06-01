@@ -21,3 +21,8 @@ Math.round(x)   // Standard rounding (financial calculations)
 Math.floor(x)   // Round down (pagination, array partitioning)
 Math.ceil(x)    // Round up (pagination, resource allocation)
 Math.trunc(x)   // Remove decimals (ES6, faster than floor for positives)
+
+
+Min/Max
+Math.max(a, b, c)//...)  // Find highest value (data analysis, comparisons)
+Math.min(a, b, c)//...)  // Find lowest value (data analysis, comparisons)
