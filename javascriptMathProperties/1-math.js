@@ -137,3 +137,8 @@ Math.hypot(/*[x[, y[, ...]]]*/) (ES6)
 // Returns the square root of the sum of squares (Euclidean distance).
 // Handles overflow/underflow better than manual sqrt(x² + y²).
 Math.hypot(3, 4); // 5 (3² + 4² = 25 → √25 = 5)
+
+Math.imul(x, y) (ES6)
+// Performs C-like 32-bit integer multiplication.
+// Critical for fast integer math (e.g., emulators, cryptography).
+Math.imul(0xffffffff, 5); // -5 (overflow behavior)
