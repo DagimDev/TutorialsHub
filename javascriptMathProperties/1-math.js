@@ -101,3 +101,8 @@ Math.tanh(x)    // Hyperbolic tangent - ES6
 // Security: random() for generating tokens (combined with crypto APIs)
 
 // UI Development: floor(), ceil() for responsive layouts
+
+// Remaining Math Properties (Constants)
+// Math.LN2
+// Natural logarithm of 2 (~0.693).
+// Used in logarithmic scaling or advanced mathematical computations.
