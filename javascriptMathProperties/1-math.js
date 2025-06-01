@@ -26,3 +26,10 @@ Math.trunc(x)   // Remove decimals (ES6, faster than floor for positives)
 Min/Max
 Math.max(a, b, c)//...)  // Find highest value (data analysis, comparisons)
 Math.min(a, b, c)//...)  // Find lowest value (data analysis, comparisons)
+
+// Powers and Roots
+Math.pow(x, y)  // x to power y (compound interest, growth calculations)
+Math.sqrt(x)    // Square root (distance calculations, physics)
+Math.cbrt(x)    // Cube root (volume calculations) - ES6
+Math.exp(x)     // e^x (exponential growth)
+Math.expm1(x)   // e^x - 1 (more accurate for small x) - ES6
