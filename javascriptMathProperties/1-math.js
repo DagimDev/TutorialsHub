@@ -15,3 +15,9 @@ Math.SQRT1_2    // 0.707... - Normalization factors
 javascript
 Math.abs(x)     // Absolute value (distance calculations, input validation)
 Math.sign(x)    // Returns sign as 1, -1 or 0 (direction detection)
+
+// Rounding
+Math.round(x)   // Standard rounding (financial calculations)
+Math.floor(x)   // Round down (pagination, array partitioning)
+Math.ceil(x)    // Round up (pagination, resource allocation)
+Math.trunc(x)   // Remove decimals (ES6, faster than floor for positives)
