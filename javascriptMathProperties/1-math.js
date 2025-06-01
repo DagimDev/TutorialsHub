@@ -106,3 +106,7 @@ Math.tanh(x)    // Hyperbolic tangent - ES6
 // Math.LN2
 // Natural logarithm of 2 (~0.693).
 // Used in logarithmic scaling or advanced mathematical computations.
+
+// Math.LN10
+// Natural logarithm of 10 (~2.302).
+// Useful in log-based calculations (e.g., decibels, pH scales).
