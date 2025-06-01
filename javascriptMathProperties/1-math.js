@@ -110,3 +110,7 @@ Math.tanh(x)    // Hyperbolic tangent - ES6
 // Math.LN10
 // Natural logarithm of 10 (~2.302).
 // Useful in log-based calculations (e.g., decibels, pH scales).
+
+// Math.LOG2E
+// Base-2 logarithm of Euler's number (~1.442).
+// Used in binary logarithm conversions.
