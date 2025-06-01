@@ -132,3 +132,8 @@ Math.clz32(1); // 31 (binary: 000...0001 → 31 leading zeros)
 Math.fround(x) (ES6)
 // Rounds to the nearest 32-bit float.
 // Used in precision-critical applications (e.g., WebGL, WASM).
+
+Math.hypot(/*[x[, y[, ...]]]*/) (ES6)
+// Returns the square root of the sum of squares (Euclidean distance).
+// Handles overflow/underflow better than manual sqrt(x² + y²).
+Math.hypot(3, 4); // 5 (3² + 4² = 25 → √25 = 5)
