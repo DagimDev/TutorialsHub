@@ -79,3 +79,9 @@ console.log(randomValue);
 'apple'   // or
 'banana'  // or
 'cherry'
+
+// Hyperbolic Functions (less common but useful)
+
+Math.sinh(x)    // Hyperbolic sine - ES6
+Math.cosh(x)    // Hyperbolic cosine - ES6
+Math.tanh(x)    // Hyperbolic tangent - ES6
