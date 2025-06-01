@@ -118,3 +118,7 @@ Math.tanh(x)    // Hyperbolic tangent - ES6
 // Math.LOG10E
 // Base-10 logarithm of Euler's number (~0.434).
 // Helpful for log10 transformations.
+
+// Math.SQRT1_2
+// Square root of ½ (~0.707).
+// Used in normalization (e.g., signal processing).
