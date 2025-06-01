@@ -128,3 +128,7 @@ Math.clz32(x) (ES6)
 // Useful in low-level bit manipulation (e.g., hashing algorithms).
 
 Math.clz32(1); // 31 (binary: 000...0001 → 31 leading zeros)
+
+Math.fround(x) (ES6)
+// Rounds to the nearest 32-bit float.
+// Used in precision-critical applications (e.g., WebGL, WASM).
