@@ -114,3 +114,7 @@ Math.tanh(x)    // Hyperbolic tangent - ES6
 // Math.LOG2E
 // Base-2 logarithm of Euler's number (~1.442).
 // Used in binary logarithm conversions.
+
+// Math.LOG10E
+// Base-10 logarithm of Euler's number (~0.434).
+// Helpful for log10 transformations.
