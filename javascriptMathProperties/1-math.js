@@ -33,3 +33,9 @@ Math.sqrt(x)    // Square root (distance calculations, physics)
 Math.cbrt(x)    // Cube root (volume calculations) - ES6
 Math.exp(x)     // e^x (exponential growth)
 Math.expm1(x)   // e^x - 1 (more accurate for small x) - ES6
+
+// Logarithms
+Math.log(x)     // Natural logarithm (data scaling)
+Math.log10(x)   // Base 10 logarithm (decibel calculations) - ES6
+Math.log2(x)    // Base 2 logarithm (information theory) - ES6
+Math.log1p(x)   // ln(1 + x) (more accurate for small x) - ES6
