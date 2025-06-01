@@ -39,3 +39,12 @@ Math.log(x)     // Natural logarithm (data scaling)
 Math.log10(x)   // Base 10 logarithm (decibel calculations) - ES6
 Math.log2(x)    // Base 2 logarithm (information theory) - ES6
 Math.log1p(x)   // ln(1 + x) (more accurate for small x) - ES6
+
+Trigonometry
+Math.sin(x)     // Sine (oscillations, waves, circular motion)
+Math.cos(x)     // Cosine (oscillations, waves, circular motion)
+Math.tan(x)     // Tangent (slopes, angles)
+Math.asin(x)    // Arcsine (angle from ratio)
+Math.acos(x)    // Arccosine (angle from ratio)
+Math.atan(x)    // Arctangent (angle from slope)
+Math.atan2(y,x) // Arctangent of y/x (proper angle in all quadrants)
