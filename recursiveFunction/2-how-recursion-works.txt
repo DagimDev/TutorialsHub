@@ -1,0 +1,44 @@
+How Recursion Works – Step by Step
+
+factorial(3)
+= 3 * factorial(2)
+= 3 * (2 * factorial(1))
+= 3 * (2 * (1 * factorial(0)))
+= 3 * 2 * 1 * 1
+= 6
+
+
+function sum(n) {
+  if (n === 1) return 1;
+  return n + sum(n - 1);
+}
+
+console.log(sum(4)); // Output: 10
+🧠 Step-by-Step Breakdown (for sum(4))
+We want to compute:
+sum(4) = 4 + 3 + 2 + 1 = 10
+
+Step 1: Call Stack Builds Up (Recursive Calls)
+
+sum(4)
+→ 4 + sum(3)
+      → 3 + sum(2)
+            → 2 + sum(1)
+                  → 1 (base case returns 1)
+Step 2: Call Stack Unwinds (Returns Start)
+
+sum(1) returns 1
+→ sum(2) = 2 + 1 = 3
+→ sum(3) = 3 + 3 = 6
+→ sum(4) = 4 + 6 = 10
+Final result: 10
+
+
+Common Mistakes
+No base case – leads to infinite recursion.
+
+Base case after recursion – causes at least one unnecessary call.
+
+Not modifying parameters – results in same function call repeatedly.
+
+Example: Recursive Sum of Numbers from 1 to n
