@@ -1,0 +1,60 @@
+===================================
+🌲 Recursion in Data Structures
+===================================
+
+Recursion is a natural fit for data structures that are nested or hierarchical like trees and graphs.
+
+-----------------------------------
+📁 Tree Traversal Example (Binary Tree)
+
+const tree = {
+  value: 1,
+  left: {
+    value: 2,
+    left: null,
+    right: null
+  },
+  right: {
+    value: 3,
+    left: null,
+    right: null
+  }
+};
+
+function inOrder(node) {
+  if (!node) return;
+  inOrder(node.left);
+  console.log(node.value);
+  inOrder(node.right);
+}
+
+inOrder(tree); // Output: 2, 1, 3
+
+-----------------------------------
+🕸 Recursion in Graphs (DFS)
+
+const graph = {
+  A: ['B', 'C'],
+  B: ['D'],
+  C: ['E'],
+  D: [],
+  E: []
+};
+
+function dfs(node, visited = new Set()) {
+  if (visited.has(node)) return;
+  visited.add(node);
+  console.log(node);
+  for (let neighbor of graph[node]) {
+    dfs(neighbor, visited);
+  }
+}
+
+dfs('A');
+
+✅ Output: A B D C E
+
+📌 Use Cases:
+- Trees: In-order, Pre-order, Post-order traversal
+- Graphs: DFS, backtracking
+- JSON/object traversal
