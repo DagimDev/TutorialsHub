@@ -23,3 +23,22 @@ function mergeSort(arr) {
 
   return merge(left, right);
 }
+
+3. 🔄 Backtracking
+-----------------------
+Used in: Maze solving, Sudoku, N-Queens
+
+function solve(board, row) {
+  if (row === board.length) {
+    console.log("Solution found");
+    return;
+  }
+
+  for (let col = 0; col < board.length; col++) {
+    if (isSafe(board, row, col)) {
+      board[row][col] = true;
+      solve(board, row + 1);
+      board[row][col] = false; // backtrack
+    }
+  }
+}
