@@ -10,3 +10,14 @@ function factorial(n) {
   return n * factorial(n - 1);        // recursive call happens first
 }
 Call stack builds → then results multiply on the way back.
+
+But: Recursive Call Doesn't Have To Come First
+Some recursive functions do their work before or between the recursive calls.
+
+2. ✅ Pre-Order (do work before recursive call)
+function countdown(n) {
+  if (n === 0) return;
+  console.log(n); // work before recursion
+  countdown(n - 1);
+}
+Output: n ... 3 2 1
