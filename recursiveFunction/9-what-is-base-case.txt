@@ -1,0 +1,92 @@
+What is a Base Case?
+The base case is the condition that stops the recursion.
+Without it, your function would call itself forever, eventually causing a stack overflow error.
+
+Think of it like saying:
+
+“Stop when you reach this point.”
+
+🛠 How Do You Determine the Base Case?
+
+→ What is the smallest, simplest version of this problem that I already know the answer to?
+Let’s look at some examples:
+
+✅ Example 1: Factorial
+
+function factorial(n) {
+  if (n === 0) return 1; // <-- Base case
+  return n * factorial(n - 1); // Recursive case
+}
+📌 Why is the base case n === 0?
+Because the factorial of 0 is defined as 1 — it’s the known, simplest answer.
+
+Example 3: Reverse a string
+
+function reverse(str) {
+  if (str === "") return ""; // <-- Base case
+  return reverse(str.slice(1)) + str[0];
+}
+📌 Why str === ""?
+Because an empty string is already reversed.
+
+🔎 Signs You've Missed the Base Case
+Your code runs forever.
+
+You get a "Maximum call stack size exceeded" error.
+
+The function doesn't return.
+
+🧠 Key Tip
+If recursion is a loop, the base case is the "stop sign."
+
+Always:
+
+Define when to stop
+
+Ensure each call moves closer to that condition
+
+
+What Does str === "" Mean Here?
+The base case str === "" means:
+
+“If the string is empty, stop recursing and return an empty string.”
+
+Let’s walk through the steps so you see why that’s the stopping point:
+
+Step-by-Step for reverse("abc")
+reverse("abc")
+→ reverse("bc") + "a"
+
+reverse("bc")
+→ reverse("c") + "b"
+
+reverse("c")
+→ reverse("") + "c"
+
+reverse("") → Base case hits!
+→ return ""
+
+Now we go back up:
+
+reverse("") → ""
+
+reverse("c") → "" + "c" = "c"
+
+reverse("bc") → "c" + "b" = "cb"
+
+reverse("abc") → "cb" + "a" = "cba"
+
+🔍 So Why Is str === "" the Base Case?
+Because once the string is empty, there's nothing left to reverse.
+
+That’s the simplest possible version of the problem: reversing an empty string is still just an empty string.
+
+🔁 Visual Summary:
+str	Action Taken
+"abc"	call reverse("bc") + "a"
+"bc"	call reverse("c") + "b"
+"c"	call reverse("") + "c"
+""	← Base case! return ""
+
+📘 Analogy:
+Imagine peeling letters from the front of the word and stacking them at the back — you stop peeling when there's nothing left. That’s the base case.
