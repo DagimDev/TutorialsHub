@@ -1,0 +1,41 @@
+===============================
+🐞 Debugging Recursive Functions
+===============================
+
+Debugging recursion can be tricky due to the nested calls. Here are some tips:
+
+1. 📌 Add Logs
+----------------------
+Add `console.log()` to trace input and output at each level.
+
+Example:
+function factorial(n) {
+  console.log("Calling factorial with:", n);
+  if (n === 0) return 1;
+  const result = n * factorial(n - 1);
+  console.log(`Returning ${result} for factorial(${n})`);
+  return result;
+}
+
+2. ⛔ Watch for Infinite Loops
+----------------------
+Make sure:
+- Base case is reachable
+- Recursive call moves toward base case
+
+3. 🧠 Use Stack Diagrams
+----------------------
+Visualize each function call and return value to understand how the call stack works.
+
+4. 🧰 Use Debugger
+----------------------
+Use browser or IDE debuggers (like VSCode):
+- Set breakpoints
+- Step into function calls
+- Watch variables
+
+✅ Tip:
+Recursive errors often happen due to:
+- Missing return statement
+- Incorrect base case
+- Wrong direction of recursion
