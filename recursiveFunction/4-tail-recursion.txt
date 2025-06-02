@@ -1,0 +1,36 @@
+===============================
+🔄 Tail Recursion in JavaScript
+===============================
+
+🧠 What is Tail Recursion?
+Tail recursion occurs when the recursive call is the last thing executed in the function.
+
+✅ Benefit:
+In some languages, the compiler optimizes tail recursion to reuse stack frames (tail call optimization - TCO). This prevents stack overflow.
+
+❌ In JavaScript:
+As of now, JavaScript engines like V8 (used in Chrome and Node.js) **do not reliably support tail call optimization**, even though the ES6 spec allows it.
+
+-----------------------------------
+🧪 Example: Regular vs Tail Recursion
+
+// Regular recursion
+function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+
+// Tail-recursive version
+function tailFactorial(n, acc = 1) {
+  if (n === 0) return acc;
+  return tailFactorial(n - 1, acc * n);
+}
+
+tailFactorial(5); // Output: 120
+
+📌 Explanation:
+- The result is carried in the `acc` (accumulator).
+- No work remains after the recursive call — that’s the definition of tail call.
+
+✅ Tip:
+Always consider tail recursion if you're using a language that supports tail call optimization (TCO). For JavaScript, use iteration for performance-critical code.
