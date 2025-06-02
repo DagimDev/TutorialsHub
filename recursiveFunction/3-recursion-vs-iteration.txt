@@ -1,0 +1,53 @@
+===================================
+🔁 Recursion vs Iteration in JavaScript
+===================================
+
+🧠 Concept:
+Recursion and iteration are both used to repeat a block of code. Which one to use depends on the problem and performance considerations.
+
+-----------------------------------
+Recursion
+-----------------------------------
+✔ A function that calls itself.
+✔ Elegant and natural for problems like tree traversal, DFS, backtracking.
+✔ Easier to write in problems with nested or branching structures.
+✖ Uses more memory (call stack).
+✖ Can cause stack overflow.
+
+Example:
+function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+
+-----------------------------------
+Iteration
+-----------------------------------
+✔ Uses loops (`for`, `while`, etc.)
+✔ More efficient in terms of memory.
+✔ Safer for large input sizes.
+✔ Preferred for linear or sequential problems.
+
+Example:
+function factorial(n) {
+  let result = 1;
+  for (let i = n; i > 0; i--) {
+    result *= i;
+  }
+  return result;
+}
+
+-----------------------------------
+Comparison Table
+-----------------------------------
+
+| Feature         | Recursion             | Iteration              |
+|-----------------|------------------------|-------------------------|
+| Readability     | High for trees, etc.   | High for simple loops   |
+| Performance     | Slower (stack frames)  | Faster                 |
+| Memory usage    | High                   | Low                    |
+| Infinite risk   | Stack overflow         | Less likely            |
+| When to use     | Tree, graph, backtrack | Loops, math, counters  |
+
+✅ Summary:
+Use recursion when the problem is naturally recursive (tree, graph, divide-and-conquer). Use iteration for better performance when the problem is linear.
