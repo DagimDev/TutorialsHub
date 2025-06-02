@@ -8,3 +8,18 @@ function recurse(n) {
   if (n === 0) return;
   recurse(n - 1);
 }
+
+
+2. 🪓 Divide and Conquer
+-----------------------
+Used in: Merge Sort, Quick Sort
+
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr;
+
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid));
+  const right = mergeSort(arr.slice(mid));
+
+  return merge(left, right);
+}
