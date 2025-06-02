@@ -1,0 +1,12 @@
+In Most Recursive Functions:
+Yes — the recursive call is usually done first, and the other operations (like *, +, pushing to array, etc.) happen afterward when the function returns.
+
+This is called a post-order approach: first recurse, then compute.
+
+Example: Factorial (Post-Order)
+
+function factorial(n) {
+  if (n === 0) return 1;              // base case
+  return n * factorial(n - 1);        // recursive call happens first
+}
+Call stack builds → then results multiply on the way back.
