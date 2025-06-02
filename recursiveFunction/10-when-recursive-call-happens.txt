@@ -21,3 +21,13 @@ function countdown(n) {
   countdown(n - 1);
 }
 Output: n ... 3 2 1
+
+3. ✅ In-Order (do work between two recursive calls)
+Often used in trees:
+
+function traverse(node) {
+  if (!node) return;
+  traverse(node.left);
+  console.log(node.value); // work in between
+  traverse(node.right);
+}
