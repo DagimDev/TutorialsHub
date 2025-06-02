@@ -7,3 +7,11 @@ function factorial(n) {
   if (n === 0) return 1;
   return n * factorial(n - 1);
 }
+
+2. ✅ Sum of Digits
+sumDigits(1234) => 1 + 2 + 3 + 4 = 10
+
+function sumDigits(n) {
+  if (n === 0) return 0;
+  return (n % 10) + sumDigits(Math.floor(n / 10));
+}
