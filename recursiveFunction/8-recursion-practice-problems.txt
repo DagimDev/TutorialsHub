@@ -23,3 +23,11 @@ function reverse(str) {
   if (str === "") return "";
   return reverse(str.slice(1)) + str[0];
 }
+
+
+4. ✅ Count Occurrences of a Value in Array
+
+function countOccurrences(arr, val, index = 0) {
+  if (index >= arr.length) return 0;
+  return (arr[index] === val ? 1 : 0) + countOccurrences(arr, val, index + 1);
+}
