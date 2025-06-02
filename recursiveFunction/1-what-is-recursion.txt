@@ -1,0 +1,24 @@
+What is Recursion?
+Recursion is a process where a function calls itself to solve smaller instances of the same problem.
+
+📌 Syntax of a Recursive Function
+function recursiveFunction(parameters) {
+  if (baseCondition) {
+    return result; // base case to stop recursion
+  } else {
+    return recursiveFunction(modifiedParameters); // recursive call
+  }
+}
+🧠 Key Concepts
+Concept	            Description
+Base Case	        The condition at which the recursion stops. Without it, recursion goes infinite.
+Recursive Case	    The part where the function calls itself with modified arguments.
+Call Stack	        JavaScript uses a stack (LIFO) to keep track of function calls.
+Stack Overflow	    Happens if the base case is never met or too many recursive calls are made.
+🌀 Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller sub-problems.
+Key Features:
+A base case that stops recursion.
+A recursive case that reduces the problem and calls the function again.
+Why Use Recursion?
+Simplifies complex problems.
+Natural fit for problems like tree traversal, factorials, or Fibonacci sequences.
