@@ -1,0 +1,39 @@
+Let’s break it down step by step for factorial(5):
+
+👣 Step-by-Step Call Stack:
+
+factorial(5)
+→ 5 * factorial(4)
+      → 4 * factorial(3)
+            → 3 * factorial(2)
+                  → 2 * factorial(1)
+                        → 1 * factorial(0)
+                              → factorial(0) = 1 (BASE CASE!)
+Now the function starts returning (unwinding):
+
+factorial(1) = 1 * 1 = 1
+factorial(2) = 2 * 1 = 2
+factorial(3) = 3 * 2 = 6
+factorial(4) = 4 * 6 = 24
+factorial(5) = 5 * 24 = 120
+✅ Conclusion:
+🔁 First: all the function calls happen (recursive calls) — going down
+➕ Then: multiplication happens as each function call returns — going up
+
+This is called the call stack in action.
+
+📘 Analogy:
+Think of recursion like stacking plates:
+
+Each call adds a plate to the stack.
+
+You can’t calculate anything until you reach the base case (the bottom plate).
+
+Then you process (multiply) while unstacking.
+
+🧠 In Code Terms:
+
+// The function doesn't do "n *" until
+// factorial(n - 1) has returned a value.
+return n * factorial(n - 1);
+This is why the base case must be hit first, otherwise the function just keeps calling itself without ever doing math.
