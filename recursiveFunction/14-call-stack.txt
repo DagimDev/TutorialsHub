@@ -254,3 +254,28 @@ Recursion drills down to the simplest case before combining results
 The stack ensures proper ordering - no function is "forgotten"
 
 This behavior is identical to how you'd solve a mathematical expression with nested parentheses - you always evaluate the innermost parentheses first.
+
+Stack Overflow
+
+Happens when a function calls itself too many times without reaching the base case.
+
+The stack grows too large and crashes.
+
+function infinite() {
+  infinite();
+}
+
+infinite(); // ❌ Stack overflow
+
+Summary
+
+Term                                    Meaning
+Call Stack                              Keeps track of function execution
+
+Push                                    Add a function to the stack
+
+Pop                                     Remove a function when it finishes
+
+LIFO                                    Last-In, First-Out order
+
+Stack Overflow                          Error when stack grows too big
