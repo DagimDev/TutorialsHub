@@ -21,3 +21,29 @@ Remove plate 3 (last in → first out)
 Then plate 2
 
 Then plate 1
+
+
+In JavaScript's Call Stack
+Each time a function is called, it's pushed on top of the stack.
+When a function finishes, it's popped off the top.
+
+Example:
+
+function one() {
+  two();
+}
+
+function two() {
+  three();
+}
+
+function three() {
+  console.log("Done");
+}
+
+one();
+Call stack order:
+
+three() ← last in → first out (popped first)
+two()
+one()
