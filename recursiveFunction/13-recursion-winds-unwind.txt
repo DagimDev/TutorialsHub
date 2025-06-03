@@ -94,3 +94,94 @@ Optimize or debug logic
 
 Implement more advanced algorithms like DFS, backtracking, etc.
 
+What Does "Recursion Unwinds" Mean in Merge Sort?
+When we say the recursion "unwinds," we're describing how JavaScript's call stack processes nested function calls in reverse order after hitting the base case. Let me break this down clearly:
+
+1. The Call Stack Builds Up (Winding Phase)
+Each recursive mergeSort call gets added to the call stack (JavaScript's "to-do list" of functions).
+
+The stack grows deeper until we hit arrays of length 0 or 1 (the base case).
+
+Example with [8, -2, 4]
+javascript
+mergeSort([8, -2, 4])
+  → mergeSort([8])       // Base case (returns [8])
+  → mergeSort([-2, 4])   // Needs to split further
+    → mergeSort([-2])    // Base case (returns [-2])
+    → mergeSort([4])     // Base case (returns [4])
+At this point, the call stack looks like this (top to bottom):
+
+mergeSort([4]) (base case, ready to return)
+
+mergeSort([-2]) (base case, ready to return)
+
+mergeSort([-2, 4]) (waiting for its recursive calls to finish)
+
+mergeSort([8]) (already resolved)
+
+mergeSort([8, -2, 4]) (waiting)
+
+2. The Call Stack Collapses (Unwinding Phase)
+Now, JavaScript starts resolving the pending calls from the deepest level up (like unstacking plates):
+
+Step-by-Step Unwinding
+Innermost calls return first:
+
+mergeSort([4]) returns [4]
+
+mergeSort([-2]) returns [-2]
+
+Their parent call (mergeSort([-2, 4])) can now proceed:
+
+
+merge([-2], [4]) → returns [-2, 4]
+Next level up resolves:
+
+mergeSort([8]) had already returned [8]
+
+Now mergeSort([8, -2, 4]) can run:
+
+
+merge([8], [-2, 4]) → returns [-2, 4, 8]
+Key Analogy: Stack of Books
+Winding = Adding books to a pile (each recursive call adds a "book").
+
+Unwinding = Removing books from the top (resolving calls from deepest to shallowest).
+
+Why "Unwind" Matters in Merge Sort
+Merge only runs after splits are complete
+(You can't merge [8] and [-2,4] until [-2,4] is itself sorted).
+
+Order of operations:
+
+Split until atomic → Merge small pieces → Merge larger pieces
+Visualization of Unwinding
+For [8, -2, 4]:
+
+// Winding (splitting)
+[8, -2, 4] → [8] and [-2, 4] → [-2] and [4]
+
+// Unwinding (merging)
+merge([-2], [4]) → [-2, 4]
+merge([8], [-2, 4]) → [-2, 4, 8]
+Practical Implications
+If you added console.log statements, you'd see:
+
+function mergeSort(arr) {
+  if (arr.length < 2) {
+    console.log(`Base case reached: ${arr}`); // Hits first
+    return arr;
+  }
+  // ... splitting logic ...
+  const merged = merge(mergeSort(left), mergeSort(right));
+  console.log(`Merged ${left} and ${right} into ${merged}`); // Runs during unwinding
+  return merged;
+}
+Output:
+
+Base case reached: [8]
+Base case reached: [-2]
+Base case reached: [4]
+Merged [-2] and [4] into [-2,4]
+Merged [8] and [-2,4] into [-2,4,8]
+This "unwinding" behavior is fundamental to how all recursive algorithms work, not just Merge Sort!
