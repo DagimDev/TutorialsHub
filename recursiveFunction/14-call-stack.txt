@@ -19,3 +19,54 @@ When a function is invoked, it's added ("pushed") onto the top of the call stack
 When the function completes, it's removed ("popped") from the stack.
 
 The browser's JavaScript engine uses the call stack to manage the order in which functions are run.
+
+
+🧠 Visual Example:
+
+function greet() {
+  console.log("Hello");
+  sayBye();
+}
+
+function sayBye() {
+  console.log("Goodbye");
+}
+
+greet();
+
+Call Stack Flow:
+
+Call Stack:
+1. greet() → pushed
+2. sayBye() → pushed (inside greet)
+3. sayBye() → popped (finished)
+4. greet() → popped (finished)
+
+Output:  Hello
+         Goodbye
+
+function greet() {
+  console.log("Hello!");
+}
+
+function sayName() {
+  greet();
+  console.log("John");
+}
+
+sayName();
+Call Stack Flow:
+
+sayName() is pushed to stack
+
+greet() is pushed when called inside sayName
+
+greet() executes ("Hello!" logs), then pops off
+
+sayName() continues, logs "John", then pops off
+
+Stack is empty
+
+[Top of Stack]
+greet()       │
+sayName()     │ ← Bottom of Stack
