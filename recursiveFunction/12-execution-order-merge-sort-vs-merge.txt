@@ -1,0 +1,56 @@
+Execution Order in Merge Sort: mergeSort vs merge
+In your Merge Sort implementation, the functions execute in this order:
+
+1. mergeSort Executes First (Recursively)
+The mergeSort function runs first and keeps calling itself recursively until it hits the base case (arrays with 0 or 1 elements).
+
+Only after all recursive splits are done does the merge function start executing.
+
+2. merge Executes After Splitting is Complete
+The merge function runs after the deepest recursive mergeSort calls return.
+
+It combines the sorted subarrays back together.
+
+Step-by-Step Execution Flow
+Let's see how this works with your example array [-6, 20, 8, -2, 4]:
+
+Phase 1: mergeSort Splits the Array (Top-Down)
+First Call:
+mergeSort([-6, 20, 8, -2, 4])
+→ Splits into left = [-6, 20], right = [8, -2, 4]
+
+Recursive Call on Left:
+mergeSort([-6, 20])
+→ Splits into left = [-6], right = [20] (base case reached)
+
+Recursive Call on Right:
+mergeSort([8, -2, 4])
+→ Splits into left = [8], right = [-2, 4]
+→ Then mergeSort([-2, 4]) splits into left = [-2], right = [4] (base cases)
+
+Phase 2: merge Combines Subarrays (Bottom-Up)
+Now, the recursion "unwinds," and merge starts executing:
+
+First Merge:
+merge([-6], [20]) → Returns [-6, 20]
+
+Second Merge:
+merge([-2], [4]) → Returns [-2, 4]
+
+Third Merge:
+merge([8], [-2, 4]) → Returns [-2, 4, 8]
+
+Final Merge:
+merge([-6, 20], [-2, 4, 8]) → Returns [-6, -2, 4, 8, 20]
+
+Key Takeaways
+mergeSort runs first (recursively splitting the array).
+
+merge runs after (combining the split arrays in sorted order).
+
+Execution is depth-first:
+
+The algorithm fully splits the left side before processing the right side.
+
+Merging happens from the smallest subarrays up to the full array.
+
