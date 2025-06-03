@@ -1,0 +1,7 @@
+LIFO stands for Last-In, First-Out, and it's a rule that describes how items are added and removed from certain data structures like the call stack.
+
+📦 What Does “Last-In, First-Out” Mean?
+The last item that was added to the stack is the first one to come out.
+
+You push items onto the top, and you pop from the top.
+
