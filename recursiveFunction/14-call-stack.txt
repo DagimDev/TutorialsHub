@@ -70,3 +70,28 @@ Stack is empty
 [Top of Stack]
 greet()       │
 sayName()     │ ← Bottom of Stack
+
+🔁 Call Stack in Recursion
+
+With recursion, each recursive call is a new function frame pushed onto the stack.
+
+Example:
+
+function countDown(n) {
+  if (n === 0) return;
+  console.log(n);
+  countDown(n - 1);
+}
+
+countDown(3);
+
+Stack Trace:
+
+countDown(3) → pushed
+countDown(2) → pushed
+countDown(1) → pushed
+countDown(0) → pushed
+countDown(0) → popped
+countDown(1) → popped
+countDown(2) → popped
+countDown(3) → popped
