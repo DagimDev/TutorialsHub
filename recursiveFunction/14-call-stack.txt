@@ -95,3 +95,162 @@ countDown(0) → popped
 countDown(1) → popped
 countDown(2) → popped
 countDown(3) → popped
+
+
+Why Call Stack Matters for Recursion (Like Merge Sort)
+
+When you called mergeSort([-6, 20, 8, -2, 4]), here's what happened in the stack:
+
+Initial Call
+mergeSort([-6,20,8,-2,4])
+After First Split
+mergeSort([8,-2,4])       │ Waiting for right side
+mergeSort([-6,20])        │
+mergeSort([-6,20,8,-2,4]) │
+Deepest Recursion Level
+mergeSort([4])            │ Base case - returns first
+mergeSort([-2,4])         │
+mergeSort([8,-2,4])       │
+mergeSort([-6,20])        │
+mergeSort([-6,20,8,-2,4]) │
+
+Key Properties
+LIFO Behavior
+Last function pushed is first to complete (like stacking plates)
+
+Stack Frames Contain:
+
+Function arguments
+
+Local variables
+
+Where to return after completion
+
+Stack Overflow
+Happens with infinite recursion when the stack grows beyond its limit (~10,000-50,000 calls in most browsers)
+
+Visualizing Merge Sort's Stack
+For your mergeSort([-6, 20]) example:
+
+Step 1:
+mergeSort([-6,20]) called
+→ Pushes to stack
+
+Step 2:
+It calls mergeSort([-6])
+→ New frame pushed on top
+
+Step 3:
+Base case reached for [-6]
+→ Pops mergeSort([-6]) from stack
+
+Step 4:
+Back to mergeSort([-6,20])
+→ Now calls mergeSort([20])
+→ New frame pushed
+
+Step 5:
+Base case reached for [20]
+→ Pops mergeSort([20])
+
+Step 6:
+Back to mergeSort([-6,20])
+→ Now calls merge([-6], [20])
+
+Understanding Why mergeSort([4]) Executes First
+
+The Golden Rule of Recursion
+"Complete the deepest call first" - JavaScript always finishes the most nested function call before returning to outer calls.
+
+Step-by-Step Execution
+For your array [8, -2, 4] (simplified example):
+
+1. Initial Call
+javascript
+mergeSort([8, -2, 4])
+Splits into:
+
+left = [8]
+
+right = [-2, 4]
+
+Must evaluate mergeSort([8]) and mergeSort([-2, 4]) before merging
+
+2. First Recursive Branch (Left Side)
+javascript
+mergeSort([8]) // Base case (length 1)
+Returns immediately: [8]
+
+Now the stack knows left is resolved
+
+3. Second Recursive Branch (Right Side)
+javascript
+mergeSort([-2, 4])
+Splits into:
+
+left = [-2]
+
+right = [4]
+
+Now must evaluate mergeSort([-2]) and mergeSort([4])
+
+4. Evaluating the Nested Calls
+javascript
+mergeSort([-2]) // Base case → returns [-2]
+mergeSort([4])  // Base case → returns [4]
+Here's the key insight:
+
+mergeSort([4]) is the last call made in this branch
+
+Therefore, it's at the top of the call stack
+
+JavaScript always completes the topmost stack frame first
+
+Visualizing the Call Stack
+When we reach mergeSort([4]), the stack looks like this (top to bottom):
+
+[Top of Stack]
+mergeSort([4])         ← Currently executing (will resolve first)
+mergeSort([-2,4])
+mergeSort([8,-2,4])
+[Bottom of Stack]
+Why This Order Matters
+Merge Sort's Dependencies:
+
+Can't merge [-2] and [4] until both are resolved
+
+[4] must return before we can combine results
+
+Natural Recursion Behavior:
+
+javascript
+return merge(mergeSort(left), mergeSort(right));
+The rightmost mergeSort call can't start until the left one finishes
+
+But within each call, we go deeper until hitting base cases
+
+Complete Execution Flow
+mergeSort([8,-2,4]) starts
+
+Calls mergeSort([8]) (base case, returns [8])
+
+Calls mergeSort([-2,4])
+
+Calls mergeSort([-2]) (base case, returns [-2])
+
+Calls mergeSort([4]) (base case, returns [4])
+
+Now unwinds:
+
+Merges [-2] and [4] → [-2,4]
+
+Finally merges [8] and [-2,4] → [-2,4,8]
+
+Key Takeaways
+Base cases resolve first because they're at the top of the call stack
+
+Recursion drills down to the simplest case before combining results
+
+The stack ensures proper ordering - no function is "forgotten"
+
+This behavior is identical to how you'd solve a mathematical expression with nested parentheses - you always evaluate the innermost parentheses first.
