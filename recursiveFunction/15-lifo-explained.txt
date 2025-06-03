@@ -5,3 +5,19 @@ The last item that was added to the stack is the first one to come out.
 
 You push items onto the top, and you pop from the top.
 
+Real-World Analogy: Stack of Plates
+Imagine a stack of plates:
+
+You put plate 1 on the table.
+
+Then plate 2 goes on top.
+
+Then plate 3 goes on top of that.
+
+To remove a plate, you always take the top one first:
+
+Remove plate 3 (last in → first out)
+
+Then plate 2
+
+Then plate 1
