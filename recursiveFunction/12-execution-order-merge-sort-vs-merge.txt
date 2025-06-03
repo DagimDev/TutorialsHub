@@ -54,3 +54,23 @@ The algorithm fully splits the left side before processing the right side.
 
 Merging happens from the smallest subarrays up to the full array.
 
+Visualization of Execution Order
+mergeSort([-6,20,8,-2,4])
+│
+├─ mergeSort([-6,20]) → merge([-6], [20]) → [-6,20]
+│  ├─ mergeSort([-6]) → base case
+│  └─ mergeSort([20]) → base case
+│
+└─ mergeSort([8,-2,4]) → merge([8], [-2,4]) → [-2,4,8]
+   ├─ mergeSort([8]) → base case
+   └─ mergeSort([-2,4]) → merge([-2], [4]) → [-2,4]
+      ├─ mergeSort([-2]) → base case
+      └─ mergeSort([4]) → base case
+│
+└─ Final merge([-6,20], [-2,4,8]) → [-6,-2,4,8,20]
+Why This Order Matters
+Splitting must finish before merging can begin (you can't merge unsorted subarrays).
+
+The recursion ensures we work on the smallest possible pieces first.
+
+Would you like a modified version that logs each step for better visualization? 
