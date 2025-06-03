@@ -1,0 +1,34 @@
+What Does "Winding" and "Unwinding" Mean in Recursion?
+
+These terms describe the two phases of recursive execution:
+
+🔄 Winding Phase (Recursive Descent)
+
+This is the phase where recursive calls are made, but not yet resolved.
+
+Each time the function calls itself, it pushes a new frame onto the call stack.
+
+The parameters change slightly with each call, moving the function toward the base case.
+
+No actual computation is completed during winding if the work is after the recursive call.
+
+🧠 Think of this like diving into a tunnel, deeper and deeper, until you hit a wall (the base case).
+
+Example:
+
+function countDown(n) {
+  if (n === 0) return;
+  countDown(n - 1); // Recursive call
+  console.log(n);   // Work happens later
+}
+
+Winding Stack:
+
+countDown(5)
+countDown(4)
+countDown(3)
+countDown(2)
+countDown(1)
+countDown(0)  <-- base case hit, recursion stops
+
+At this point, no console.log has run yet.
