@@ -32,3 +32,22 @@ countDown(1)
 countDown(0)  <-- base case hit, recursion stops
 
 At this point, no console.log has run yet.
+
+Unwinding Phase (Recursive Return)
+
+Once the base case is hit:
+
+The function starts returning to previous calls.
+
+The stack begins to pop — the last call returns, then the one before, and so on.
+
+Any operations after the recursive call will now execute in reverse order.
+
+📤 Think of it as climbing back up out of the tunnel.
+Execution Order:
+countDown(0) returns
+countDown(1): console.log(1)
+countDown(2): console.log(2)
+countDown(3): console.log(3)
+countDown(4): console.log(4)
+countDown(5): console.log(5)
