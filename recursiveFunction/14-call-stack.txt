@@ -1,0 +1,13 @@
+What Is the Call Stack in JavaScript?
+
+The call stack is a data structure that JavaScript uses to keep track of function execution. It follows the Last-In, First-Out (LIFO) principle.
+
+The call stack is a fundamental mechanism JavaScript uses to track function execution. Let me break it down clearly with examples relevant to your Merge Sort questions.
+
+The call stack is:
+
+A LIFO (Last-In, First-Out) data structure that tracks function calls
+
+JavaScript's "to-do list" of functions that need to be executed
+
+Where the engine stores execution contexts (variable environments)
