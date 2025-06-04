@@ -150,3 +150,15 @@ function createCounter() {
 const counter = createCounter();
 counter(); // 1
 counter(); // 2
+
+Returning Objects
+You can return object literals directly:
+
+function createPerson(name) {
+  return {
+    name: name,
+    greet: function() {
+      return `Hello, I'm ${this.name}`;
+    }
+  };
+}
