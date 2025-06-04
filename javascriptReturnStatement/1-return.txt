@@ -112,3 +112,12 @@ console.log(square(5)); // Error: square is not defined
 const square = function(n) {
   return n * n;
 };
+
+Key Takeaways
+Function declarations (including their entire body) are hoisted
+
+Return statements execute in place when reached during function execution
+
+You can call functions before their declaration in code because of hoisting
+
+The return statement doesn't get "moved up" independently - it stays where you wrote it
