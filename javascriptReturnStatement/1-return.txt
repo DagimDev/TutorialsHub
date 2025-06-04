@@ -58,3 +58,13 @@ console.log(greet()); // "Hello"
 function greet() {
   return "Hello";
 }
+
+
+2. Return Statement Behavior
+The return statement itself is not hoisted independently. It only executes when the function is called and execution reaches that point in the code.
+
+function example() {
+  // The return statement below isn't "moved up" by itself
+  // It stays in place and executes when reached
+  return "Value";
+}
