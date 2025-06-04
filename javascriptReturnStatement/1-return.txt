@@ -15,3 +15,10 @@ function example() {
   return;
   console.log("This won't run");
 }
+
+Returns a Value: The return statement sends a value back to the caller.
+
+function add(a, b) {
+  return a + b;
+}
+const sum = add(2, 3); // sum is now 5
