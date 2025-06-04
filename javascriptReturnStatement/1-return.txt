@@ -103,3 +103,12 @@ function test() {
 }
 // The return only affects execution flow when reached
 test(); // Logs "This will still run"
+
+Contrast with Function Expressions
+
+// Doesn't work because function expressions aren't hoisted
+console.log(square(5)); // Error: square is not defined
+
+const square = function(n) {
+  return n * n;
+};
