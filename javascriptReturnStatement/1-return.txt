@@ -121,3 +121,19 @@ Return statements execute in place when reached during function execution
 You can call functions before their declaration in code because of hoisting
 
 The return statement doesn't get "moved up" independently - it stays where you wrote it
+
+3. Automatic Semicolon Insertion (ASI)
+JavaScript has ASI which can cause unexpected behavior with return:
+
+function problem() {
+  return
+    { message: "Hello" };
+}
+console.log(problem()); // undefined
+This happens because ASI inserts a semicolon after return. To fix:
+
+function fixed() {
+  return {
+    message: "Hello"
+  };
+}
