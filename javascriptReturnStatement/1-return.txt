@@ -137,3 +137,16 @@ function fixed() {
     message: "Hello"
   };
 }
+
+Returning Functions (Closures)
+Functions can return other functions, creating closures:
+
+function createCounter() {
+  let count = 0;
+  return function() {
+    return ++count;
+  };
+}
+const counter = createCounter();
+counter(); // 1
+counter(); // 2
