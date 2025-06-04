@@ -190,3 +190,12 @@ function getCoordinates() {
   // or
   return { x: 10, y: 20 }; // Object
 }
+
+Generator Functions
+Generator functions use yield instead of return, but can also use return to end the generator:
+
+function* generator() {
+  yield 1;
+  yield 2;
+  return 3;
+}
