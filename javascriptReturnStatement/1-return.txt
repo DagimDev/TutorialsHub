@@ -5,3 +5,13 @@ Basic Syntax
   
 return [expression];
 The expression is optional. If omitted, the function returns undefined.
+
+How It Works
+Terminates Function Execution: When a return statement is encountered, the function stops executing immediately.
+
+  
+function example() {
+  console.log("This will run");
+  return;
+  console.log("This won't run");
+}
