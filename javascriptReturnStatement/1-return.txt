@@ -39,3 +39,22 @@ function noReturn() {
   // does something
 }
 console.log(noReturn()); // undefined
+
+Return and Hoisting
+The return statement itself isn't hoisted, but the function declaration is:
+
+console.log(myFunc()); // Works because function is hoisted
+function myFunc() { return "Hello"; }
+
+Understanding the Statement
+When we say "The return statement itself isn't hoisted, but the function declaration is," we're describing two distinct behaviors in JavaScript's compilation phase:
+
+1. Function Declaration Hoisting
+Function declarations are hoisted to the top of their containing scope during compilation. This means the entire function (including its name and body) is available before its actual position in the code.
+
+// This works because the function is hoisted
+console.log(greet()); // "Hello"
+
+function greet() {
+  return "Hello";
+}
