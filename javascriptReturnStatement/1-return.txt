@@ -92,3 +92,14 @@ console.log(square(5)); // 25
 function square(n) {
   return n * n;
 }
+
+Incorrect Assumption (Doesn't Work)
+
+function test() {
+  // People might think the return is hoisted above the console.log
+  console.log("This will still run");
+  return;
+  console.log("This won't run");
+}
+// The return only affects execution flow when reached
+test(); // Logs "This will still run"
