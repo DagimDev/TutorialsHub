@@ -199,3 +199,18 @@ function* generator() {
   yield 2;
   return 3;
 }
+
+Common Pitfalls
+Forgetting the return statement leads to undefined.
+
+ASI issues with multiline returns.
+
+Returning inside callbacks doesn't return from the outer function:
+
+function findItem(items, target) {
+  items.forEach(item => {
+    if (item === target) {
+      return item; // This returns from the callback, not findItem
+    }
+  });
+}
