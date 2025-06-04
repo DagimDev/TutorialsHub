@@ -181,3 +181,12 @@ function processInput(input) {
   // Main logic here
   return input.toUpperCase();
 }
+
+Returning Multiple Values
+While you can't directly return multiple values, you can return an array or object:
+
+function getCoordinates() {
+  return [10, 20]; // Array
+  // or
+  return { x: 10, y: 20 }; // Object
+}
