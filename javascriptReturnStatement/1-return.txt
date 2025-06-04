@@ -81,3 +81,14 @@ During execution phase:
 When a function is called, execution starts at the top of the function body
 
 The return statement only takes effect when execution reaches it
+
+
+Practical Implications
+Correct Usage (Works)
+
+// Works because the entire function is hoisted
+console.log(square(5)); // 25
+
+function square(n) {
+  return n * n;
+}
