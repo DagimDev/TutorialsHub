@@ -68,3 +68,16 @@ function example() {
   // It stays in place and executes when reached
   return "Value";
 }
+
+How It Works Internally
+During compilation phase:
+
+The JavaScript engine scans for function declarations and hoists them
+
+All other code (including return statements) remains in place
+
+During execution phase:
+
+When a function is called, execution starts at the top of the function body
+
+The return statement only takes effect when execution reaches it
