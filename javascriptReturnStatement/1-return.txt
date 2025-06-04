@@ -162,3 +162,10 @@ function createPerson(name) {
     }
   };
 }
+
+6. Returning Promises
+Common in asynchronous functions:
+
+async function fetchData() {
+  return fetch('https://api.example.com/data');
+}
