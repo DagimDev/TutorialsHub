@@ -30,3 +30,12 @@ function checkNumber(num) {
   if (num < 0) return "Negative";
   return "Zero";
 }
+
+Key Behaviors
+Implicit undefined Return
+If a function doesn't have a return statement, or if the return has no expression, it returns undefined.
+
+function noReturn() {
+  // does something
+}
+console.log(noReturn()); // undefined
