@@ -169,3 +169,15 @@ Common in asynchronous functions:
 async function fetchData() {
   return fetch('https://api.example.com/data');
 }
+
+Advanced Usage
+Early Returns
+Used for validation or edge cases at the start of functions:
+
+function processInput(input) {
+  if (!input) return null;
+  if (input.length < 3) return "Too short";
+  
+  // Main logic here
+  return input.toUpperCase();
+}
