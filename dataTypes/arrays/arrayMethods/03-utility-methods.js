@@ -48,3 +48,12 @@ join()
 let words = ['hello', 'world'];
 console.log(words.join(' ')); // "hello world"
 console.log(words.join('-')); // "hello-world"
+
+
+find()
+// 6. find(callback)
+// Returns the first element that satisfies the condition in the callback.
+
+let nums = [3, 6, 9, 12];
+let result = nums.find(n => n > 5);
+console.log(result); // 6 (first match)
