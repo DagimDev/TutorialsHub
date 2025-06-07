@@ -57,3 +57,11 @@ find()
 let nums = [3, 6, 9, 12];
 let result = nums.find(n => n > 5);
 console.log(result); // 6 (first match)
+
+findIndex(callback)
+// Returns the index of the first element that matches the condition.
+
+
+let nums1 = [3, 6, 9, 12];
+let idx = nums1.findIndex(n => n > 10);
+console.log(idx); // 3 (index of 12)
