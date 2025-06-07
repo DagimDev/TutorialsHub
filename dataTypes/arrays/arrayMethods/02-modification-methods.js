@@ -157,3 +157,75 @@ console.log(fruits3); // ['apple', 'orange', 'cherry']
 // So:
 
 // ['apple', 'banana', 'cherry'] → ['apple', 'orange', 'cherry']
+
+
+sort()
+// ➤ What it does:
+// Sorts the elements as strings by default. You can pass a function for custom sorting.
+
+// ➤ Syntax:
+
+array.sort([compareFunction]);
+// ➤ Returns:
+// The sorted array (same reference).
+
+// ➤ Mutates original array? ✅ Yes
+// ➤ Examples:
+// ➤ Default (lexicographical sort):
+
+let nums = [100, 25, 5];
+nums.sort();
+console.log(nums); // [100, 25, 5] → incorrect numerically
+// ➤ Numeric sort:
+
+nums.sort((a, b) => a - b);
+console.log(nums); // [5, 25, 100]
+
+// Array.prototype.sort() Overview
+// ✅ Default behavior:
+// By default, JavaScript's sort() method converts elements to strings and compares their UTF-16 character codes — not their actual numeric values.
+
+// 🔍 So yes:
+ sort() // works on arrays, but it treats the elements as strings unless you give it a custom sorting function.
+
+// 🔸 Example 1: Default (string-based) sorting
+
+// let nums = [100, 25, 5];
+// nums.sort();
+// console.log(nums); // [100, 25, 5]
+// 💡 Why is this wrong?
+// It’s comparing them as:
+
+// "100", "25", "5"
+// So:
+
+// "100" comes before "25" because '1' is less than '2'
+
+// This is not numeric sorting!
+
+// 🔸 Example 2: Numeric sort (correct way)
+
+nums.sort((a, b) => a - b);
+console.log(nums); // [5, 25, 100]
+// 🧠 Explanation:
+// a - b → if result is negative, a comes before b
+
+// So this sorts numerically from smallest to largest
+
+// For descending order:
+
+
+nums.sort((a, b) => b - a);
+console.log(nums); // [100, 25, 5]
+// 🔸 Sorting Strings (default works as expected)
+
+let fruits5 = ['banana', 'apple', 'cherry'];
+fruits.sort();
+console.log(fruits5); // ['apple', 'banana', 'cherry']
+// This works correctly because string comparison is intended.
+
+// 🔸 Summary Table
+// Type of Elements	      Default Sort Works?	       Need Custom Function?
+// Strings	                ✅ Yes	                    ❌ No
+// Numbers	                ❌ No	                    ✅ Yes (a - b)
+// Mixed types	            ❌ Unreliable	            ✅ Use custom logic
