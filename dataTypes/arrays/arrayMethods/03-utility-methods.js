@@ -22,3 +22,12 @@ let part = arr.slice(1, 3);
 console.log(part); // [20, 30]
 console.log(arr);  // [10, 20, 30, 40]
 
+
+indexOf()
+// 3. indexOf(value)
+// Returns the first index where the value appears, or -1 if not found.
+
+
+let items = ['a', 'b', 'c'];
+console.log(items.indexOf('b')); // 1
+console.log(items.indexOf('z')); // -1
