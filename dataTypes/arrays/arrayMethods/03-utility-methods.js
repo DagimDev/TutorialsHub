@@ -39,3 +39,12 @@ includes()
 let arr1 = [1, 2, 3];
 console.log(arr1.includes(2)); // true
 console.log(arr1.includes(5)); // false
+
+
+join()
+// 5. join(separator)
+// Converts the array into a string, joined by the separator.
+
+let words = ['hello', 'world'];
+console.log(words.join(' ')); // "hello world"
+console.log(words.join('-')); // "hello-world"
