@@ -65,3 +65,11 @@ findIndex(callback)
 let nums1 = [3, 6, 9, 12];
 let idx = nums1.findIndex(n => n > 10);
 console.log(idx); // 3 (index of 12)
+
+
+flat(depth = 1)
+// Flattens nested arrays into a single array.
+
+let nested = [1, [2, 3], [4, [5]]];
+console.log(nested.flat()); // [1, 2, 3, 4, [5]]
+console.log(nested.flat(2)); // [1, 2, 3, 4, 5]
