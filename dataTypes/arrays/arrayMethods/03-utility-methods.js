@@ -73,3 +73,10 @@ flat(depth = 1)
 let nested = [1, [2, 3], [4, [5]]];
 console.log(nested.flat()); // [1, 2, 3, 4, [5]]
 console.log(nested.flat(2)); // [1, 2, 3, 4, 5]
+
+at(index)
+// Access an element at a specific positive or negative index.
+
+let arr2 = [10, 20, 30, 40];
+console.log(arr2.at(1));  // 20
+console.log(arr2.at(-1)); // 40 (last item)
