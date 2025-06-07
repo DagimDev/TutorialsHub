@@ -31,3 +31,11 @@ indexOf()
 let items = ['a', 'b', 'c'];
 console.log(items.indexOf('b')); // 1
 console.log(items.indexOf('z')); // -1
+
+includes()
+// 4. includes(value)
+// Returns true if the array contains the value.
+
+let arr1 = [1, 2, 3];
+console.log(arr1.includes(2)); // true
+console.log(arr1.includes(5)); // false
