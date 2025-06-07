@@ -34,3 +34,21 @@ let last = colors.pop();
 
 console.log(last);   // 'blue'
 console.log(colorsPop); // ['red', 'green']
+
+shift()
+// ➤ What it does:
+// Removes the first element from an array.
+
+// ➤ Syntax:
+
+array.shift();
+// ➤ Returns:
+// The removed element.
+
+// ➤ Mutates original array? ✅ Yes
+// ➤ Example:
+let numbers = [10, 20, 30];
+let first = numbers.shift();
+
+console.log(first);   // 10
+console.log(numbers); // [20, 30]
