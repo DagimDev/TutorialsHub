@@ -52,3 +52,20 @@ let first = numbers.shift();
 
 console.log(first);   // 10
 console.log(numbers); // [20, 30]
+
+ unshift()
+// ➤ What it does:
+// Adds one or more elements to the beginning of an array.
+
+// ➤ Syntax:
+// array.unshift(element1, element2, ...);
+// ➤ Returns:
+// The new length of the array.
+
+// ➤ Mutates original array? ✅ Yes
+// ➤ Example:
+
+let number = [20, 30];
+numbers.unshift(10);
+
+console.log(number); // [10, 20, 30]
