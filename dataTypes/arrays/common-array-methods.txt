@@ -1,0 +1,39 @@
+Common Array Methods (By Category):
+🔄 Iteration Methods:
+Method	                Description
+forEach()	        Runs a function for each item (no return)
+map()	            Transforms each item, returns new array
+filter()	        Keeps items that match a condition
+reduce()	        Reduces array to a single value
+some()	          Checks if any item meets a condition
+every()	          Checks if all items meet a condition
+
+🔧 Modification Methods (Mutate the original array):
+Method	          Description
+push()	      Adds item(s) to the end
+pop()	        Removes the last item
+shift()	      Removes the first item
+unshift()	    Adds item(s) to the beginning
+splice()	    Adds/removes items at a specific index
+sort()	      Sorts the array (can mutate it!)
+reverse()	    Reverses the array
+
+📋 Utility Methods:
+Method	              Description
+concat()	        Joins arrays, returns new one
+slice()	          Returns a part of the array
+indexOf()	        Returns the index of a value
+includes()	      Checks if array contains a value
+join()	          Joins array into a string
+find()	          Returns the first matching element
+findIndex()	      Returns the index of the first match
+flat()	          Flattens nested arrays
+at()	            Access by positive/negative index
+
+🧠 Example:
+const nums = [1, 2, 3, 4, 5];
+
+const result = nums
+  .filter(n => n % 2 === 0)     // [2, 4]
+  .map(n => n * 10)             // [20, 40]
+  .reduce((sum, n) => sum + n); // 60
