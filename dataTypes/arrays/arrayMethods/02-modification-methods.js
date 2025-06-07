@@ -256,3 +256,11 @@ fill()
 let arr = [1, 2, 3, 4];
 arr.fill(0, 1, 3); // fill with 0 from index 1 to 2
 console.log(arr); // [1, 0, 0, 4]
+
+copyWithin()
+copyWithin (target, start, end)//?)
+// Copies part of the array to another index.
+
+let arr1 = [1, 2, 3, 4, 5];
+arr.copyWithin(0, 3); // copy from index 3 to start (index 0)
+console.log(arr1); // [4, 5, 3, 4, 5]
