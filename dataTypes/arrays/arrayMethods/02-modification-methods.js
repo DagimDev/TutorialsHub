@@ -229,3 +229,30 @@ console.log(fruits5); // ['apple', 'banana', 'cherry']
 // Strings	                ✅ Yes	                    ❌ No
 // Numbers	                ❌ No	                    ✅ Yes (a - b)
 // Mixed types	            ❌ Unreliable	            ✅ Use custom logic
+
+
+reverse()
+// ➤ What it does:
+// Reverses the order of elements in place.
+
+// ➤ Syntax:
+
+array.reverse();
+// ➤ Returns:
+// The reversed array (same reference).
+
+// ➤ Mutates original array? ✅ Yes
+// ➤ Example:
+
+let letters = ['a', 'b', 'c'];
+letters.reverse();
+
+console.log(letters); // ['c', 'b', 'a']
+
+fill()
+// fill(value, start?, end?)
+// Fills parts of the array with a static value.
+
+let arr = [1, 2, 3, 4];
+arr.fill(0, 1, 3); // fill with 0 from index 1 to 2
+console.log(arr); // [1, 0, 0, 4]
