@@ -60,3 +60,17 @@ Output:
 // Const activeAdults = users.filter(user => 
 //   User.active && user.age >= 18
 // );
+
+// Common Mistakes to Avoid
+ 
+// ❌ Forgetting to Return a Boolean
+// Wrong – returns price number, not true/false
+Products.filter(p => p.price > 500); // Still works (truthy/falsy)
+// Better:
+Products.filter(p => p.price > 500 ? true : false);
+// ❌ Modifying Original Array in Callback
+// Avoid – causes side effects
+Products.filter(p => {
+  p.price += 100; // Mutates original!
+  //Return p.inStock;
+});
