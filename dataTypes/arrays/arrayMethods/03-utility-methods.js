@@ -109,3 +109,11 @@ for (let [index, value] of arr8.entries()) {
 }
 // 0 'a'
 // 1 'b'
+
+keys()
+// Returns an iterator of the array's indices.
+
+let arrk = ['x', 'y'];
+for (let index of arrk.keys()) {
+  console.log(index); // 0, 1
+}
