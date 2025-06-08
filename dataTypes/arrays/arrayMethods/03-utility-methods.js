@@ -89,3 +89,13 @@ let arr15 = [1, 2, 3];
 let rev = arr15.toReversed();
 console.log(rev); // [3, 2, 1]
 console.log(arr15); // [1, 2, 3]
+
+
+toSorted() (New in ES2023)
+// Returns a sorted copy (like sort(), but doesn’t mutate original).
+
+
+let nums15 = [3, 1, 2];
+let sorted = nums15.toSorted((a, b) => a - b);
+console.log(sorted); // [1, 2, 3]
+console.log(nums15);   // [3, 1, 2]
