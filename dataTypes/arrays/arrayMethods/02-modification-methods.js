@@ -273,3 +273,17 @@ delete arr[1];
 console.log(arrd); // [1, <empty>, 3]
 console.log(arrd.length); // 3
 // ⚠️ Not recommended for arrays; use splice() instead.
+
+// Using Proxies to Mutate
+// Advanced: You can intercept and mutate arrays using Proxy.
+
+let arrp = [1, 2, 3];
+let proxy = new Proxy(arrp, {
+  set(target, key, value) {
+    target[key] = value * 2; // auto double any set value
+    return true;
+  }
+});
+proxy[1] = 10;
+console.log(arrp); // [1, 20, 3]
+// Not a method — but shows how mutation logic can be customized.
