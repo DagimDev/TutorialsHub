@@ -287,3 +287,13 @@ let proxy = new Proxy(arrp, {
 proxy[1] = 10;
 console.log(arrp); // [1, 20, 3]
 // Not a method — but shows how mutation logic can be customized.
+
+// Typed Arrays (e.g. Uint8Array)
+// Mutation methods exist for typed arrays too (like arrays for binary data).
+
+
+let typed = new Uint8Array([10, 20, 30]);
+typed[1] = 99;
+console.log(typed); // Uint8Array(3) [10, 99, 30]
+// Typed arrays support many mutating methods, including set() and indexed assignment.
+
