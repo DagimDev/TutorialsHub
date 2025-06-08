@@ -74,3 +74,14 @@ Products.filter(p => {
   p.price += 100; // Mutates original!
   //Return p.inStock;
 });
+
+// Performance Considerations
+//  
+// -Memory Usagety: O(n) – must check every elementAlternativese: Creates new array (can be large)
+// - Alternatives: For simple checks, for loop might be faster for huge arrays
+//  
+// When to Use filter()
+//  
+// ✅ When you need a subset of an array  
+// ✅ When working with immutable data patterns  
+// ✅Browser Compatibilityods (e.g., map after filter)  
