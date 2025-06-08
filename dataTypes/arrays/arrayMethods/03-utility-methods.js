@@ -80,3 +80,12 @@ at(index)
 let arr2 = [10, 20, 30, 40];
 console.log(arr2.at(1));  // 20
 console.log(arr2.at(-1)); // 40 (last item)
+
+
+toReversed() (New in ES2023)
+// Returns a reversed copy of the array without changing the original.
+
+let arr15 = [1, 2, 3];
+let rev = arr15.toReversed();
+console.log(rev); // [3, 2, 1]
+console.log(arr15); // [1, 2, 3]
