@@ -125,3 +125,9 @@ let arrv = ['apple', 'banana'];
 for (let value of arrv.values()) {
   console.log(value); // 'apple', 'banana'
 }
+
+Array.isArray()
+// Checks if a value is actually an array.
+
+console.log(Array.isArray([1, 2, 3])); // true
+console.log(Array.isArray('hello'));  // false
