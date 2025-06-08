@@ -145,3 +145,12 @@ Array.of()
 let single = Array.of(7);
 console.log(single); // [7]
 // 🔸 Unlike Array(7) which creates an empty array of length 7, Array.of(7) creates [7].
+
+
+with(index, value) (ES2023)
+// Returns a copy of the array with a value replaced at a specific index.
+
+let arrw = [10, 20, 30];
+let updated = arrw.with(1, 99);
+console.log(updated); // [10, 99, 30]
+console.log(arrw);     // [10, 20, 30]
