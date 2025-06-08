@@ -138,3 +138,10 @@ Array.from()
 let str = "hello";
 let letters = Array.from(str);
 console.log(letters); // ['h', 'e', 'l', 'l', 'o']
+
+Array.of()
+// Creates a new array from a list of arguments (even if it's just one).
+
+let single = Array.of(7);
+console.log(single); // [7]
+// 🔸 Unlike Array(7) which creates an empty array of length 7, Array.of(7) creates [7].
