@@ -154,3 +154,19 @@ let arrw = [10, 20, 30];
 let updated = arrw.with(1, 99);
 console.log(updated); // [10, 99, 30]
 console.log(arrw);     // [10, 20, 30]
+
+group() / groupToMap() //(ES2024 Proposal – Not supported everywhere yet)
+// Groups items based on a property or key.
+
+let users = [
+  { name: 'Alice', age: 20 },
+  { name: 'Bob', age: 20 },
+  { name: 'Eve', age: 30 }
+];
+
+let grouped = users.group(u => u.age);
+console.log(grouped);
+// {
+//   20: [Alice, Bob],
+//   30: [Eve]
+// }
