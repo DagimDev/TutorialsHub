@@ -117,3 +117,11 @@ let arrk = ['x', 'y'];
 for (let index of arrk.keys()) {
   console.log(index); // 0, 1
 }
+
+values()
+// Returns an iterator of the values.
+
+let arrv = ['apple', 'banana'];
+for (let value of arrv.values()) {
+  console.log(value); // 'apple', 'banana'
+}
