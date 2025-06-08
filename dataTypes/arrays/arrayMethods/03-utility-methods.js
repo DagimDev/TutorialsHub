@@ -99,3 +99,13 @@ let nums15 = [3, 1, 2];
 let sorted = nums15.toSorted((a, b) => a - b);
 console.log(sorted); // [1, 2, 3]
 console.log(nums15);   // [3, 1, 2]
+
+entries()
+// Returns an iterator of key/value pairs (index and value) for each item.
+
+let arr8 = ['a', 'b'];
+for (let [index, value] of arr8.entries()) {
+  console.log(index, value);
+}
+// 0 'a'
+// 1 'b'
