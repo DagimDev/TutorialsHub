@@ -131,3 +131,10 @@ Array.isArray()
 
 console.log(Array.isArray([1, 2, 3])); // true
 console.log(Array.isArray('hello'));  // false
+
+Array.from()
+// Creates a new array from an array-like or iterable object.
+
+let str = "hello";
+let letters = Array.from(str);
+console.log(letters); // ['h', 'e', 'l', 'l', 'o']
