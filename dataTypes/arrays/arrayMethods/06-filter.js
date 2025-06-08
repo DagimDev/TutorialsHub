@@ -85,3 +85,14 @@ Products.filter(p => {
 // ✅ When you need a subset of an array  
 // ✅ When working with immutable data patterns  
 // ✅Browser Compatibilityods (e.g., map after filter)  
+
+
+// Browser Compatibility
+//  
+// Works in all modern browsers and IE9+. For older support, use polyfill:
+// If (!Array.prototype.filter) {
+//   Array.prototype.filter = function(fun) {
+//     // Polyfill implementation
+//   };
+// }
+// The filter() method is essential for clean, functional JavaScript programming. It helps write more declarative code by focusing on what data you want rather than how to loop through it.
