@@ -264,3 +264,12 @@ copyWithin (target, start, end)//?)
 let arr1 = [1, 2, 3, 4, 5];
 arr.copyWithin(0, 3); // copy from index 3 to start (index 0)
 console.log(arr1); // [4, 5, 3, 4, 5]
+
+delete arr[index]
+// Deletes the element at that index, but leaves a hole (creates a "sparse array").
+
+let arrd = [1, 2, 3];
+delete arr[1];
+console.log(arrd); // [1, <empty>, 3]
+console.log(arrd.length); // 3
+// ⚠️ Not recommended for arrays; use splice() instead.
