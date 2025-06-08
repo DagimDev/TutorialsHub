@@ -297,3 +297,16 @@ typed[1] = 99;
 console.log(typed); // Uint8Array(3) [10, 99, 30]
 // Typed arrays support many mutating methods, including set() and indexed assignment.
 
+// Summary: Are There More Mutation Methods?
+// Mutation Method	Description
+// push/pop/shift/unshift	            Add/remove at start/end
+// splice()	                    Add/remove/replace anywhere
+// sort()	                        Sort array in place
+// reverse()	                    Reverse array in place
+// fill()	                        Fill with static values
+// copyWithin()	                Copy part of array internally
+// length                          property	Can truncate or expand array
+// arr[i] = value	                Direct value assignment
+// delete arr[i]	                Deletes value (leaves empty slot)
+// Proxy	                        Custom mutation behavior
+// typedArray[i] =	Mutates         typed arrays
