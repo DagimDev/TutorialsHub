@@ -31,3 +31,10 @@ getDate(); // – Get the Day of the Month (1-31)
 // Example:
 
 console.log(new Date().getDate()); // Output: 5 (or current day)
+
+
+getDay(); //– Get the Day of the Week (0-6)
+// Explanation: Returns the day of the week (0 = Sunday, 6 = Saturday).
+// Example:
+
+console.log(new Date().getDay()); // Output: 4 (for Thursday)
