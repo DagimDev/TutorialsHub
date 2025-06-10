@@ -154,3 +154,10 @@ toLocaleDateString() // – Localized Date String
 // Example:
 
 console.log(new Date().toLocaleDateString()); // Output: "10/5/2023" (US format)
+
+
+toLocaleTimeString() // – Localized Time String
+// Explanation: Returns a localized time string.
+// Example:
+
+console.log(new Date().toLocaleTimeString()); // Output: "12:34:56 PM"
