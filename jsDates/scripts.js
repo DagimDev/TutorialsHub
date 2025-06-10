@@ -108,3 +108,12 @@ setHours() //– Set the Hour
 const date13 = new Date();
 date13.setHours(12);
 console.log(date13.getHours()); // Output: 12
+
+
+setMinutes() // – Set the Minutes
+// Explanation: Sets the minutes (0-59).
+// Example:
+
+const date16 = new Date();
+date16.setMinutes(45);
+console.log(date16.getMinutes()); // Output: 45
