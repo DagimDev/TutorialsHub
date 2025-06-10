@@ -90,3 +90,12 @@ setMonth() // – Set the Month (0-11)
 const date12 = new Date();
 date12.setMonth(11); // December
 console.log(date12.getMonth()); // Output: 11
+
+
+setDate() // – Set the Day of the Month
+// Explanation: Sets the day of the month (1-31).
+// Example:
+
+const date14 = new Date();
+date14.setDate(15);
+console.log(date14.getDate()); // Output: 15
