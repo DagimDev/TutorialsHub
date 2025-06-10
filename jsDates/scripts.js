@@ -134,3 +134,9 @@ setMilliseconds() // – Set Milliseconds
 const date27 = new Date();
 date27.setMilliseconds(500);
 console.log(date27.getMilliseconds()); // Output: 500
+
+toDateString() // – Date as Readable String
+// Explanation: Converts the date portion to a human-readable string.
+// Example:
+
+console.log(new Date().toDateString()); // Output: "Thu Oct 05 2023"
