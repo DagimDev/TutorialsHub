@@ -65,3 +65,10 @@ getMilliseconds() // – Get Milliseconds (0-999)
 // Example:
 
 console.log(new Date().getMilliseconds()); // Output: Current ms (e.g., 123)
+
+
+getTime() //– Get Timestamp (Milliseconds since 1970)
+// Explanation: Returns the number of milliseconds since January 1, 1970.
+// Example:
+
+console.log(new Date().getTime()); // Output: 1696500000000 (example)
