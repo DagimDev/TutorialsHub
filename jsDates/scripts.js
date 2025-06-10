@@ -161,3 +161,10 @@ toLocaleTimeString() // – Localized Time String
 // Example:
 
 console.log(new Date().toLocaleTimeString()); // Output: "12:34:56 PM"
+
+
+Date.now() // – Current Timestamp
+// Explanation: Returns the current timestamp in milliseconds.
+// Example:
+
+console.log(Date.now()); // Output: 1696500000000 (example)
