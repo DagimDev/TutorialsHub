@@ -147,3 +147,10 @@ toISOString() // – Date in ISO Format
 // Example:
 
 console.log(new Date().toISOString()); // Output: "2023-10-05T12:34:56.789Z"
+
+
+toLocaleDateString() // – Localized Date String
+// Explanation: Returns a localized date string.
+// Example:
+
+console.log(new Date().toLocaleDateString()); // Output: "10/5/2023" (US format)
