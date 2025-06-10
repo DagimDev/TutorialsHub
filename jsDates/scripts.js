@@ -140,3 +140,10 @@ toDateString() // – Date as Readable String
 // Example:
 
 console.log(new Date().toDateString()); // Output: "Thu Oct 05 2023"
+
+
+toISOString() // – Date in ISO Format
+// Explanation: Returns the date in ISO format (YYYY-MM-DDTHH:mm:ss.sssZ).
+// Example:
+
+console.log(new Date().toISOString()); // Output: "2023-10-05T12:34:56.789Z"
