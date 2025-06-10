@@ -12,3 +12,10 @@ Date.parse() //– Parsing a Date String
 
 const ms = Date.parse("2023-10-05");
 console.log(ms); // Output: 1696464000000
+
+getFullYear() //– Get the Year
+// Explanation: Returns the year (4 digits) of a date.
+// Example:
+
+const date = new Date();
+console.log(date.getFullYear()); // Output: 2023 (or current year)
