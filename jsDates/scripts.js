@@ -117,3 +117,12 @@ setMinutes() // – Set the Minutes
 const date16 = new Date();
 date16.setMinutes(45);
 console.log(date16.getMinutes()); // Output: 45
+
+
+setSeconds() // – Set the Seconds
+// Explanation: Sets the seconds (0-59).
+// Example:
+
+const dates = new Date();
+dates.setSeconds(30);
+console.log(dates.getSeconds()); // Output: 30
