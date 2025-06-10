@@ -72,3 +72,12 @@ getTime() //– Get Timestamp (Milliseconds since 1970)
 // Example:
 
 console.log(new Date().getTime()); // Output: 1696500000000 (example)
+
+
+setFullYear() // – Set the Year
+// Explanation: Sets the year of a date object.
+// Example:
+
+const date2 = new Date();
+date2.setFullYear(2025);
+console.log(date2.getFullYear()); // Output: 2025
