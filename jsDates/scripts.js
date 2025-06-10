@@ -45,3 +45,10 @@ getHours() // – Get the Hour (0-23)
 // Example:
 
 console.log(new Date().getHours()); // Output: Current hour (e.g., 14)
+
+
+getMinutes()// – Get the Minutes (0-59)
+// Explanation: Returns the minutes.
+// Example:
+
+console.log(new Date().getMinutes()); // Output: Current minutes (e.g., 30)
