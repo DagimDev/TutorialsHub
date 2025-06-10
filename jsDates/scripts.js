@@ -168,3 +168,9 @@ Date.now() // – Current Timestamp
 // Example:
 
 console.log(Date.now()); // Output: 1696500000000 (example)
+
+Date.UTC() // – UTC Timestamp from Date Components
+// Explanation: Returns the number of milliseconds since 1970 in UTC.
+// Example:
+
+console.log(Date.UTC(2023, 9, 5)); // Output: 1696464000000 (for Oct 5, 2023)
