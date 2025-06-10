@@ -38,3 +38,10 @@ getDay(); //– Get the Day of the Week (0-6)
 // Example:
 
 console.log(new Date().getDay()); // Output: 4 (for Thursday)
+
+
+getHours() // – Get the Hour (0-23)
+// Explanation: Returns the hour of the day.
+// Example:
+
+console.log(new Date().getHours()); // Output: Current hour (e.g., 14)
