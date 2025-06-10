@@ -81,3 +81,12 @@ setFullYear() // – Set the Year
 const date2 = new Date();
 date2.setFullYear(2025);
 console.log(date2.getFullYear()); // Output: 2025
+
+
+setMonth() // – Set the Month (0-11)
+// Explanation: Sets the month (0-11).
+// Example:
+
+const date12 = new Date();
+date12.setMonth(11); // December
+console.log(date12.getMonth()); // Output: 11
