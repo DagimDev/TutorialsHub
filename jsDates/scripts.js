@@ -126,3 +126,11 @@ setSeconds() // – Set the Seconds
 const dates = new Date();
 dates.setSeconds(30);
 console.log(dates.getSeconds()); // Output: 30
+
+setMilliseconds() // – Set Milliseconds
+// Explanation: Sets milliseconds (0-999).
+// Example:
+
+const date27 = new Date();
+date27.setMilliseconds(500);
+console.log(date27.getMilliseconds()); // Output: 500
