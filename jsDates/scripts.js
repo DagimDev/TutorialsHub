@@ -52,3 +52,9 @@ getMinutes()// – Get the Minutes (0-59)
 // Example:
 
 console.log(new Date().getMinutes()); // Output: Current minutes (e.g., 30)
+
+getSeconds() //– Get the Seconds (0-59)
+// Explanation: Returns the seconds.
+// Example:
+
+console.log(new Date().getSeconds()); // Output: Current seconds (e.g., 45)
