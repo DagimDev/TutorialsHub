@@ -5,3 +5,10 @@
 
 const now = new Date();
 console.log(now); // Output: Current date & time (e.g., "2023-10-05T12:34:56.789Z")
+
+Date.parse() //– Parsing a Date String
+// Explanation: Parses a date string and returns the number of milliseconds since January 1, 1970.
+// Example:
+
+const ms = Date.parse("2023-10-05");
+console.log(ms); // Output: 1696464000000
