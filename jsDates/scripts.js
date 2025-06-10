@@ -99,3 +99,12 @@ setDate() // – Set the Day of the Month
 const date14 = new Date();
 date14.setDate(15);
 console.log(date14.getDate()); // Output: 15
+
+
+setHours() //– Set the Hour
+// Explanation: Sets the hour (0-23).
+// Example:
+
+const date13 = new Date();
+date13.setHours(12);
+console.log(date13.getHours()); // Output: 12
