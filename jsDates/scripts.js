@@ -58,3 +58,10 @@ getSeconds() //– Get the Seconds (0-59)
 // Example:
 
 console.log(new Date().getSeconds()); // Output: Current seconds (e.g., 45)
+
+
+getMilliseconds() // – Get Milliseconds (0-999)
+// Explanation: Returns the milliseconds.
+// Example:
+
+console.log(new Date().getMilliseconds()); // Output: Current ms (e.g., 123)
