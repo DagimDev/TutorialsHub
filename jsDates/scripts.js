@@ -19,3 +19,10 @@ getFullYear() //– Get the Year
 
 const date = new Date();
 console.log(date.getFullYear()); // Output: 2023 (or current year)
+
+
+getMonth() //– Get the Month (0-11)
+// Explanation: Returns the month (0 = January, 11 = December).
+// Example:
+
+console.log(new Date().getMonth()); // Output: 9 (for October)
