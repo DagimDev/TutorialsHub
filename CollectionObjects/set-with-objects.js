@@ -17,3 +17,12 @@ set.add(obj2); // different reference!
 console.log(set.size); // 2
 // Even though obj1 and obj2 look the same, they're stored as two different entries because they are different object references.
 
+// 1. .add()
+
+const userSet = new Set();
+
+const userA = { name: "Alice" };
+userSet.add(userA);
+userSet.add(userA); // same object reference, won't be added again
+
+console.log(userSet.size); // 1
