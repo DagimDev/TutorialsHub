@@ -16,3 +16,10 @@ console.log(typeof vowels)
 console.log(vowels.has('a'))
 console.log(vowels.has('x'))
 console.log(vowels)
+
+// 3. delete(value)
+// Removes a value from the Set.
+
+const numbers = new Set([1, 4, 5, 3, 2]);
+numbers.delete(5);
+console.log(numbers); 
