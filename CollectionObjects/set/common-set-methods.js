@@ -30,3 +30,10 @@ console.log(numbers);
 const colors = new Set(['red', 'green', 'blue']);
 colors.clear();
 console.log(colors); // Set {}
+
+
+// size
+// Property that returns the number of elements in the Set.
+
+const fruits = new Set(['apple', 'banana', 'orange']);
+console.log(fruits.size); // 3
