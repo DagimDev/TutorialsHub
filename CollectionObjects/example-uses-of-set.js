@@ -39,3 +39,8 @@ console.log(union); // Set { 1, 2, 3 }
 
 const intersection = new Set([...a].filter(x => b.has(x)));
 console.log(intersection); // Set { 2 }
+
+// 3. 🔄 Difference (A - B)
+
+const difference = new Set([...a].filter(x => !b.has(x)));
+console.log(difference); // Set { 1 }
