@@ -9,3 +9,13 @@
 // Order Preservation: Maintains insertion order of elements.
 
 // Performance: Offers faster lookups than arrays for checking if a value exists.
+
+// How to Create a Set
+// Empty Set
+const mySet = new Set();
+
+// Set with initial values
+const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
+const hell = "hello";
+
+console.log(vowels)
