@@ -14,3 +14,15 @@ const uniqueCount = new Set(words).size;
 // console.log(uniqueCount.size)
 console.log(uniqueCount)
 // 3
+
+// Tracking visited items:
+const visited = new Set();
+// Mark as visited
+visited.add('page1');
+// Check if visited
+if (!visited.has('page2')) {
+    // Do something
+    console.log(true)
+} else {
+    console.log(false)
+}
