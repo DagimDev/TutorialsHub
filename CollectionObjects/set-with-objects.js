@@ -37,3 +37,13 @@ console.log(users.has(user)); // true
 
 // different object, same value
 console.log(users.has({ name: "Bob" })); // false
+
+// 3. .delete()
+
+const product = { id: 101 };
+const cart = new Set([product]);
+
+cart.delete(product); // works
+console.log(cart.size); // 0
+
+cart.delete({ id: 101 }); // doesn't work — different reference
