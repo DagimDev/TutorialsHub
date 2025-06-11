@@ -26,3 +26,11 @@ if (!visited.has('page2')) {
 } else {
     console.log(false)
 }
+
+
+// 1. 🔗 Union
+
+const a = new Set([1, 2]);
+const b = new Set([2, 3]);
+const union = new Set([...a, ...b]);
+console.log(union); // Set { 1, 2, 3 }
