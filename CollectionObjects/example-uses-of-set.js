@@ -34,3 +34,8 @@ const a = new Set([1, 2]);
 const b = new Set([2, 3]);
 const union = new Set([...a, ...b]);
 console.log(union); // Set { 1, 2, 3 }
+
+// 2. 🔀 Intersection
+
+const intersection = new Set([...a].filter(x => b.has(x)));
+console.log(intersection); // Set { 2 }
