@@ -23,3 +23,10 @@ console.log(vowels)
 const numbers = new Set([1, 4, 5, 3, 2]);
 numbers.delete(5);
 console.log(numbers); 
+
+// clear()
+// Removes all elements from the Set.
+
+const colors = new Set(['red', 'green', 'blue']);
+colors.clear();
+console.log(colors); // Set {}
