@@ -26,3 +26,14 @@ userSet.add(userA);
 userSet.add(userA); // same object reference, won't be added again
 
 console.log(userSet.size); // 1
+
+// 2. .has()
+
+const user = { name: "Bob" };
+const users = new Set();
+users.add(user);
+
+console.log(users.has(user)); // true
+
+// different object, same value
+console.log(users.has({ name: "Bob" })); // false
