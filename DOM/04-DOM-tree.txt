@@ -1,0 +1,37 @@
+The DOM (Document Object Model) Tree is a structured representation of your HTML document that allows JavaScript to interact with and manipulate the webpage dynamically.
+
+1. What is the DOM Tree?
+When a browser loads an HTML page, it creates a tree-like structure called the DOM Tree.
+
+Every HTML element (<html>, <div>, <p>, etc.) becomes a node in this tree.
+
+JavaScript can access, modify, delete, or add nodes to make the page interactive.
+
+Example:
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button>Click Me</button>
+</body>
+</html>
+⬇️ DOM Tree Representation:
+
+text
+DOCUMENT (root)
+└── <html>
+    ├── <head>
+    │   └── <title> ("My Page")
+    └── <body>
+        ├── <h1> ("Hello World")
+        └── <button> ("Click Me")
+2. Types of DOM Nodes
+The DOM consists of different node types, including:
+Element Nodes – HTML tags (<div>, <p>, <button>).
+Text Nodes – The text inside elements ("Hello World" inside <h1>).
+Attribute Nodes – Attributes like id, class, src (<img src="image.jpg">).
+Comment Nodes – HTML comments (<!-- This is a comment -->).
