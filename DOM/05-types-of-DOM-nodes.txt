@@ -7,7 +7,6 @@ that we can use to access and alter them
 
 Types of DOM Nodes
 The DOM consists of different node types, including:
-
 1. The “document node”: Document node is the root of DOM tree. It represents the
 entire HTML document that is loaded in the browser window. It is the entry point to
 the document. The document node has multiple methods that we can access all nodes
@@ -16,3 +15,11 @@ in the DOM tree. Also, the top-level nodes in an HTML document (<html>, <head>,
 • document.documentElement to access the <html> tag
 • document.head to access the <head> tag
 • document.body to access the <body> tag
+
+Element Nodes – HTML tags (<div>, <p>, <button>).
+
+Dom element: DOM element on the other side is one type of a DOM node
+representing only HTML elements. Meaning, an element node is a node that's
+written using a tag in the HTML document. <html>, <head>, <title>, <body>,
+<h2>, <p> are all elements because they are represented by tags. <!DOCTYPE >,
+the comment and the text nodes are not DOM elements
