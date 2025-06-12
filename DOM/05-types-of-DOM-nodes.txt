@@ -44,3 +44,26 @@ JavaScript. You may be asking yourself “why is a comment added to the DOM, if 
 doesn’t affect the visual representation of an HTML?”. However, there is a rule under
 DOM stating that anything in the HTML must be represented in the DOM tree.
 Meaning, everything in HTML, even comments, become a part of the DOM.
+
+
+3. How JavaScript Interacts with the DOM Tree
+JavaScript can:
+
+Traverse (move up/down the tree to find elements).
+
+Modify (change text, styles, attributes).
+
+Add/Remove (insert or delete elements dynamically).
+
+Example: Changing Text with JavaScript
+
+// Select the <h1> node
+const heading = document.querySelector("h1");
+
+// Modify its text
+heading.textContent = "New Heading!";
+
+// Change its color
+heading.style.color = "blue";
+Result:
+The <h1> in the DOM updates from "Hello World" to "New Heading!" in blue.
