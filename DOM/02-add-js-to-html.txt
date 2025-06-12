@@ -39,3 +39,36 @@ Embed JS directly in HTML using `<script>` tags (usually placed before `</body>`
 
 ---
 
+### **3. External JavaScript (Separate `.js` File)**  
+Best practice for larger projects. Link an external `.js` file using `<script src="file.js">`.  
+
+#### **Step 1: Create `script.js`**  
+```javascript
+// script.js
+function changeText() {
+  document.getElementById("demo").innerHTML = "Loaded from JS file!";
+}
+```
+
+#### **Step 2: Link it in HTML**  
+```html
+<!DOCTYPE html>
+<html>
+<body>
+  <h1 id="demo">Welcome!</h1>
+  <button onclick="changeText()">Change Text</button>
+
+  <!-- Place before </body> -->
+  <script src="script.js"></script>
+</body>
+</html>
+```
+✅ **Pros**:  
+- Clean separation of HTML and JS.  
+- Reusable across multiple pages.  
+- Better performance (browser caches JS files).  
+
+❌ **Cons**: Requires an extra HTTP request (minimal impact).  
+
+---
+
