@@ -34,3 +34,20 @@ document
 
 ---
 
+## **2. How JavaScript Interacts with the DOM**  
+### **A. Selecting Elements**  
+JS can **find and modify** HTML elements using methods like:  
+
+| Method                            | Example                               | Returns |
+|--------                           |---------                              |---------|
+| `document.getElementById()`       | `document.getElementById("title")`    | Single element |
+| `document.querySelector()`        | `document.querySelector("button")`    | First matching element |
+| `document.querySelectorAll()`     | `document.querySelectorAll("p")`      | NodeList of all matches |
+
+#### **Example: Change Text**  
+```javascript
+const heading = document.getElementById("title");
+heading.textContent = "New Heading!"; // Updates the <h1>
+```
+
+---
