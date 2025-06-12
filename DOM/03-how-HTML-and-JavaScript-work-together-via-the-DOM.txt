@@ -51,3 +51,18 @@ heading.textContent = "New Heading!"; // Updates the <h1>
 ```
 
 ---
+
+### **B. Modifying Elements**  
+Once selected, JS can:  
+- **Change content** (`textContent`, `innerHTML`)  
+- **Update styles** (`style.property`)  
+- **Add/remove classes** (`classList.add()`, `classList.remove()`)  
+
+#### **Example: Change Style & Content**  
+```javascript
+const button = document.querySelector("button");
+button.textContent = "Don’t Click Me"; 
+button.style.backgroundColor = "red";
+```
+
+---
