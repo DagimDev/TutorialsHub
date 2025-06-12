@@ -96,3 +96,35 @@ heading.remove(); // Deletes the <h1>
 ```
 
 ---
+
+## **3. How HTML and JS Work Together – Step by Step**  
+1. **Browser loads HTML** → Builds the DOM tree.  
+2. **JavaScript runs** → Can access/modify the DOM.  
+3. **User interacts** (clicks, types, etc.) → JS updates DOM in real-time.  
+
+#### **Full Example**  
+```html
+<!DOCTYPE html>
+<html>
+<body>
+  <h1 id="message">Welcome!</h1>
+  <button id="btn">Click Me</button>
+
+  <script>
+    const button = document.getElementById("btn");
+    const heading = document.getElementById("message");
+
+    button.addEventListener("click", () => {
+      heading.textContent = "You clicked the button!";
+      heading.style.color = "blue";
+    });
+  </script>
+</body>
+</html>
+```
+**What happens?**  
+- The HTML loads (`<h1>` and `<button>` exist in the DOM).  
+- JS **selects** the button and heading.  
+- When clicked, JS **updates** the text and color.  
+
+---
