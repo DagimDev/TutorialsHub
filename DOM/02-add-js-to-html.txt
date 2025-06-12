@@ -1,0 +1,17 @@
+### **How to Add JavaScript to HTML**  
+There are **3 main ways** to include JavaScript in an HTML file:  
+
+---
+
+### **1. Inline JavaScript (Directly in HTML)**  
+Add JS code inside an HTML element using the `on*` attributes (e.g., `onclick`, `onload`).  
+
+#### **Example: Button Click Alert**  
+```html
+<button onclick="alert('Hello World!')">Click Me</button>
+```
+✅ **Pros**: Quick for small actions.  
+❌ **Cons**: Hard to maintain; mixes HTML and JS (not recommended for complex code).  
+
+---
+
