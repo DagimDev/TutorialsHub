@@ -15,3 +15,27 @@ Add JS code inside an HTML element using the `on*` attributes (e.g., `onclick`, 
 
 ---
 
+### **2. Internal JavaScript (Using `<script>` Tag)**  
+Embed JS directly in HTML using `<script>` tags (usually placed before `</body>` for performance).  
+
+#### **Example: Change Text on Click**  
+```html
+<!DOCTYPE html>
+<html>
+<body>
+  <h1 id="demo">Welcome!</h1>
+  <button onclick="changeText()">Change Text</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("demo").innerHTML = "Text Updated!";
+    }
+  </script>
+</body>
+</html>
+```
+✅ **Pros**: Keeps JS in one file (good for small projects).  
+❌ **Cons**: Still mixes logic with HTML; not reusable across pages.  
+
+---
+
