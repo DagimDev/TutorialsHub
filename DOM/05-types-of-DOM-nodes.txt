@@ -31,3 +31,8 @@ attribute node objects: <html lang="en-US">, <a href="">, <img src="" width=""
 alt="">, <div id=""> <p style="">, etc. 
 
 Attribute Nodes – Attributes like id, class, src (<img src="image.jpg">).
+
+4. The "text node”: Text nodes represents the textual content in an element or an
+attribute. Examples of text node objects include:
+▪ <p> Some text </p>
+Text Nodes – The text inside elements ("Hello World" inside <h1>).
