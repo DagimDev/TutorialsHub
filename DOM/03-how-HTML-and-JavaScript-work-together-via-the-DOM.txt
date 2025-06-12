@@ -78,3 +78,21 @@ button.addEventListener("click", () => {
 ```
 
 ---
+
+### **D. Creating/Deleting Elements**  
+JS can **dynamically add or remove** HTML elements.  
+
+#### **Example: Add a New Paragraph**  
+```javascript
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "This was added by JS!";
+document.body.appendChild(newParagraph);
+```
+
+#### **Example: Remove an Element**  
+```javascript
+const heading = document.getElementById("title");
+heading.remove(); // Deletes the <h1>
+```
+
+---
