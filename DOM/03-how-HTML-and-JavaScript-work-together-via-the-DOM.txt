@@ -1,0 +1,36 @@
+### **How HTML and JavaScript Work Together via the DOM**  
+
+The **Document Object Model (DOM)** is the bridge between **HTML (structure)** and **JavaScript (behavior)**. It allows JS to **dynamically access, modify, and interact** with HTML elements.  
+
+---
+
+## **1. What is the DOM?**  
+- The DOM is a **tree-like representation** of your HTML document.  
+- Each HTML element (e.g., `<div>`, `<p>`, `<button>`) becomes a **"node"** in the DOM.  
+- JavaScript can **manipulate these nodes** to change content, styles, and behavior.  
+
+### **Example DOM Tree**  
+```html
+<html>
+  <head>
+    <title>Page</title>
+  </head>
+  <body>
+    <h1 id="title">Hello</h1>
+    <button>Click Me</button>
+  </body>
+</html>
+```
+⬇️ **DOM Representation**  
+```
+document
+  ├── html
+      ├── head
+      │    └── title ("Page")
+      └── body
+           ├── h1#title ("Hello")
+           └── button ("Click Me")
+```
+
+---
+
