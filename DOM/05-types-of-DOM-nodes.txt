@@ -1,0 +1,18 @@
+DOM node: In DOM terminology, all elements of an HTML document are nodes,
+including the built-in DOM elements such as document document.body, HTML
+tags such as <p> (called element node), a text in HTML tags (text node) and an
+attribute (attribute node) of an HTML tag. DOM nodes are any one of the above
+in an object form in the DOM hierarchy. Thus, node objects have methods in them
+that we can use to access and alter them
+
+Types of DOM Nodes
+The DOM consists of different node types, including:
+
+1. The “document node”: Document node is the root of DOM tree. It represents the
+entire HTML document that is loaded in the browser window. It is the entry point to
+the document. The document node has multiple methods that we can access all nodes
+in the DOM tree. Also, the top-level nodes in an HTML document (<html>, <head>,
+<body>) can be directly accessed using properties of document node as follows:
+• document.documentElement to access the <html> tag
+• document.head to access the <head> tag
+• document.body to access the <body> tag
