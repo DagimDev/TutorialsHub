@@ -23,3 +23,11 @@ representing only HTML elements. Meaning, an element node is a node that's
 written using a tag in the HTML document. <html>, <head>, <title>, <body>,
 <h2>, <p> are all elements because they are represented by tags. <!DOCTYPE >,
 the comment and the text nodes are not DOM elements
+
+3: The "attribute node”: Each attribute of an HTML element becomes element node
+under the DOM tree. Once again, attribute nodes are also objects. Means they have
+their own method that we can use to read or change the attribute values. Examples of
+attribute node objects: <html lang="en-US">, <a href="">, <img src="" width=""
+alt="">, <div id=""> <p style="">, etc. 
+
+Attribute Nodes – Attributes like id, class, src (<img src="image.jpg">).
