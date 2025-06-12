@@ -72,3 +72,24 @@ function changeText() {
 
 ---
 
+### **Where to Place `<script>` Tags?**  
+- **Before `</body>` (Recommended)**: Ensures HTML loads first, preventing JS from blocking page rendering.  
+- **In `<head>` (With `defer` or `async`)**:  
+  - **`defer`**: Runs JS after HTML parses (good for dependencies).  
+  - **`async`**: Runs JS asynchronously (good for non-critical scripts).  
+
+#### **Example: Using `defer`**  
+```html
+<head>
+  <script src="script.js" defer></script>
+</head>
+```
+
+---
+
+### **Key Takeaways**  
+1. **For quick tests**: Use **inline JS** (e.g., `onclick`).  
+2. **Small projects**: Use **internal JS** (`<script>` tags).  
+3. **Production apps**: Always use **external JS files**.  
+4. **Optimize loading**: Place scripts at the **end of `<body>`** or use `defer/async`.  
+
