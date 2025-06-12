@@ -36,3 +36,11 @@ Attribute Nodes – Attributes like id, class, src (<img src="image.jpg">).
 attribute. Examples of text node objects include:
 ▪ <p> Some text </p>
 Text Nodes – The text inside elements ("Hello World" inside <h1>).
+
+Comment Nodes – HTML comments (<!-- This is a comment -->).
+5. The "comment node”: HTML comments (<!-- comment -->) are represented by
+comment nodes in a DOM tree. That means, comment node can also be accessed using
+JavaScript. You may be asking yourself “why is a comment added to the DOM, if it
+doesn’t affect the visual representation of an HTML?”. However, there is a rule under
+DOM stating that anything in the HTML must be represented in the DOM tree.
+Meaning, everything in HTML, even comments, become a part of the DOM.
