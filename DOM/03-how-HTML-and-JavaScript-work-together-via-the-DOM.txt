@@ -66,3 +66,15 @@ button.style.backgroundColor = "red";
 ```
 
 ---
+
+### **C. Handling Events**  
+JS can **respond to user actions** (clicks, keypresses, etc.) via **event listeners**.  
+
+#### **Example: Click Event**  
+```javascript
+button.addEventListener("click", () => {
+  alert("Button clicked!");
+});
+```
+
+---
