@@ -8,3 +8,31 @@ be returned.
 • Note 2: If you want to do something with an element returned in a list, you
 must specifically identify it from the list first in order to properly target it.
 There are several ways you can do this.
+
+1. NodeList
+
+NodeList: To refresh your memories, everything in the DOM is a node (contains
+element nodes, text nodes, atrribute nodes, etc.) NodeList returns a static NodeList.
+Meaning, even if the DOM changes after you use the method, the NodeList does not
+change and does not reflect the current UI.
+• querySelectorAll() method returns a static NodeList
+What it is: A static (usually) or live collection of nodes (elements, text, comments).
+
+How you get it: Methods like:
+
+document.querySelectorAll()
+
+element.childNodes
+
+Key Features:
+✔ Static by default (querySelectorAll) – Doesn’t update when DOM changes.
+✔ Live in some cases (childNodes) – Updates dynamically.
+✔ Supports forEach() – Can loop directly (modern browsers).
+❌ No array methods (unless converted to an array).
+
+const buttons = document.querySelectorAll("button"); // NodeList (static)
+console.log(buttons.length); // Number of buttons
+
+// Adding a new button does NOT update the NodeList
+document.body.appendChild(document.createElement("button"));
+console.log(buttons.length); // Still the same
