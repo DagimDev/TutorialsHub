@@ -36,3 +36,38 @@ console.log(buttons.length); // Number of buttons
 // Adding a new button does NOT update the NodeList
 document.body.appendChild(document.createElement("button"));
 console.log(buttons.length); // Still the same
+
+
+2. HTMLCollection
+
+HTMLCollection: Element/HTML node in DOM contains only elements. To refresh
+your memory, an element node in DOM is one specific type of node, called element
+node (it can be <li>, <div>, <body>, etc.) HTMLCollection returns a live
+HTMLCollection where, each nodes can be accessed by index numbers 0 being the
+first index. Meaning, if the DOM changes after you use the method, the
+HTMLCollection is updated to reflect the current UI.
+• getElementsByClassName() and getElementsByTagName() methods
+return a live HTMLCollection.
+
+What it is: A live collection of elements (automatically updates when the DOM changes).
+
+How you get it: Methods like:
+
+document.getElementsByClassName()
+
+document.getElementsByTagName()
+
+element.children
+
+Key Features:
+✔ Live collection – Automatically reflects DOM changes.
+❌ No array methods – Cannot use forEach(), map(), etc. directly.
+✔ Accessed by index or name – If elements have an id or name, you can access them like collection["myId"].
+
+Example:
+const buttons = document.getElementsByTagName("button"); // HTMLCollection
+console.log(buttons.length); // Number of buttons
+
+// Adding a new button updates the collection automatically
+document.body.appendChild(document.createElement("button"));
+console.log(buttons.length); // Increased by 1
