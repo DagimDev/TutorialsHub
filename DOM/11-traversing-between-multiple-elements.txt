@@ -61,3 +61,9 @@ ousElementSibling)//prints the 2nd li
 
 const first = document.querySelector('.elem');
 console.log(first.nextElementSibling); // <div class="elem">Second</div>
+
+nextElementSibling: The nextElementSibling property returns the
+element immediately following the specified element, in the same tree
+level. Look at the example above:
+console.log(document.getElementById("two").nextEle
+mentSibling); // prints the 3rd li
