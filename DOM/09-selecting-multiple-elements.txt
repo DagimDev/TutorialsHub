@@ -3,3 +3,15 @@
 with just one query. Please note that, you can pass in any valid CSS selector for these
 methods, including, comma-separated CSS selectors for targeting multiple different
 selectors
+
+querySelectorAll() method: The querySelectorAll() method returns all elements
+in the document that matches a specified CSS selector(s) as NodeList.
+• Syntax: document.querySelectorAll(CSS selectors)
+<ul id="listOfFruits">
+<li class="red">Apple</li>
+<li class="yellow">Mango</li>
+<li class="yellow">Peach</li>
+<li class="red">Rasberries</li>
+</u>
+Ex: document.querySelectorAll("li") //returns
+a nodeList of all <li>
