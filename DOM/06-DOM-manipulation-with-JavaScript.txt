@@ -1,0 +1,19 @@
+DOM manipulation: introduction
+• DOM manipulation with JavaScript:
+▪ What do we mean by manipulating?
+• Earlier we said that DOM represents the HTML page using a series of
+objects, the document object being the main object. The document object
+in turn houses other objects which also house their own objects, and so on.
+• So, when we say, “DOM manipulation”, it simply means changing the
+DOM (the HTML document). This in turn means, changing the HTML
+elements, that DOM converted into objects, in response to a user’s action
+▪ Manipulating DOM involves two steps:
+• 1: Finding/selecting the element we want to work with
+• 2: Altering the text or attributes of that element
+▪ The “document object” makes manipulation of the HTML document
+possible: The "document" object in JavaScript is the door to the DOM structure.
+This is the name of the JavaScript object that contains all the methods and
+properties to help us access and manipulate the DOM elements. The "document
+object” allows us to access the root node of the DOM tree. You can access the
+other child nodes of the DOM as properties of the “document object”.
+• Example, to access the body node: console.log(document.body);
