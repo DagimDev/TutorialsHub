@@ -36,3 +36,12 @@ Syntax:
 document.getElementsByTagName(tagname)
 getElementsByTagName("li"); //returns
 HTMLCollection with all <li>
+
+
+Selecting one element from an HTMLCollection: See example code above
+
+var el = document.getElementsByTagName("li");
+console.log(el.item(0));// returns the 1st li
+element
+console.log(el[1]); // returns the 2nd li
+element
