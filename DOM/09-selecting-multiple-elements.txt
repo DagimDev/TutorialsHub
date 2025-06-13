@@ -1,0 +1,5 @@
+ Selecting multiple elements (HTML collection vs NodeList)
+• Selecting multiple elements: There are three common ways of selecting multiple elements
+with just one query. Please note that, you can pass in any valid CSS selector for these
+methods, including, comma-separated CSS selectors for targeting multiple different
+selectors
