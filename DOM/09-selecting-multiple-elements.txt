@@ -21,3 +21,9 @@ o Selecting using the item() method : See example code above
 var el = document.querySelectorAll(".yellow");
 el.item(0);// selects the first li with yellow class
 el.item(1);// selects the 2nd li with yellow class
+
+
+Selecting using array syntax: See example code above
+var el = document.getElementsByClassName("red");
+console.log(el[1]); //selects the 2nd li with
+red class
