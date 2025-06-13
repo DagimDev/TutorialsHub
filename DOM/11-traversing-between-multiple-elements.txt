@@ -38,3 +38,26 @@ console.log(document.getElementById("one").closest
 <ul>.
 o Note: The <li>s selected here has the <div> and <ul> as its
 parents, but closest allows us choose the closest parent
+
+
+<div class="hello" >
+<ul id="fruitId" class="hello">
+<li id="one" class="red">Apple</li>
+<li id="two" class="yellow">Mango</li>
+<li id="three" class="red">Peach</li>
+</ul>
+</div>
+
+Traversing sideways:
+• previousElementSibling: The previousElementSibling property returns
+the previous element of the specified element, in the same tree level. Look
+at the example above:
+console.log(document.getElementById("three").previ
+ousElementSibling)//prints the 2nd li
+
+<div class="elem">First</div>
+<div class="elem">Second</div>
+<div class="elem">Third</div>
+
+const first = document.querySelector('.elem');
+console.log(first.nextElementSibling); // <div class="elem">Second</div>
