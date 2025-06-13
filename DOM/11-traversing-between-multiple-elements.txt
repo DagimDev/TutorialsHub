@@ -1,0 +1,3 @@
+Selecting elements (traversing between multiple elements)
+• Traversing between multiple elements: Traversing is the act of selecting an element from
+another/neighboring element.
