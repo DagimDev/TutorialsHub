@@ -45,3 +45,12 @@ console.log(el.item(0));// returns the 1st li
 element
 console.log(el[1]); // returns the 2nd li
 element
+
+
+getElementsByClassName(): Just like getElementsByTagName(), this method
+also returns a live HTMLCollection representing an array-like object of all
+elements with the specified class name.
+Syntax:
+document.getElementsByClassName(classname)
+getElementsByClassName(“red”)// returns HTML
+collection with all elements having the “red” class
