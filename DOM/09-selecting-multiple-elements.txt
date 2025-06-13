@@ -15,3 +15,9 @@ in the document that matches a specified CSS selector(s) as NodeList.
 </u>
 Ex: document.querySelectorAll("li") //returns
 a nodeList of all <li>
+
+Selecting one element from a nodeList
+o Selecting using the item() method : See example code above
+var el = document.querySelectorAll(".yellow");
+el.item(0);// selects the first li with yellow class
+el.item(1);// selects the 2nd li with yellow class
