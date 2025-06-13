@@ -27,3 +27,12 @@ Selecting using array syntax: See example code above
 var el = document.getElementsByClassName("red");
 console.log(el[1]); //selects the 2nd li with
 red class
+
+
+getElementsByTagName() method: The method takes a tag name and returns a
+collection of all elements in the document with the specified tag name, as an
+HTMLCollection object.
+Syntax:
+document.getElementsByTagName(tagname)
+getElementsByTagName("li"); //returns
+HTMLCollection with all <li>
