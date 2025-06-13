@@ -6,3 +6,15 @@ document object that we can use to select one specific element. Let’s look at 
 selector as its argument and returns an element whose id matches the passed
 string/id. Since the ids of elements are always unique to that element, this is a faster
 way to select an element. If the id is not found, then this method returns null.
+
+2. querySelector() method: The querySelector method takes CSS selectors as its
+argument and returns the first element that matches the passed selector. Meaning,
+the method can take ids, classes and tag names as its argument.
+• document.querySelector("#hi"); // selects the element with “hi” id name
+• document.querySelector(".bye"); // selects all elements with “bye” class
+name, but returns first element in the document with class name
+• document.querySelector("div"); // selects all elements with “div” tag, but
+returns first div
+• document.querySelector("div span.hello"); // selects all “span” elements
+within a “div” tag but returns the first span element with class name
+"hello", inside a div
