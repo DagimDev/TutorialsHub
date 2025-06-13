@@ -1,3 +1,18 @@
 Selecting elements (traversing between multiple elements)
 • Traversing between multiple elements: Traversing is the act of selecting an element from
 another/neighboring element.
+
+• Traversing directions: we can traverse in three directions:
+<div class="hello" >
+<ul id="fruitId" class="hello">
+<li id="one" class="red">Apple</li>
+<li id="two" class="yellow">Mango</li>
+<li id="three" class="red">Peach</li>
+</ul>
+</div>
+▪ Traversing downwards:
+
+firstElementChild(): The firstElementChild property returns the first
+child element of the specified element.
+console.log(document.getElementById("fruitId").firstElementChild);// prints the first li
+element under the ul
