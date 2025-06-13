@@ -1,0 +1,10 @@
+HTMLCollection vs NodeList
+▪ One thing to understand is that most JavaScript selector methods return multiple
+elements with a single query. Because of this, by default many selectors will return
+array-like lists that store the matching elements.
+• Note: When we use the methods that return multiple elements by default,
+even if there is only one matching element in the document, a list will still
+be returned.
+• Note 2: If you want to do something with an element returned in a list, you
+must specifically identify it from the list first in order to properly target it.
+There are several ways you can do this.
