@@ -16,3 +16,10 @@ firstElementChild(): The firstElementChild property returns the first
 child element of the specified element.
 console.log(document.getElementById("fruitId").firstElementChild);// prints the first li
 element under the ul
+
+
+lastElementChild(): The lastElementChild property returns the last child
+element of the specified element.
+console.log(document.getElementById("fruitId").las
+tElementChild);// prints the last li element
+under the ul
