@@ -54,3 +54,11 @@ Syntax:
 document.getElementsByClassName(classname)
 getElementsByClassName(“red”)// returns HTML
 collection with all elements having the “red” class
+
+Selecting one element from an HTMLCollection: See example code
+above
+var el = document.getElementsByClassName("red");
+console.log(el[1]); //selects the 2nd li element
+with red class
+console.log(el.item(0));// selects the 1st li
+element with red class
