@@ -1,0 +1,14 @@
+DOM manipulation: selecting elements (part 1)
+• JavaScript is most used language to modify HTML elements or their content and apply
+effects like show/hide, animations, etc. But before we perform any action on an element,
+we need to select the target HTML element.
+• What does selecting DOM elements mean? In terms of DOM manipulation, the term
+“selecting” an element(s) means finding an element that we plan to manipulate or apply a
+change on.
+• Selecting in JavaScript can also be divided into three types
+▪ 1. Select an individual element:
+• Example: Finding one specific <div> element
+▪ 2. Select multiple elements: Example:
+• Finding all <div> elements
+▪ 3. Traversing between multiple elements:
+• Example: Finding a <p> element within a particular <div>
