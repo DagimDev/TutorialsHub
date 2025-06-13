@@ -1,3 +1,8 @@
 DOM manipulation: selecting an individual element (part 2)
 • Selecting an individual element: There are three common methods provided by the
 document object that we can use to select one specific element. Let’s look at them below.
+
+▪ 1. getElementById() method: The getElementById method accepts CSS’ id
+selector as its argument and returns an element whose id matches the passed
+string/id. Since the ids of elements are always unique to that element, this is a faster
+way to select an element. If the id is not found, then this method returns null.
