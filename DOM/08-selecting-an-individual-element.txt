@@ -1,0 +1,3 @@
+DOM manipulation: selecting an individual element (part 2)
+• Selecting an individual element: There are three common methods provided by the
+document object that we can use to select one specific element. Let’s look at them below.
