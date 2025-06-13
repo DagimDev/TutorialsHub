@@ -29,3 +29,12 @@ Traversing upwards:
 parent element. parentElement is great for selecting one level upwards
 console.log(document.getElementById("one").parentElement);// prints the <ul> which is the parent
 to all the <li>
+
+closest(): To find an element that can be multiple levels above the current
+element, you use the closest method. closest lets you select the closest
+ancestor element that matches a selector.
+console.log(document.getElementById("one").closest
+(". hello")); //prints the closest parent or the
+<ul>.
+o Note: The <li>s selected here has the <div> and <ul> as its
+parents, but closest allows us choose the closest parent
