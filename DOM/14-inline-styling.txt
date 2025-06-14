@@ -52,3 +52,14 @@ secondLi.style.backgroundColor = "yellow"; //
 changes the background color of 2nd <li>to yellow
 console.log(secondLi.style.backgroundColor); //
 prints "yellow"
+
+
+Style display property: The display property sets or returns the element's display
+type. Elements are mostly block or inline. You can also hide the element using
+display:none
+• Let’s change the display property of our <li> into none and print the
+changed display
+var h1Element = document.getElementById("title");
+h1Element.style.display = "none"; // hides our <h1>
+console.log(h1Element.style.display); // prints
+"none" because we just hid our <h1> above
