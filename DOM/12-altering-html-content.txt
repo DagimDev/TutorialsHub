@@ -43,3 +43,17 @@ var parent = document.getElementById("listOfFruits");
 parent.prepend(liElem2);
 console.log(parent);// shows that a new <li> is added
 as the first child of the parent node (the <ul>)
+
+
+innerHTML() method: The innerHTML property changes or prints the HTML
+content (inner HTML) of an element. This method returns HTML, as its name
+indicates.
+• Syntax: HTMLElementObject.innerHTML
+• Let’s change the inner HTML of our <div> with " bigId " id
+var content = document.getElementById(" bigId ");
+console.log(content.innerHTML); // prints all the
+inner HTML under the div with " bigId " id
+content.innerHTML = "<li>Kiwi</li>"; // changing
+inner HTML of div (with " bigId " id) to <li>Kiwi</li>
+console.log(content.innerHTML);// now prints
+<li>Kiwi</li>
