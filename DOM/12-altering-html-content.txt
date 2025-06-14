@@ -57,3 +57,16 @@ content.innerHTML = "<li>Kiwi</li>"; // changing
 inner HTML of div (with " bigId " id) to <li>Kiwi</li>
 console.log(content.innerHTML);// now prints
 <li>Kiwi</li>
+
+
+textContent() method: The textContent property changes or returns the text
+content of the specified node, and all its descendants. TextContent() returns all text
+contained by an element and all its children.
+• Syntax: node.textContent
+• Let’s change the text content of our <div> that has "bigId" as its id
+var content = document.getElementById("bigId");
+console.log(content.textContent);// prints
+“hello”, “apple”, and “mango”
+content. textContent = "New text here";
+console.log(content.textContent);// prints "New
+text here"
