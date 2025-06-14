@@ -1,0 +1,12 @@
+Altering values (working with inline styling)
+• Changing CSS Values with the DOM “style” property
+▪ We use the style property to manipulate the inline style of the HTML elements
+using JavaScript
+▪ The style property is used to get as well as add the inline style of an element using
+different CSS properties. We can set almost all the styles for the elements like
+colors, fonts, text alignments, margin, borders, background images, sizes, and
+more.
+▪ The style property is extremely helpful to dynamically change the visual
+representation of an HTML element using JavaScript. Note: the JavaScript syntax
+for setting CSS properties is slightly different than CSS (Ex: backgroundColor
+instead of background-color). 
