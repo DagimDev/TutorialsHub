@@ -1,0 +1,3 @@
+Altering values (working with HTML attribute)
+• Working with attributes: This is when you want to add, change or remove the attribute
+value of an element.
