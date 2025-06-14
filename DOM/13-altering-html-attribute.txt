@@ -45,3 +45,14 @@ prints false because the <form> element doesn't
 have a name attribute
 console.log(myForm.hasAttribute("id")); //prints
 true because <form> element has id attribute.
+
+getAttribute() method: The getAttribute() method returns the value of the
+attribute of an element.
+• Syntax: element.getAttribute(attributename)
+• Let’s print the value of the “name” attribute for our first name
+<input>
+var firstInputVal =
+document.getElementsByTagName("input")[0];
+console.log(firstInputVal.getAttribute("name"));
+// returns "firstName" which is the value of the
+"name" attribute for first name <input>
