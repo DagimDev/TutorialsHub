@@ -2,4 +2,29 @@ Altering values (working with HTML content)
 
 Altering HTML content: The HTML DOM allows JavaScript to change the content of
 HTML elements. Meaning, we can add, update or remove the HTML tag, the text content
-in an HTML element, or the entire block of HTML code from your page. 
+in an HTML element, or the entire block of HTML code from your page. These are the
+most common methods that allow us add, update or remove contents in an HTML
+document.
+• Let’s use the below HTML document as an example to explain altering:
+<div id="bigId">
+<div>Hello</div>
+<ul id="listOfFruits">
+<li id="one" class="red">Apple</li>
+<li id="two" class="yellow">Mango</li>
+</ul>
+</div>
+
+createElement() method: The createElement() method creates an Element Node
+with the specified element name.
+• Syntax: document.createElement(nodename)
+• Note 1: After the element is created, use the element.appendChild() or
+element.insertBefore() method to insert it to the HTML document.
+• Note 2: HTML elements often contains text. To insert a text into the
+element you created, use the innerText or innerHTML properties.
+• Let’s create a new <li> and insert it as the last child of our <ul>
+
+var liElem = document.createElement("li");
+var parent = document.getElementById("listOfFruits");
+parent.appendChild(liElem);
+console.log(parent); // shows that a new <li> is
+added as the last child of the parent node (the <ul>)
