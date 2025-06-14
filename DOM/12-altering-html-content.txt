@@ -32,3 +32,14 @@ added as the last child of the parent node (the <ul>)
 appendChild() method: The appendChild() method appends a set of node objects
 as the last child of a node. See the above example.
 • Syntax: node.appendChild(node)
+
+prepend () method: The method inserts a set of node objects before the first child
+of the Element. See the above example.
+• Syntax: node. prepend(node)
+• Let’s insert an <li> as the first child of our <ul>
+
+var liElem2 = document.createElement("li");
+var parent = document.getElementById("listOfFruits");
+parent.prepend(liElem2);
+console.log(parent);// shows that a new <li> is added
+as the first child of the parent node (the <ul>)
