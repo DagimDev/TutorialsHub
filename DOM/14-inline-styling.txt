@@ -30,3 +30,15 @@ var firstLi = document.getElementById("one");
 firstLi.style.color = "red"; // changes text
 color of <li> to red
 console.log(firstLi.style.color);// prints "red"
+
+Style font property: The font property sets or returns up to six separate font
+properties, in a shorthand form. With this property, we can set/return the following
+font properties in the order they are written; font-style, font-variant, font-weight,
+font-size, line-height and font-family.
+• Let’s add font (font-weight, font-size and font-family) to our 2nd <li>
+and print the font values we just added
+var secondLi = document.getElementById("two");
+secondLi.style.font = "bold 30px arial"; //
+changes text font of 2nd <li>
+console.log(secondLi.style.font); // prints
+"bold 30px arial"
