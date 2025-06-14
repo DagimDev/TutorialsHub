@@ -42,3 +42,13 @@ secondLi.style.font = "bold 30px arial"; //
 changes text font of 2nd <li>
 console.log(secondLi.style.font); // prints
 "bold 30px arial"
+
+Style background color property: The backgroundColor property sets or returns
+the background color of an element.
+• Let’s change the background color of 2nd <li> into yellow and print
+the changed color
+var secondLi = document.getElementById("one");
+secondLi.style.backgroundColor = "yellow"; //
+changes the background color of 2nd <li>to yellow
+console.log(secondLi.style.backgroundColor); //
+prints "yellow"
