@@ -26,3 +26,11 @@ var classForLastName=document.getElementsByName("lastName")[0];
 classForLastName.classList.add("myLastName");// adds class name
 console.log(classForLastName.classList);// prints a DOMToken list
 containing the "myLastName" we just added above
+
+Id property: The id property sets or returns the id of an element (the value of an
+element's id attribute).
+• Syntax: HTMLElementObject.id
+• Let’s print the id for our <form> element
+var myForm = document.getElementById("formID");
+console.log(myForm.id); // prints the id name
+"formID"
