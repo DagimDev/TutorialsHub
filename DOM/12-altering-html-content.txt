@@ -28,3 +28,7 @@ var parent = document.getElementById("listOfFruits");
 parent.appendChild(liElem);
 console.log(parent); // shows that a new <li> is
 added as the last child of the parent node (the <ul>)
+
+appendChild() method: The appendChild() method appends a set of node objects
+as the last child of a node. See the above example.
+• Syntax: node.appendChild(node)
