@@ -63,3 +63,13 @@ var h1Element = document.getElementById("title");
 h1Element.style.display = "none"; // hides our <h1>
 console.log(h1Element.style.display); // prints
 "none" because we just hid our <h1> above
+
+Style border property: The border property sets or returns up to three separate
+border properties, in a shorthand form. With this property, you can set/return one
+or more of the following (in any order): border-width, border-style and bordercolor.
+• Let’s change the border property of our <div> into thick, solid, and
+red and print the properties
+var divElement = document.getElementById("divID");
+divElement.style.border = "thick solid red";
+console.log(divElement.style.border);// returns
+“thick solid red”
