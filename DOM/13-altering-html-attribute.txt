@@ -73,3 +73,15 @@ var firstInputVal =
 document.getElementsByTagName("input")[0];
 firstInputVal.setAttribute("value ", "first name");// placeholder input value of “first name”
 added to our <input>
+
+removeAttribute() method: The removeAttribute() method removes the specified
+attribute from an element.
+• Syntax: element.removeAttribute(attributename)
+• Let’s remove the “type” attribute form the first name <input>
+var firstInputVal =
+document.getElementsByTagName("input")[0];
+firstInputVal.removeAttribute("type");// removes
+the “type” attribute
+console.log(firstInputVal.getAttribute("type"));
+// returns null because we just removed the
+"type" attribute
