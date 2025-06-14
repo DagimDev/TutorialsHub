@@ -103,3 +103,8 @@ html
 </div>
 const parent = document.querySelector('.parent');
 console.log(parent.children); // [div.child, div.child]
+
+
+Get All Descendants (Including Nested)
+const parent = document.querySelector('.parent');
+const allDescendants = parent.querySelectorAll('*'); // All nested elements
