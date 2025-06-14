@@ -1,3 +1,16 @@
 Altering values (working with HTML attribute)
 • Working with attributes: This is when you want to add, change or remove the attribute
 value of an element.
+
+className() method: The className property sets or returns the class name of
+an element (the value of an element's class attribute). Note: To apply multiple
+classes, separate them with spaces, like "test demo"
+• Syntax: HTMLElementObject.className
+• Let’s add 2 class names for <form> and print the added class names
+var myForm = document.getElementById("formID");
+myForm.className = "formClass1, formClass2"; //
+"formClass1" and "formClass2" class names added
+console.log(myForm.className);// prints
+formClass1, formClass2
+console.log(myForm.classList); // Also prints a
+list containing the new class names "formClass1" and "formClass2"
