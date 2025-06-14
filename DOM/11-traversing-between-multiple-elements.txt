@@ -67,3 +67,25 @@ element immediately following the specified element, in the same tree
 level. Look at the example above:
 console.log(document.getElementById("two").nextEle
 mentSibling); // prints the 3rd li
+
+
+Question to ask: Why do we need to learn to traverse the DOM? When can we easily use
+document.querySelector() ? Let’s look at this example:
+<div class="ulDiv" >
+<ul class="greetings" id="greetingsID" >
+<li class="bye">Bye 1 here</li>
+<li class="bye">Bye 2 here</li>
+</ul>
+</div>
+<div class="noULDiv">
+<div class="hello">Bye 5 here</div>
+</div>
+▪ Based on the above example code:
+• console.log(document.querySelector(“div")),
+• What querySelector() method does above is basically full search
+on the document to find all elements with "div" tag and print only
+the first div (the div with "ulDiv ” class name).
+• console.log(document.getElementById("greetingsID").parentElement)
+o Here, the getElementById method goes straight to the element
+with “greetingsID” id and the parentElement method will find and
+the parent of that element parent
