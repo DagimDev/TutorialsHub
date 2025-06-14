@@ -1,0 +1,5 @@
+Altering values (working with HTML content)
+
+Altering HTML content: The HTML DOM allows JavaScript to change the content of
+HTML elements. Meaning, we can add, update or remove the HTML tag, the text content
+in an HTML element, or the entire block of HTML code from your page. 
