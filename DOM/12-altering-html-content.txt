@@ -70,3 +70,16 @@ console.log(content.textContent);// prints
 content. textContent = "New text here";
 console.log(content.textContent);// prints "New
 text here"
+
+
+removeChild() method: The removeChild() method removes a specified child
+node of the specified element. Note: Use the appendChild() or insertBefore()
+methods if you want to insert the removed node back into the same document.
+• Syntax; removeChild(child);
+• Let’s remove the <li> child from our <ul>
+var ULcontainer = document.getElementById("listOfFruits");
+var unwantedLi = document.getElementById("two");
+console.log(ULcontainer); // prints <ul> with all
+its <li> children
+ULcontainer.removeChild(unwantedLi); // prints
+<ul>, but the <li> with "two" id is removed
