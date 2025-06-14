@@ -56,3 +56,20 @@ document.getElementsByTagName("input")[0];
 console.log(firstInputVal.getAttribute("name"));
 // returns "firstName" which is the value of the
 "name" attribute for first name <input>
+
+setAttribute() method: The setAttribute() method adds the specified attribute to
+an element and gives it the specified value. If the specified attribute already exists,
+only the value is set/changed. Otherwise, a new attribute is added with the specified
+name and value.
+• Syntax: element.setAttribute(attributename, attributevalue)
+o Attributename parameter specifies the name of the attribute whose
+value is to be set. Even if you put upper case for the name, the
+attribute name is automatically converted to all lower-case when
+setAttribute() is called
+o attributevalue parameter is the value to assign to the attribute
+• Let’s add a “value” attribute to our first name input. The value will
+be a placehoder for our First Name input.
+var firstInputVal =
+document.getElementsByTagName("input")[0];
+firstInputVal.setAttribute("value ", "first name");// placeholder input value of “first name”
+added to our <input>
