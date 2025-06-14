@@ -89,3 +89,17 @@ the first div (the div with "ulDiv ” class name).
 o Here, the getElementById method goes straight to the element
 with “greetingsID” id and the parentElement method will find and
 the parent of that element parent
+
+
+Get Direct Children
+const parent = document.querySelector('.parent');
+const children = parent.children; // HTMLCollection of direct children
+Example:
+
+html
+<div class="parent">
+  <div class="child"></div>
+  <div class="child"></div>
+</div>
+const parent = document.querySelector('.parent');
+console.log(parent.children); // [div.child, div.child]
