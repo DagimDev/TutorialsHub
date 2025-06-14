@@ -10,3 +10,23 @@ more.
 representation of an HTML element using JavaScript. Note: the JavaScript syntax
 for setting CSS properties is slightly different than CSS (Ex: backgroundColor
 instead of background-color). 
+
+Syntax:
+• To return style properties: = element.style.property
+• To set/add style properties: = element.style.property = value
+▪ How to access the style property: we can use the getElementById() method
+• Let’s use the following example code to add or return CSS properties using style
+property
+<h1 id="title">Fruits</h1>
+<div class="containerDiv" id="divID">
+<ul id="listOfFruits" class="Kelele">
+<li id="one" class="red">Apple</li>
+<li id="two" class="yellow">Mango</li>
+</ul>
+</div>
+▪ Style color property: The color property sets or returns the color of the text.
+• Let’s add “red” color to the text of the first <li>
+var firstLi = document.getElementById("one");
+firstLi.style.color = "red"; // changes text
+color of <li> to red
+console.log(firstLi.style.color);// prints "red"
