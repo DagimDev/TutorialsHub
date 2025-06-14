@@ -34,3 +34,14 @@ element's id attribute).
 var myForm = document.getElementById("formID");
 console.log(myForm.id); // prints the id name
 "formID"
+
+hasAttribute() method: The hasAttribute() method returns a Boolean value (true
+or false) indicating whether the specified element has the specified attribute or not.
+• Syntax: element.hasAttribute(attributename)
+• Let’s check if our <form> element has “name” and “id” attributes
+var myForm = document.getElementById("formID");
+console.log(myForm.hasAttribute("name")); //
+prints false because the <form> element doesn't
+have a name attribute
+console.log(myForm.hasAttribute("id")); //prints
+true because <form> element has id attribute.
