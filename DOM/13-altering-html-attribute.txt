@@ -14,3 +14,15 @@ console.log(myForm.className);// prints
 formClass1, formClass2
 console.log(myForm.classList); // Also prints a
 list containing the new class names "formClass1" and "formClass2"
+
+
+ClassList() method: The classList property returns the class name(s) of an
+element. This property can be used to add, remove and toggle CSS classes on an
+element.
+• Syntax: element.classList
+• Let’s add a class name for our last name <input> and print the added
+class name
+var classForLastName=document.getElementsByName("lastName")[0];
+classForLastName.classList.add("myLastName");// adds class name
+console.log(classForLastName.classList);// prints a DOMToken list
+containing the "myLastName" we just added above
