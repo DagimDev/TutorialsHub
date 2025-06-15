@@ -2,3 +2,5 @@
 
 keydown event: This event fires when user first presses any key on the keyboard. Note: If
 the user holds down the key, this event fires repeatedly.
+
+keyup event: This event fires when a user releases any key on the keyboard
