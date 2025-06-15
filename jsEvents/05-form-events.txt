@@ -24,3 +24,7 @@ paste event: This event fires when a user pastes content in an element
 copy event: This event happens when a user copies the content of an element (ex: copying
     content from a form field)
     o Tip: The copy event is mostly used on <input> elements with type="text".
+
+select event: This event fires when a user selects some text in an element.
+    o Note: The onselect event is mostly used on <input type="text"> or <textarea>
+    elements.
