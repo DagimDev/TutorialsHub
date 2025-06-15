@@ -1,0 +1,9 @@
+JavaScript events, definition
+▪ Change in the state of any object is known as event, i.e., event describes the change in the state of
+  the source. HTML/browser events are "changes" that happen to HTML elements when a user or
+  the browser manipulates the website. When the page loads, it is called an event. When the user
+  clicks a button, presses any key or closes/resizes a window, these too are events.
+▪This is what makes websites interactive. When one interacts with a web page (like clicking
+  a button), that interaction is registered as an event on the browser. In response to that event, the
+  script that is bound with that event changes something on the web page.
+▪ Event in JavaScript are also called HTML or browser events.
