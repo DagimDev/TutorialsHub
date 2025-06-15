@@ -2,3 +2,6 @@ Load event: The event fires when the browser finishes loading a page
 
 Unload event: This event fires when This event fires before the users leave the page,
 probably because user requested a new pages
+
+error event: This event fires when the browser encounters a JavaScript error or a value
+that doesn’t exist
