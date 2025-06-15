@@ -28,3 +28,13 @@ copy event: This event happens when a user copies the content of an element (ex:
 select event: This event fires when a user selects some text in an element.
     o Note: The onselect event is mostly used on <input type="text"> or <textarea>
     elements.
+
+Focus and blur events: These events fire when the HTML elements you can interact with gain/
+    lose focus. They are most commonly used in forms and especially helpful when you want to do the
+    following tasks:
+    • The tips are usually shown in the elements other than the one the user is interacting with.
+    • To trigger form validation as a user moves from one control to the next without waiting to
+    submit the form.
+    • Here are some of the focus and blur events:
+    o Focus/focusin event: This event fires, when an element gains focus.
+    o Blur/focusout event: This event fires, when an element loses focus.
