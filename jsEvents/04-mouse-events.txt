@@ -8,3 +8,8 @@ when an element has focus.
 o Note 2: For touchscreen devises, a tap on the screen acts like a single left-click
 o Note 3: We can add the above two events to any element, but it’s better to apply it
 only on the items that are usually clicked (like button element)
+
+• dbclick event: This event fires when user quickly presses and releases a button twice
+   o Note: For touchscreen devises, a double-tap on the screen acts like a double leftclick.
+   o Note 2: We can add the above two events to any element, but it’s better to apply it
+   only on the items that are usually clicked (like button element)
