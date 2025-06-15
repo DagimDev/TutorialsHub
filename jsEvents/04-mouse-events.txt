@@ -19,3 +19,5 @@ before, inside the element, in short, when a user moves the mouse over an elemen
 
 mouseout event: This event fires when the user moves the cursor, which was inside an
 element before, outside the element, in short, when users move the mouse from an element
+
+mousedown/mouseup - When mouse button is pressed/released
