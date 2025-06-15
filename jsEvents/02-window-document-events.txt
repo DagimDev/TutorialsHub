@@ -8,3 +8,6 @@ that doesn’t exist
 
 resize event: This event occurs when a user changes/resizes the current size of the browser
 window
+
+scroll event: This event fires when the user scrolls up/down on the browser window. It can
+relate to the entire page or a specific element on the page.
