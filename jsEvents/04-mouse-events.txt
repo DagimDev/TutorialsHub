@@ -13,3 +13,7 @@ only on the items that are usually clicked (like button element)
    o Note: For touchscreen devises, a double-tap on the screen acts like a double leftclick.
    o Note 2: We can add the above two events to any element, but it’s better to apply it
    only on the items that are usually clicked (like button element)
+
+
+mouseover event: It fires when the user moves the cursor, which was outside an element
+before, inside the element, in short, when a user moves the mouse over an element.
