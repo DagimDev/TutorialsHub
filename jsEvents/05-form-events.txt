@@ -1,0 +1,3 @@
+Form Events: These events are common while using forms on a webpage. We find the submit
+event mostly in form of validation (Ex: if a user misses a required information or enters an incorrect
+input, submit event fires to check the form values before the data is sent/submitted to the server).
