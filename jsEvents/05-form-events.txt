@@ -20,3 +20,7 @@ paste event: This event fires when a user pastes content in an element
     o Note 2: Although the paste event is supported by all HTML elements, it is not
     possible to cut the content of a <p> element, unless we add the “contenteditable”
     attribute and give it a value of "true"
+
+copy event: This event happens when a user copies the content of an element (ex: copying
+    content from a form field)
+    o Tip: The copy event is mostly used on <input> elements with type="text".
