@@ -4,3 +4,11 @@ keydown event: This event fires when user first presses any key on the keyboard.
 the user holds down the key, this event fires repeatedly.
 
 keyup event: This event fires when a user releases any key on the keyboard
+
+keypress event: Just like keydown event, this event fires when a user presses any key on
+the keyboard. However, the pressing of key results in printing a character on the screen.
+The keypress event will not fire for enter, tab or arrow keys as pressing them will not result
+in printing characters on the screen, but the keydown event will fire if a user presses these
+keys.
+• Note: The keydown and keypress events fire before a character appears on the screen, the
+keyup fires after it shows.
