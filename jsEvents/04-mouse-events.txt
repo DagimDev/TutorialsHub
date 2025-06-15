@@ -1,2 +1,10 @@
 ▪ Mouse events: These events fire when the mouse moves, or the user clicks a button. All the
 elements of the page support these events.
+
+Click event: This event fires when the user presses on and releases the primary mouse
+button (usually the left button).
+o Note 1: This event also fires if the user presses the “Enter” key on the keyboard
+when an element has focus.
+o Note 2: For touchscreen devises, a tap on the screen acts like a single left-click
+o Note 3: We can add the above two events to any element, but it’s better to apply it
+only on the items that are usually clicked (like button element)
