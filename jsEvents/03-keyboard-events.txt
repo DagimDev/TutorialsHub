@@ -1,0 +1,4 @@
+▪ Key board events: These events fire when a user interacts with a keyboard
+
+keydown event: This event fires when user first presses any key on the keyboard. Note: If
+the user holds down the key, this event fires repeatedly.
