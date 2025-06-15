@@ -1,2 +1,4 @@
 Touch Events (for mobile)
 touchstart/touchend - When touch begins/ends
+
+touchmove - When finger moves on screen
