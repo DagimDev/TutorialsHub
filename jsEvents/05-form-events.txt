@@ -1,3 +1,7 @@
 Form Events: These events are common while using forms on a webpage. We find the submit
 event mostly in form of validation (Ex: if a user misses a required information or enters an incorrect
 input, submit event fires to check the form values before the data is sent/submitted to the server).
+
+change event: This event occurs when the value of an element has been changed. Example,
+the change event fires when the checked value in check box, or radio button changes 
+When form element value changes (input, select, etc.)
