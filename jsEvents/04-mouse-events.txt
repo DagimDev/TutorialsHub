@@ -1,0 +1,2 @@
+▪ Mouse events: These events fire when the mouse moves, or the user clicks a button. All the
+elements of the page support these events.
