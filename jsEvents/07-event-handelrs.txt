@@ -17,3 +17,13 @@ executed when the button is clicked.
 
 Event binding: The event binding allows you to add an event handler (JavaScript function) for a specified
 event so that your chosen JavaScript function will be executed when that event is triggered. 
+
+What happens during event handling? When a user interacts with any HTML element on a web page,
+there are three steps involved in triggering a script associated with an event:
+▪ 1. Selecting an element: The element is selected to bind it with the event handler (JavaScript
+function) when an event occurs on it
+▪ 2. Binding an event: This is to identify the specific event that will trigger the event handler to
+execute.
+▪ 3. Attach a script: This is to instruct the web browser which specific event handler to execute
+when a specific event happens
+• Note: The script that you want to bind with an event needs to be written first 
