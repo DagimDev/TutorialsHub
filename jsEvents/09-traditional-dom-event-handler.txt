@@ -1,0 +1,30 @@
+Ways to bind an event (traditional DOM event handlers/ DOM Level 0 event handlers)
+• Traditional DOM event handlers/ DOM Level 0 event handler: Each element has event handler
+properties (or onevent properties) such as onclick, ondblclick or onfocus. Under this event handling
+approach, you just need to set/assign the event handler property to a function (event handler function).
+• Syntax:
+▪ element.onevent = functionName;
+• Notice that the event name is preceded by "on"
+• Steps involved under traditional DOM event handling:
+▪ First, select the element you want to bind an event with
+▪ Then bind the element with the event handler
+▪ Finally attach the event handler function on the event (onevent property)
+• Example 1: Let’s try to change the text color of a <button> to red when a user clicks on the <button>
+▪ Method 1: It is fine to make the handler function a separate named function, like below:
+• Selecting the <button> we want to bind the event (click) with
+let myButton = document.getElementById("buttonId");
+• Binding an event handler with the element selected using a named function
+var changeToRed = function () {
+myButton.style.color = "red";
+};
+• Attaching the event handler function with the event handler property (onclick)
+myButton.onclick = changeToRed;
+▪ Method 2: We can use anonymous handler function like below
+var myButton = document.getElementById("buttonId");
+myButton.onclick = function () {
+myButton.style.color = "red";
+};
+• Note:
+▪ Under traditional DOM event handling, we can only attach a single function to an event
+▪ Under traditional DOM event handling, the event handler can be replaced by assigning another
+function to the same property.
