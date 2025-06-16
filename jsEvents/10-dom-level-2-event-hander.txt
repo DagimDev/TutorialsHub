@@ -1,0 +1,11 @@
+Ways to bind an event (DOM level 2 event handlers/listeners)
+    • DOM level 2 event handlers/listeners: Under this event handling approach, we will add/remove the event
+handler as a listener for an element using the addEventListener() method.
+    ▪ This is the most favored way of handling events as the approach allows adding (removing) of
+multiple event handlers for a single event using the event listener methods.
+    • DOM Level 2 Event Handlers provide two main methods to register/deregister event listeners:
+    ▪ addEventListener(): registers an event handler
+    ▪ removeEventListener(): removes an event handler
+    • Syntax:
+    ▪ element.addEventListener(event, function)
+    ▪ element. removeEventListener(event, function)
