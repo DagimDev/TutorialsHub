@@ -18,4 +18,14 @@ button.addEventListener("click", (event) => {
     nameErrorMsg.innerHTML = "Name is required*";
     isValid = false;
   }
+
+  // Validate password
+  if (passwordValue === "") {
+    console.log("Password is empty");
+    passwordErrorMsg.innerHTML = "Password is required*";
+    isValid = false;
+  } else if (passwordValue.length < 6) {
+    passwordErrorMsg.innerHTML = "Password must be at least 6 characters long";
+    isValid = false;
+  }
 });
