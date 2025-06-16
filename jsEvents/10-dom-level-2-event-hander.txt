@@ -9,3 +9,18 @@ multiple event handlers for a single event using the event listener methods.
     • Syntax:
     ▪ element.addEventListener(event, function)
     ▪ element. removeEventListener(event, function)
+
+addEventListene(): This is the recommended mechanism for adding event handlers in web pages. Inside
+the addEventListener() function, we specify two parameters: the name of the event and event handler
+function we want to run in response to the event.
+▪ Example 1: Let’s change the text color of a <button> to red when <button> is clicked
+var myButton = document.getElementById("buttonId");
+myButton.addEventListener("click", function () {
+myButton.style.color = "red";
+});
+▪ Exmaple 2: We can use a named function to do the same thing as example 1 above
+var myButton = document.getElementById("buttonId");
+let changeToRed = function () {
+myButton.style.color = "red";
+};
+myButton.addEventListener("click", changeToRed);
