@@ -14,3 +14,6 @@ events.
 handlers, all the event handlers will be executed when the event is fired. For example, if there are
 multiple scripts that will be executed when a button is clicked, all the scripts/functions will be
 executed when the button is clicked.
+
+Event binding: The event binding allows you to add an event handler (JavaScript function) for a specified
+event so that your chosen JavaScript function will be executed when that event is triggered. 
