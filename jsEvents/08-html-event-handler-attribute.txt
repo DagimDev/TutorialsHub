@@ -1,0 +1,45 @@
+HTML event handlers attribute: HTML allows event handler attributes, with JavaScript code, to be added to HTML
+elements. To handle events using this method, all you need to do is to use an HTML attribute with the name of the
+event handler function.
+Syntax: onclick="changeBackground()"
+▪ Example 1: Let’s try to show an alert text on browser that says, "button clicked!!" when a user
+clicks on a button
+• Our code in the JavaScript file:
+function showClickedAlert() {
+alert("button clicked!!");
+}
+• Attaching the event handler function when there is a click event on our <button>
+element:
+<button onclick="showClickedAlert()">Save</button>
+▪ Example 2: Let’s try to change the color of our button’s text to red when the <button> is clicked
+• Our code in the JavaScript file:
+function changeButtonColor() {
+var myButton = document.getElementById("buttonId");
+myButton.style.color = "red";
+}
+• Attaching the event handler function to when there is a click event on our <button>
+element:
+<button id="buttonId"
+onclick="changeButtonColor()">Change Color</button>
+
+Note: This approach (using inline event handlers) is considered a bad practice for the following
+reasons:
+• The event handler code is mixed with the HTML code, which will make the code more
+difficult to maintain, especially on a larger scale it can get quite messy. Look at this
+example:
+<button onclick="changeButtonColor()"
+ondblclick="showClickedAlert()"
+onfocus="changeBackgroundColor()" >Change Color</button>
+o Look how unclean it will be to have all these event handlers in our <button>
+• The approach won’t allow us bind more than one event handler for an event. Meaning, if
+we use the inline event handling approach, we cannot assign a text color changer function
+and a background color changer function for a single <button> click event.
+• In inline HTML event handling, the scope of the event handler functions cannot be
+controlled. This approach requires the event to be global, meaning, the event handler
+functions need to be globally accessible
+• If the element is loaded fully before the JavaScript code, users can start interacting with
+the element on the webpage which will cause an error. To use the above
+showClickedAlert() function, if the HTML page is loaded fully and the JavaScript has not
+been loaded, the showClickedAlert () function is undefined. Meaning, if a user clicks the
+button at this moment, an error will occur.
+
