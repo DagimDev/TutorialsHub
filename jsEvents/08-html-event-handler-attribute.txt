@@ -43,3 +43,27 @@ showClickedAlert() function, if the HTML page is loaded fully and the JavaScript
 been loaded, the showClickedAlert () function is undefined. Meaning, if a user clicks the
 button at this moment, an error will occur.
 
+• Priority order: If the same event, that had an event handler attribute within the HTML, is
+assigned DOM level event handler in the external JavaScript file, the event handler
+assigned in the HTML will be replaced by DOM level event handler. Let’s assume we have
+an event handler attribute that changes the text color of a <button> to red when it is clicked.
+We also have a DOM level event handler that changes the text color of the same <button>
+to green when it is clicked.
+var myButton = document.getElementById("buttonId");
+//function changing button text to green
+function changeTextToGreen() {
+myButton.style.color = "green";
+}
+//function changing button text to red
+function changeTextTored() {
+myButton.style.color = "red";
+}
+// Attribute event handler (for the <button> click
+event)
+<button id="buttonId" onclick="changeButtonColor()"
+ondblclick="showClickedAlert()">Change Color</button>
+// DOM level event handler (for the <button> click
+event)
+myButton.onclick = changeTextToGreen;
+o The <button> text color will change to green, not red, when clicked as the event
+handler in the external JavaScript gets priority over the attribute handler
