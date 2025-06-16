@@ -15,3 +15,6 @@ addEventListener('click', changeColor)
 // button.addEventListener('click', () => {
 //     button.style.color = 'red'
 // })
+
+removeEventListener('click', changeColor)
+
