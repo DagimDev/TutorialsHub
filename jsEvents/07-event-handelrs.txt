@@ -1,0 +1,16 @@
+Event handling in HTML
+
+Event handling: is a mechanism that controls these events and decides what should happen when an event
+happens.
+• Event handlers/listeners:
+▪ An event handler is also known as an event listener. An event handler/listener is a specific script
+(JavaScript code) that gets executed when a particular event (such as clicking of a button) happens
+on an HTML element.
+▪ An event handler is a script/function that listens to the event and responds accordingly to the event.
+▪ Note 1: An event listener/handler is a function with a name if is we want to reuse it for various
+events.
+▪ Note 2: An event listener/handler is an anonymous function if it is going to be used only once.
+▪ Note 3: An event can be handled by one or multiple event handlers. If an event has multiple event
+handlers, all the event handlers will be executed when the event is fired. For example, if there are
+multiple scripts that will be executed when a button is clicked, all the scripts/functions will be
+executed when the button is clicked.
