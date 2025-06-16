@@ -1,3 +1,33 @@
 Halting default behaviors
     • There are scenarios where you want the default HTML behavior not to take effect on the browser. For
     example, you don't want the submit button to submit the form when required filled are not filled out.
+
+    The preventDefault() method: It tells the user agent that if the event does not get explicitly handled, its
+default action should not be taken as it normally would be.
+▪ Syntax: event.preventDefault();
+▪ Example 1: A checkbox has a default behavior of toggling a checkbox (showing the check mark
+and hiding the check mark) upon clicking the <input> element. Using preventDefault() method,
+let’s prevent the checkbox toggling and instead change the background color of the HTML <body>
+to yellow.
+var myCheckbox = document.querySelector("#id-checkbox");
+var myeventHandler = function (event) {
+document.body.style.backgroundColor = "yellow";
+event.preventDefault();
+};
+myCheckbox.addEventListener("click", myeventHandler);
+▪ Example 2: By default, the submit event fires when the user clicks a submit button (<button> or
+<input type="submit">) or presses Enter while editing a field. Now let’s prevents the default action
+of submitting the form.
+• Here is your HTML code for your form
+<form id="formID">
+<button id="buttonId" type="submit">Submit here</button>
+</form>
+• Now let’s prevent the form from being submitted and change the <button>’s text to
+“Form submission prevented” on submit event
+var myForm = document.getElementById("formID");
+var myButton = document.getElementById("buttonId");
+function functionToPrevent(event) {
+myButton.innerHTML = "Form submission prevented";
+event.preventDefault();
+}
+myForm.addEventListener("submit", functionToPrevent);

@@ -47,3 +47,21 @@ myButton.style.backgroundColor = "yellow";
 // myButton.addEventListener('click', clickAlert)
 // myButton.addEventListener('click', changebackgroudToYellow)
 // myButton.addEventListener('click', changeColorToRed)
+
+const checkbox = document.getElementById('checkbox')
+const check = (event) => {
+    checkbox.style.color = 'red'
+    event.preventDefault()
+}
+
+checkbox.addEventListener('click', check)
+
+const myForm = document.getElementById('myForm')
+const submit = document.getElementById('submit')
+
+
+const functionToPreventDefault = (e) => {
+    submit.innerHTML = "default behavior is prevented!!";
+    e.preventDefault()
+}
+myForm.addEventListener('click', functionToPreventDefault)
