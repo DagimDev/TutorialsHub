@@ -24,3 +24,20 @@ let changeToRed = function () {
 myButton.style.color = "red";
 };
 myButton.addEventListener("click", changeToRed);
+
+Adding multiple listeners for a single event: Through DOM Level 2 event model, it is possible for one
+event to trigger multiple event handler functions. Meaning, a specific object (ex:
+document.getElementById("elementId")), with a specific event ((ex: click or keypress) can be assigned
+with any number of event-handler functions.
+▪ Let’s add different event handler functions and change the text color of button to red, change the
+button’s background to yellow and alert a message that says, "button clicked!!!"
+var myButton = document.getElementById("buttonId");
+myButton.addEventListener("click", function () {
+myButton.style.color = "red";
+});
+myButton.addEventListener("click", function () {
+alert("button clicked!!!");
+});
+myButton.addEventListener("click", function () {
+myButton.style.backgroundColor = "yellow";
+});
