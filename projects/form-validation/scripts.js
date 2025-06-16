@@ -28,4 +28,11 @@ button.addEventListener("click", (event) => {
     passwordErrorMsg.innerHTML = "Password must be at least 6 characters long";
     isValid = false;
   }
+
+  // Prevent submition if validation fails
+  if (!isValid) {
+    event.preventDefault();
+  } else {
+    alert("Submited successfully");
+  }
 });
