@@ -1,0 +1,15 @@
+Selecting elements with jQuery (id, class, element selectors)
+• jQuery selectors: They select HTML elements based on their name, id, classes, types,
+    ttributes, values of attributes and much more.
+▪ jQuery selectors mostly use the existing CSS Selectors and, in some instances,
+    stom selectors.
+▪ jQuery() vs $(): All jQuery selectors use a function called jQuery(). However,
+    there is a shorthand representation of the jQuery() method, just using the dollar
+    sign at the start and add parentheses like this: $().
+• Therefore, jQuery() is the same as $()
+• Note 1: The jQuery function/ jQuery() always returns a jQuery object (that
+    is based on an array). You will see this in example when jQuery selectors
+    are explained
+• Note 2: Please note that jQuery() returns an object even if there are no
+    elements that matches the selector. If the jQuery object contains no
+    elements, it will simply do nothing. 
