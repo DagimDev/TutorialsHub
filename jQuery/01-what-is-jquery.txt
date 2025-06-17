@@ -1,0 +1,12 @@
+jQuery
+10.1 What is jQuery? Why do we need it and what can we do with it?
+• Definition:
+• jQuery is just a JavaScript library that you include on your web page. As jQuery is
+    built on top of JavaScript, it provides all the functionalities of JavaScript. We can say
+    from above points jQuery is enhanced version of JavaScript.
+• As a library, it provides many built-in functions using which you can accomplish
+    various tasks easily and quickly.
+• jQuery is different from vanilla JavaScript because is basically a simpler way of doing
+    things in a more compatible way
+• jQuery library contains features like HTML/DOM manipulation, CSS manipulation,
+    CSS manipulation and effects and animations
