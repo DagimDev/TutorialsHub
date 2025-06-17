@@ -13,3 +13,7 @@ Selecting elements with jQuery (id, class, element selectors)
 • Note 2: Please note that jQuery() returns an object even if there are no
     elements that matches the selector. If the jQuery object contains no
     elements, it will simply do nothing. 
+
+jQuery #id Selector: jQuery #id selector uses the id attribute of an HTML tag to find the
+specific element. Let’s use the following HTML to explain id, class and element selectors
+in jQuery

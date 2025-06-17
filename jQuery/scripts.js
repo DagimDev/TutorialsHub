@@ -8,3 +8,5 @@
 // <script> tag. Note: Your jQuery CDN needs to be placed before your custom
 // JavaScript file
 console.log("jQuery")
+const logParagraph = $("#myParagraph")
+console.log(logParagraph) // logs my paragraph
