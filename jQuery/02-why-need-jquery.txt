@@ -19,3 +19,15 @@ Simplicity: The main reason we need jQuery is because it makes JavaScript easier
 
 Cross-Browser Compatibility
 In the early 2000s, browsers had significant inconsistencies in their JavaScript implementations. jQuery provided a unified API that worked consistently across all major browsers (including older versions of Internet Explorer).
+
+Event Handling Abstraction
+jQuery normalized event handling across browsers, solving many edge cases:
+// Native JS (with old IE support)
+if (element.addEventListener) {
+  element.addEventListener('click', handler);
+} else if (element.attachEvent) {
+  element.attachEvent('onclick', handler);
+}
+
+// jQuery
+$(element).on('click', handler);
