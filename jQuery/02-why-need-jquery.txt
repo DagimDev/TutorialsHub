@@ -1,0 +1,12 @@
+What can you do with jQuery? jQuery is JavaScript and does not add anything to the
+JavaScript language itself. Whatever you do with vanilla JavaScript, you can do it with jQuery
+too. But jQuery does the following jobs in a very easy way for developers:
+• DOM manipulation:
+▪ Selecting: jQuery provides simpler and CSS-like way of selecting HTML
+    elements
+▪ Updating: Multiple jQuery methods provide different ways to update, animate
+    and loop through elements in a much simpler way
+• Handling events: Allows you to bind events with elements without the need to write
+    a fall back for older versions
+• Effects and animations: jQuery also allows us to add animated effects on our web
+    pae which takes a lot of pain and lines of code with JavaScript.
