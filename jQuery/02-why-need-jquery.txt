@@ -31,3 +31,6 @@ if (element.addEventListener) {
 
 // jQuery
 $(element).on('click', handler);
+
+Animation and Effects
+jQuery provided built-in animation methods like fadeIn(), slideUp(), and animate() that were complex to implement with pure JavaScript.
