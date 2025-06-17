@@ -17,3 +17,5 @@ Selecting elements with jQuery (id, class, element selectors)
 jQuery #id Selector: jQuery #id selector uses the id attribute of an HTML tag to find the
 specific element. Let’s use the following HTML to explain id, class and element selectors
 in jQuery
+
+jQuery .class Selector: jQuery .class selector finds elements with a specific class.

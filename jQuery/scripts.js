@@ -10,3 +10,7 @@
 console.log("jQuery")
 const logParagraph = $("#myParagraph")
 console.log(logParagraph) // logs my paragraph
+
+// ▪ Example: of selecting class using jquery
+var logDiv = $(".myDiv");
+console.log(logDiv);// logs the two divs with
