@@ -16,3 +16,6 @@ Simplicity: The main reason we need jQuery is because it makes JavaScript easier
 ▪ jQuery takes a lot of common tasks that require many lines of vanilla JavaScript
     code to accomplish and wraps them into methods that you can call with a single
     line of code. 
+
+Cross-Browser Compatibility
+In the early 2000s, browsers had significant inconsistencies in their JavaScript implementations. jQuery provided a unified API that worked consistently across all major browsers (including older versions of Internet Explorer).
