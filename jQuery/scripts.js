@@ -14,3 +14,6 @@ console.log(logParagraph) // logs my paragraph
 // ▪ Example: of selecting class using jquery
 var logDiv = $(".myDiv");
 console.log(logDiv);// logs the two divs with
+
+// Example: select using element name
+console.log($("span"));// returns our <span> element 

@@ -19,3 +19,6 @@ specific element. Let’s use the following HTML to explain id, class and elemen
 in jQuery
 
 jQuery .class Selector: jQuery .class selector finds elements with a specific class.
+
+jQuery element selector: jQury element selector selects elements based on the element
+name.
