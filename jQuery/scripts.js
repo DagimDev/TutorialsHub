@@ -17,3 +17,6 @@ console.log(logDiv);// logs the two divs with
 
 // Example: select using element name
 console.log($("span"));// returns our <span> element 
+
+$("li").even().css("background", "yellow")
+$("li").odd().css("background", "purple")

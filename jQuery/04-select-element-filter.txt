@@ -11,3 +11,10 @@ last(): This method returns the last element of the specified elements. Example:
 The script below will select all <li>s and filters the last<li> only and change its
 background color to pink
 $("li").last().css("background-color", "pink");
+
+even() and odd() : These method filter the set of matched/selected elements and
+returns those with an even/odd index number. Example: Let’s select all <li>s and
+make background color of those <li>s with even index green and make background
+color of those <li>s with odd index purple
+$("li").even().css("background-color", "green");
+$("li").odd().css("background-color", "purple");
