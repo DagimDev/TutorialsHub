@@ -45,3 +45,7 @@ console.log($("li[class=third]").text())
 // $("#divId").prepend($("#firstPar"));
 
 $("#divId").append($("#firstPar"));
+let secondPar = $(".secondPar").addClass("classOne classTwo")
+secondPar.removeClass("classTwo")
+
+$(".thirdPar").css("color", "red")

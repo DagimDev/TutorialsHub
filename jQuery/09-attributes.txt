@@ -1,15 +1,20 @@
 Altering values: attributes, form value, looping through elements
 • Attributes:
 ▪ addClass(): This method adds one or more property (CSS class) to each selected
-element. This method does not remove existing class attributes, it only adds one or
-more class names to the class attribute. Example: Let’s add two CSS classes to
-our paragraphs using addClass() and change their background and text color.
-.classOne {background-color: blueviolet;}
-.classTwo {color: yellow;}
-$("p").addClass("classOne classTwo");
+    element. This method does not remove existing class attributes, it only adds one or
+    more class names to the class attribute. Example: Let’s add two CSS classes to
+    our paragraphs using addClass() and change their background and text color.
+    .classOne {background-color: blueviolet;}
+    .classTwo {color: yellow;}
+    $("p").addClass("classOne classTwo");
 
 removeClass(): The removeClass() method removes one or more class names
-from the selected elements. Example: Let’s remove one of the above CSS classes
-(the “classOne”) from our paragraphs using removeClass(). This removes only the
-backgroundcolor from our paragraphs
-$("p").removeClass("classOne");
+    from the selected elements. Example: Let’s remove one of the above CSS classes
+    (the “classOne”) from our paragraphs using removeClass(). This removes only the
+    backgroundcolor from our paragraphs
+    $("p").removeClass("classOne");
+
+css(): The css() method in JQuery is used to change the style property of the
+    selected element. Example: Let’s change the background color of our <p>tags
+    using the css() method
+    $("p").css("background-color", "green");
