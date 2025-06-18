@@ -16,3 +16,10 @@ UI/DOM element events: focus, blur, change
     • blur(): This method triggers the blur event or attaches a function when
     blur event occurs. Blur event occurs when an element loses focus.
     
+Keyboard events:
+    • keypress(): This method attaches a function to run when a keypress event
+    occurs. Note: keypress event is not fired for all keys (Ex. ALT, CTRL,
+    SHIFT, ESC). Example:
+    $("input").keypress(function () {
+    $("label").css("background-color", "pink");
+    });

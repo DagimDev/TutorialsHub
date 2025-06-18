@@ -111,3 +111,6 @@ input.blur(() => {
     alert("input losses focus")
 })
 
+$("input").keypress(function () {
+$("label").css("background-color", "pink");
+});
