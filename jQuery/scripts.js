@@ -128,3 +128,11 @@ $(document).ready(() => {
     alert("Document is fully loaded")
 })
 
+
+// Example: Let’s hide and show our
+// <p> with “p2” id name when we click our <p> that has an id of
+// “p1”. It will take 1000 milliseconds for the <p> to hide or show upon click
+
+$("#p1").on('click', () => {
+    $("#p2").toggle()
+})
