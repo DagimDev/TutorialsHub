@@ -1,0 +1,14 @@
+Methods to traverse down the DOM
+• children(): returns all direct children of the selected element.
+o Example: let’s style all direct children of div. Here, grand children like the <li> will not be affected
+    <div>
+    <p>div is my dad</p>
+    <span>div is my dad too</span>
+    <ul>
+    <li>I am div's descendant</li>
+    <li>I also div's descendant</li>
+    </ul>
+    </div>
+    $(document).ready(function () {
+    $("div").children().css({border: "2px solid" });
+    });
