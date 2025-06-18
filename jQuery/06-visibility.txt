@@ -1,0 +1,3 @@
+hidden(): This method hides the selected elements just like CSS property
+    display: none. Example: let’s hide our <ul> that has id name of firstUL
+    $(" ul[id=firstUL] ").hide();
