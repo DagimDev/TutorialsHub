@@ -30,3 +30,5 @@ $("ul:contains(First list item)").css("background-color", "pink");
 $(".divi").empty()
 
 $("ul li:nth-child(5)").hide()
+
+$("span").show()

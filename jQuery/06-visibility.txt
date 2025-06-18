@@ -8,3 +8,9 @@ visible(): The method selects every element that is currently visible. If an
     select any <ul> that is visible and change its background color
     $("ul:visible").css("background-color",
     "lightgreen");
+
+show(): The method shows the hidden, selected elements. Note: The
+    show() shows hidden with jQuery methods and display: none in CSS, it
+    will not show if element is hidden using CSS property display: none.
+    Example: Now, let’s show a <ul> that ha is hidden, if there is any
+    $(" ul").show();
