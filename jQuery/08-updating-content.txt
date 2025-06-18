@@ -7,3 +7,20 @@ Updating content:
 text(): The method sets/returns the text content of selected elements. Example:
     Let’s print in the console the text of our <li> that has a specific class name
     console.log($("li[class=firstLi]").text());
+
+remove() and empty(): The remove() method removes the selected element and
+    all its child elements. The empty() method removes only the child elements of the
+    selected element, meaning, the selected element itself will not be removed, but its
+    child/children. This method sets/returns the value of form fields
+Example: Let’s remove our <div> and its child <p>s first and then go to emptying our <div>’s
+children. Notice: We styled our <div> to show that it won’t be affected by empty()
+    method.
+    <div style="border:1px solid; height:100px">I
+    am a parent div
+    <p>I am first</p>
+    <p>I am second</p>
+    <p>I am third</p>
+    </div>
+    $("div").remove();// removes our parent <div>
+    with child <p>
+    $("div").empty();// removes only the child <p>
