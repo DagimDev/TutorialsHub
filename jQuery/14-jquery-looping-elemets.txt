@@ -1,0 +1,22 @@
+Looping through elements: jQuery returns an object (array-like
+    collection) when we create a new element or select an existing element using jQuery. Using
+    jQuery to loop through elements is simplified way better than vanilla JavaScript. jQuery
+    does the looping behind the scene. Let’s compare the code will use if we want to change
+    the background color of all <li> elements using vanilla JavaScript and jQuery. 
+
+    Assume you have the following HTML
+<ul>
+    <li>I am 1st li</li>
+    <li>I am 2nd li</li>
+    <li>I am 2nd li</li>
+    <li>I am 2nd li</li>
+</ul>
+Example of looping through elements using vanilla JavaScript
+    var element1 = document.getElementsByTagName("li");
+    for (let i = 0; i < element1.length; i++) {
+    var allLi = element1[i];
+    allLi.style.backgroundColor = "pink";
+}
+
+Example of looping through elements using jQuery
+$("li").css("background-color", "pink")

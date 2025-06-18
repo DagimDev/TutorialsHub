@@ -54,3 +54,18 @@ console.log($("input").val());
 
 const inputValue = $("input#firstName").val();
 console.log($.isNumeric(inputValue));
+
+// Looping using vanilla js
+const myUl = document.querySelectorAll(".myUl li")
+
+for (let i = 0; i < myUl.length; i++){
+    if (i % 2 === 0) {
+        let even = myUl[i]
+        even.style.backgroundColor = "pink"
+        
+    }
+}
+
+// Looping using jQuery
+
+$(".myUl li").odd().css("background", "lightgreen")
