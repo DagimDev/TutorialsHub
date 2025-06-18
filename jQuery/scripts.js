@@ -99,3 +99,15 @@ $("h4").on({
     console.log("mouse leaving h4");
   },
 });
+
+
+// Example: Let’s alert a text and also change the input’s background color
+// to red when the <input> loses focus because user moved away the pointer
+// from it.
+
+const input = $("input")
+input.blur(() => {
+    input.css("background", "red")
+    alert("input losses focus")
+})
+

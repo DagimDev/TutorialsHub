@@ -11,3 +11,8 @@ jQuery’s on() method
     ▪ The on() method in jQuery accepts an object containing multiple events and
     handlers. Meaning, it does the following things:
     ▪ Bind any event triggered on the selected elements to an event handler
+
+UI/DOM element events: focus, blur, change
+    • blur(): This method triggers the blur event or attaches a function when
+    blur event occurs. Blur event occurs when an element loses focus.
+    
