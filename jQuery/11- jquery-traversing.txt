@@ -15,3 +15,13 @@ o Example: Let’s style our <div> using its child <ul> and applying
     </div>
     $(document).ready(function () {
     $("ul").parent().css({ border: "2px solid red" })});
+
+
+parents(): returns all ancestor elements of the selected element
+    o Example: Let’s style all ancestor elements of our <li>
+    <div>
+    <ul>
+    <li>ul and div are my ancestors. </li>
+    </ul>
+    </div>
+    $("li").parents().css({ border: "2px solid red" });
