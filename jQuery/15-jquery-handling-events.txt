@@ -37,3 +37,10 @@ backgroundChanger);
 function backgroundChanger() {
 $("#firstInput").css("backgroundcolor", "pink");
 }
+
+Browser/window /document events: ready(), load(), resize(), unload(), error(), scroll()
+    • $(document).ready(): This method allows us to execute a function when
+    the document is fully loaded. It is good practice to wait for the document
+    (HTML and CSS) to be fully loaded and ready before working with it. This
+    also allows you to have your JavaScript code before the body of your
+    document, in the head section.

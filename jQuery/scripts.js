@@ -122,3 +122,9 @@ h5.click(() => {
     h6.hide()
 })
 
+// Example: Below, let’s show an alert once the document is fully loaded
+
+$(document).ready(() => {
+    alert("Document is fully loaded")
+})
+
