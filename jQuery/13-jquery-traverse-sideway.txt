@@ -1,0 +1,12 @@
+Methods to travers sideways in the DOM
+• siblings(): returns all sibling elements of the selected element.
+    o Example: Let’s style all sibling elements of our <span>
+    <div>
+        <p>div is my dad</p>
+        <span>div is my dad too</span>
+        <ul>
+            <li>I am div's descendant</li>
+            <li>I also div's descendant</li>
+        </ul>
+    </div>
+    $("span").siblings().css({ border: "4px solid red" });
