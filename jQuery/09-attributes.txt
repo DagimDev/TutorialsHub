@@ -7,3 +7,9 @@ our paragraphs using addClass() and change their background and text color.
 .classOne {background-color: blueviolet;}
 .classTwo {color: yellow;}
 $("p").addClass("classOne classTwo");
+
+removeClass(): The removeClass() method removes one or more class names
+from the selected elements. Example: Let’s remove one of the above CSS classes
+(the “classOne”) from our paragraphs using removeClass(). This removes only the
+backgroundcolor from our paragraphs
+$("p").removeClass("classOne");
