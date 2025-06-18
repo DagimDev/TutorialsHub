@@ -3,3 +3,16 @@ Form value:
     for example, the value of the value attribute in an <input>. Example: Let’s print
     in the console what we provided under the value attribute for our <input>
     console.log($("input").val());
+    
+$.isNumeric(): This method checks whether a value is numeric/a number and
+    returns true if only the argument passed to it a number or a numeric string.
+    Example: Let’s use the $.isNumeric method to see if our <input>’s value attribute
+    has a numeric or non-numeric value. Since the value is “happy” string, the
+    following script should return false
+    <form id="myForm" method="POST">
+    <label for="firstName">First Name</label>
+    <input id="firstInput" value="happy">
+    </form>
+    var inputValue = $("input#firstInput").val();
+    console.log($.isNumeric(inputValue));//
+    prints false

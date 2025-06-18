@@ -7,36 +7,36 @@
 // o Including jQuery from a CDN and adding it right before the closing </body> in
 // <script> tag. Note: Your jQuery CDN needs to be placed before your custom
 // JavaScript file
-console.log("jQuery")
-const logParagraph = $("#myParagraph")
-console.log(logParagraph) // logs my paragraph
+console.log("jQuery");
+const logParagraph = $("#myParagraph");
+console.log(logParagraph); // logs my paragraph
 
 // ▪ Example: of selecting class using jquery
 var logDiv = $(".myDiv");
-console.log(logDiv);// logs the two divs with
+console.log(logDiv); // logs the two divs with
 
 // Example: select using element name
-console.log($("span"));// returns our <span> element 
+console.log($("span")); // returns our <span> element
 
 // $("li").even().css("background", "yellow")
 // $("li").odd().css("background", "purple")
 
-$("ul li:nth-child(2)").css("background", "lightgreen")
+$("ul li:nth-child(2)").css("background", "lightgreen");
 
-$("h2").has("p").css("color", "lightgreen")
+$("h2").has("p").css("color", "lightgreen");
 
 $("ul:contains(First list item)").css("background-color", "pink");
 
-$(".divi").empty()
+$(".divi").empty();
 
-$("ul li:nth-child(5)").hide()
+$("ul li:nth-child(5)").hide();
 
-$("span").show()
+$("span").show();
 
-const html = $("ul li:nth-child(7)").html()
-console.log(html)
+const html = $("ul li:nth-child(7)").html();
+console.log(html);
 
-console.log($("li[class=third]").text())
+console.log($("li[class=third]").text());
 
 // $("#divId").before($("#firstPar"))
 
@@ -45,9 +45,12 @@ console.log($("li[class=third]").text())
 // $("#divId").prepend($("#firstPar"));
 
 $("#divId").append($("#firstPar"));
-let secondPar = $(".secondPar").addClass("classOne classTwo")
-secondPar.removeClass("classTwo")
+let secondPar = $(".secondPar").addClass("classOne classTwo");
+secondPar.removeClass("classTwo");
 
-$(".thirdPar").css("color", "red")
+$(".thirdPar").css("color", "red");
 
-console.log($("input").val())
+console.log($("input").val());
+
+const inputValue = $("input#firstName").val();
+console.log($.isNumeric(inputValue));
