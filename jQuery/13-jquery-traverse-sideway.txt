@@ -15,3 +15,7 @@ next(): returns the next sibling element of the selected element.
 o Example: Let’s use the above HTML and style <span>’s next
     sibling, which is the <ul>
     $("span").next().css({ border: "4px solid red" });
+
+nextAll(): returns all next sibling elements of the selected element.
+    o Example: Let’s use our <p> and style all of its next siblings
+    $("p").nextAll().css({ border: "4px solid red" });
