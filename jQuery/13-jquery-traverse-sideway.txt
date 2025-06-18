@@ -10,3 +10,8 @@ Methods to travers sideways in the DOM
         </ul>
     </div>
     $("span").siblings().css({ border: "4px solid red" });
+
+next(): returns the next sibling element of the selected element.
+o Example: Let’s use the above HTML and style <span>’s next
+    sibling, which is the <ul>
+    $("span").next().css({ border: "4px solid red" });
