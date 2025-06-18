@@ -6,3 +6,8 @@ first(): The first() method filters the set of matched elements and returns the 
 element of the specified elements. Example: The script below will select all <li>s
 and filters the first <li> only and change its background color to pink
 $("li").first().css("background-color", "pink");
+
+last(): This method returns the last element of the specified elements. Example:
+The script below will select all <li>s and filters the last<li> only and change its
+background color to pink
+$("li").last().css("background-color", "pink");
