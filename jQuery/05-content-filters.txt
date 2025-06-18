@@ -1,0 +1,7 @@
+Content filters
+• has(selector): This method filters the set of matched elements and returns
+    only those elements that has the specified descendant element. Note: To
+    select elements that have multiple elements inside of them, use comma.
+    Example: Let’s select a <div> that has <p> in it, and change this <div>’s
+    background color
+    $("div").has("p").css("background-color", "pink");

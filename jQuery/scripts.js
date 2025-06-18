@@ -22,3 +22,5 @@ console.log($("span"));// returns our <span> element
 // $("li").odd().css("background", "purple")
 
 $("ul li:nth-child(2)").css("background", "lightgreen")
+
+$("h2").has("p").css("color", "lightgreen")
