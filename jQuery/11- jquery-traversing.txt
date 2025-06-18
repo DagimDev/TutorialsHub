@@ -2,3 +2,16 @@ Finding elements (jQuery traversing): We have seen previously that traversing
 the DOM means moving through DOM/HTML elements to find/select them based
 on their relation to other elements. jQuery has its own traversing methods to select
 HTML elements based on ancestor, child, sibling and other related elements.
+
+jQuery traversing: Methods to up the DOM
+• parent(): returns the direct parent element of the selected element
+o Example: Let’s style our <div> using its child <ul> and applying
+    the parent() method
+    <div>
+    <p>I am div's child</p>
+    <ul>
+    <li>UL is my dad. Div is my granddad</li>
+    </ul>
+    </div>
+    $(document).ready(function () {
+    $("ul").parent().css({ border: "2px solid red" })});
