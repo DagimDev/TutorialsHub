@@ -1,0 +1,4 @@
+To handle events in jQuery, just like any other method in jQuery, you start by selecting the
+element you want to respond to. We said that selection of elements in jQuery creates a
+jQuery object. It is on these objects that we apply the different jQuery event methods.
+jQuery has various methods to attach a handler function to an event for selected elements.
