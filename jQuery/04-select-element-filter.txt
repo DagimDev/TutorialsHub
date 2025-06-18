@@ -1,3 +1,8 @@
 Selecting elements with jQuery (filters)
 • jQuery (filters): jQuery provides several filter methods to narrow down the search for
 elements in a DOM tree
+
+first(): The first() method filters the set of matched elements and returns the first
+element of the specified elements. Example: The script below will select all <li>s
+and filters the first <li> only and change its background color to pink
+$("li").first().css("background-color", "pink");
