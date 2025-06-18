@@ -147,3 +147,10 @@ $("#p1").on('click', () => {
 $("#btn1").on('click', () => {
     $("#p2").slideDown(2000)
 })
+
+// Example: Let’s just toggle between sliding up and sliding down of our
+// <p> when button is clicked. 
+
+$("#slideToggle").on('click', () => {
+    $("#para2").slideToggle(300)
+})
