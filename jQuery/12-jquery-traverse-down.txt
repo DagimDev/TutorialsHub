@@ -12,3 +12,15 @@ o Example: let’s style all direct children of div. Here, grand children like t
     $(document).ready(function () {
     $("div").children().css({border: "2px solid" });
     });
+    
+find(): returns descendant elements of the selected element
+o Example: Let’s find only the <li> descendants of our <div> and style them
+    <div>
+    <p>div is my dad</p>
+    <span>div is my dad too</span>
+    <ul>
+    <li>I am div's descendant</li>
+    <li>I also div's descendant</li>
+    </ul>
+    </div>
+    $("div").find("li").css({ border: "2px solid red" });
