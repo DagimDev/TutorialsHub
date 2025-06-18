@@ -26,3 +26,5 @@ $("ul li:nth-child(2)").css("background", "lightgreen")
 $("h2").has("p").css("color", "lightgreen")
 
 $("ul:contains(First list item)").css("background-color", "pink");
+
+$(".divi").empty()

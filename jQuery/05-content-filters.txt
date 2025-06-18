@@ -11,3 +11,7 @@ Content filters
     in a child element. Example: Now, let’s select a <ul> that has “First list
     item” as text directly in it or in its children.
     $("ul:contains(First list item)").css("backgroundcolor", "pink");
+
+
+empty(): The empty() method removes all child nodes and content from
+the selected elements.
