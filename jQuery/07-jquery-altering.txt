@@ -1,0 +1,4 @@
+Updating or altering values: content and elements
+• jQuery object has many methods that you can use on the element that you select. These are
+    the common methods that you will use. Methods to get or change content of elements,
+    attributes or nodes 
