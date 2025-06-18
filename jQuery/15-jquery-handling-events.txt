@@ -27,3 +27,13 @@ Keyboard events:
 Mouse events: click, dbclick, mouseenter, mouseleave
 • click(): The click() method attaches an event handler function to an HTML
 element when the user clicks on the HTML element. 
+
+Form events: submit, change
+    • submit(): This method is used to submit an HTML form i.e. <form> or to
+    attach a function to run when a submit event occurs. Note: This event can
+    only be used on <form> elements.
+$("form").on("submit",
+backgroundChanger);
+function backgroundChanger() {
+$("#firstInput").css("backgroundcolor", "pink");
+}
