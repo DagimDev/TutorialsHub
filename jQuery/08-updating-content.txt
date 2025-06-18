@@ -3,3 +3,7 @@ Updating content:
     HTML markup). Example: Let’s print in the console the text, including our <li>
     tag, of our <li> that has a specific class name
     console.log($("li[class=otherLi]").html());
+
+text(): The method sets/returns the text content of selected elements. Example:
+    Let’s print in the console the text of our <li> that has a specific class name
+    console.log($("li[class=firstLi]").text());

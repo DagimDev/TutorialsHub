@@ -35,3 +35,5 @@ $("span").show()
 
 const html = $("ul li:nth-child(7)").html()
 console.log(html)
+
+console.log($("li[class=third]").text())
