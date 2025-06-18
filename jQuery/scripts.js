@@ -38,8 +38,10 @@ console.log(html)
 
 console.log($("li[class=third]").text())
 
-$("#divId").before($("#firstPar"))
+// $("#divId").before($("#firstPar"))
 
-$("#divId").after($("#firstPar"));
+// $("#divId").after($("#firstPar"));
 
-$("#divId").prepend($("#firstPar"));
+// $("#divId").prepend($("#firstPar"));
+
+$("#divId").append($("#firstPar"));
