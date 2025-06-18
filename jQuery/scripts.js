@@ -37,3 +37,5 @@ const html = $("ul li:nth-child(7)").html()
 console.log(html)
 
 console.log($("li[class=third]").text())
+
+$("#divId").before($("#firstPar"))
