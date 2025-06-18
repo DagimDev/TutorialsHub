@@ -1,3 +1,10 @@
 hidden(): This method hides the selected elements just like CSS property
     display: none. Example: let’s hide our <ul> that has id name of firstUL
     $(" ul[id=firstUL] ").hide();
+
+visible(): The method selects every element that is currently visible. If an
+    element is already invisible (using ways like display: none,
+    type="hidden”), the visible() method will not apply to it. Example: Let’s
+    select any <ul> that is visible and change its background color
+    $("ul:visible").css("background-color",
+    "lightgreen");
