@@ -1,0 +1,9 @@
+Altering values: attributes, form value, looping through elements
+• Attributes:
+▪ addClass(): This method adds one or more property (CSS class) to each selected
+element. This method does not remove existing class attributes, it only adds one or
+more class names to the class attribute. Example: Let’s add two CSS classes to
+our paragraphs using addClass() and change their background and text color.
+.classOne {background-color: blueviolet;}
+.classTwo {color: yellow;}
+$("p").addClass("classOne classTwo");
