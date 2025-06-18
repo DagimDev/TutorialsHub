@@ -5,3 +5,9 @@ Content filters
     Example: Let’s select a <div> that has <p> in it, and change this <div>’s
     background color
     $("div").has("p").css("background-color", "pink");
+
+:contains(text): This selector selects all elements containing the specified
+    string. Note: The string can be contained directly in the element as text, or
+    in a child element. Example: Now, let’s select a <ul> that has “First list
+    item” as text directly in it or in its children.
+    $("ul:contains(First list item)").css("backgroundcolor", "pink");
