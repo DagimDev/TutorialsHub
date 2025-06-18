@@ -1,0 +1,3 @@
+Selecting elements with jQuery (filters)
+• jQuery (filters): jQuery provides several filter methods to narrow down the search for
+elements in a DOM tree
