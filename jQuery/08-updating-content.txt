@@ -1,0 +1,5 @@
+Updating content:
+▪ html(): This method sets/returns the content of selected elements (including
+    HTML markup). Example: Let’s print in the console the text, including our <li>
+    tag, of our <li> that has a specific class name
+    console.log($("li[class=otherLi]").html());

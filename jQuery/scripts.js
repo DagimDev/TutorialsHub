@@ -32,3 +32,6 @@ $(".divi").empty()
 $("ul li:nth-child(5)").hide()
 
 $("span").show()
+
+const html = $("ul li:nth-child(7)").html()
+console.log(html)
