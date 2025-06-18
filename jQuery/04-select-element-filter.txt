@@ -18,3 +18,9 @@ make background color of those <li>s with even index green and make background
 color of those <li>s with odd index purple
 $("li").even().css("background-color", "green");
 $("li").odd().css("background-color", "purple");
+
+nth-child() or nth-children(): This method selects all elements that are the nth
+child/children, of their parent. Note: The element type is not considered here, if it
+is the nth child, this method returns that element. Example: Let’s select a <ul> that
+has <li>s as children and change the background color of the 2nd child <li> only
+$("ul li:nth-child(2)").css("background-color", "lightgreen");
