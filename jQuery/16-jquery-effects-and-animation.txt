@@ -7,3 +7,8 @@ toggle(): The toggle() method is used to check the visibility of selected
     Note: We can pass speed in milliseconds for the toggle effects. In the
     following example paragraph element will take 2000 milliseconds time to
     get hidden and displayed completely
+
+Some of jQuery’s sliding effects: slideUp(), slideDown(),
+    slideToggle()
+    • slideUp(): It is a method that slides-up (gradually hides) the selected
+    elements
