@@ -19,3 +19,15 @@ height:160px"> I am a parent
 <p>I am third</p>
 </div>
 $("#divId").after($("#firstPar"));
+
+prepend(): The prepend() method inserts specified content inside the selected
+element at the beginning of this selected element. In short, it puts the selected
+element at the first index. Example: Let’s put our <p> that has “firstPar” id at the
+beginning of our <div>
+<div id="divId" style="border:1px solid
+height:160px">
+<p id="firstPar">I am first</p>
+<p>I am second</p>
+<p>I am third</p>
+</div>
+$("#divId").prepend($("#firstPar"));
