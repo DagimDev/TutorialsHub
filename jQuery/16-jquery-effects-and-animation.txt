@@ -12,3 +12,5 @@ Some of jQuery’s sliding effects: slideUp(), slideDown(),
     slideToggle()
     • slideUp(): It is a method that slides-up (gradually hides) the selected
     elements
+
+slideDown(): This method slides (gradually hides) an element down. 

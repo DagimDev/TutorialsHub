@@ -140,7 +140,10 @@ $("#p1").on('click', () => {
 // Example: Let’s slide our <p2> up with id of “btn” when a
 // button is clicked
 
-$("#btn").on('click', () => {
-    $("#p2").slideUp(2000) 
-})
+// $("#btn").on('click', () => {
+//     $("#p2").slideUp(2000) 
+// })
 
+$("#btn1").on('click', () => {
+    $("#p2").slideDown(2000)
+})
