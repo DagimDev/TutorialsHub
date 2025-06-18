@@ -49,3 +49,5 @@ let secondPar = $(".secondPar").addClass("classOne classTwo")
 secondPar.removeClass("classTwo")
 
 $(".thirdPar").css("color", "red")
+
+console.log($("input").val())

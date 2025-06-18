@@ -1,0 +1,5 @@
+Form value:
+▪ val(): This method sets or returns the value of form fields. The value of an input is
+    for example, the value of the value attribute in an <input>. Example: Let’s print
+    in the console what we provided under the value attribute for our <input>
+    console.log($("input").val());
