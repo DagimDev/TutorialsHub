@@ -114,3 +114,11 @@ input.blur(() => {
 $("input").keypress(function () {
 $("label").css("background-color", "pink");
 });
+
+// Example: Let’s make a <h5> hide when <h6> is clicked
+const h5 = $("h5")
+const h6 = $("h6")
+h5.click(() => {
+    h6.hide()
+})
+

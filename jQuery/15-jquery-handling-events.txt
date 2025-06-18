@@ -23,3 +23,7 @@ Keyboard events:
     $("input").keypress(function () {
     $("label").css("background-color", "pink");
     });
+
+Mouse events: click, dbclick, mouseenter, mouseleave
+• click(): The click() method attaches an event handler function to an HTML
+element when the user clicks on the HTML element. 
