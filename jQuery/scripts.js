@@ -56,16 +56,46 @@ const inputValue = $("input#firstName").val();
 console.log($.isNumeric(inputValue));
 
 // Looping using vanilla js
-const myUl = document.querySelectorAll(".myUl li")
+const myUl = document.querySelectorAll(".myUl li");
 
-for (let i = 0; i < myUl.length; i++){
-    if (i % 2 === 0) {
-        let even = myUl[i]
-        even.style.backgroundColor = "pink"
-        
-    }
+for (let i = 0; i < myUl.length; i++) {
+  if (i % 2 === 0) {
+    let even = myUl[i];
+    even.style.backgroundColor = "pink";
+  }
 }
 
 // Looping using jQuery
 
-$(".myUl li").odd().css("background", "lightgreen")
+$(".myUl li").odd().css("background", "lightgreen");
+
+// Bind any event triggered on the selected elements to an event handler
+
+// Example: When any <h3> is clicked, it will print “'<h3> was clicked'
+
+$("h3").on("click", function () {
+  console.log("h3 is clicked");
+});
+
+// Bind multiple events to one event handler
+// • Example: Let’s trigger the same handler function whenever the mouse
+// hovers over or leaves our <span>
+
+$("span").on("mouseenter mouseleve", () => {
+  alert("mouseOver or mouseLeave");
+});
+
+// Bind multiple events and multiple handlers to the selected elements
+// • Example: Let’s assign multiple event handler functions for multiple
+// events to the selected h4
+$("h4").on({
+  click: function () {
+    console.log("clicking h4");
+  },
+  mouseenter: function () {
+    $("h4").css("background-color", "yellow");
+  },
+  mouseleave: function () {
+    console.log("mouse leaving h4");
+  },
+});
