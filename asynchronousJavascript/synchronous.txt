@@ -30,3 +30,26 @@ There are 5 major tools involved to make this happen
 1. Memory/JavaScript heap
 ● The JavaScript heap is where objects are stored when we define functions
 or variables.
+
+2. Call stack
+● This is the synchronous part of the JavaScript engine component that
+    tracks the current code being executed and lets the JavaScript engine know
+    what code to execute next.
+● The way it works is quite simple. When a task is to be executed, it's added
+    to the call stack. When it's finished, it's removed from the call stack. This
+    same action is repeated for each and every task until the program is fully
+    executed.
+● Note: Everything that happens inside the call stack is sequential as this is
+    the synchronous part of JavaScript. JavaScript's main thread makes sure
+    that it takes care of everything in the stack before anything else.
+
+1. Call stack starts off empty at the start of the program.
+2. printSquare(4) is added to the call stack and executed.
+3. As printSquare(4) calls the function square(4), square(4) is added to the call stack
+and executed as well. Note that as the execution of printSquare(4) isn't finished
+yet, it's kept on the stack.
+4. As square(4) calls multiply(4,4), multiply(4,4) is added to the call stack and
+executed as well.
+5. multiply(4,4) is removed from the call stack once finished.
+6. square(4) is removed from the call stack once finished.
+7. printSquare(4) is removed from the call stack once finished. End of the program.
