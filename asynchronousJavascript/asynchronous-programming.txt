@@ -40,3 +40,30 @@ When the call stack detects that the task it's processing is web API-related,
 it asks the web API "Hey API, I need to get this done", and the web API
 takes care of it, allowing the call stack to continue with the next task in the
 stack.
+
+Example using setTimeout() API
+console.log("task1");
+setTimeout(() => console.log("task2"), 0);
+console.log("task3");
+○ Here, we're logging three separate strings, and on the second one we're
+using setTimeout to log it after 0 milliseconds. Which should be,
+according to common logic, instantly. So one should expect the
+console to log: "task1", then "task2", and then "task3".
+○ But that's not what happens:
+○ And if we had a look at our call stack during the program, It would
+look like this:
+1. Call stack starts off empty at the start of the program.
+2. console.log('task1') is added to the call stack and executed.
+3. console.log('task1') is removed from the call stack once finished.
+4. setTimeout(console.log('task2')) is added to the call stack, but it's not
+executed.
+5. setTimeout(console.log('task2')) disappears from the call stack, because
+it was sent to the web API.
+6. console.log('task3') is added to the call stack and executed.
+7. console.log('task3') is removed from the call stack once finished.
+8. console.log('task2') "mysteriously" hops into the call stack and is
+executed.
+9. console.log('task2') is removed from the call stack once finished.
+❖ To explain this "mysterious" reappearance of the setTimeout task, we need to
+introduce more components that are part of the browser runtime: the callback
+queue, and the event loop.
