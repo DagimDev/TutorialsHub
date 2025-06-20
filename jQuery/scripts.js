@@ -161,3 +161,8 @@ $("#myButtonF").on('click', () => {
   $("#secondParF").fadeOut("slow")
   $("#thirdParF").fadeOut(3000)
 })
+
+// Example: let’s change the opacity of our third <p> when #myOhterButtonF is clicked. 
+$("#myOtherButtonF").on('click', () => {
+  $("#thirdParF").fadeIn(1000)
+})
