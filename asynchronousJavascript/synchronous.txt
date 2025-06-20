@@ -53,3 +53,33 @@ executed as well.
 5. multiply(4,4) is removed from the call stack once finished.
 6. square(4) is removed from the call stack once finished.
 7. printSquare(4) is removed from the call stack once finished. End of the program.
+
+The problem with synchronous JS
+○ The problem with synchronous JS comes when we encounter a long-running
+synchronous function.
+○ Consider the following example
+    console.log("Start");
+    
+    function delay(seconds) {
+        const start = Date.now();
+        let x = true;
+        while (x) {
+            const current = Date.now();
+            if (current - start >= seconds * 1000) {
+                console.log("hi");
+                x = false;
+            }
+        }
+    }
+delay(5); // Delays for 5 seconds
+console.log("Doing something completely unrelated to the
+timer above");
+❖ In the above example the function delay takes 5 seconds to execute, and the
+console.logs we have on the very first and last line has nothing to do with the
+function. But because of its synchronous nature the last console.log has been
+affected, it's forced to wait 5 seconds before printing to the console window.
+❖ This effect continues to your UI too. Imagine if you have something
+synchronous executing and taking 10 seconds or more. Your client can not use
+the interface for 10 seconds since it has been blocked by the long synchronous
+function.
+❖ That's where asynchronous functions come to the rescue.
