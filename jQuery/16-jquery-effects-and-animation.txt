@@ -34,3 +34,6 @@ animate(): This method makes the CSS property value change gradually
 to create an animation effect. Note: Only CSS properties with numerical
 values (such as padding: 15px) can be animated, unless we want the
 animation to be between “hide” and “show” or “toggle”
+
+stop(): This method is used to stop animations or effects before it is
+finished

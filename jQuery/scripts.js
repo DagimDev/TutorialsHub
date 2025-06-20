@@ -176,3 +176,16 @@ $("#btnAnime").on('click', () => {
   $("#parAnime").animate({ width: 300}, "3000")
   $("#parAnime").css("background-color", "blue")
 })
+
+// Example: Assuming there was an animation (slideUp on our
+// <p>), let’s stop that animation using the stop() method. While the <p> is
+// sliding up, click on the <button> for stop slide up to stop <p> from
+// continuing to slide up.
+
+$("#button1").on('click', () =>  {
+  $("#parStop").slideUp(3000)
+})
+
+$("#button2").on('click', () => {
+ $("#parStop").stop()
+})
