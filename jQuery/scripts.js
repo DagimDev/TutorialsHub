@@ -154,3 +154,10 @@ $("#btn1").on('click', () => {
 $("#slideToggle").on('click', () => {
     $("#para2").slideToggle(300)
 })
+
+// Example: Let’s fade out our <p>s with different speed
+$("#myButtonF").on('click', () => {
+  $("#firstParF").fadeOut()
+  $("#secondParF").fadeOut("slow")
+  $("#thirdParF").fadeOut(3000)
+})

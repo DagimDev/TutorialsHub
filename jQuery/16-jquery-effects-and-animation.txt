@@ -19,3 +19,6 @@ slideToggle(): This method toggles between the slideDown and slideUp
 methods. Meaning, if the element(s) has been slid down already,
 slideToggle() will slide it/them down and vice versa. We can basically
 avoid the use of slideUp() and slideDown() and just use slideToggle().
+
+fadeOut(): This method gradually changes the opacity, for selected
+elements, from visible to hidden (fading effect).
