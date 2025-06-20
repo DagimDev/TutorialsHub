@@ -1,0 +1,20 @@
+Synchronous Programming
+● Definition
+○ Synchronous tasks are the ones that execute sequentially, one after the other, and
+    while they're being executed nothing else is being done. At each line of the
+    program, the browser waits for the task to finish before jumping to the next one.
+○ These kinds of tasks are "blocking", because while they execute they block the
+    ecution thread, preventing it from doing anything else.
+○ Synchronous JS Example:
+■ const studentName = "Abebe";
+■ const greeting = `Hello, my name is ${studentName}!`;
+■ console.log(greeting);
+■ In the above example
+    1. Declares a string called studentName.
+    2. Declares another string called greeting, which uses studentName.
+    3. Outputs the greeting to the JavaScript console.
+■ Note that the browser effectively steps through the program one line at a
+    time, in the order we wrote it. At each point, the browser waits for the line
+    to finish its work before going on to the next line. It has to do this because
+    each line depends on the work done in the preceding lines. That makes this
+    a synchronous program.
