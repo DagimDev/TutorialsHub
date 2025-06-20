@@ -18,3 +18,8 @@ potentially take a long time, and therefore, are asynchronous.
 ● Asking a user to select files using showOpenFilePicker()
 ○ Even though you may not have to implement your own asynchronous functions
 very often, you are very likely to need to use them correctly.
+
+Why Asynchronous Programming?
+○ Enhances performance by handling time-consuming operations efficiently.
+○ Prevents blocking the user interface (UI) and allows concurrent operations.
+○ Enables better handling of tasks like network requests, file operations, etc
