@@ -10,3 +10,15 @@ jQuery
     things in a more compatible way
 • jQuery library contains features like HTML/DOM manipulation, CSS manipulation,
     CSS manipulation and effects and animations
+
+Conclusion
+• jQuery is just a JavaScript library that you include on your web page. As jQuery is
+    built on top of JavaScript, it provides all the functionalities of JavaScript. It is important
+    to know that jQuery is an enhanced version of JavaScript.
+• jQuery makes DOM manipulation and event handling much simpler as opposed to
+    vanilla JavaScript. It also comes in handy when we want to include animation and
+    effects on our website/application. Moreover, jQuery takes a lot of common tasks that
+    require many lines of vanilla JavaScript code to accomplish and wraps them into
+    methods that you can call with a single line of code.
+• Unlike vanilla JavaScript, jQuery provides a consistent result throughout major
+    browsers and is therefore cheered for its cross-browser compatibility. 
