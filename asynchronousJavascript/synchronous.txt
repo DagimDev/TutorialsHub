@@ -18,3 +18,15 @@ Synchronous Programming
     to finish its work before going on to the next line. It has to do this because
     each line depends on the work done in the preceding lines. That makes this
     a synchronous program.
+
+How does the Browser & JS engine work together to execute synchronous JS
+There are 5 major tools involved to make this happen
+1. Memory/JavaScript heap
+2. Call stack
+3. Web APIs
+4. Callback queue
+5. Event loop
+
+1. Memory/JavaScript heap
+● The JavaScript heap is where objects are stored when we define functions
+or variables.
