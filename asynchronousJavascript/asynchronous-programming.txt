@@ -23,3 +23,20 @@ Why Asynchronous Programming?
 ○ Enhances performance by handling time-consuming operations efficiently.
 ○ Prevents blocking the user interface (UI) and allows concurrent operations.
 ○ Enables better handling of tasks like network requests, file operations, etc
+
+How does the Browser & JS engine work together to execute asynchronous 
+
+3. Web APIs
+● Web APIs are a set of features and functionalities that the browser uses to
+enable JavaScript to execute.
+● These features include
+○ DOM manipulation,
+○ HTTP requests (fetch method),
+○ setTimeout among other things, and
+
+
+Think of it like a different "execution place" rather than the call stack.
+When the call stack detects that the task it's processing is web API-related,
+it asks the web API "Hey API, I need to get this done", and the web API
+takes care of it, allowing the call stack to continue with the next task in the
+stack.
