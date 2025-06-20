@@ -24,4 +24,8 @@ fadeOut(): This method gradually changes the opacity, for selected
 elements, from visible to hidden (fading effect).
 
 FadeIn(): This method gradually changes the opacity, for selected
-elements, from hidden to visible
+elements, from hidden to 
+
+delay(): This method sets a timer to delay the execution of the next item
+in the queue. The method is for instance used to make a delay between the
+queued jQuery effects

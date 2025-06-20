@@ -166,3 +166,5 @@ $("#myButtonF").on('click', () => {
 $("#myOtherButtonF").on('click', () => {
   $("#thirdParF").fadeIn(1000)
 })
+
+$("#btnDelay").on("click", () => $("#parDelay").delay(1000).slideToggle())
