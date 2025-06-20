@@ -124,9 +124,9 @@ h5.click(() => {
 
 // Example: Below, let’s show an alert once the document is fully loaded
 
-$(document).ready(() => {
-    alert("Document is fully loaded")
-})
+// $(document).ready(() => {
+//     alert("Document is fully loaded")
+// })
 
 
 // Example: Let’s hide and show our
@@ -168,3 +168,11 @@ $("#myOtherButtonF").on('click', () => {
 })
 
 $("#btnDelay").on("click", () => $("#parDelay").delay(1000).slideToggle())
+
+// Example: Let’s add animation on our <p> by changing the already existing CSS width,
+// height and background color when the <button> is clicked.
+$("#btnAnime").on('click', () => {
+  $("#parAnime").animate({ height: 300}, "3000")
+  $("#parAnime").animate({ width: 300}, "3000")
+  $("#parAnime").css("background-color", "blue")
+})

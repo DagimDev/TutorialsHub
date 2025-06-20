@@ -29,3 +29,8 @@ elements, from hidden to
 delay(): This method sets a timer to delay the execution of the next item
 in the queue. The method is for instance used to make a delay between the
 queued jQuery effects
+
+animate(): This method makes the CSS property value change gradually
+to create an animation effect. Note: Only CSS properties with numerical
+values (such as padding: 15px) can be animated, unless we want the
+animation to be between “hide” and “show” or “toggle”
