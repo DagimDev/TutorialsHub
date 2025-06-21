@@ -76,3 +76,15 @@ queue, and the event loop.
     ● Note: Unlike the call stack, the callback queue follows the FIFO order
     (First In, First Out), meaning the callback function that first gets into the
     queue has the opportunity to go out first.
+
+5. Event Loop
+● Event Loop is a system to track tasks being executed at the external
+    ocessor.
+● Once the browser finishes processing the tasks under the synchronous
+    stack (or call stack), the event loop will pass the tasks under the call back
+    queue to the browser to be processed.
+● It constantly checks two things:
+    1. If the call stack is empty
+    2. If there's any task present in the callback queue
+    ★ If both of these conditions are met, then the task present in the
+    callback queue is sent to the call stack to complete its execution.
