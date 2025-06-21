@@ -29,4 +29,26 @@ resolves/completes/fulfilled.
 fulfilled.
 fetch("https://randomuser.me/api")
 .then((res) => res.json())
-.then((data) => console.log(data.results[0]));te
+.then((data) => console.log(data.results[0]));
+
+
+Catching errors (.catch( ) method)
+○ The fetch() API can throw an error for many reasons (for example, because there
+was no network connectivity or the URL was malformed in some way) and we are
+throwing an error ourselves if the server returned an error.
+○ To support error handling, Promise objects provide a catch() method.
+○ This is a lot like then(): you call it and pass in a handler function. However,
+while the handler passed to then() is called when the asynchronous operation
+succeeds, the handler passed to catch() is called when the asynchronous
+operation fails/rejected.
+○ If you add catch() to the end of a promise chain, then it will be called when any
+of the asynchronous function calls fail. So you can implement an operation as
+several consecutive asynchronous function calls, and have a single place to handle
+all errors.
+○ Example : apply “.catch” method to be executed once the promise object is
+Rejected.
+fetch("https://randomuser123.me/api")
+.then((res) => res.json())
+.then((data) => console.log(data.results[0]))
+.catch((err) => console.log("Something went wrong
+>>> ", err));
