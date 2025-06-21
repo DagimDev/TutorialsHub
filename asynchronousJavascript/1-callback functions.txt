@@ -1,0 +1,33 @@
+1. Callback functions
+● A callback is just a function that's passed into another function, with the
+expectation that the callback will be called at the appropriate time.
+● Callbacks are functions that are passed as arguments to other functions. The
+function that takes the argument is called a "Higher order function", and the
+function that is passed as an argument is called a "Callback".
+● The difference between synchronous and asynchronous callbacks relies on the
+type of task that function executes (if it uses Web APIs).
+● Callback function Example :
+function orderPizza(callback) {
+    console.log("order pizza");
+        setTimeout(() => {
+            const pizza = "🍕";
+            console.log(`Your ${pizza} is ready`);
+            callback(pizza);
+        }, 2000);
+    }
+    function pizzaReady(pizza) {
+         console.log(`Eat your ${pizza}`);
+    }
+    orderPizza(pizzaReady);
+    console.log("call a friend");
+
+○ In the above example,
+■ “orderPizza” is taking a function as argument which
+    akes it the higher order function
+■ “pizzaReady” is passed as an argument which makes it the
+    callback function - this function is being executed after 2
+    seconds, since it's inside a setTimeout method (Web APIs)
+    of asynchronous nature.
+■ It will log all synchronous tasks first, then continue to log asynchronous tasks.
+● Note: Not all callbacks are asynchronous, what makes them asynchronous is if
+    they are being called inside an asynchronous Web API
