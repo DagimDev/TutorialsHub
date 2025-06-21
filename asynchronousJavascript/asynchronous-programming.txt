@@ -67,3 +67,12 @@ executed.
 ❖ To explain this "mysterious" reappearance of the setTimeout task, we need to
 introduce more components that are part of the browser runtime: the callback
 queue, and the event loop.
+
+4. Callback Queue
+    ● Callback queue is a queue that stores the tasks that the web APIs return.
+    ● Once the JavaScript engine finishes executing the synchronous tasks on
+    the call stack, it continues to execute the asynchronous code found on the
+    callback queue.
+    ● Note: Unlike the call stack, the callback queue follows the FIFO order
+    (First In, First Out), meaning the callback function that first gets into the
+    queue has the opportunity to go out first.
