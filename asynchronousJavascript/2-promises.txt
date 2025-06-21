@@ -1,0 +1,12 @@
+2. Promises
+● Promises are the foundation of asynchronous programming in modern JavaScript.
+    ● A promise is an object returned by an asynchronous function, which represents the
+    current state of the operation.
+    ● At the time the promise is returned to the caller, the operation often isn't finished, but the
+    promise object provides methods to handle the eventual success or failure of the
+    operation.
+● A promise is a special kind of object in JavaScript that has 3 possible states:
+    ○ Pending: It's the initial state, and it signifies that the corresponding task is yet to
+    be resolved.
+    ○ Fulfilled: Means the task has been completed successfully.
+    ○ Rejected: Means the task has produced some kind of error.
