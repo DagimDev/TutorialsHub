@@ -10,3 +10,13 @@
     be resolved.
     ○ Fulfilled: Means the task has been completed successfully.
     ○ Rejected: Means the task has produced some kind of error.
+
+Using the fetch() API
+○ fetch() API - is an asynchronous Web API that is used to make HTTP requests to
+a server and respond with a response data.
+Example :
+console.log(fetch("https://randomuser.me/api"));
+output: Promise{<pending>} 
+We see we get a promise with a pending state
+○ We can chain other operations to it to be followed once it becomes
+fulfilled, using the “.then()” method
