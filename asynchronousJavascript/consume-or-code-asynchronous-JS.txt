@@ -1,0 +1,7 @@
+- How to consume/code asynchronous JS
+    Now that we have the theoretical foundation of how JavaScript makes asynchronism possible,
+    let's see how all this can be implemented in code.
+    There are mainly three ways in which we can code asynchronism in JavaScript:
+        1. callback functions,
+        2. promises, and
+        3. async-await.
