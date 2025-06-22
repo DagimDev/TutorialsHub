@@ -6,7 +6,7 @@ function orderPizza(callback) {
     const pizza = "🍕";
     console.log(`Your ${pizza} is Ready`);
     callback(pizza);
-  }, 1000);
+  }, 2000);
 }
 
 function pizzaReady(pizza) {
@@ -20,3 +20,21 @@ fetch("https://randomuser.me/api")
   .then((response) => response.json())
   .then((data) => console.log(data))
   .catch((error) => console.log("Something went wrong:", error));
+
+// Example : handling fetch method using async-await
+
+async function fetchData() {
+  try {
+    const response = await fetch("https://randomuser.me/api");
+    // console.log(response);
+    const data = await response.json()
+    // console.log(data)
+    const user = data.results[0]
+    console.log(user)
+  } catch (error) {
+    console.log("Somethind is wrong");
+    throw (error)
+  }
+}
+
+fetchData();

@@ -1,0 +1,120 @@
+async and await in JavaScript/TypeScript
+async and await are modern JavaScript features that make asynchronous code easier to write and read, building on top of Promises.
+
+Core Concepts
+async Functions
+Any function declared with async automatically returns a Promise
+
+Allows you to use await inside the function
+
+Handles errors with try/catch blocks
+
+javascript
+async function fetchData() {
+  // This returns a Promise even without explicit return
+}
+await Operator
+Pauses the execution of the async function until the Promise settles
+
+Can only be used inside async functions
+
+Returns the resolved value of the Promise
+
+Throws the rejected value if the Promise rejects
+
+javascript
+async function getUser() {
+  const response = await fetch('/api/user');
+  const data = await response.json();
+  return data;
+}
+Practical Examples
+Basic Usage
+javascript
+async function loadData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error('Failed to load data:', error);
+    throw error; // Re-throw if you want calling code to handle it
+  }
+}
+Parallel Execution
+javascript
+async function fetchMultiple() {
+  // Start all requests in parallel
+  const [user, posts] = await Promise.all([
+    fetch('/api/user'),
+    fetch('/api/posts')
+  ]);
+  
+  // Process responses
+  const userData = await user.json();
+  const postsData = await posts.json();
+  
+  return { user: userData, posts: postsData };
+}
+Error Handling Patterns
+javascript
+// Option 1: try/catch
+async function withTryCatch() {
+  try {
+    const result = await mightFail();
+    return result;
+  } catch (error) {
+    // Handle error
+  }
+}
+
+// Option 2: Promise.catch()
+async function withCatch() {
+  const result = await mightFail().catch(error => {
+    // Handle error
+    return fallbackValue;
+  });
+  return result;
+}
+Key Benefits
+Readability: Code looks more like synchronous code
+
+Error Handling: Can use traditional try/catch blocks
+
+Debugging: Better stack traces compared to Promise chains
+
+Control Flow: Easier to write conditional async logic
+
+Common Pitfalls
+Forgetting await: Leads to unintended Promise returns
+
+Unnecessary sequential awaits: Can slow down independent operations
+
+Error swallowing: Forgetting to handle rejections
+
+Top-level await: Only available in ES modules (or modern environments)
+
+Advanced Patterns
+Async Iteration
+javascript
+async function processItems(items) {
+  for await (const item of asyncIterator) {
+    // Process each item
+  }
+}
+Async Generators
+javascript
+async function* asyncGenerator() {
+  let i = 0;
+  while (i < 3) {
+    await sleep(100); // Some async operation
+    yield i++;
+  }
+}
+Top-Level Await (in modules)
+javascript
+// In ES modules only
+const data = await fetchData();
+console.log(data);
+async/await has become the standard way to handle asynchronous operations in modern JavaScript, making code more maintainable while maintaining all the benefits of asynchronous programming.
