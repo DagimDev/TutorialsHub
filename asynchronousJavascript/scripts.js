@@ -27,14 +27,42 @@ async function fetchData() {
   try {
     const response = await fetch("https://randomuser.me/api");
     // console.log(response);
-    const data = await response.json()
+    const data = await response.json();
     // console.log(data)
-    const user = data.results[0]
-    console.log(user)
+    const user = data.results[0];
+    console.log(user);
   } catch (error) {
     console.log("Somethind is wrong");
-    throw (error)
+    throw error;
   }
 }
 
 fetchData();
+
+// Example :
+// ○ Let’s create our own promise based API called alarm
+const alarm = (person, delay) => {
+  return new Promise((resolve, reject) => {
+    if (delay < 0) {
+      reject("Alarm delay can not be negative");
+    }
+    setTimeout(() => {
+      resolve(`Wake up ${person}`);
+    }, delay);
+  });
+};
+
+alarm("natty", 1000)
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error));
+
+async function getUp() {
+  try {
+    const res = await alarm("bob", 3000);
+    console.log(res);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getUp();

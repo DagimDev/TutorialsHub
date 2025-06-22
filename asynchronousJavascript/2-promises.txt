@@ -66,3 +66,21 @@ rejected, its catch() handler is called.
 ○ Note that what "succeeded" or "failed" means here is up to the API in question:
 for example, fetch() considers a request successful if the server returned an error
 like 404 Not Found, but not if a network error prevented the request being sent.
+
+How to implement our own promise-based API (Promise Constructor)
+● Promise() constructor function
+○ The promise constructor function is a constructor function that exists in JS.
+○ It lets us create a promise object.
+○ It is initiated like any other constructor function using the “new” keyword
+followed by the “Promise” constructor function.
+○ The Promise() constructor takes a single function as an argument. We'll call this
+function the executor.
+○ When you create a new promise you supply the implementation of the executor.
+● The executor function
+○ Takes two arguments, which are both also functions, and which are
+conventionally called resolve and reject.
+○ In your executor implementation, you call the underlying asynchronous function.
+■ If the asynchronous function succeeds, you call resolve, and
+■ If it fails, you call reject.
+○ If the executor function throws an error, reject is called automatically. You can
+pass a single parameter of any type into resolve and reject.
