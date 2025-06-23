@@ -1,0 +1,34 @@
+Why Do We Need Regex?
+Definition 1: Regex solves several critical problems in text processing:
+
+Pattern Matching: Find complex patterns that simple string searches can't handle
+
+    Example: Find all email addresses in a document
+
+Validation: Check if input follows a specific format
+
+    Example: Validate phone numbers, passwords, or dates
+
+Text Manipulation: Find and replace patterns in bulk
+
+    Example: Reformat dates from MM/DD/YYYY to YYYY-MM-DD
+
+Data Extraction: Pull specific information from unstructured text
+
+    Example: Extract all product codes from logs
+
+Efficiency: Perform complex text operations with concise expressions
+
+Definition 2: Having the ability to search through text, validate text, and replace text using an advanced set of rules is exactly what Regex is for 
+
+    Ex: Use case scenario
+      Let's say you have a form which collects users data including their phone number. Users provide their numbers following different formats. These could be some of the formats to use. 
+        1234567890
+        (123) 456-7890
+        (123)456-7890
+        123 456 7890
+        123.456.7890 
+
+      What you want to do is, regardless of the format the user followed, you want to check if it is a valid US number. How do you achieve this programmatically?  
+
+      These are the kind of scenarios where you need help from Regular Expression.
