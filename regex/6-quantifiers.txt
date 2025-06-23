@@ -10,3 +10,7 @@ Quantifiers
            One or more times, is short for {1,}
 
           X+ Finds one or several letter X
+?
+          Occurs no or one times, ? is short for {0,1}.
+
+          X? finds no or exactly one letter X
