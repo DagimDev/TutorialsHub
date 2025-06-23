@@ -1,0 +1,7 @@
+Quantifiers
+        *
+          Occurs zero or more times, is short for {0,}
+
+          X* finds no or several letter x0b
+          .* finds any character sequence
+         * 0 or more occurrences
