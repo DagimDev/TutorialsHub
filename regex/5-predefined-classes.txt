@@ -3,3 +3,5 @@
           Any digit, short for [0-9]
 \D
           A non-digit, short for [^0-9]
+\s
+          A whitespace character, short for [ \t\n\x0b\r\f]
