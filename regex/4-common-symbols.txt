@@ -1,3 +1,5 @@
  Common Symbols 
         .
           Matches any character
+^regex  
+          Finds regex that must match at the beginning of the line.
