@@ -14,3 +14,7 @@ Quantifiers
           Occurs no or one times, ? is short for {0,1}.
 
           X? finds no or exactly one letter X
+ {X}
+          Occurs X number of times, {} describes the order of the preceding liberal
+
+          \d{3} searches for three digits, .{10} for any character sequence of length 10.
