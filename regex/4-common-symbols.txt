@@ -1,0 +1,3 @@
+ Common Symbols 
+        .
+          Matches any character
