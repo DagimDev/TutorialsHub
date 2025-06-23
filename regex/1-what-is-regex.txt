@@ -1,0 +1,12 @@
+Regular expression 
+****************** 
+
+  What is Regex?
+  ************** 
+    Definition 1: 
+      A sequence of symbols and characters expressing a string or pattern to be searched from within a longer piece of text.
+
+    Definition 2: 
+      A regular expression (regex) defines a search pattern for strings. The search pattern can be anything from a simple character, a fixed string or a complex expression containing special characters describing the pattern.
+    Definition 3:
+        Regular Expressions (regex or regexp) are powerful pattern-matching tools that allow you to search, manipulate, and validate text with incredible precision. They consist of a sequence of characters that define a search pattern, primarily used for string matching operations.
