@@ -1,0 +1,3 @@
+ Pre defined meta characters 
+ \d
+          Any digit, short for [0-9]
