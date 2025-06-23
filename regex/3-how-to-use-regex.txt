@@ -1,0 +1,20 @@
+ How do we use RegEx?
+  ********************
+ 
+    Basics 
+    ******* 
+
+      To use RegEx, we need three things. 
+        - The first one is the text that we do the search on.
+        - The second is the pattern that we use to search 
+        - The third one, a way to do the matching/searching 
+      
+        For ex: 
+          Example text: "Abebe beso belto tegna. Keza 911 dewele!" 
+
+          Question: What is the number that abebe called?
+            - To identify the number, we need to come up with some kind of pattern that uniquely identify the number 911 from the Example text. 
+
+              - The pattern we write should match only with the number 911.
+
+              - First thing we need to write is the matching pattern. 
