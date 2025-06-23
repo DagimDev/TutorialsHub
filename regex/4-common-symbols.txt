@@ -5,3 +5,5 @@
           Finds regex that must match at the beginning of the line.
 regex$
           Finds regex that must match at the end of the line.
+[abc]
+          Set definition, can match the letter a or b or c.
