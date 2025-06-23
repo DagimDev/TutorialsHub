@@ -18,3 +18,4 @@ Quantifiers
           Occurs X number of times, {} describes the order of the preceding liberal
 
           \d{3} searches for three digits, .{10} for any character sequence of length 10.
+{n,} n or more occurrences
