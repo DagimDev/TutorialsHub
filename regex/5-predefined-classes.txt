@@ -5,3 +5,4 @@
           A non-digit, short for [^0-9]
 \s
           A whitespace character, short for [ \t\n\x0b\r\f]
+\w word character (a-z, A-Z, 0-9, _)
