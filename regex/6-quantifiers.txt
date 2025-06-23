@@ -5,3 +5,8 @@ Quantifiers
           X* finds no or several letter x0b
           .* finds any character sequence
          * 0 or more occurrences
++
+          Occurs 
+           One or more times, is short for {1,}
+
+          X+ Finds one or several letter X
