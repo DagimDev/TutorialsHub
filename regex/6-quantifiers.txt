@@ -19,3 +19,8 @@ Quantifiers
 
           \d{3} searches for three digits, .{10} for any character sequence of length 10.
 {n,} n or more occurrences
+ {X,Y}
+
+          Occurs between X and Y times,
+          
+          \d{1,4} means \d must occur at least once and at a maximum of four.
