@@ -3,3 +3,21 @@
       - In JavaScript, regular expressions are objects (RegExp). Just like Arrays. There are methods inside of the object that we can use to help us with the matching. The exec() and test() methods are the main ones. 
 
       - To start using RegEx in JavaScript, we need to create the expression object first. We can use the literal or the constructor method to create the object. 
+Syntax
+      ****** 
+        let var = /pattern/modifiers;
+
+        Ex: 
+          let re = /ab+c/i; // literal notation
+          let re = new RegExp('ab+c', 'i') // 
+
+
+          - The "pattern" is the sequence we use to filter
+            - It is composed of simple characters and/or a combination of simple and special characters.
+            - When you search for data in a text, you can use this search pattern to describe what you are searching for.
+
+          - The "modifiers" are just to describe if the search is global or case-sensitive 
+        
+          Ex: 
+            var someVar = /abebe/i; 
+            - This is a pattern that can be used to match for the word "abebe"
