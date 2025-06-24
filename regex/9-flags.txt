@@ -2,3 +2,6 @@
         Flags in RegEx are ways of providing further information on how to do the searching. 
 
         There are 6 RegEx flags in JavaScript. But the most common ones are these two
+    i
+            With this flag the search is case-insensitive: 
+            no difference between A and a 
