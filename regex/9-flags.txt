@@ -5,3 +5,7 @@
     i
             With this flag the search is case-insensitive: 
             no difference between A and a 
+     g
+            With this flag the search looks for all matches, without it â€“ only the first match is returned.
+
+          - The default is usually to do case sensitive global matching 
