@@ -1,0 +1,5 @@
+ RegEx in JavaScript 
+    ******************* 
+      - In JavaScript, regular expressions are objects (RegExp). Just like Arrays. There are methods inside of the object that we can use to help us with the matching. The exec() and test() methods are the main ones. 
+
+      - To start using RegEx in JavaScript, we need to create the expression object first. We can use the literal or the constructor method to create the object. 
