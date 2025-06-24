@@ -1,0 +1,15 @@
+Using the RegExp Object
+      ************************ 
+
+        In JavaScript, the RegExp object is a regular expression object with predefined properties and methods.
+
+        Using test()
+        ************ 
+          The test() method takes a string as an argument,searches for a pattern, and returns true or false, depending on the result.
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
+
+            Ex: 
+              var str = "Abebe beso bela!";
+              var patt = /bela/i;
+              var result = patt.test(str); 
+              result is true 
