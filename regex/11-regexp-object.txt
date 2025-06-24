@@ -13,3 +13,12 @@ Using the RegExp Object
               var patt = /bela/i;
               var result = patt.test(str); 
               result is true 
+Using exec()
+        ************ 
+          The exec() method takes a string as an argument,searches for a pattern, and returns the found text as an object. If no match is found, it returns an empty (null) object.
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec
+
+            Ex: 
+              var str = "Abebe beso bela!";
+              var patt = /bela/i;
+              var result = patt.exec(str);  

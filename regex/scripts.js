@@ -16,3 +16,6 @@ console.log(str.match(/bE/ig))
 // Test object of regexp
 console.log(/be/gi.test(str)) // returns true
 console.log(/teta/gi.test(str)) // returns false
+
+// Exec object of regexp
+console.log(/beso/gi.exec(str))
