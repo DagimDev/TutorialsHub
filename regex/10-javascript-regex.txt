@@ -48,3 +48,19 @@ Syntax
                 var n = str.search(/Beso/i);
 
                 n is 6
+Using String replace()
+        ********************** 
+          - The replace() method takes two arguments and returns a new string with some or all matches of a pattern replaced by a replacement. 
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+          Ex: 
+            var str = "Abebe beso bela!";
+            var n = str.replace("bela", "teta");
+
+            n is "Abebe beso teta!"
+
+          - We can also use regular expression to find the match that we want to replace 
+          
+            Ex: 
+              var str = "Abebe beso bela!";
+              var n = str.replace(/bela/i, "teta"); 
