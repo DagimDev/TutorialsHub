@@ -1,0 +1,4 @@
+ Flags 
+        Flags in RegEx are ways of providing further information on how to do the searching. 
+
+        There are 6 RegEx flags in JavaScript. But the most common ones are these two
