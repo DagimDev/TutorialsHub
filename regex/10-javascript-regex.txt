@@ -21,3 +21,30 @@ Syntax
           Ex: 
             var someVar = /abebe/i; 
             - This is a pattern that can be used to match for the word "abebe"
+ Using String Methods with RegEx 
+      ******************************* 
+
+        - Regular expressions are often used with string methods. The common String methods we use with regex are match(), search() and replace() methods.
+
+        Using String search()
+        ********************* 
+          The search() method searches a string for a specified value, and returns the position of the match.
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search
+
+          Ex: 
+            var str = "Abebe beso bela!";
+            var n = str.search("beso");
+
+            n is 6 
+        
+          Using String search() With a RegEx
+
+            - To use Regular expression inside of the search method, we can just replace the search string with a regular expression. 
+
+              - Let's say we needed to do a case sensitive search of the word "beso". We can do that as follows. 
+
+              Ex: 
+                var str = "Abebe beso bela!";
+                var n = str.search(/Beso/i);
+
+                n is 6
