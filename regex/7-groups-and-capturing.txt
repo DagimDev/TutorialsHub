@@ -1,3 +1,4 @@
 Groups and Capturing
     ( ) creates a capturing group
     (?: ) non-capturing group
+    | alternation (OR operator)
