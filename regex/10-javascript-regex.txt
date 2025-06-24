@@ -64,3 +64,11 @@ Using String replace()
             Ex: 
               var str = "Abebe beso bela!";
               var n = str.replace(/bela/i, "teta"); 
+ String match()
+        *********************  
+          - The match method takes regular expression as an argument and returns an Array whose contents depend on the presence or absence of the global (g) flag, or null if no matches are found.
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+
+            Ex: 
+              var str = "Abebe beso bela!";
+              var n = str.match(/bela/i);
