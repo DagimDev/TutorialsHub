@@ -9,3 +9,6 @@ for (let i = 0; i < 5; i++) console.log(i);
 
 // 4. Double array values using map
 console.log([1, 2, 3].map(n => n * 2));
+
+// 5. Create an object
+const user = { name: "Alice", age: 25 };
