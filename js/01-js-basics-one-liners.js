@@ -6,3 +6,6 @@ const add = (a, b) => a + b;
 
 // 3. Simple for loop
 for (let i = 0; i < 5; i++) console.log(i);
+
+// 4. Double array values using map
+console.log([1, 2, 3].map(n => n * 2));
