@@ -30,3 +30,6 @@ const status = age => age >= 18 ? "Adult" : "Minor";
 
 // 11. Destructuring
 const { name, age } = user;
+
+// 12. Spread operator
+const numbers = [1, 2, 3], more = [...numbers, 4];
