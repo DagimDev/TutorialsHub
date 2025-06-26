@@ -48,3 +48,6 @@ const multiple = (a, b) => a * b;
 
 // Divide two numbers
 const divide = (a, b) => a / b;
+
+// Substract two numbers
+const substract = (a, b) => a - b
