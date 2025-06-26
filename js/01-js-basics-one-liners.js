@@ -27,3 +27,6 @@ const greet = name => `Hello, ${name}!`;
 
 // 10. Ternary condition
 const status = age => age >= 18 ? "Adult" : "Minor";
+
+// 11. Destructuring
+const { name, age } = user;
