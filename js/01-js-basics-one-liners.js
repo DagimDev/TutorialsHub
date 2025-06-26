@@ -21,3 +21,6 @@ console.log([1, -2, 3, -4].filter(n => n > 0));
 
 // 8. Arrow function square
 const square = x => x * x;
+
+// 9. Template literal
+const greet = name => `Hello, ${name}!`;
