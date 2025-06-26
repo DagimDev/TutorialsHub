@@ -36,3 +36,6 @@ const numbers = [1, 2, 3], more = [...numbers, 4];
 
 // 13. Default parameter
 const sayHi = (name = "Guest") => `Hi, ${name}`;
+
+// 14. Optional chaining
+const city = user?.address?.city;
