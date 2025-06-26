@@ -42,3 +42,6 @@ const city = user?.address?.city;
 
 // 15. Nullish coalescing
 const username = null ?? "Anonymous";
+
+// Multiple two numbers
+const multiple = (a, b) => a * b;
