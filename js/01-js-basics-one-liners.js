@@ -63,3 +63,4 @@ const str2 = "hello"
 console.log(str1.concat(...str2))
 
 // isArray to chek if it's array
+// toString change into string
