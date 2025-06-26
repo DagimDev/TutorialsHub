@@ -24,3 +24,6 @@ const square = x => x * x;
 
 // 9. Template literal
 const greet = name => `Hello, ${name}!`;
+
+// 10. Ternary condition
+const status = age => age >= 18 ? "Adult" : "Minor";
