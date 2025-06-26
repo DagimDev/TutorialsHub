@@ -45,3 +45,6 @@ const username = null ?? "Anonymous";
 
 // Multiple two numbers
 const multiple = (a, b) => a * b;
+
+// Divide two numbers
+const divide = (a, b) => a / b;
