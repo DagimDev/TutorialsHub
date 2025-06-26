@@ -61,3 +61,5 @@ console.log([1, -2, 3, -4].filter(n => n < 0));
 const str1 = "hello"
 const str2 = "hello"
 console.log(str1.concat(...str2))
+
+// isArray to chek if it's array
