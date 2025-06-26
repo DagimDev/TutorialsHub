@@ -51,3 +51,6 @@ const divide = (a, b) => a / b;
 
 // Substract two numbers
 const substract = (a, b) => a - b
+
+// Filter negative numbers
+console.log([1, -2, 3, -4].filter(n => n < 0));
