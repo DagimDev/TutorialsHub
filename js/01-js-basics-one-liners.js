@@ -54,3 +54,8 @@ const substract = (a, b) => a - b
 
 // Filter negative numbers
 console.log([1, -2, 3, -4].filter(n => n < 0));
+
+// concat() to concatination
+const str1 = "hello"
+const str2 = "hello"
+console.log(str1.concat(...str2))
