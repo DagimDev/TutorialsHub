@@ -1,0 +1,2 @@
+Error objects
+Error objects are a special type of fundamental object. They include the basic Error type, as well as several specialized error types.
