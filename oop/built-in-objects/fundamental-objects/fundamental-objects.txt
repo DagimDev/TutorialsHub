@@ -25,3 +25,6 @@ Represents the arguments passed to this function. For strict, arrow, async, and 
 Function.prototype.caller 
 Deprecated Non-standard
 Represents the function that invoked this function. For strict, arrow, async, and generator functions, accessing the caller property throws a TypeError.
+
+Function.prototype.constructor
+The constructor function that created the instance object. For Function instances, the initial value is the Function constructor.
