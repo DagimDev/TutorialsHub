@@ -34,3 +34,6 @@ The display name of the function.
 
 length
 Specifies the number of arguments expected by the function.
+
+name
+The name of the function.
