@@ -28,3 +28,6 @@ Represents the function that invoked this function. For strict, arrow, async, an
 
 Function.prototype.constructor
 The constructor function that created the instance object. For Function instances, the initial value is the Function constructor.
+
+displayName 
+The display name of the function.
