@@ -9,3 +9,5 @@ localStorage Methods
         const userObj = JSON.parse(storedData);
         console.log(userObj.name); // "Alice"
     }
+3. Removing from localStorage
+    localStorage.removeItem("userData");
