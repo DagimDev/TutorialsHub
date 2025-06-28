@@ -14,3 +14,6 @@ The Function object provides methods for functions. In JavaScript, every functio
 Constructor
 Function()
 Creates a new Function object. Calling the constructor directly can create functions dynamically but suffers from security and similar (but far less significant) performance issues to eval(). However, unlike eval(), the Function constructor creates functions that execute in the global scope only.
+
+Instance properties
+These properties are defined on Function.prototype and shared by all Function instances.
