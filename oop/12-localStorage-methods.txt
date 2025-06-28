@@ -1,2 +1,5 @@
 localStorage Methods
     localStorage allows you to store data in the browser persistently (even after closing the browser). It only stores strings, so we use JSON.stringify() and JSON.parse() to work with objects.
+1. Saving to localStorage
+    const user = { name: "Alice", age: 25 };
+    localStorage.setItem("userData", JSON.stringify(user));
