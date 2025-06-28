@@ -7,3 +7,6 @@ Changes to the Object.prototype object are seen by all objects through prototype
 
 Object prototype properties
 You should avoid calling any of the Object.prototype methods directly from the instance, especially those that are not intended to be polymorphic (i.e., only its initial behavior makes sense and no descending object could override it in a meaningful way). All objects descending from Object.prototype may define a custom own property that has the same name, but with entirely different semantics from what you expect. Furthermore, these properties are not inherited by null-prototype objects. All modern JavaScript utilities for working with objects are static. More specifically:
+
+Function
+The Function object provides methods for functions. In JavaScript, every function is actually a Function object.
