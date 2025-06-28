@@ -6,3 +6,6 @@ Error objects are thrown when runtime errors occur. The Error object can also be
 
 Description
 Runtime errors result in new Error objects being created and thrown.
+
+Error types
+Besides the generic Error constructor, there are other core error constructors in JavaScript. For client-side exceptions, see Exception handling statements.
