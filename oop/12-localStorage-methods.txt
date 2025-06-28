@@ -11,3 +11,5 @@ localStorage Methods
     }
 3. Removing from localStorage
     localStorage.removeItem("userData");
+4. Clearing all localStorage
+    localStorage.clear(); // Deletes everything
