@@ -31,3 +31,6 @@ The constructor function that created the instance object. For Function instance
 
 displayName 
 The display name of the function.
+
+length
+Specifies the number of arguments expected by the function.
