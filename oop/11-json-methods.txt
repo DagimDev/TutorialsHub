@@ -1,0 +1,2 @@
+JSON Methods
+JSON (JavaScript Object Notation) is used to convert JavaScript objects to strings and vice versa. The two main methods are:
