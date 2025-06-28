@@ -6,3 +6,10 @@ Example
     const user = { name: "John", age: 30 };
     const userString = JSON.stringify(user);
     console.log(userString); // '{"name":"John","age":30}'
+
+2. JSON.parse()
+    Converts a JSON string back to a JavaScript object.
+Example
+    const jsonString = '{"name":"John","age":30}';
+    const userObj = JSON.parse(jsonString);
+    console.log(userObj.name); // "John"
