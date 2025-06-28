@@ -3,3 +3,9 @@ localStorage Methods
 1. Saving to localStorage
     const user = { name: "Alice", age: 25 };
     localStorage.setItem("userData", JSON.stringify(user));
+2. Retrieving from localStorage
+    const storedData = localStorage.getItem("userData");
+    if (storedData) {
+        const userObj = JSON.parse(storedData);
+        console.log(userObj.name); // "Alice"
+    }
