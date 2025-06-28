@@ -17,3 +17,6 @@ Creates a new Function object. Calling the constructor directly can create funct
 
 Instance properties
 These properties are defined on Function.prototype and shared by all Function instances.
+
+Function.prototype.arguments Deprecated Non-standard
+Represents the arguments passed to this function. For strict, arrow, async, and generator functions, accessing the arguments property throws a TypeError. Use the arguments object inside function closures instead.
