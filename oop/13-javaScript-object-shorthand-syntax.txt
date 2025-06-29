@@ -13,3 +13,20 @@ const name = 'John';
 
 // Shorthand
 const user = { name, age };
+
+2. Method Shorthand (ES6+)
+For defining methods in objects:
+
+// Long way
+const calculator = {
+  add: function(a, b) {
+    return a + b;
+  }
+};
+
+// Shorthand
+const calculator = {
+  add(a, b) {
+    return a + b;
+  }
+};
