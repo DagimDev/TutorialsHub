@@ -30,3 +30,17 @@ const calculator = {
     return a + b;
   }
 };
+
+3. Computed Property Names (ES6+)
+When you need dynamic property names:
+
+javascript
+const key = 'username';
+const value = 'js_developer';
+
+// Long way
+const obj = {};
+obj[key] = value;
+
+// Shorthand
+const obj = { [key]: value };
