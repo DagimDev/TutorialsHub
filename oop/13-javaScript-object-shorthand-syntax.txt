@@ -70,3 +70,16 @@ const clone = { ...obj1 };
 
 // Merge objects
 const merged = { ...obj1, ...obj2 };
+
+6. Short-circuit Evaluation for Defaults
+Set default values concisely:
+
+javascript
+const options = { timeout: undefined };
+
+// Long way
+const timeout = options.timeout !== undefined ? options.timeout : 1000;
+
+// Shorthand
+const timeout = options.timeout || 1000; // OR operator
+const timeout = options.timeout ?? 1000; // Nullish coalescing (better for falsy values)
