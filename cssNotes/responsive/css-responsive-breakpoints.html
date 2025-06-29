@@ -6,3 +6,23 @@ CSS Responsive Breakpoints: A Deep Explanation for Web Developers
     Improve readability and usability.
     Optimize content layout for different screen sizes.
     Enhance performance by loading appropriate styles.
+3. Common Breakpoint Approaches
+a) Device-Based Breakpoints (Traditional Approach)
+Historically, breakpoints were based on common device sizes:
+
+css
+/* Mobile (Portrait) */
+@media (max-width: 480px) { ... }
+
+/* Mobile (Landscape) & Small Tablets */
+@media (max-width: 767px) { ... }
+
+/* Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 1023px) { ... }
+
+/* Desktops & Laptops */
+@media (min-width: 1024px) and (max-width: 1199px) { ... }
+
+/* Large Screens */
+@media (min-width: 1200px) { ... }
+Problem: Device sizes constantly change, making this approach less future-proof.
