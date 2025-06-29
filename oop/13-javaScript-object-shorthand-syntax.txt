@@ -1,2 +1,15 @@
 JavaScript Object Shorthand Syntax
     JavaScript provides several handy shorthand notations for working with objects that can make your code cleaner and more concise. Here are the most useful ones:
+1. Property Value Shorthand (ES6+)
+When the property name matches the variable name:
+
+// Long way
+const name = 'John';
+    const age = 30;
+    const user = {
+        name: name,
+        age: age
+    };
+
+// Shorthand
+const user = { name, age };
