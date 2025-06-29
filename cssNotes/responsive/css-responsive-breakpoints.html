@@ -26,3 +26,17 @@ css
 /* Large Screens */
 @media (min-width: 1200px) { ... }
 Problem: Device sizes constantly change, making this approach less future-proof.
+
+b) Content-Based Breakpoints (Recommended)
+Instead of targeting devices, adjust layouts when the content starts to break:
+
+css
+/* Small devices (phones, up to 600px) */
+@media (max-width: 600px) { ... }
+
+/* Medium devices (tablets, 601px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) { ... }
+
+/* Large devices (desktops, 901px and up) */
+@media (min-width: 901px) { ... }
+Advantage: More flexible and maintainable.
