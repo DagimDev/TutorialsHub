@@ -44,3 +44,16 @@ obj[key] = value;
 
 // Shorthand
 const obj = { [key]: value };
+
+. Object Destructuring
+Extract properties into variables:
+
+javascript
+const user = { name: 'Alice', age: 25 };
+
+// Long way
+const name = user.name;
+const age = user.age;
+
+// Shorthand
+const { name, age } = user;
