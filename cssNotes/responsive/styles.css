@@ -1,0 +1,18 @@
+/* Base (Mobile) Styles */
+body {
+  font-size: 14px;
+}
+/* Tablet & Up */
+@media (min-width: 768px) {
+  body {
+    background: #31f341;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: #f1ff2b;
+    font-size: 18px;
+  }
+}

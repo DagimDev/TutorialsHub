@@ -40,3 +40,21 @@ css
 /* Large devices (desktops, 901px and up) */
 @media (min-width: 901px) { ... }
 Advantage: More flexible and maintainable.
+
+4. Best Practices for Breakpoints
+a) Mobile-First Approach
+Start styling for mobile (max-width) and then scale up (min-width).
+
+css
+/* Base (Mobile) Styles */
+body { font-size: 14px; }
+
+/* Tablet & Up */
+@media (min-width: 768px) {
+  body { font-size: 16px; }
+}
+
+/* Desktop & Up */
+@media (min-width: 1024px) {
+  body { font-size: 18px; }
+}
