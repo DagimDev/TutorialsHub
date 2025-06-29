@@ -1,0 +1,2 @@
+JavaScript Object Shorthand Syntax
+    JavaScript provides several handy shorthand notations for working with objects that can make your code cleaner and more concise. Here are the most useful ones:
