@@ -11,3 +11,12 @@ prompt()
 // Asks for user input, returns the entered string.
 
 const name = prompt("Your name?");
+
+// 2. Event Scheduling
+requestAnimationFrame() // (Optimized for animations)
+
+function animate() {
+  console.log("Frame");
+  requestAnimationFrame(animate);
+}
+animate();
