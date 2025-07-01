@@ -35,3 +35,4 @@ function start() {
   // To cancel:
   // clearInterval(intervalId);
 }
+
