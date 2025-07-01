@@ -3,3 +3,7 @@
 require() // (CommonJS imports)
 
 const fs = require("fs");
+
+// setImmediate() (Runs after current event loop)
+
+setImmediate(() => console.log("Runs soon"));
