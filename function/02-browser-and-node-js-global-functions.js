@@ -26,3 +26,13 @@ isNaN("Hello"); // true
 isFinite() // (Checks if a value is a finite number)
 
 isFinite(Infinity); // false
+
+// 4. JSON Handling
+JSON.parse()
+// Converts a JSON string to an object.
+
+JSON.parse('{"name": "Alice"}'); // { name: "Alice" }
+JSON.stringify()
+// Converts an object to a JSON string.
+
+JSON.stringify({ name: "Alice" }); // '{"name":"Alice"}'
