@@ -18,3 +18,11 @@ Function() // (Safer than eval but still risky)
 
 const sum = new Function("a", "b", "return a + b");
 sum(2, 3); // 5
+
+// 3. Numeric Checks
+isNaN() // (Checks if a value is NaN)
+
+isNaN("Hello"); // true
+isFinite() // (Checks if a value is a finite number)
+
+isFinite(Infinity); // false
