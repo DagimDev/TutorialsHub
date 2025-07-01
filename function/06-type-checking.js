@@ -10,3 +10,9 @@ typeof 42; // "number"
 // Checks if an object is an instance of a constructor.
 
 [] instanceof Array; // true
+
+// Array.isArray()
+
+// Safely check if a value is an array.
+
+Array.isArray([]); // true
