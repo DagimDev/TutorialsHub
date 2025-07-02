@@ -56,3 +56,12 @@ javascript
 document.getElementById('touchArea').addEventListener('touchstart', (e) => {
     console.log('Touch started at:', e.touches[0].clientX);
 });
+
+
+Animation Events (animationstart, animationend)
+Example:
+
+javascript
+document.getElementById('animatedBox').addEventListener('animationend', () => {
+    console.log('Animation finished!');
+});
