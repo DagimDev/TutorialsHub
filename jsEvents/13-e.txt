@@ -20,3 +20,10 @@ Example:
 document.getElementById('copyText').addEventListener('copy', () => {
     console.log('Text copied to clipboard!');
 });
+
+Input Event (Real-time Input Changes)
+Example:
+
+document.getElementById('liveInput').addEventListener('input', (e) => {
+    console.log('Current input:', e.target.value);
+});
