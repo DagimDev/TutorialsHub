@@ -5,3 +5,11 @@ javascript
 document.getElementById('mySelect').addEventListener('change', (e) => {
     console.log(`Selected: ${e.target.value}`);
 });
+
+Paste Event (paste on Input/Textarea)
+Example:
+
+document.getElementById('textInput').addEventListener('paste', (e) => {
+    const pastedText = e.clipboardData.getData('text');
+    console.log('Pasted:', pastedText);
+});
