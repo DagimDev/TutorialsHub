@@ -13,3 +13,10 @@ document.getElementById('textInput').addEventListener('paste', (e) => {
     const pastedText = e.clipboardData.getData('text');
     console.log('Pasted:', pastedText);
 });
+
+14. Copy/Cut Events (copy, cut)
+Example:
+
+document.getElementById('copyText').addEventListener('copy', () => {
+    console.log('Text copied to clipboard!');
+});
