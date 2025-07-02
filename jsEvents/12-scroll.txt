@@ -1,0 +1,7 @@
+Scroll Event
+Example:
+
+javascript
+window.addEventListener('scroll', () => {
+    console.log('User is scrolling!');
+});
