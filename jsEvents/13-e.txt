@@ -27,3 +27,23 @@ Example:
 document.getElementById('liveInput').addEventListener('input', (e) => {
     console.log('Current input:', e.target.value);
 });
+
+
+Drag & Drop Events (dragstart, dragover, drop)
+Example:
+
+javascript
+const draggable = document.getElementById('draggable');
+const dropzone = document.getElementById('dropzone');
+
+draggable.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', e.target.id);
+});
+
+dropzone.addEventListener('dragover', (e) => e.preventDefault());
+
+dropzone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    const id = e.dataTransfer.getData('text/plain');
+    dropzone.appendChild(document.getElementById(id));
+});
