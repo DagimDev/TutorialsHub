@@ -47,3 +47,12 @@ dropzone.addEventListener('drop', (e) => {
     const id = e.dataTransfer.getData('text/plain');
     dropzone.appendChild(document.getElementById(id));
 });
+
+
+Touch Events (touchstart, touchend, touchmove)
+Example:
+
+javascript
+document.getElementById('touchArea').addEventListener('touchstart', (e) => {
+    console.log('Touch started at:', e.touches[0].clientX);
+});
