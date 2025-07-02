@@ -117,3 +117,12 @@ javascript
 document.addEventListener('visibilitychange', () => {
     console.log('Tab is:', document.hidden ? 'Hidden' : 'Visible');
 });
+
+
+Wheel/Scroll Event (wheel for Mouse Wheel)
+Example:
+
+javascript
+document.addEventListener('wheel', (e) => {
+    console.log('Scrolling:', e.deltaY > 0 ? 'Down' : 'Up');
+});
