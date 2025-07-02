@@ -92,3 +92,11 @@ javascript
 window.addEventListener('hashchange', () => {
     console.log('New hash:', window.location.hash);
 });
+
+Fullscreen Events (fullscreenchange)
+Example:
+
+javascript
+document.addEventListener('fullscreenchange', () => {
+    console.log('Fullscreen mode:', document.fullscreenElement ? 'ON' : 'OFF');
+});
