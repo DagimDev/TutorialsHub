@@ -20,3 +20,10 @@ javascript
 document.getElementById('myInput').addEventListener('keydown', (e) => {
     console.log(`Key pressed: ${e.key}`);
 });
+
+Mouseover / Mouseout Event
+Example:
+
+document.getElementById('hoverElement').addEventListener('mouseover', () => {
+    console.log('Mouse over element!');
+});
