@@ -6,6 +6,7 @@ const updateCalculation = (value) => {
 
 function displayCalculation() {
   document.querySelector(".display-calculation").innerHTML = calculation;
+  localStorage.setItem("calculation", JSON.stringify(calculation))
 }
 
 const calculateResult = () => {
@@ -13,3 +14,10 @@ const calculateResult = () => {
   console.log(calculation);
   localStorage.setItem("calculation", JSON.stringify(calculation))
 };
+
+
+const clearCalculation = () => {
+  calculation = ""
+  localStorage.removeItem("calculation")
+  console.log(calculation)
+}
