@@ -100,3 +100,11 @@ javascript
 document.addEventListener('fullscreenchange', () => {
     console.log('Fullscreen mode:', document.fullscreenElement ? 'ON' : 'OFF');
 });
+
+
+ Online/Offline Events (Network Status)
+Example:
+
+javascript
+window.addEventListener('offline', () => console.log('You are offline!'));
+window.addEventListener('online', () => console.log('Back online!'));
