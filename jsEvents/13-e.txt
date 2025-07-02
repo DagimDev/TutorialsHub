@@ -65,3 +65,11 @@ javascript
 document.getElementById('animatedBox').addEventListener('animationend', () => {
     console.log('Animation finished!');
 });
+
+Transition Events (transitionend)
+Example:
+
+javascript
+document.getElementById('fadeElement').addEventListener('transitionend', () => {
+    console.log('Transition completed!');
+});
