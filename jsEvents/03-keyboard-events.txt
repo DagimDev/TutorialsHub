@@ -12,3 +12,11 @@ in printing characters on the screen, but the keydown event will fire if a user 
 keys.
 • Note: The keydown and keypress events fire before a character appears on the screen, the
 keyup fires after it shows.
+
+ Keydown / Keyup Event
+Example:
+
+javascript
+document.getElementById('myInput').addEventListener('keydown', (e) => {
+    console.log(`Key pressed: ${e.key}`);
+});
