@@ -1,0 +1,7 @@
+Change Event (for Inputs, Selects)
+Example:
+
+javascript
+document.getElementById('mySelect').addEventListener('change', (e) => {
+    console.log(`Selected: ${e.target.value}`);
+});
