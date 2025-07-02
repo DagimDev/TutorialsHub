@@ -108,3 +108,12 @@ Example:
 javascript
 window.addEventListener('offline', () => console.log('You are offline!'));
 window.addEventListener('online', () => console.log('Back online!'));
+
+
+Visibility Change (Tab Switching Detection)
+Example:
+
+javascript
+document.addEventListener('visibilitychange', () => {
+    console.log('Tab is:', document.hidden ? 'Hidden' : 'Visible');
+});
