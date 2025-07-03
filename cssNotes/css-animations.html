@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css animations</title>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 3;
+        }
+      }
+      .element {
+        animation: fadeIn 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animations</h1>
+    <div>
+      What it does: Animations allow multi-step, complex movements using
+      @keyframes. Unlike transitions, they don’t need a trigger (like :hover)
+      and can loop infinitely.
+    </div>
+    <div>
+      1. @keyframes Rule css /* Defines the animation sequence */ @keyframes
+      fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </div>
+    <div class="element">div</div>
+  </body>
+</html>
