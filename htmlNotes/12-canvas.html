@@ -108,6 +108,17 @@
         ctx.fillStyle = "blue";
         ctx.fillRect(x - 10, y - 10, 20, 20);
       });
+
+      // Create canvas clearing utility function
+      function clearCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+
+      // With optional background color
+      function clearCanvasWithColor(color = "white") {
+        ctx.fillStyle = color;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
     </script>
   </body>
 </html>
