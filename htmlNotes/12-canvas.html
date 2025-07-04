@@ -56,6 +56,13 @@
       img.onload = function () {
         ctx.drawImage(img, 0, 0);
       };
+
+      // Add canvas transformation methods
+      ctx.save();
+      ctx.translate(100, 100);
+      ctx.rotate(Math.PI / 4); // 45 degrees
+      ctx.fillRect(0, 0, 50, 50);
+      ctx.restore();
     </script>
   </body>
 </html>
