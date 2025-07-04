@@ -96,6 +96,18 @@
         // ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.fillRect(x - 25, y - 25, 50, 50);
       });
+
+      // Add touch event support for mobile
+      canvas.addEventListener("touchmove", (e) => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        const rect = canvas.getBoundingClientRect();
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x - 10, y - 10, 20, 20);
+      });
     </script>
   </body>
 </html>
