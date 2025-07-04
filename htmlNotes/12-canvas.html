@@ -73,6 +73,19 @@
         requestAnimationFrame(animate);
       }
       animate();
+
+      // Optimize canvas rendering performance
+      // Use offscreen canvas for complex drawings
+      const bufferCanvas = document.createElement("canvas");
+      bufferCanvas.width = canvas.width;
+      bufferCanvas.height = canvas.height;
+      const bufferCtx = bufferCanvas.getContext("2d");
+
+      // Draw everything to buffer first
+      bufferCtx.fillRect(0, 0, 100, 100);
+
+      // Then draw to main canvas
+      ctx.drawImage(bufferCanvas, 0, 0);
     </script>
   </body>
 </html>
