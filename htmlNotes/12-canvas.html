@@ -37,6 +37,13 @@
       ctx.lineTo(300, 200);
       ctx.closePath();
       ctx.stroke();
+
+      // Implement stroke and fill style controls
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = "blue";
+      ctx.fillStyle = "rgba(255, 0, 0, 0.5)";
+      ctx.fillRect(50, 50, 100, 100);
+      ctx.strokeRect(50, 50, 100, 100);
     </script>
   </body>
 </html>
