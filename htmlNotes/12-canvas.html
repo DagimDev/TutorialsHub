@@ -28,7 +28,15 @@
         ctx.fillStyle = color;
         ctx.fillRect(x, y, width, height);
       }
-      drawRectangle(0, 0, 20, 20, "green")
+      drawRectangle(0, 0, 20, 20, "green");
+
+      // Draw a triangle
+      ctx.beginPath();
+      ctx.moveTo(100, 100);
+      ctx.lineTo(100, 300);
+      ctx.lineTo(300, 200);
+      ctx.closePath();
+      ctx.stroke();
     </script>
   </body>
 </html>
