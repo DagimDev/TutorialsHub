@@ -63,6 +63,16 @@
       ctx.rotate(Math.PI / 4); // 45 degrees
       ctx.fillRect(0, 0, 50, 50);
       ctx.restore();
+
+      // Create animation loop with requestAnimationFrame
+      let x = 0;
+      function animate() {
+        // ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillRect(x, 320, 50, 50);
+        x += 2;
+        requestAnimationFrame(animate);
+      }
+      animate();
     </script>
   </body>
 </html>
