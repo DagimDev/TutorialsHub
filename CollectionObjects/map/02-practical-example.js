@@ -34,3 +34,9 @@ userPreferences.delete('oldPreference');
 function resetPreferences() {
   userPreferences.clear();
 }
+
+// Add Map iteration with forEach
+
+userPreferences.forEach((value, key) => {
+  console.log(`${key}: ${value}`);
+});
