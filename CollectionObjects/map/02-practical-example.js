@@ -40,3 +40,9 @@ function resetPreferences() {
 userPreferences.forEach((value, key) => {
   console.log(`${key}: ${value}`);
 });
+
+// Implement Map iteration with for...of
+
+for (let [key, value] of userPreferences) {
+  console.log(key, value);
+}
