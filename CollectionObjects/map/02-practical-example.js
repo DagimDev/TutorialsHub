@@ -52,3 +52,7 @@ for (let [key, value] of userPreferences) {
 for (let key of userPreferences.keys()) {
   console.log('Key:', key);
 }
+
+// Implement Map values iteration
+
+const allValues = [...userPreferences.values()];
