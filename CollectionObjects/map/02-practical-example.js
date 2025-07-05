@@ -56,3 +56,7 @@ for (let key of userPreferences.keys()) {
 // Implement Map values iteration
 
 const allValues = [...userPreferences.values()];
+
+// Add Map to array conversion
+
+const preferencesArray = Array.from(userPreferences);
