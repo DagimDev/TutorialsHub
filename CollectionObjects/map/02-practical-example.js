@@ -46,3 +46,9 @@ userPreferences.forEach((value, key) => {
 for (let [key, value] of userPreferences) {
   console.log(key, value);
 }
+
+// Add Map keys iteration
+
+for (let key of userPreferences.keys()) {
+  console.log('Key:', key);
+}
