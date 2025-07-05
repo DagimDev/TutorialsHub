@@ -24,3 +24,7 @@ if (userPreferences.size > 5) {
 if (!userPreferences.has('notifications')) {
   userPreferences.set('notifications', 'enabled');
 }
+
+// Add Map entry deletion
+
+userPreferences.delete('oldPreference');
