@@ -1,2 +1,26 @@
 What is a Map in JavaScript?
 A Map is a collection of key-value pairs where keys can be of any type (unlike Objects which only allow strings/Symbols as keys). Maps maintain insertion order and provide useful methods for manipulation.
+
+Basic Map Operations
+// Creating a Map
+const myMap = new Map();
+
+// Adding entries
+myMap.set('name', 'John');
+myMap.set(1, 'number one');
+myMap.set({ id: 1 }, 'object key');
+
+// Getting values
+console.log(myMap.get('name')); // 'John'
+
+// Checking existence
+console.log(myMap.has('name')); // true
+
+// Deleting entries
+myMap.delete(1);
+
+// Size of Map
+console.log(myMap.size);
+
+// Clearing Map
+myMap.clear();
