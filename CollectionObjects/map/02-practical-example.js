@@ -60,3 +60,8 @@ const allValues = [...userPreferences.values()];
 // Add Map to array conversion
 
 const preferencesArray = Array.from(userPreferences);
+
+// Implement array to Map conversion
+
+const settingsArray = [['theme', 'dark'], ['language', 'en']];
+const settingsMap = new Map(settingsArray);
