@@ -18,3 +18,9 @@ function getUserTheme(preferences) {
 if (userPreferences.size > 5) {
   console.log('Many preferences saved');
 }
+
+// Implement Map existence check
+
+if (!userPreferences.has('notifications')) {
+  userPreferences.set('notifications', 'enabled');
+}
