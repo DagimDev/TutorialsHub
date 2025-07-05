@@ -6,3 +6,9 @@ const userPreferences = new Map();
 
 userPreferences.set('theme', 'dark');
 userPreferences.set('language', 'en');
+
+// Implement Map value retrieval
+
+function getUserTheme(preferences) {
+  return preferences.get('theme') || 'light';
+}
