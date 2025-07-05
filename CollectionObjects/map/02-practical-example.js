@@ -12,3 +12,9 @@ userPreferences.set('language', 'en');
 function getUserTheme(preferences) {
   return preferences.get('theme') || 'light';
 }
+
+// Add Map size checking
+
+if (userPreferences.size > 5) {
+  console.log('Many preferences saved');
+}
