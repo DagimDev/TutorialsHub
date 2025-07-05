@@ -28,3 +28,9 @@ if (!userPreferences.has('notifications')) {
 // Add Map entry deletion
 
 userPreferences.delete('oldPreference');
+
+// Implement Map clearing
+
+function resetPreferences() {
+  userPreferences.clear();
+}
