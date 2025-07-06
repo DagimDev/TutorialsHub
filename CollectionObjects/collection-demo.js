@@ -55,3 +55,18 @@ view[0] = 42;
 // 12: "Create DataView for mixed-type buffers"
 const dv = new DataView(buffer);
 dv.setFloat32(4, Math.PI);
+
+// 13: "Implement custom collection class"
+class RecentItems {
+  constructor(maxSize) {
+    this.items = new Set();
+    this.maxSize = maxSize;
+  }
+  add(item) {
+    if (this.items.size >= this.maxSize) {
+      const oldest = this.items.values().next().value;
+      this.items.delete(oldest);
+    }
+    this.items.add(item);
+  }
+}
