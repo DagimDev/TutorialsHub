@@ -36,3 +36,9 @@ class User {
     return _privateData.get(this).name;
   }
 }
+
+// 9: "Add WeakSet for object tracking"
+const deletedUsers = new WeakSet();
+function deleteUser(user) {
+  deletedUsers.add(user);
+}
