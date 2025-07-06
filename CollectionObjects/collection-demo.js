@@ -12,3 +12,7 @@ const filteredUsers = usersArray.filter(user => user.startsWith('A'));
 // 4: "Convert array to Set for uniqueness"
 const uniqueUsers = new Set(usersArray);
 uniqueUsers.add('Alice'); // Won't duplicate
+
+// 5: "Add Set operations (union, intersection)"
+const premiumUsers = new Set(['Alice', 'Eve']);
+const commonUsers = new Set([...uniqueUsers].filter(x => premiumUsers.has(x)));
