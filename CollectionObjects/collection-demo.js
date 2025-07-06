@@ -113,3 +113,12 @@ class ObservableSet extends Set {
 function serializeMap(map) {
   return JSON.stringify([...map]);
 }
+
+
+// 19: "Implement collection statistics"
+function collectionStats(collection) {
+  return {
+    size: collection.size || collection.length,
+    type: collection.constructor.name
+  };
+}
