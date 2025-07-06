@@ -90,3 +90,8 @@ class LRUCache {
     return value;
   }
 }
+
+// 16: "Add collection validation"
+function validateStringSet(set) {
+  return [...set].every(item => typeof item === 'string');
+}
