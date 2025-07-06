@@ -42,3 +42,7 @@ const deletedUsers = new WeakSet();
 function deleteUser(user) {
   deletedUsers.add(user);
 }
+
+// 10: "Implement typed arrays for analytics"
+const hourlyVisits = new Uint32Array(24);
+hourlyVisits[12] = 150; // Noon visits
