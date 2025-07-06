@@ -122,3 +122,11 @@ function collectionStats(collection) {
     type: collection.constructor.name
   };
 }
+
+
+// 20: "Add collection performance benchmarks"
+function benchmark(fn, iterations = 1000) {
+  const start = performance.now();
+  for (let i = 0; i < iterations; i++) fn();
+  return performance.now() - start;
+}
