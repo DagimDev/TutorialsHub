@@ -108,3 +108,8 @@ class ObservableSet extends Set {
     return this;
   }
 }
+
+// 18: "Add collection serialization"
+function serializeMap(map) {
+  return JSON.stringify([...map]);
+}
