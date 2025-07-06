@@ -95,3 +95,16 @@ class LRUCache {
 function validateStringSet(set) {
   return [...set].every(item => typeof item === 'string');
 }
+
+// 17: "Implement observable Set"
+class ObservableSet extends Set {
+  constructor(changeCallback) {
+    super();
+    this.changeCallback = changeCallback;
+  }
+  add(value) {
+    super.add(value);
+    this.changeCallback('add', value);
+    return this;
+  }
+}
