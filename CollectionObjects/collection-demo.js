@@ -51,3 +51,7 @@ hourlyVisits[12] = 150; // Noon visits
 const buffer = new ArrayBuffer(16);
 const view = new Int32Array(buffer);
 view[0] = 42;
+
+// 12: "Create DataView for mixed-type buffers"
+const dv = new DataView(buffer);
+dv.setFloat32(4, Math.PI);
