@@ -25,3 +25,14 @@ userMetadata.set('Alice', { lastLogin: new Date(), tier: 'premium' });
 for (const [name, data] of userMetadata) {
   console.log(`${name}: ${data.tier}`);
 }
+
+// 8: "Create WeakMap for private data"
+const _privateData = new WeakMap();
+class User {
+  constructor(name) {
+    _privateData.set(this, { name });
+  }
+  getName() {
+    return _privateData.get(this).name;
+  }
+}
