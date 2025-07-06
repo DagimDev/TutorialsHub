@@ -70,3 +70,9 @@ class RecentItems {
     this.items.add(item);
   }
 }
+
+// 14: "Add collection utilities"
+function mergeMaps(map1, map2) {
+  return new Map([...map1, ...map2]);
+}
+
