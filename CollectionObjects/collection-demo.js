@@ -20,3 +20,8 @@ const commonUsers = new Set([...uniqueUsers].filter(x => premiumUsers.has(x)));
 // 6: "Implement Map for user metadata"
 const userMetadata = new Map();
 userMetadata.set('Alice', { lastLogin: new Date(), tier: 'premium' });
+
+// 7: "Add Map iteration methods"
+for (const [name, data] of userMetadata) {
+  console.log(`${name}: ${data.tier}`);
+}
