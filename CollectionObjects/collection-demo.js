@@ -76,3 +76,17 @@ function mergeMaps(map1, map2) {
   return new Map([...map1, ...map2]);
 }
 
+// 15: "Implement LRU cache with Map"
+class LRUCache {
+  constructor(capacity) {
+    this.cache = new Map();
+    this.capacity = capacity;
+  }
+  get(key) {
+    if (!this.cache.has(key)) return null;
+    const value = this.cache.get(key);
+    this.cache.delete(key);
+    this.cache.set(key, value);
+    return value;
+  }
+}
