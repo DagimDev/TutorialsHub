@@ -46,3 +46,8 @@ function deleteUser(user) {
 // 10: "Implement typed arrays for analytics"
 const hourlyVisits = new Uint32Array(24);
 hourlyVisits[12] = 150; // Noon visits
+
+// 11: "Add ArrayBuffer for binary data"
+const buffer = new ArrayBuffer(16);
+const view = new Int32Array(buffer);
+view[0] = 42;
