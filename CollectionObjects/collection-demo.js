@@ -16,3 +16,7 @@ uniqueUsers.add('Alice'); // Won't duplicate
 // 5: "Add Set operations (union, intersection)"
 const premiumUsers = new Set(['Alice', 'Eve']);
 const commonUsers = new Set([...uniqueUsers].filter(x => premiumUsers.has(x)));
+
+// 6: "Implement Map for user metadata"
+const userMetadata = new Map();
+userMetadata.set('Alice', { lastLogin: new Date(), tier: 'premium' });
