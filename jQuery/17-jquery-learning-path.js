@@ -93,3 +93,11 @@ $('[data-toggle="tab"]').each(function() {
   const target = $(this).data('target');
   $(this).click(() => $(target).show());
 });
+
+// 9: "Implement input validation"
+$.fn.validateEmail = function() {
+  return this.filter(function() {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($(this).val());
+  });
+};
+$('#email-input').validateEmail();
