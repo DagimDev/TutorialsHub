@@ -87,3 +87,9 @@ $('a[href^="#"]').click(function(e) {
     scrollTop: $($(this).attr('href')).offset().top
   }, 500);
 });
+
+// 18: "Add data attribute handling"
+$('[data-toggle="tab"]').each(function() {
+  const target = $(this).data('target');
+  $(this).click(() => $(target).show());
+});
