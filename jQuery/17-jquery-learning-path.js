@@ -44,3 +44,8 @@ $.fn.highlight = function(color) {
   return this.css('background-color', color || '#ffff99');
 };
 $('.important').highlight();
+
+// 12: "Implement event delegation"
+$('#dynamic-list').on('click', '.item', function() {
+  $(this).toggleClass('selected');
+});
