@@ -49,3 +49,11 @@ $('.important').highlight();
 $('#dynamic-list').on('click', '.item', function() {
   $(this).toggleClass('selected');
 });
+
+// 13: "Add promise handling"
+$.when(
+  $.ajax('/api/user'),
+  $.ajax('/api/products')
+).then(function(userResp, productsResp) {
+  // Handle both responses
+});
