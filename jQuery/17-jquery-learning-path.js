@@ -6,3 +6,6 @@ const $buttons = $('.btn');
 $('#login-btn').click(function() {
   console.log('Button clicked!');
 });
+
+// 4: "Implement DOM manipulation"
+$('#title').text('Welcome Back').css('color', 'blue');
