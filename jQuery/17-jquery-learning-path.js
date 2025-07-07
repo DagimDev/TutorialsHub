@@ -57,3 +57,9 @@ $.when(
 ).then(function(userResp, productsResp) {
   // Handle both responses
 });
+
+// 14: "Implement localStorage integration"
+$('#save-btn').click(function() {
+  const content = $('#editor').val();
+  localStorage.setItem('draft', content);
+});
