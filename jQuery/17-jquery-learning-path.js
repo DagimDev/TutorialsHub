@@ -63,3 +63,11 @@ $('#save-btn').click(function() {
   const content = $('#editor').val();
   localStorage.setItem('draft', content);
 });
+
+// 15: "Add responsive design helpers"
+function checkViewport() {
+  if ($(window).width() < 768) {
+    $('nav').addClass('mobile');
+  }
+}
+$(window).resize(checkViewport);
