@@ -30,3 +30,6 @@ $('#contact-form').submit(function(e) {
   const formData = $(this).serialize();
   // Process form data
 });
+
+// 9: "Implement fade animations"
+$('#notification').fadeIn(500).delay(2000).fadeOut();
