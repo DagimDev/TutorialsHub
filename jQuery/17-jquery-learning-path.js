@@ -23,3 +23,10 @@ $('#list').append($newItem);
 $.get('https://api.example.com/data', function(response) {
   $('#content').html(response);
 });
+
+// 8: "Add form handling"
+$('#contact-form').submit(function(e) {
+  e.preventDefault();
+  const formData = $(this).serialize();
+  // Process form data
+});
