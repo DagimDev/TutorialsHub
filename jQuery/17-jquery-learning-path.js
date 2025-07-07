@@ -79,3 +79,11 @@ $.fn.openModal = function() {
 $('#close-modal').click(function() {
   $(this).closest('.modal').fadeOut();
 });
+
+// 17: "Implement smooth scrolling"
+$('a[href^="#"]').click(function(e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+  }, 500);
+});
