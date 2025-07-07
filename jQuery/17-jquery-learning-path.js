@@ -71,3 +71,11 @@ function checkViewport() {
   }
 }
 $(window).resize(checkViewport);
+
+// 16: "Create modal system"
+$.fn.openModal = function() {
+  return this.fadeIn(300).css('display', 'flex');
+};
+$('#close-modal').click(function() {
+  $(this).closest('.modal').fadeOut();
+});
