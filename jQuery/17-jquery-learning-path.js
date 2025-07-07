@@ -107,3 +107,8 @@ $('#email-input').validateEmail();
 
 // 2) Use find() instead of context
 $('#parent').find('.child').css('color', 'red');
+
+// 3) Detach before bulk operations
+const $list = $('#long-list').detach();
+// ... bulk operations
+$list.appendTo('body');
