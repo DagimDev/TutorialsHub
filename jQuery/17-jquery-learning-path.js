@@ -33,3 +33,8 @@ $('#contact-form').submit(function(e) {
 
 // 9: "Implement fade animations"
 $('#notification').fadeIn(500).delay(2000).fadeOut();
+
+// 10: "Add slide toggle effects"
+$('#toggle-btn').click(function() {
+  $('#sidebar').slideToggle();
+});
