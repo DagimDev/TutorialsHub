@@ -9,3 +9,8 @@ $('#login-btn').click(function() {
 
 // 4: "Implement DOM manipulation"
 $('#title').text('Welcome Back').css('color', 'blue');
+
+
+// 5: "Add class operations"
+$('.menu-item').addClass('active');
+$('#alert-box').removeClass('hidden');
