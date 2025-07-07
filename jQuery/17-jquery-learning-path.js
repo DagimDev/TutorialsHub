@@ -14,3 +14,7 @@ $('#title').text('Welcome Back').css('color', 'blue');
 // 5: "Add class operations"
 $('.menu-item').addClass('active');
 $('#alert-box').removeClass('hidden');
+
+// 6: "Create element and append"
+const $newItem = $('<li>').text('New Item').attr('data-id', 123);
+$('#list').append($newItem);
