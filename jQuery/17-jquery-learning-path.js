@@ -101,3 +101,7 @@ $.fn.validateEmail = function() {
   });
 };
 $('#email-input').validateEmail();
+
+// 20: "Optimize jQuery performance"
+// 1) Cache selectors
+const $cachedElements = $('#main, .sidebar, footer');
