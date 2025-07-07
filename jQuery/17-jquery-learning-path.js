@@ -38,3 +38,9 @@ $('#notification').fadeIn(500).delay(2000).fadeOut();
 $('#toggle-btn').click(function() {
   $('#sidebar').slideToggle();
 });
+
+// 11: "Create custom plugin"
+$.fn.highlight = function(color) {
+  return this.css('background-color', color || '#ffff99');
+};
+$('.important').highlight();
