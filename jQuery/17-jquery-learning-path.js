@@ -104,4 +104,6 @@ $('#email-input').validateEmail();
 
 // 20: "Optimize jQuery performance"
 // 1) Cache selectors
-const $cachedElements = $('#main, .sidebar, footer');
+
+// 2) Use find() instead of context
+$('#parent').find('.child').css('color', 'red');
