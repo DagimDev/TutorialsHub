@@ -18,3 +18,8 @@ $('#alert-box').removeClass('hidden');
 // 6: "Create element and append"
 const $newItem = $('<li>').text('New Item').attr('data-id', 123);
 $('#list').append($newItem);
+
+// 7: "Implement AJAX GET request"
+$.get('https://api.example.com/data', function(response) {
+  $('#content').html(response);
+});
