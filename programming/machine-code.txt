@@ -14,3 +14,23 @@ Processor-specific
 Extremely fast
 
 Human-unreadable
+
+2. Assembly Language
+What: Human-readable machine code with mnemonics
+
+Level: Low-level
+
+Example (x86):
+
+asm
+MOV AL, 61h       ; Load 61h into AL register
+ADD AX, BX        ; Add BX to AX
+Characteristics:
+
+1:1 with machine code
+
+Requires assembler
+
+Hardware-dependent
+
+Used in firmware/OS kernels
