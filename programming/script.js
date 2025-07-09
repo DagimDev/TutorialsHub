@@ -24,3 +24,10 @@
 // 3. DOM Events
 // git commit -m "Add click handler" -m "
 // document.getElementById('btn').addEventListener('click', handleClick)"
+
+//  4. Async Operations
+// git commit -m "Implement fetch API" -m "
+// async function getData() {
+//   const res = await fetch('/api')
+//   return res.json()
+// }"
