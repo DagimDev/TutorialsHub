@@ -31,3 +31,11 @@
 //   const res = await fetch('/api')
 //   return res.json()
 // }"
+
+// 5. Error Handling
+// git commit -m "Add API error handling" -m "
+// try {
+//   const data = await getData()
+// } catch (err) {
+//   showError(err)
+// }"
