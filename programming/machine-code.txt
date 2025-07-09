@@ -34,3 +34,10 @@ Requires assembler
 Hardware-dependent
 
 Used in firmware/OS kernels
+
+3. High-Level Compiled Languages
+What: Human-readable code → compiled to machine code
+
+Level: High-level
+
+Examples: C, C++, Go, Rust
