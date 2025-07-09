@@ -77,3 +77,22 @@ Example (Python):
 
 python
 print("Hello World")
+
+1. Assembly-like JS (Low-level Simulation)
+javascript
+// Simulating register operations
+const registers = { ax: 0, bx: 0, cx: 0 };
+
+function mov(target, value) {
+  registers[target] = value;
+}
+
+function add(target, source) {
+  registers[target] += registers[source];
+}
+
+// Usage:
+mov('ax', 5);
+mov('bx', 10);
+add('ax', 'bx');
+console.log(registers.ax); // 15
