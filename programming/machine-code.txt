@@ -65,3 +65,15 @@ What: Code executed line-by-line at runtime
 Level: High-level
 
 Examples: Python, JavaScript, Ruby
+Characteristics:
+
+Platform-independent
+
+Slower than compiled
+
+No separate compilation step
+
+Example (Python):
+
+python
+print("Hello World")
