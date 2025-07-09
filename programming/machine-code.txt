@@ -111,3 +111,14 @@ function createUser(id: number, name: string): User {
 
 // Type checking at compile time
 const user = createUser(1, "Alice");
+
+3. Interpreted JS Features
+javascript
+// Dynamic interpreted behavior
+function dynamicAdd(a, b) {
+  return a + b;
+}
+
+// Works with any type at runtime
+console.log(dynamicAdd(2, 3));     // 5
+console.log(dynamicAdd("2", "3")); // "23"
