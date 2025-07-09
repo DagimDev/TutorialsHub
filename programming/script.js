@@ -10,3 +10,7 @@
 // Asynchronous Operations - Using promises, async/await
 
 // Application State - Managing data flow and reactivity
+
+// 1. Project setup
+// git commit -m "Initialize npm package" -m "npm init -y"
+// git commit -m "Add webpack config" -m "Basic webpack.config.js"
