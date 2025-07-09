@@ -1,0 +1,16 @@
+1. Machine Code (Binary)
+What: Direct CPU instructions in binary (1s/0s)
+
+Level: Lowest (hardware-level)
+
+Example: 10110000 01100001 (x86 mov instruction)
+
+Characteristics:
+
+No translation needed
+
+Processor-specific
+
+Extremely fast
+
+Human-unreadable
