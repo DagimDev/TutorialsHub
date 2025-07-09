@@ -20,3 +20,7 @@
 // class App extends React.Component {
 //   render() { return <div>Hello</div> }
 // }
+
+// 3. DOM Events
+// git commit -m "Add click handler" -m "
+// document.getElementById('btn').addEventListener('click', handleClick)"
