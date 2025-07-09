@@ -96,3 +96,18 @@ mov('ax', 5);
 mov('bx', 10);
 add('ax', 'bx');
 console.log(registers.ax); // 15
+
+2. High-Level Compiled Style (TypeScript)
+typescript
+// Strongly-typed compiled approach
+interface User {
+  id: number;
+  name: string;
+}
+
+function createUser(id: number, name: string): User {
+  return { id, name };
+}
+
+// Type checking at compile time
+const user = createUser(1, "Alice");
