@@ -58,3 +58,10 @@ int main() {
   printf("Hello World");
   return 0;
 }
+
+4. High-Level Interpreted Languages
+What: Code executed line-by-line at runtime
+
+Level: High-level
+
+Examples: Python, JavaScript, Ruby
