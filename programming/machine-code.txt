@@ -41,3 +41,20 @@ What: Human-readable code → compiled to machine code
 Level: High-level
 
 Examples: C, C++, Go, Rust
+
+Characteristics:
+
+Platform-specific binaries
+
+Faster execution
+
+Requires recompilation for different platforms
+
+Example (C):
+
+c
+#include <stdio.h>
+int main() {
+  printf("Hello World");
+  return 0;
+}
