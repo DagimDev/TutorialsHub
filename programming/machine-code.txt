@@ -122,3 +122,20 @@ function dynamicAdd(a, b) {
 // Works with any type at runtime
 console.log(dynamicAdd(2, 3));     // 5
 console.log(dynamicAdd("2", "3")); // "23"
+
+4. Just-In-Time (JIT) Optimized Code
+javascript
+// Function that gets optimized after warmup
+function heavyCalculation(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i] * arr[i];
+  }
+  return sum;
+}
+
+// V8 will optimize after multiple runs
+const array = new Array(1000000).fill(2);
+console.time('calc');
+heavyCalculation(array);
+console.timeEnd('calc'); // Faster after first run
