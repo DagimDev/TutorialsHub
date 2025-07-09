@@ -14,3 +14,9 @@
 // 1. Project setup
 // git commit -m "Initialize npm package" -m "npm init -y"
 // git commit -m "Add webpack config" -m "Basic webpack.config.js"
+
+//  2. Core functionality
+// git commit -m "Create main App component" -m "
+// class App extends React.Component {
+//   render() { return <div>Hello</div> }
+// }
