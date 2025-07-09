@@ -39,3 +39,7 @@
 // } catch (err) {
 //   showError(err)
 // }"
+
+// 6. Optimization
+// git commit -m "Memoize calculations" -m "
+// const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b])"
