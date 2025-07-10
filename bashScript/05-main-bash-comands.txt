@@ -44,3 +44,7 @@ Example: echo “hello world” prints “hello world” on terminal
     file and types “Hello” on the file
 cat	View file	cat script.js
 nano	Text editor	nano file.txt (Ctrl+X to exit)
+grep: It searches for a string in groups of files from current directory
+• Example: grep Sam my.txt your.txt : This command is basically saying
+    search for “Sam” string in my.txt and your.txt files found under your
+    current directory
