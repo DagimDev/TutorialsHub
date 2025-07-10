@@ -5,4 +5,6 @@ File & Directory Operations
 ▪ pwd: It prints full path of your current/working directory
 cd: It will change the directory you are currently in so that you can manipulate the
     different files and directories in your system. It is basically going to a different
-    folder and double clicking it
+    folder and double clicking 
+ls: Lists contents of the current directory, whether files or folders. It’s the same as
+you opening a folder in file explorer to see its contents 
