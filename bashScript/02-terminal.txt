@@ -1,0 +1,6 @@
+Terminal: GUIs, allow a user to accomplish daily tasks by easily interacting with
+windows and icons. However, there are commands that need to be manually
+entered via texts to instruct the computer directly. We usually do this through
+terminals. Terminals, also known as command lines or consoles the “black” screen
+programmers use to send text commands to do things like navigate through a folder
+or copy a file and do more complex tasks.
