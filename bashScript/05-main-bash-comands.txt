@@ -56,3 +56,19 @@ chmod: This command is used to change the permissions of a file in a directory.
 □ The file owner
 □ The group owners/members
 □ Other users (everybody else)
+
+File/folder permission: There are three file permission types that apply
+    to each class of users above
+□ The read permission
+□ The write permission
+□ The execute/running program permission
+□ Interpreting file permission listing: Example: rwxrwxrwx This
+    is interpreted to mean that
+▪ The first set of rwx is for the owner: File owner has
+    permission to read, write and execute
+▪ The second set of rwx is for the group owner of the
+    file: The group also has permission to read, write and
+    execute
+▪ The third set of rwx is for all other users of the file:
+    All other users also has permission to read, write and
+    execute
