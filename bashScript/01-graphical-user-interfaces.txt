@@ -1,0 +1,5 @@
+Graphical User Interfaces (GUI): A GUI is a way to command/instruct your
+computer operating system (OS) using graphical symbols rather than typing the
+instructions. A GUI uses windows, icons, and menus to carry out commands, such
+as opening, deleting, and moving files. Although a GUI operating system is
+primarily navigated using a mouse, a keyboard can also be used
