@@ -1,0 +1,8 @@
+Bash: It is an acronym for Bourne Again SHell which is a command-line interface
+(CLI) and is currently the most widely used shell.
+● Bash is a type of shell (CLI) that we can use to communicate/instruct our
+    OS. Meaning, we use Bash when we want to control our OS without
+    having to navigate menus, options, and windows within a GUI
+● Whatever we can do with our mouse to communicate with our OS, we can
+    do it with from our terminal by running Bash commands without the need
+    to use our mouse to navigate through our computer
