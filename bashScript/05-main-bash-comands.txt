@@ -31,3 +31,4 @@ rm and rmdir: Both remove directories. However, rmdir will only delete empty
     removed by rm unless it has files or folders in it)
 • Example: rmdir CSS will remove the CSS folder, if it has not files or
     folders in it. 
+cp	Copy file/folder	cp file.txt backup/
