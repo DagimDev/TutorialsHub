@@ -72,3 +72,33 @@ File/folder permission: There are three file permission types that apply
 ▪ The third set of rwx is for all other users of the file:
     All other users also has permission to read, write and
     execute
+    
+Changing file access permissions: File access permissions can
+be changed by a numerical (octal) chmod specification
+▪ ( r ) read permission is given the value 4
+▪ ( w ) write permission is given the value 2
+▪ ( e ) execute permission is given the value 1
+▪ ( - ) indicates the file is a regular file/ not executable file
+□ The above values are added together for any one user
+category:
+▪ 0 means no permissions at all
+▪ 1 means there is permission to execute only
+▪ 2 means there is permission to write only
+▪ 3 means there is permission to write and execute (1+2)
+▪ 4 means there is permission to read only
+▪ 5 means there is permission to read and execute (4+1)
+▪ 6 means there is permission to read and write (4+2)
+▪ 7 means there is permission to read and write and execute
+    (4+2+1). 7 means there is no restrictions on permissions.
+    Anybody may do anything, generally, not a desirable
+    setting
+□ File permission to 664: This means rw-rw-r--
+▪ The first 6: File owner has permission to read and write
+    (4 + 2 + 0)
+▪ The second 6: The group owners of the file also have the
+    permission to read and write (4 + 2 + 0)
+▪ The third 4: All other users have permission to read only
+    (4+ 0 + 0)
+□ Command to view file permission: ls -l filename.txt
+□ Command to change file permission:
+▪ Example: chmod 660 my.txt
