@@ -43,3 +43,4 @@ Example: echo “hello world” prints “hello world” on terminal
     in the file. Example: echo "Hello" > index.html, creates an index.html
     file and types “Hello” on the file
 cat	View file	cat script.js
+nano	Text editor	nano file.txt (Ctrl+X to exit)
