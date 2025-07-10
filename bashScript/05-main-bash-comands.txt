@@ -3,3 +3,6 @@ File & Directory Operations
 ● Directory: when we discuss Bash commands, we will use the term “directory” more often.
     Please know that directory is another name for folder.
 ▪ pwd: It prints full path of your current/working directory
+cd: It will change the directory you are currently in so that you can manipulate the
+    different files and directories in your system. It is basically going to a different
+    folder and double clicking it
