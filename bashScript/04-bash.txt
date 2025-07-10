@@ -6,3 +6,61 @@ Bash: It is an acronym for Bourne Again SHell which is a command-line interface
 ● Whatever we can do with our mouse to communicate with our OS, we can
     do it with from our terminal by running Bash commands without the need
     to use our mouse to navigate through our computer
+
+Why are we learning Bash and Bash script for this course?
+▪ As web developers you should learn one of the shell scripts, be it Bash, Command
+    Prompt or PowerShell for the following reasons:
+● Great control over your operating system: There are commands that
+    you can’t use with your mouse and keyboard, but you can achieve these
+    commands only via shell.
+o Example: changing permissions on a certain file, listing all files
+    including the hidden files, server administration for a local server
+    setup like Apache/MySQL and most importantly running multiple
+    commands at once (command to change your directory/folder and
+    then listing files in that folder)
+● The piping feature on bash is what makes it super special: The Pipe (|)
+    is a command that lets you use two or more commands at once such that
+    the output from command serves as an input to the next.
+o Example: cd classFolder | ls -lt | head
+▪ cd changes the direcrory/folder
+▪ ls -lt, lists all files/folders in that directory in order of time created.
+▪ head command prints the first 10 lines of the specified files.
+▪ So, in the above example, we are saying “please change
+    to the classFolder, list all files and folders in classFolder
+    and from the listed files and folders, only show me 10 of
+    them” in one command line
+● There are web developer tools which operate through shell only: There
+    are software/application can’t be download and installed in your computer.
+    Thus, understanding shell commands will be very helpful in such cases
+o Example: A package from Node Package Manager (NPM) can’t
+    be downloaded and installed using your mouse. You will need to
+    install every package manually using npm commands on your
+    terminal window. In addition, you will need to use npm
+    commands to update (all packages at once or one by one), build
+    or know the versions of your packages,
+● Better utilization of the Git Version Control tool: You will need your
+    shell command experiences to use the Git commands as well. There is a
+    desktop application created to make Git use easier. However, there are a
+    lot of Git functionalities that still require the use of Git commands from
+    your terminal.
+● For local backend development: The front-end languages live in the
+    browser, so there are no extra installations required. However, any
+    backend programming language can run on your server and there is no one
+    language that lives in your server. Therefore, you need to install the
+    backend language you want on your computer in order to get them
+    running. Therefore, a backend developer (regardless of the language) will
+    need to know a shell script during framework installation process or while
+    setting up your computer’s environment. In your case, you will need a
+    shell scripting knowledge for setting up your own local server on Node.js
+o Example: initiating your local Node.js server, keeping your server
+    running (with the nodemon command), installing
+    modules/packages
+● What do we need to write Bash script?
+▪ You need to have a terminal to write bash script on.
+▪ If you have a Mac computer, you can use the default built-in terminal on your Mac.
+▪ For Windows computers, you can applications such as GitBash and Cygwin.
+● Git Bash comes included as part of the Git for Windows package.
+● If you have not downloaded and installed Git, please download and install
+    Git for Windows here, just like other Windows applications.
+● Once download completes, go to your downloads folder and find the
+    included .exe file and open to execute Git Bash
