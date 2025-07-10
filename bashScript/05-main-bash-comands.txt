@@ -10,3 +10,5 @@ ls: Lists contents of the current directory, whether files or folders. It’s th
     opening a folder in file explorer to see its contents 
 mkdir: Makes/creates a new directory. It is the same as you right clicking and
     creating a folder
+touch: This is going to be the easiest way to create a new file in a current
+    directory. It is the same as right clicking on a folder and creating a new file
