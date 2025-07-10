@@ -1,0 +1,5 @@
+The main Bash commands 
+File & Directory Operations
+● Directory: when we discuss Bash commands, we will use the term “directory” more often.
+    Please know that directory is another name for folder.
+▪ pwd: It prints full path of your current/working directory
