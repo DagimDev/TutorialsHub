@@ -18,3 +18,16 @@ Example: mv style.css CSS. This command will move the style.css file
 ● Example: mv style.css custom.css. This comand will rename the file
     style.css to custom.css It is the same as right clicking on style.css to
     rename it 
+rm	Delete file	rm file.txt (use -r for folders)
+rm and rmdir: Both remove directories. However, rmdir will only delete empty
+    directories, whereas rm will remove directories that may contain content such as
+    files and subdirectories.
+• rmdir can only remove empty directories
+• rm removes both files and non-empty directories.
+• rm -r removes both the directory and the file within it.
+• rm -r -rf removes recursively and forcefully all files in that directory and
+    the directory itself.
+• Example: rm -r CSS will removes the CSS folder (this folder will not be
+    removed by rm unless it has files or folders in it)
+• Example: rmdir CSS will remove the CSS folder, if it has not files or
+    folders in it. 
