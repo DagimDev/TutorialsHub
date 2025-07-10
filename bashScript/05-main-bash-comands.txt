@@ -32,3 +32,13 @@ rm and rmdir: Both remove directories. However, rmdir will only delete empty
 • Example: rmdir CSS will remove the CSS folder, if it has not files or
     folders in it. 
 cp	Copy file/folder	cp file.txt backup/
+
+File Content & Editing
+echo:
+● Using echo without option: It prints text to the terminal window.
+Example: echo “hello world” prints “hello world” on terminal
+● Using echo with fie name only: It creates a file. Example: echo >
+    style.css creates the style.css file
+● Using echo with text and file name: creates the file and writes the text
+    in the file. Example: echo "Hello" > index.html, creates an index.html
+    file and types “Hello” on the file
