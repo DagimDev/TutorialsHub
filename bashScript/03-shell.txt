@@ -1,0 +1,6 @@
+Shell: When you type commands on your terminal, what you’ve typed must be
+understood before the computer executes the task. Shell is the software that
+interprets the commands typed on terminal so that your computer understands them
+and return a response to your command. There are different shells
+(programs/CLI/script) that we can use to manipulate our OS. Example: Bash (for
+Mac and Linus OS), Command Prompt (CMD) or PowerShell.
