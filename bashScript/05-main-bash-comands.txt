@@ -12,3 +12,9 @@ mkdir: Makes/creates a new directory. It is the same as you right clicking and
     creating a folder
 touch: This is going to be the easiest way to create a new file in a current
     directory. It is the same as right clicking on a folder and creating a new file
+mv: It moves or renames directory.
+Example: mv style.css CSS. This command will move the style.css file
+    found in your current directory to the CSS folder
+● Example: mv style.css custom.css. This comand will rename the file
+    style.css to custom.css It is the same as right clicking on style.css to
+    rename it 
