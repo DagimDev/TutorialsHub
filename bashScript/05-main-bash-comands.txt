@@ -72,7 +72,7 @@ File/folder permission: There are three file permission types that apply
 ▪ The third set of rwx is for all other users of the file:
     All other users also has permission to read, write and
     execute
-    
+
 Changing file access permissions: File access permissions can
 be changed by a numerical (octal) chmod specification
 ▪ ( r ) read permission is given the value 4
@@ -102,3 +102,8 @@ category:
 □ Command to view file permission: ls -l filename.txt
 □ Command to change file permission:
 ▪ Example: chmod 660 my.txt
+
+exit: The exit command will close a terminal window/ends the session. You can
+    just type the “exit” command while you are on your current directory
+▪ crtl + C: If you don’t want to close your terminal, but want to stop a running
+    command, just use the “Ctrl + C” using your keyboard
