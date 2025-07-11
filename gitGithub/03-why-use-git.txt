@@ -6,3 +6,11 @@ Why use Git in website/application development process?
     collaborate more easily with other developers.
 ▪ If different people are working on the same file, Git can automatically merge the
     changes from each contributor, without losing everyone's work.
+Diffing: makes git supper powerful and efficient
+● Diff (or short for difference): Diff in computation world allows
+    programmers to look at 2 files side by side and see what differentiates them
+    by spotting the place where a new line of code had been added.
+● Diffing is used mostly when comparing two different versions of the same
+    e/code, meaning comparing an older with the newer version.
+● Diffing is used in Git to specifically show what has changed between two
+    versions of the same file/code/commits/branches
