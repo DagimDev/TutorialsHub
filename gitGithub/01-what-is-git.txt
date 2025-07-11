@@ -1,0 +1,11 @@
+What is Git?
+▪ Git is a Version Control System. There are multiple Version Control Systems, but
+    Git is by far and large the most popular.
+▪ In simple terms, Git is a software that tracks the changes you make to files, to be
+    specific, it tracks the changes you make in your code. By tracking it is meant that
+    Git will record every change you make in a file and saves the different versions of
+    the file. If you want to look at a specific version of your file, you can go back and
+    see that version. 
+Git’s tracking of file changes is important when a project is done in collaboration
+    with others by allowing changes made by different people to be merged into one
+    document.
