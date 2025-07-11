@@ -1,0 +1,8 @@
+Why use Git in website/application development process?
+▪ As stated above, Git is useful to anyone who writes code and tracks changes made
+    to a file. Git simplifies the process of working with other people. Having a
+    centrally located place (remote place such as GitHub) where you can upload your
+    changes and download changes from other members of your team, enable you to
+    collaborate more easily with other developers.
+▪ If different people are working on the same file, Git can automatically merge the
+    changes from each contributor, without losing everyone's work.
