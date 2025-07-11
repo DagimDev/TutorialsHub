@@ -12,3 +12,5 @@ The. git directory and how does Git track changes?
     project folder in terminal and type the command “git init”
 ● If it is an existing project, this directory is created when you bring a copy
     of a repository into your local computer through the command “git clone”.
+Ways to use Git: Git can be accessed via terminal commands or desktop app (GitHub
+Desktop)
