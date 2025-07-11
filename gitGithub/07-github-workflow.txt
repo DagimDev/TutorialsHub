@@ -1,0 +1,18 @@
+Forking: A fork is a copy of a repository. Forking is basically copying any public
+    repository from GitHub of someone to your GitHub (it is copying from remote repo to
+    another remote repo). 
+Why forking: Forking a repository allows you to freely make changes without affecting
+    the original project. Usually, people want to fork a publicly available repository because
+    they want to contribute to someone else’s project or want to use someone’s project as the
+    starting point for their own.
+● What happens after forking? Forking without the need to make changes to the forked
+    repository is useless. The very reason of forking someone’s project is because you want to
+    contribute to the project my making changes. Once you forked someone’s repo, it will be
+    saved in your GitHub. In order to make changes to the repo, you will need to:
+▪ Clone: You will need to clone it and make it available in your local computer so
+    that you make changes
+▪ Commit: Make changes and commit the changes
+▪ Push: Push the changes. Note: pushing the changes here means, the changes will
+    be pushed to the remote forked copy found in YOUR GitHub. It will not be pushed
+    to the original git repo. If you want to send the changes you made to the original
+    repo owner, you will need to send a pull request. 
