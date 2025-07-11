@@ -1,2 +1,6 @@
 Ignoring a file: just type name of the file to ignore in the
 .gitignore file. Example: todo.t
+
+Ignoring a folder/directory: To ignore entire directories,
+just by including their paths and putting a forward slash (
+/ ) at the end. Example: node_modules/
