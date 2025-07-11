@@ -8,3 +8,9 @@ just by including their paths and putting a forward slash (
 Ignoring in group using Wildcard (*):
 ● Example: *.log ignores any file ending with the
 .log extension
+
+Negation (!): Putting negation before the file name
+negates a file that would be ignored otherwise
+● Example: !example.log, this means that
+example.log is not ignored, even though all other
+files ending with .log are ignored already
