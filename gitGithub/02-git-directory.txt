@@ -1,0 +1,14 @@
+The. git directory and how does Git track changes?
+▪ The .git directory: This the directory/folder where Git stores the information about
+    your project. Without the .git directory, your project is a local project and not a Git
+    project. Meaning, you cannot perform any git commands and the project remains
+    untracked for any changes. The .git directory does the following:
+● Remote information (to which remote server your project is connected)
+● History of all local commits
+● Branch information (on which branch is your current project state (HEAD) pointing to)
+● All logs of all local commits you have ever made (including revert changes)
+▪ Where does the. git directory come from?
+● In case of new projects, this directory is created when you open your new
+    project folder in terminal and type the command “git init”
+● If it is an existing project, this directory is created when you bring a copy
+    of a repository into your local computer through the command “git clone”.
