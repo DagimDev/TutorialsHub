@@ -1,0 +1,5 @@
+Git workflow: It is a guideline for how to use Git in a team project to ensure the team is
+    on the same page. Even if there is no fixed standard way of interacting with Git, however,
+    a software team must at least know where to begin when implementing Git in the
+    workplace. No matter what, the team’s size and culture are always considered when
+    planning a Git workflow. 
