@@ -38,3 +38,27 @@ Pushing: Once the local repository has the new changes committed, these
     changes will need to be uploaded/pushed to the remote/central repository to share
     with other developers on the project.
 ● Type: git push
+
+Branching: Branching in Git allows you to separate your work into different
+    branches so you can work freely on your source code without affecting anyone
+    else’s work or the actual code in the main branch.
+● Main/master branch: This is basically the first branch created when you
+    clone and save a repository in your local computer.
+● Other branches: Git allows you to create branches in addition to the main
+    branch. To create other branches, you can either create them from the
+    main branch or from the central remote repository.
+o Why other branches? Let’s see this real-life scenario. Let’s
+    assume you and your co-worker are working on the same project
+    but you both are working on different features. It is best if there is
+    one main branch then two other branches for each of you to work.
+    When you both finish working on your features, these feature
+    branches can be merged into the main/master branch and accepted
+    into the main central repository.
+● Creating a new branch:
+    o Type: git branch <branchName>
+● List all of the branches in your repository:
+    o Type: git branch
+● Delete a specified branch:
+    o Type: git branch -D < branchName >
+● Rename the current branch to “newBrahchName”:
+    o Type: git branch -m < newBrahchNam >
