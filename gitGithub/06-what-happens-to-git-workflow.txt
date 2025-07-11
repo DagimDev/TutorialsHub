@@ -14,4 +14,23 @@ o You can find the address of the central repo by going to your
 Committing: After cloning the project locally, each developer can make changes
     to the files and then commit. Committing is basically saving the changes the
     developer made to the local repository.
-● Type: git commit –m “_______” (where you fill in the space with a comment)
+
+Pulling: After committing changes locally, if you just push changes to the remote
+    repository, it is possible that another developer had already pushed updates that
+    contain code that conflicts with yours. Git will notify the conflict between your
+    version and the other developer’s version. Before publishing your updated version,
+    you need to download the current version of the central repository by the process
+    called, “git pull”. Pulling the current version of the remote repository will allow
+    you to add your updated version on top of what everyone else has already done.
+● Type: git pull
+● Merging conflicts: Without pulling the current repository to your local
+    computer, if you push your updated version to the central repository and
+    if the version you have is different from that of the current version of the
+    central repository, Git will refuse to push your changes to the central
+    repository. This is done to avoid the overwriting of other official commits.
+    In such cases, Git will give you a chance to manually resolve the conflict
+    between your updated version and that of the central repository, with a
+    process called merge conflict.
+● Note: Merging conflicts manually is not advisable. Rather, it is highly
+    advisable that developers pull the current version of the repository from
+    GitHub before pushing their updated version to the central repository.
