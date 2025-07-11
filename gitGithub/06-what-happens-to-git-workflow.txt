@@ -1,0 +1,4 @@
+What happens in Git workflow?
+▪ Creating a repository: Someone needs to create the central repository on GitHub
+    if the project is a brand-new project. Here are the steps to create a new repository
+    on GitHub:
