@@ -34,3 +34,7 @@ Pulling: After committing changes locally, if you just push changes to the remot
 ● Note: Merging conflicts manually is not advisable. Rather, it is highly
     advisable that developers pull the current version of the repository from
     GitHub before pushing their updated version to the central repository.
+Pushing: Once the local repository has the new changes committed, these
+    changes will need to be uploaded/pushed to the remote/central repository to share
+    with other developers on the project.
+● Type: git push
