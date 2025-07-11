@@ -11,3 +11,7 @@ Cloning: If it is not a brand-new project and there exists a Git repository alre
 o You can find the address of the central repo by going to your
     GitHub first and opening the repository. Click on “Code” green
     button and either copy the HTTPS or SSH URL
+Committing: After cloning the project locally, each developer can make changes
+    to the files and then commit. Committing is basically saving the changes the
+    developer made to the local repository.
+● Type: git commit –m “_______” (where you fill in the space with a comment)
