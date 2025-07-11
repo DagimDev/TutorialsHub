@@ -22,3 +22,8 @@ Sending pull request: This is to tell the owner of the project that you wish to 
 ▪ Click on “pull request” and then click on “new pull request”
 ▪ You will see a pull request opened with a box to write a comment/note to state
     what changes you made. Write your note and create a pull request
+Merging a pull request: Once you send a pull request to propose that changes you've made
+    on your branch, the owner of the repo needs to accept your pull request in order for the
+    changes to be added to the original repo. If the owner is happy with the changes, she/he
+    will click “Merge Pull request”. By default, any pull request can be merged at any time,
+    unless the head branch conflicts with the base branch
