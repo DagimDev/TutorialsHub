@@ -1,0 +1,2 @@
+Ignoring a file: just type name of the file to ignore in the
+.gitignore file. Example: todo.t
