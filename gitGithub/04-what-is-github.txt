@@ -1,0 +1,9 @@
+What is GitHub?
+▪ Git is software that runs locally. Your files and their history are stored on your
+    computer. However, if you want to work on a project together with others from
+    anywhere, you will need to store a copy of your files in a clude/remote place. That
+    is when GitHub comes in handy.
+▪ GitHub is a website/online host where you can remotely store your git
+    project/repositories so that they are accessible from anywhere in the world for
+    anyone working on the project. It offers the distributed version control and source
+    code management functionality of Git, plus its own features
