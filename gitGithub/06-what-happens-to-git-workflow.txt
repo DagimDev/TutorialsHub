@@ -2,3 +2,12 @@ What happens in Git workflow?
 ▪ Creating a repository: Someone needs to create the central repository on GitHub
     if the project is a brand-new project. Here are the steps to create a new repository
     on GitHub:
+Cloning: If it is not a brand-new project and there exists a Git repository already,
+    each developer needs to create a local copy of the existing repository, a process
+    called cloning. Here is the command you use to clone a remote repository:
+● Go to any folder of your choice on your computer where you want to store
+    the remote repository and open your terminal
+● Type: git clone <URL address of the central repo>
+o You can find the address of the central repo by going to your
+    GitHub first and opening the repository. Click on “Code” green
+    button and either copy the HTTPS or SSH URL
