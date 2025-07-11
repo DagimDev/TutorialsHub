@@ -14,3 +14,9 @@ negates a file that would be ignored otherwise
 ● Example: !example.log, this means that
 example.log is not ignored, even though all other
 files ending with .log are ignored already
+
+Comments: Any lines that start with # are comments.
+Example: # macOS Files
+o Note: Once you added a file/folder in your .gitignore file, all your
+Git repositories will ignore the files and folders listed in the
+.gitignore file.
