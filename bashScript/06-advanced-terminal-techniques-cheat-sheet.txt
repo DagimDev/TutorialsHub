@@ -14,3 +14,6 @@ grep -rn --color=always -C 2 "error" /var/log/
 
 5: "Add CSV data extraction tool"
 awk -F',' '{print $1,$3}' data.csv | column -t
+
+6: "Create log file analyzer"
+cat app.log | grep "WARN" | cut -d' ' -f5- | sort | uniq -c | sort -nr
