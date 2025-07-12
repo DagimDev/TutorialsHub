@@ -24,3 +24,6 @@ watch -n1 "ps aux --sort=-%mem | head -n 10"
 
 8: "Implement network connection tracker"
 ss -tulpn | grep -E '0.0.0.0|LISTEN'
+
+9: "Create disk usage visualizer"
+du -h --max-depth=1 / | sort -h
