@@ -45,3 +45,6 @@ ssh-keygen -t ed25519 -C "work_email@example.com" -f ~/.ssh/work_key -N ""
 ### AUTOMATION ###
 14: "Implement backup rotation system"
 find /backups -name "*.tar.gz" -mtime +30 -delete
+
+15: "Add scheduled task manager"
+(crontab -l 2>/dev/null; echo "0 3 * * * /path/to/backup.sh") | crontab -
