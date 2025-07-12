@@ -11,3 +11,6 @@ sha256sum -c checksums.sha256
 ### TEXT PROCESSING ###
 4: "Implement multi-file grep with context"
 grep -rn --color=always -C 2 "error" /var/log/
+
+5: "Add CSV data extraction tool"
+awk -F',' '{print $1,$3}' data.csv | column -t
