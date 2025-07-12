@@ -27,3 +27,7 @@ ss -tulpn | grep -E '0.0.0.0|LISTEN'
 
 9: "Create disk usage visualizer"
 du -h --max-depth=1 / | sort -h
+
+### GIT INTEGRATION ###
+10: "Add git branch cleaner"
+git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
