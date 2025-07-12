@@ -52,3 +52,6 @@ find /backups -name "*.tar.gz" -mtime +30 -delete
 ### NETWORK TOOLS ###
 16: "Create download speed tester"
 curl -o /dev/null -s -w "%{speed_download}\n" https://example.com/file.zip
+
+17: "Add port scanning utility"
+nc -zv example.com 20-30 2>&1 | grep succeeded
