@@ -7,3 +7,7 @@ for file in *.jpg; do mv "$file" "vacation_${file%.jpg}.png"; done
 3: "Create checksum verification system"
 sha256sum important_file.txt > checksums.sha256
 sha256sum -c checksums.sha256
+
+### TEXT PROCESSING ###
+4: "Implement multi-file grep with context"
+grep -rn --color=always -C 2 "error" /var/log/
