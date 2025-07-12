@@ -17,3 +17,7 @@ awk -F',' '{print $1,$3}' data.csv | column -t
 
 6: "Create log file analyzer"
 cat app.log | grep "WARN" | cut -d' ' -f5- | sort | uniq -c | sort -nr
+
+### SYSTEM MONITORING ###
+7: "Add process monitoring dashboard"
+watch -n1 "ps aux --sort=-%mem | head -n 10"
