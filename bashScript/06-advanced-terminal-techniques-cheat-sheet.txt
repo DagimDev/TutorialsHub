@@ -59,3 +59,6 @@ nc -zv example.com 20-30 2>&1 | grep succeeded
 ### ADVANCED TECHNIQUES ###
 18: "Implement parallel processing"
 find . -type f -name "*.txt" | parallel -j 4 "gzip {}"
+
+19: "Add terminal multiplexer config"
+tmux new-session -d -s "work" && tmux split-window -h -p 30
