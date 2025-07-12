@@ -38,3 +38,6 @@ git log --since="1 month ago" --pretty=format:'%an' | sort | uniq -c | sort -nr
 ### SECURITY ###
 12: "Add permission repair utility"
 find ~/public_html -type d -exec chmod 755 {} \; -exec chown $USER:www-data {} \;
+
+13: "Create SSH key generator"
+ssh-keygen -t ed25519 -C "work_email@example.com" -f ~/.ssh/work_key -N ""
