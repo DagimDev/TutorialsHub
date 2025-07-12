@@ -34,3 +34,7 @@ git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git b
 
 11: "Implement git commit statistics"
 git log --since="1 month ago" --pretty=format:'%an' | sort | uniq -c | sort -nr
+
+### SECURITY ###
+12: "Add permission repair utility"
+find ~/public_html -type d -exec chmod 755 {} \; -exec chown $USER:www-data {} \;
