@@ -21,3 +21,6 @@ cat app.log | grep "WARN" | cut -d' ' -f5- | sort | uniq -c | sort -nr
 ### SYSTEM MONITORING ###
 7: "Add process monitoring dashboard"
 watch -n1 "ps aux --sort=-%mem | head -n 10"
+
+8: "Implement network connection tracker"
+ss -tulpn | grep -E '0.0.0.0|LISTEN'
