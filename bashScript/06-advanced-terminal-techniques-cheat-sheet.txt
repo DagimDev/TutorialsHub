@@ -69,3 +69,6 @@ openssl enc -aes-256-cbc -salt -in secret.txt -out secret.enc -k mypassword
 ### DEBUGGING ###
 21: "Add strace debugging wrapper"
 strace -f -e trace=file,process -o debug.log ./script.sh
+
+22: "Implement bash script linter"
+shellcheck script.sh && bash -n script.sh
