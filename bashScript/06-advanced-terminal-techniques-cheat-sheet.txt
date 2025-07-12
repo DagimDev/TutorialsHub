@@ -31,3 +31,6 @@ du -h --max-depth=1 / | sort -h
 ### GIT INTEGRATION ###
 10: "Add git branch cleaner"
 git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+
+11: "Implement git commit statistics"
+git log --since="1 month ago" --pretty=format:'%an' | sort | uniq -c | sort -nr
