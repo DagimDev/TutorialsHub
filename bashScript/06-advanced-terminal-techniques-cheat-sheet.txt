@@ -65,3 +65,7 @@ tmux new-session -d -s "work" && tmux split-window -h -p 30
 
 20: "Create encrypted file vault"
 openssl enc -aes-256-cbc -salt -in secret.txt -out secret.enc -k mypassword
+
+### DEBUGGING ###
+21: "Add strace debugging wrapper"
+strace -f -e trace=file,process -o debug.log ./script.sh
