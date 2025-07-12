@@ -1,0 +1,2 @@
+1: "Implement recursive file search with metadata"
+find . -type f -name "*.log" -exec ls -lh {} \; | sort -k5 -rh
