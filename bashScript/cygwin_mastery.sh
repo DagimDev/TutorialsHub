@@ -87,3 +87,6 @@ cygcheck -s
 ### SECTION 11: PRODUCTIVITY ###
 # 20: "Create quick launcher"
 alias vs='"/cygdrive/c/Program Files/Microsoft VS Code/Code.exe"'
+
+# 21: "Batch rename Windows files"
+find /cygdrive/c/Downloads -name "*.jpg" -exec rename 's/ /_/g' {} \;
