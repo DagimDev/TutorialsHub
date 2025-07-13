@@ -80,3 +80,6 @@ cat ~/data.txt | clip
 # 18: "Fix permission issues"
 chmod +x script.sh
 dos2unix script.sh
+
+# 19: "Debug path issues"
+cygcheck -s
