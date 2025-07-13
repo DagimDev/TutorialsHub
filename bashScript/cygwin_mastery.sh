@@ -15,3 +15,6 @@ source ~/.bashrc
 # Add to /etc/fstab:
 # C:/cygwin64 /home ntfs binary,posix=0 0 0
 mount -f
+
+# 4: "Create symlink to Documents"
+ln -s "/cygdrive/c/Users/$USER/Documents" ~/Documents
