@@ -72,3 +72,6 @@ cygrunsrv --start sshd
 # 16: "X Server setup"
 startxwin &
 export DISPLAY=:0.0
+
+# 17: "Clipboard integrat
+cat ~/data.txt | clip
