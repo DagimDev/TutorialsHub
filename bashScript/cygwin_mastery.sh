@@ -83,3 +83,7 @@ dos2unix script.sh
 
 # 19: "Debug path issues"
 cygcheck -s
+
+### SECTION 11: PRODUCTIVITY ###
+# 20: "Create quick launcher"
+alias vs='"/cygdrive/c/Program Files/Microsoft VS Code/Code.exe"'
