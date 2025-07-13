@@ -42,3 +42,11 @@ net start sshd
 
 # 10: "Port forwarding"
 ssh -L 8080:localhost:80 user@remote-server
+
+### SECTION 6: SHELL SCRIPTING ###
+# 11: "Create cross-platform script"
+if [[ $(uname -o) == Cygwin ]]; then
+  PROGRAM_FILES="/cygdrive/c/Program\ Files"
+else
+  PROGRAM_FILES="/usr/local"
+fi
