@@ -9,3 +9,9 @@
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashrc
 echo 'alias ll="ls -alh --color=auto"' >> ~/.bashrc
 source ~/.bashrc
+
+### SECTION 2: FILE SYSTEM INTEGRATION ###
+# 3: "Mount Windows drives"
+# Add to /etc/fstab:
+# C:/cygwin64 /home ntfs binary,posix=0 0 0
+mount -f
