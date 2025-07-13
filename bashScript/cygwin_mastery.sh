@@ -34,3 +34,8 @@ notepad.exe &
 # 8: "Convert path formats"
 cygpath -w ~/Documents
 cygpath -u 'C:\Windows\System32'
+
+### SECTION 5: NETWORKING ###
+# 9: "SSH server setup"
+ssh-host-config -y
+net start sshd
