@@ -23,3 +23,6 @@ ln -s "/cygdrive/c/Users/$USER/Documents" ~/Documents
 # 5: "Update all packages"
 apt-cyg update
 apt-cyg upgrade
+
+# 6: "Install developer tools"
+apt-cyg install make gcc-core gdb cmake
