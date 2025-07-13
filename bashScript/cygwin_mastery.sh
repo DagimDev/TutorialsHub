@@ -60,3 +60,7 @@ make install
 # 13: "Python virtualenv"
 python -m venv ~/venv/project
 source ~/venv/project/Scripts/activate
+
+### SECTION 8: SYSTEM ADMIN ###
+# 14: "Process management"
+ps -W | grep -i chrome | awk '{print $1}' | xargs kill -f
