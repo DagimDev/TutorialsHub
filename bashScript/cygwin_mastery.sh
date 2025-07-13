@@ -4,3 +4,8 @@
 # 1: "Install Cygwin base packages"
 # Run Cygwin Setup (setup-x86_64.exe) and select:
 # - curl, wget, git, openssh, tar, gzip
+
+# 2: "Configure shell startup"
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashrc
+echo 'alias ll="ls -alh --color=auto"' >> ~/.bashrc
+source ~/.bashrc
