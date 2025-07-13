@@ -26,3 +26,7 @@ apt-cyg upgrade
 
 # 6: "Install developer tools"
 apt-cyg install make gcc-core gdb cmake
+
+### SECTION 4: WINDOWS-LINUX INTEROP ###
+# 7: "Run Windows exe from Cygwin"
+notepad.exe &
