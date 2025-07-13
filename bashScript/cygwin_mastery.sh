@@ -30,3 +30,7 @@ apt-cyg install make gcc-core gdb cmake
 ### SECTION 4: WINDOWS-LINUX INTEROP ###
 # 7: "Run Windows exe from Cygwin"
 notepad.exe &
+
+# 8: "Convert path formats"
+cygpath -w ~/Documents
+cygpath -u 'C:\Windows\System32'
