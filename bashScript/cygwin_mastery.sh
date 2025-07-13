@@ -18,3 +18,8 @@ mount -f
 
 # 4: "Create symlink to Documents"
 ln -s "/cygdrive/c/Users/$USER/Documents" ~/Documents
+
+### SECTION 3: PACKAGE MANAGEMENT ###
+# 5: "Update all packages"
+apt-cyg update
+apt-cyg upgrade
