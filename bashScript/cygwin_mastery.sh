@@ -64,3 +64,6 @@ source ~/venv/project/Scripts/activate
 ### SECTION 8: SYSTEM ADMIN ###
 # 14: "Process management"
 ps -W | grep -i chrome | awk '{print $1}' | xargs kill -f
+
+# 15: "Service control"
+cygrunsrv --start sshd
