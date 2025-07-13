@@ -39,3 +39,6 @@ cygpath -u 'C:\Windows\System32'
 # 9: "SSH server setup"
 ssh-host-config -y
 net start sshd
+
+# 10: "Port forwarding"
+ssh -L 8080:localhost:80 user@remote-server
