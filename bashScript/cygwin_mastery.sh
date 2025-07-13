@@ -67,3 +67,8 @@ ps -W | grep -i chrome | awk '{print $1}' | xargs kill -f
 
 # 15: "Service control"
 cygrunsrv --start sshd
+
+### SECTION 9: ADVANCED TOOLS ###
+# 16: "X Server setup"
+startxwin &
+export DISPLAY=:0.0
