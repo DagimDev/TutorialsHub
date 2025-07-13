@@ -56,3 +56,7 @@ fi
 ./configure --prefix=/usr/local
 make -j4
 make install
+
+# 13: "Python virtualenv"
+python -m venv ~/venv/project
+source ~/venv/project/Scripts/activate
