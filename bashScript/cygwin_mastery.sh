@@ -90,3 +90,12 @@ alias vs='"/cygdrive/c/Program Files/Microsoft VS Code/Code.exe"'
 
 # 21: "Batch rename Windows files"
 find /cygdrive/c/Downloads -name "*.jpg" -exec rename 's/ /_/g' {} \;
+
+# 22: "System monitoring dashboard"
+conemu-cyg-64.exe -run top
+
+### BONUS: CYGWIN CONFIG FILE LOCATIONS ###
+# ~/.bashrc       # Shell customization
+# /etc/fstab      # Mount points
+# /etc/ssh/sshd_config  # SSH server config
+# /etc/nsswitch.conf    # Name service config
