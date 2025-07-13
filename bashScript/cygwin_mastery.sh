@@ -50,3 +50,9 @@ if [[ $(uname -o) == Cygwin ]]; then
 else
   PROGRAM_FILES="/usr/local"
 fi
+
+### SECTION 7: DEVELOPMENT ENV ###
+# 12: "Build Linux software"
+./configure --prefix=/usr/local
+make -j4
+make install
