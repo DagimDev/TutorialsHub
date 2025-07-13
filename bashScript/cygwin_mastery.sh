@@ -75,3 +75,8 @@ export DISPLAY=:0.0
 
 # 17: "Clipboard integrat
 cat ~/data.txt | clip
+
+### SECTION 10: TROUBLESHOOTING ###
+# 18: "Fix permission issues"
+chmod +x script.sh
+dos2unix script.sh
