@@ -139,3 +139,23 @@ const array = new Array(1000000).fill(2);
 console.time('calc');
 heavyCalculation(array);
 console.timeEnd('calc'); // Faster after first run
+
+5. Memory Management Example
+// Manual memory management simulation
+class MemoryPool {
+  constructor(size) {
+    this.pool = new Array(size);
+    this.index = 0;
+  }
+
+  allocate(obj) {
+    this.pool[this.index++] = obj;
+  }
+
+  clear() {
+    this.pool = [];
+  }
+}
+
+const pool = new MemoryPool(100);
+pool.allocate({ largeData: new Array(1000) });
