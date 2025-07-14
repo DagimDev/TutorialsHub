@@ -159,3 +159,21 @@ class MemoryPool {
 
 const pool = new MemoryPool(100);
 pool.allocate({ largeData: new Array(1000) });
+
+6. Event Loop Demonstration
+javascript
+// Showing interpreted event loop behavior
+console.log("Start");
+
+setTimeout(() => console.log("Timeout"), 0);
+
+Promise.resolve().then(() => console.log("Promise"));
+
+console.log("End");
+
+/* Output:
+Start
+End
+Promise
+Timeout
+*/
