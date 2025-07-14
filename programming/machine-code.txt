@@ -177,3 +177,10 @@ End
 Promise
 Timeout
 */
+
+7. WASM Integration (Near-Machine Code)
+// Loading WebAssembly (actual machine code)
+WebAssembly.instantiateStreaming(fetch('module.wasm'))
+  .then(obj => {
+    console.log(obj.instance.exports.add(1, 2)); // 3
+  });
