@@ -36,3 +36,9 @@ app.post('/api/todos', (req, res) => {
   todos.push(req.body);
   res.status(201).send();
 });
+
+// ===== 6: "Implement error handling" =====
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
