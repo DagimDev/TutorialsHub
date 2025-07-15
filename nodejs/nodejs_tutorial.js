@@ -56,3 +56,9 @@ const Todo = mongoose.model('Todo', new mongoose.Schema({
   title: String,
   completed: Boolean
 }));
+
+// ===== 9: "Implement CRUD operations" =====
+app.get('/api/db/todos', async (req, res) => {
+  const todos = await Todo.find();
+  res.json(todos);
+});
