@@ -62,3 +62,11 @@ app.get('/api/db/todos', async (req, res) => {
   const todos = await Todo.find();
   res.json(todos);
 });
+
+// ===== 10: "Add authentication" =====
+const jwt = require('jsonwebtoken');
+app.post('/api/login', (req, res) => {
+  const token = jwt.sign({ user: 'test' }, 'secret');
+  res.json({ token });
+});
+// Run: npm install jsonwebtoken
