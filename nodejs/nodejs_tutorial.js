@@ -103,3 +103,7 @@ exec('dir', (error, stdout) => {
   if (error) throw error;
   console.log('Child process output:', stdout.slice(0, 50));
 });
+
+// ===== 16: "Implement streams" =====
+const readStream = fs.createReadStream(__filename);
+readStream.on('data', chunk => console.log(`Received ${chunk.length} bytes`));
