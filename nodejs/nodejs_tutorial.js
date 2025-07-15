@@ -50,3 +50,9 @@ mongoose.connect('mongodb://localhost:27017/todos', {
   useUnifiedTopology: true 
 });
 // Run: npm install mongoose
+
+// ===== 8: "Create Mongoose model" =====
+const Todo = mongoose.model('Todo', new mongoose.Schema({
+  title: String,
+  completed: Boolean
+}));
