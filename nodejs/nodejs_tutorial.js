@@ -81,3 +81,8 @@ function authenticate(req, res, next) {
     res.status(401).send('Invalid token');
   }
 }
+
+// ===== 12: "Add config management" =====
+require('dotenv').config();
+console.log('Environment:', process.env.NODE_ENV);
+// Run: npm install dotenv
