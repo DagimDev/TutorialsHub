@@ -146,3 +146,21 @@ RUN npm install
 EXPOSE 3000
 CMD ["node", "nodejs_tutorial.js"]
 */
+
+// ===== 22: "Implement CI/CD example" =====
+/*
+# .github/workflows/node.js.yml example:
+name: Node.js CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm install && npm test
+*/
+
+// Start the server if not in test mode
+if (!module.parent) {
+  app.listen(3001, () => console.log('Advanced server running on port 3001'));
+}
