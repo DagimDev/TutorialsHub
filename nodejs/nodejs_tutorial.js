@@ -42,3 +42,11 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Something broke!');
 });
+
+// ===== 7: "Add database connection" =====
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/todos', { 
+  useNewUrlParser: true, 
+  useUnifiedTopology: true 
+});
+// Run: npm install mongoose
