@@ -124,9 +124,14 @@ if (cluster.isMaster) {
   console.log('Worker started');
 }
 
-// ===== COMMIT 19: "Add performance hooks" =====
+// =====  19: "Add performance hooks" =====
 const { performance } = require('perf_hooks');
 const start = performance.now();
 setTimeout(() => {
   console.log(`Execution took ${performance.now() - start}ms`);
 }, 100);
+
+// ===== 20: "Implement TypeScript" =====
+// (Requires ts-node: npm install -D typescript ts-node)
+// Run: npx ts-node nodejs_tutorial.ts
+console.log('TypeScript ready');
