@@ -107,3 +107,11 @@ exec('dir', (error, stdout) => {
 // ===== 16: "Implement streams" =====
 const readStream = fs.createReadStream(__filename);
 readStream.on('data', chunk => console.log(`Received ${chunk.length} bytes`));
+
+// ===== 17: "Add WebSocket support" =====
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ port: 8080 });
+wss.on('connection', ws => {
+  ws.send('WebSocket connected!');
+});
+// Run: npm install ws
