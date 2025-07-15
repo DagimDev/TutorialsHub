@@ -20,3 +20,10 @@ const express = require('express');
 const app = express();
 app.get('/', (req, res) => res.send('Express works!'));
 // Run: npm install express
+
+// ===== 4: "Add middleware support" =====
+app.use(express.json());
+app.use((req, res, next) => {
+  console.log(`Request at ${new Date()}`);
+  next();
+});
