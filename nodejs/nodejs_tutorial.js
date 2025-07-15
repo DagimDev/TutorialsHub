@@ -91,3 +91,8 @@ console.log('Environment:', process.env.NODE_ENV);
 const assert = require('assert');
 assert.strictEqual(1 + 1, 2);
 console.log('Tests passed!');
+
+// ===== 14: "Add file system operations" =====
+const fs = require('fs');
+fs.writeFileSync('test.txt', 'Node.js file system works!');
+console.log(fs.readFileSync('test.txt', 'utf8'));
