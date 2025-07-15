@@ -96,3 +96,10 @@ console.log('Tests passed!');
 const fs = require('fs');
 fs.writeFileSync('test.txt', 'Node.js file system works!');
 console.log(fs.readFileSync('test.txt', 'utf8'));
+
+// ===== 15: "Create child processes" =====
+const { exec } = require('child_process');
+exec('dir', (error, stdout) => {
+  if (error) throw error;
+  console.log('Child process output:', stdout.slice(0, 50));
+});
