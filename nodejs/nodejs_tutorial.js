@@ -86,3 +86,8 @@ function authenticate(req, res, next) {
 require('dotenv').config();
 console.log('Environment:', process.env.NODE_ENV);
 // Run: npm install dotenv
+
+// ===== 13: "Implement testing" =====
+const assert = require('assert');
+assert.strictEqual(1 + 1, 2);
+console.log('Tests passed!');
