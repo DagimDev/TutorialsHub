@@ -27,3 +27,12 @@ app.use((req, res, next) => {
   console.log(`Request at ${new Date()}`);
   next();
 });
+
+
+// ===== 5: "Create REST API endpoints" =====
+let todos = [];
+app.get('/api/todos', (req, res) => res.json(todos));
+app.post('/api/todos', (req, res) => {
+  todos.push(req.body);
+  res.status(201).send();
+});
