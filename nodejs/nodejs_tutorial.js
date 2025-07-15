@@ -115,3 +115,11 @@ wss.on('connection', ws => {
   ws.send('WebSocket connected!');
 });
 // Run: npm install ws
+
+
+// ===== 18: "Implement clustering" =====
+const cluster = require('cluster');
+if (cluster.isMaster) {
+  cluster.fork();
+  console.log('Worker started');
+}
