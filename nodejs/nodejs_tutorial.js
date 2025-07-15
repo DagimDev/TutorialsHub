@@ -123,3 +123,10 @@ if (cluster.isMaster) {
   cluster.fork();
   console.log('Worker started');
 }
+
+// ===== COMMIT 19: "Add performance hooks" =====
+const { performance } = require('perf_hooks');
+const start = performance.now();
+setTimeout(() => {
+  console.log(`Execution took ${performance.now() - start}ms`);
+}, 100);
