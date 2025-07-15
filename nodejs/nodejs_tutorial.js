@@ -70,3 +70,14 @@ app.post('/api/login', (req, res) => {
   res.json({ token });
 });
 // Run: npm install jsonwebtoken
+
+// ===== 11: "Implement auth middleware" =====
+function authenticate(req, res, next) {
+  const token = req.headers.authorization;
+  try {
+    req.user = jwt.verify(token, 'secret');
+    next();
+  } catch (err) {
+    res.status(401).send('Invalid token');
+  }
+}
