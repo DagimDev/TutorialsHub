@@ -135,3 +135,14 @@ setTimeout(() => {
 // (Requires ts-node: npm install -D typescript ts-node)
 // Run: npx ts-node nodejs_tutorial.ts
 console.log('TypeScript ready');
+
+// ===== 21: "Add Docker support" =====
+/*
+# Dockerfile example:
+FROM node:14
+WORKDIR /app
+COPY . .
+RUN npm install
+EXPOSE 3000
+CMD ["node", "nodejs_tutorial.js"]
+*/
