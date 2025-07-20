@@ -12,3 +12,7 @@ if not exist "C:\Windows" (
 :: Add colored output
 echo [92mSuccess message[0m
 :: Requires ANSI support (Win 10+): reg add HKCU\Console /v VirtualTerminalLevel /t REG_DWORD /d 1
+
+:: Create dynamic variables
+set /a result=5+3
+echo Math result: %result%
