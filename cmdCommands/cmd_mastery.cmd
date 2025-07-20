@@ -55,3 +55,5 @@ ping -n 3 google.com | findstr "TTL"
 :: Create user account
 :: net user NewUser Password123 /add
 
+:: Implement process killer
+tasklist | findstr "notepad.exe" && taskkill /im notepad.exe /f
