@@ -44,3 +44,7 @@ for /f "tokens=1,2 delims=," %%A in (data.csv) do (
 
 :: Create service controller
 :: sc query state= all | findstr "SERVICE_NAME"
+
+:: Implement network tools
+ping -n 3 google.com | findstr "TTL"
+
