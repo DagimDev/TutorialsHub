@@ -60,3 +60,7 @@ tasklist | findstr "notepad.exe" && taskkill /im notepad.exe /f
 
 :: Add WMI queries
 :: wmic os get caption,version /format:list
+
+
+:: Create disk utilities
+:: fsutil fsinfo drives
