@@ -41,3 +41,6 @@ for /f "tokens=1,2 delims=," %%A in (data.csv) do (
 
 :: Add registry operations
 :: reg add "HKCU\Software\MyApp" /v "Setting" /t REG_SZ /d "Value" /f
+
+:: Create service controller
+:: sc query state= all | findstr "SERVICE_NAME"
