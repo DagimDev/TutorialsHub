@@ -9,3 +9,6 @@ if not exist "C:\Windows" (
     exit /b 1
 )
 
+:: Add colored output
+echo [92mSuccess message[0m
+:: Requires ANSI support (Win 10+): reg add HKCU\Console /v VirtualTerminalLevel /t REG_DWORD /d 1
