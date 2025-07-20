@@ -38,3 +38,6 @@ exit /b
 for /f "tokens=1,2 delims=," %%A in (data.csv) do (
     echo Column 1: %%A, Column 2: %%B
 )
+
+:: Add registry operations
+:: reg add "HKCU\Software\MyApp" /v "Setting" /t REG_SZ /d "Value" /f
