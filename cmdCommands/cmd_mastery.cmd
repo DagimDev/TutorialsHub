@@ -78,3 +78,6 @@ tasklist | findstr "notepad.exe" && taskkill /im notepad.exe /f
 :: Implement password prompt
 set /p pass=Enter password: 
 echo You entered: %pass%
+
+:: Add curl integration
+:: curl -o latest.zip https://example.com/update.zip
