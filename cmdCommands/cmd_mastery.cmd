@@ -71,3 +71,6 @@ tasklist | findstr "notepad.exe" && taskkill /im notepad.exe /f
 
 :: Add remote administration
 :: psexec \\remotePC ipconfig
+
+:: Create self-destruct script
+:: del "%~f0" & exit
