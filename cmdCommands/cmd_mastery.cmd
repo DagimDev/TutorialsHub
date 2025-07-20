@@ -20,3 +20,8 @@ echo Math result: %result%
 :: Implement string manipulation
 set str=HelloWorld
 echo Substring: %str:~0,5%
+
+:: Add array simulation
+set array[0]=First
+set array[1]=Second
+echo Array element: %array[1]%
