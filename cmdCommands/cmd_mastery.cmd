@@ -25,3 +25,12 @@ echo Substring: %str:~0,5%
 set array[0]=First
 set array[1]=Second
 echo Array element: %array[1]%
+
+:: Create multi-function script
+call :hello World
+goto :eof
+
+:hello
+echo Hello %~1!
+exit /b
+
