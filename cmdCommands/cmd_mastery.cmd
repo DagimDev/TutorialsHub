@@ -64,3 +64,6 @@ tasklist | findstr "notepad.exe" && taskkill /im notepad.exe /f
 
 :: Create disk utilities
 :: fsutil fsinfo drives
+
+:: Implement XML parsing
+:: for /f "tokens=2 delims=<>" %%A in ('find "<title>" file.xml') do echo Title: %%A
