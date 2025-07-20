@@ -16,3 +16,7 @@ echo [92mSuccess message[0m
 :: Create dynamic variables
 set /a result=5+3
 echo Math result: %result%
+
+:: Implement string manipulation
+set str=HelloWorld
+echo Substring: %str:~0,5%
