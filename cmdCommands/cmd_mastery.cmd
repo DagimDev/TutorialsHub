@@ -74,3 +74,7 @@ tasklist | findstr "notepad.exe" && taskkill /im notepad.exe /f
 
 :: Create self-destruct script
 :: del "%~f0" & exit
+
+:: Implement password prompt
+set /p pass=Enter password: 
+echo You entered: %pass%
