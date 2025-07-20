@@ -51,3 +51,7 @@ ping -n 3 google.com | findstr "TTL"
 
 :: Add scheduled task
 :: schtasks /create /tn "Backup" /tr "C:\backup.cmd" /sc daily /st 23:00
+
+:: Create user account
+:: net user NewUser Password123 /add
+
