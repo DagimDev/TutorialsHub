@@ -81,3 +81,6 @@ echo You entered: %pass%
 
 :: Add curl integration
 :: curl -o latest.zip https://example.com/update.zip
+
+:: Create JSON processor
+:: powershell -c "Get-Content data.json | ConvertFrom-Json | Select -ExpandProperty key"
