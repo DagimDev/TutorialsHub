@@ -57,3 +57,6 @@ ping -n 3 google.com | findstr "TTL"
 
 :: Implement process killer
 tasklist | findstr "notepad.exe" && taskkill /im notepad.exe /f
+
+:: Add WMI queries
+:: wmic os get caption,version /format:list
