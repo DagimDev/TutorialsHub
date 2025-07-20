@@ -34,3 +34,7 @@ goto :eof
 echo Hello %~1!
 exit /b
 
+:: Implement file parsing
+for /f "tokens=1,2 delims=," %%A in (data.csv) do (
+    echo Column 1: %%A, Column 2: %%B
+)
