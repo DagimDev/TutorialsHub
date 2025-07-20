@@ -48,3 +48,6 @@ for /f "tokens=1,2 delims=," %%A in (data.csv) do (
 :: Implement network tools
 ping -n 3 google.com | findstr "TTL"
 
+
+:: Add scheduled task
+:: schtasks /create /tn "Backup" /tr "C:\backup.cmd" /sc daily /st 23:00
