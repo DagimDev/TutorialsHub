@@ -37,3 +37,12 @@ const generateToken = (user) => jwt.sign(
   process.env.JWT_SECRET, 
   { expiresIn: '1h' }
 );
+
+// Create GraphQL server
+import { ApolloServer } from '@apollo/server';
+import { startStandaloneServer } from '@apollo/server/standalone';
+const typeDefs = `#graphql
+  type Query { hello: String }
+`;
+const resolvers = { Query: { hello: () => 'World' } };
+const graphqlServer = new ApolloServer({ typeDefs, resolvers });
