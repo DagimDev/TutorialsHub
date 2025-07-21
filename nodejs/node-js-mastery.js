@@ -53,3 +53,11 @@ const wss = new WebSocketServer({ port: 8080 });
 wss.on('connection', (ws) => {
   ws.send('Connected!');
 });
+
+// Implement file streaming
+import { createReadStream } from 'fs';
+import { pipeline } from 'stream/promises';
+const streamFile = async (path) => {
+  const readStream = createReadStream(path);
+  await pipeline(readStream, process.stdout);
+};
