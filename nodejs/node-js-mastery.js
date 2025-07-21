@@ -90,3 +90,10 @@ const UserSchema = z.object({
   email: z.string().email(),
   age: z.number().min(18)
 });
+
+// Create rate limiter
+import { RateLimiterMemory } from 'rate-limiter-flexible';
+const rateLimiter = new RateLimiterMemory({
+  points: 10, // 10 requests
+  duration: 1 // per second
+});
