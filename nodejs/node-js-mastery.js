@@ -61,3 +61,10 @@ const streamFile = async (path) => {
   const readStream = createReadStream(path);
   await pipeline(readStream, process.stdout);
 };
+
+// Add worker threads
+import { Worker } from 'worker_threads';
+const runWorker = (data) => new Promise((resolve) => {
+  const worker = new Worker('./worker.js', { workerData: data });
+  worker.on('message', resolve);
+});
