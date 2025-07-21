@@ -128,3 +128,11 @@ io.on('connection', (socket) => {
 import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 const user = await prisma.user.findUnique({ where: { id: 1 } });
+
+// Create AWS S3 client
+import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
+const s3 = new S3Client({ region: 'us-east-1' });
+await s3.send(new PutObjectCommand({
+  Bucket: 'my-bucket',
+  Key: 'file.txt'
+}));
