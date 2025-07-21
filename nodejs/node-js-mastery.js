@@ -29,3 +29,11 @@ const logger = winston.createLogger({
 import { createClient } from 'redis';
 const redisClient = createClient({ url: process.env.REDIS_URL });
 await redisClient.connect().catch(logger.error);
+
+// Implement JWT authentication
+import jwt from 'jsonwebtoken';
+const generateToken = (user) => jwt.sign(
+  { id: user.id }, 
+  process.env.JWT_SECRET, 
+  { expiresIn: '1h' }
+);
