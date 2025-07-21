@@ -5,3 +5,7 @@ const packageJson = {
   engines: { node: ">=18.0.0" }
 };
 console.log("Project initialized for Node", process.versions.node);
+
+// Add config loader with dotenv
+import 'dotenv/config'; // npm install dotenv
+console.log("DB URL:", process.env.DB_URL?.slice(0, 15) + "...");
