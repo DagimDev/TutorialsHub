@@ -142,3 +142,21 @@ import { test, expect } from '@jest/globals';
 test('adds 1 + 2', () => {
   expect(1 + 2).toBe(3);
 });
+
+// Add Docker support
+/*
+# Dockerfile:
+FROM node:18
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+EXPOSE 3000
+CMD ["node", "server.js"]
+*/
+
+// Start servers if not in test mode
+if (process.env.NODE_ENV !== 'test') {
+  const { url } = await startStandaloneServer(graphqlServer);
+  logger.info(`GraphQL at ${url}`);
+}
