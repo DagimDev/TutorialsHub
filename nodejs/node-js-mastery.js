@@ -102,3 +102,8 @@ const rateLimiter = new RateLimiterMemory({
 import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 const tracerProvider = new NodeTracerProvider();
 tracerProvider.register();
+
+// Add gRPC server
+import { Server } from '@grpc/grpc-js';
+const grpcServer = new Server();
+grpcServer.bindAsync('0.0.0.0:50051');
