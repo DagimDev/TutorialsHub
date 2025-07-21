@@ -68,3 +68,10 @@ const runWorker = (data) => new Promise((resolve) => {
   const worker = new Worker('./worker.js', { workerData: data });
   worker.on('message', resolve);
 });
+
+// Create CLI interface
+import { Command } from 'commander';
+const program = new Command();
+program
+  .option('-d, --debug', 'debug mode')
+  .parse(process.argv);
