@@ -75,3 +75,11 @@ const program = new Command();
 program
   .option('-d, --debug', 'debug mode')
   .parse(process.argv);
+
+  // Implement dependency injection
+class Database {
+  constructor(config) {
+    this.connection = `Connected to ${config.host}`;
+  }
+}
+const injector = { database: new Database({ host: 'localhost' }) };
