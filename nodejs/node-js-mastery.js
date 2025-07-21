@@ -116,3 +116,10 @@ const generatePDF = async () => {
   page.drawText('Advanced Node PDF');
   return await doc.save();
 };
+
+// Implement socket.io
+import { Server } from 'socket.io';
+const io = new Server(3001);
+io.on('connection', (socket) => {
+  socket.emit('message', 'Connected!');
+});
