@@ -136,3 +136,9 @@ await s3.send(new PutObjectCommand({
   Bucket: 'my-bucket',
   Key: 'file.txt'
 }));
+
+// Implement Jest tests
+import { test, expect } from '@jest/globals';
+test('adds 1 + 2', () => {
+  expect(1 + 2).toBe(3);
+});
