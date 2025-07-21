@@ -83,3 +83,10 @@ class Database {
   }
 }
 const injector = { database: new Database({ host: 'localhost' }) };
+
+// Add request validation
+import { z } from 'zod';
+const UserSchema = z.object({
+  email: z.string().email(),
+  age: z.number().min(18)
+});
