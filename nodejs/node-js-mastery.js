@@ -46,3 +46,10 @@ const typeDefs = `#graphql
 `;
 const resolvers = { Query: { hello: () => 'World' } };
 const graphqlServer = new ApolloServer({ typeDefs, resolvers });
+
+// Add WebSocket server
+import { WebSocketServer } from 'ws';
+const wss = new WebSocketServer({ port: 8080 });
+wss.on('connection', (ws) => {
+  ws.send('Connected!');
+});
