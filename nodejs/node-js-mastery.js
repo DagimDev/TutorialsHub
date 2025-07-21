@@ -107,3 +107,12 @@ tracerProvider.register();
 import { Server } from '@grpc/grpc-js';
 const grpcServer = new Server();
 grpcServer.bindAsync('0.0.0.0:50051');
+
+// Create PDF generator
+import { PDFDocument } from 'pdf-lib';
+const generatePDF = async () => {
+  const doc = await PDFDocument.create();
+  const page = doc.addPage();
+  page.drawText('Advanced Node PDF');
+  return await doc.save();
+};
