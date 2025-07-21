@@ -123,3 +123,8 @@ const io = new Server(3001);
 io.on('connection', (socket) => {
   socket.emit('message', 'Connected!');
 });
+
+// Add Prisma ORM
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+const user = await prisma.user.findUnique({ where: { id: 1 } });
