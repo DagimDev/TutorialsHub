@@ -30,3 +30,9 @@ res.writeHead(200, {
   'Content-Type': 'text/plain',
   'X-Custom-Header': 'MyValue'
 });
+
+// Implement error handling
+if (req.url === '/error') {
+  res.writeHead(500);
+  res.end('Server error');
+}
