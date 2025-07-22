@@ -17,3 +17,10 @@ if (req.method === 'GET') {
 } else if (req.method === 'POST') {
   res.end('POST request received');
 }
+
+// Add URL routing
+if (req.url === '/') {
+  res.end('Home page');
+} else if (req.url === '/about') {
+  res.end('About page');
+}
