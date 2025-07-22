@@ -74,3 +74,8 @@ app.use(express.json());
 app.get('/api/users', (req, res) => {
   res.json([{ id: 1, name: 'John' }]);
 });
+
+// Handle 404 routes
+app.use((req, res) => {
+  res.status(404).send('Not Found');
+});
