@@ -53,3 +53,12 @@ req.on('data', chunk => {
 req.on('end', () => {
   console.log('Received:', body);
 });
+
+// Serve static files
+const fs = require('fs');
+if (req.url === '/style.css') {
+  fs.readFile('style.css', (err, data) => {
+    res.writeHead(200, { 'Content-Type': 'text/css' });
+    res.end(data);
+  });
+}
