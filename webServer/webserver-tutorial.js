@@ -94,3 +94,7 @@ app.use((req, res, next) => {
     res.status(401).send('Unauthorized');
   }
 });
+
+// Add rate limiting
+const rateLimit = require('express-rate-limit');
+app.use(rateLimit({ windowMs: 15*60*1000, max: 100 }));
