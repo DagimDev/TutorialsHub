@@ -119,3 +119,13 @@ const options = {
   cert: fs.readFileSync('cert.pem')
 };
 https.createServer(options, app).listen(443);
+
+// Implement reverse proxy
+// (Configure Nginx/Apache to forward requests)
+
+// Start servers
+if (require.main === module) {
+  app.listen(3000, () => {
+    console.log('Express server running');
+  });
+}
