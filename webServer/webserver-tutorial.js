@@ -111,3 +111,11 @@ const wss = new WebSocket.Server({ server });
 wss.on('connection', ws => {
   ws.send('Connected!');
 });
+
+// Add HTTPS support
+const https = require('https');
+const options = {
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem')
+};
+https.createServer(options, app).listen(443);
