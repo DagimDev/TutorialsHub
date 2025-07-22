@@ -69,3 +69,8 @@ const app = express();
 
 // Add Express middleware
 app.use(express.json());
+
+// Create RESTful routes
+app.get('/api/users', (req, res) => {
+  res.json([{ id: 1, name: 'John' }]);
+});
