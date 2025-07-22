@@ -10,3 +10,10 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
+
+// Implement request method handling
+if (req.method === 'GET') {
+  res.end('GET request received');
+} else if (req.method === 'POST') {
+  res.end('POST request received');
+}
