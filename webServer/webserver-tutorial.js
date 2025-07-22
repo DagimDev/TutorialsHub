@@ -79,3 +79,9 @@ app.get('/api/users', (req, res) => {
 app.use((req, res) => {
   res.status(404).send('Not Found');
 });
+
+// Add error middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Server Error');
+});
