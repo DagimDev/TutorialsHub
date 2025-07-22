@@ -98,3 +98,9 @@ app.use((req, res, next) => {
 // Add rate limiting
 const rateLimit = require('express-rate-limit');
 app.use(rateLimit({ windowMs: 15*60*1000, max: 100 }));
+
+// Enable CORS
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
