@@ -104,3 +104,10 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
 });
+
+// Implement WebSocket
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ server });
+wss.on('connection', ws => {
+  ws.send('Connected!');
+});
