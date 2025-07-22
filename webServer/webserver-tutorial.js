@@ -85,3 +85,12 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Server Error');
 });
+
+// Implement authentication
+app.use((req, res, next) => {
+  if (req.headers.authorization === 'secret') {
+    next();
+  } else {
+    res.status(401).send('Unauthorized');
+  }
+});
