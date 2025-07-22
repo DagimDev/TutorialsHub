@@ -44,3 +44,12 @@ console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
 const url = require('url');
 const query = url.parse(req.url, true).query;
 res.end(`Hello ${query.name || 'Anonymous'}`);
+
+// Handle POST data
+let body = '';
+req.on('data', chunk => {
+  body += chunk.toString();
+});
+req.on('end', () => {
+  console.log('Received:', body);
+});
