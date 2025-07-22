@@ -39,3 +39,8 @@ if (req.url === '/error') {
 
 // Add request logging middleware
 console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
+
+// Parse query parameters
+const url = require('url');
+const query = url.parse(req.url, true).query;
+res.end(`Hello ${query.name || 'Anonymous'}`);
