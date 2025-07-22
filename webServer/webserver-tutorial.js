@@ -66,3 +66,6 @@ if (req.url === '/style.css') {
 // Implement Express.js framework
 const express = require('express');
 const app = express();
+
+// Add Express middleware
+app.use(express.json());
