@@ -24,3 +24,9 @@ if (req.url === '/') {
 } else if (req.url === '/about') {
   res.end('About page');
 }
+
+// Set response headers
+res.writeHead(200, {
+  'Content-Type': 'text/plain',
+  'X-Custom-Header': 'MyValue'
+});
