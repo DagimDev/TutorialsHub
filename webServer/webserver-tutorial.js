@@ -36,3 +36,6 @@ if (req.url === '/error') {
   res.writeHead(500);
   res.end('Server error');
 }
+
+// Add request logging middleware
+console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
