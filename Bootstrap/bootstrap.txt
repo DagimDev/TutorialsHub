@@ -139,3 +139,12 @@ darkModeToggle.addEventListener('click', () => {
 .dark-mode .navbar {
   background-color: #343a40 !important;
 }
+
+## 8. CUSTOMIZATION
+### 11: "Customize with Sass"
+// Override variables
+$primary: #ff6b35;
+$enable-rounded: false;
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
