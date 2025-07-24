@@ -129,3 +129,13 @@ const darkModeToggle = document.getElementById('darkModeToggle');
 darkModeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
+
+
+/* CSS */
+.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+.dark-mode .navbar {
+  background-color: #343a40 !important;
+}
