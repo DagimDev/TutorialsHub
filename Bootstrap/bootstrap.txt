@@ -84,3 +84,18 @@ Examples:
 <div class="d-flex justify-content-center align-items-start">
   <!-- Flex container -->
 </div>
+
+## 5. FORMS & INPUTS
+### 8: "Build forms with validation"
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-6">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" required>
+    <div class="invalid-feedback">
+      Please provide a valid email
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</form>
