@@ -30,3 +30,14 @@ Bootstrap provides three container types:
 1. Fixed-width: `.container` (responsive max-widths)
 2. Full-width: `.container-fluid` (always 100% width)
 3. Responsive: `.container-{breakpoint}` (fluid until breakpoint)
+
+### 3: "Build 12-column grid"
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-6">
+      <!-- Responsive column -->
+    </div>
+  </div>
+</div>
+
+Breakpoints: xs (<576px), sm (≥576px), md (≥768px), lg (≥992px), xl (≥1200px), xxl (≥1400px)
