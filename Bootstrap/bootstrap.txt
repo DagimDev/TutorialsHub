@@ -69,3 +69,13 @@ Breakpoints: xs (<576px), sm (≥576px), md (≥768px), lg (≥992px), xl (≥12
     <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>
+
+## 4. UTILITIES & HELPERS
+### 6: "Apply spacing utilities"
+Format: {property}{sides}-{size}
+- Properties: m (margin), p (padding)
+- Sides: t (top), b (bottom), s (start/left), e (end/right), x (left+right), y (top+bottom)
+- Sizes: 0-5 (0=0rem, 3=1rem, 5=3rem)
+
+Examples:
+<div class="mt-3 p-4">Margin top 1rem, padding 1.5rem</div>
