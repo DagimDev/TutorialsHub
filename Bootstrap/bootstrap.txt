@@ -148,3 +148,18 @@ $enable-rounded: false;
 
 // Import Bootstrap
 @import "~bootstrap/scss/bootstrap";
+
+
+## 9. OPTIMIZATION
+### 12: "Optimize with PurgeCSS"
+// postcss.config.js
+module.exports = {
+  plugins: [
+    require('@fullhuman/postcss-purgecss')({
+      content: ['./**/*.html'],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+    })
+  ]
+}
+
+## COMPLETE GIT COMMIT PLAN (25 STEPS)
