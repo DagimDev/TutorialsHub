@@ -59,3 +59,13 @@ Breakpoints: xs (<576px), sm (≥576px), md (≥768px), lg (≥992px), xl (≥12
     </div>
   </div>
 </nav>
+
+### 5: "Add card components"
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">Card Title</h5>
+    <p class="card-text">Content text</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div>
