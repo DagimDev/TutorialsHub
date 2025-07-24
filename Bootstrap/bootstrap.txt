@@ -169,3 +169,11 @@ Bootstrap provides text formatting classes:
 <p class="text-danger">Red text</p>
 <p class="fw-bold">Bold text</p>
 <p class="text-truncate">Truncated long text...</p>
+
+## COMMIT 14: "Implement positioning"
+Positioning helpers:
+<div class="position-relative" style="height: 100px;">
+  <div class="position-absolute top-0 start-0"></div>
+  <div class="position-fixed bottom-0 end-0"></div>
+  <div class="sticky-top"></div>
+</div>
