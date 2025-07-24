@@ -162,4 +162,10 @@ module.exports = {
   ]
 }
 
-## COMPLETE GIT COMMIT PLAN (25 STEPS)
+# 13: "Add text utilities"
+Bootstrap provides text formatting classes:
+<p class="text-start">Left aligned</p>
+<p class="text-center">Center aligned</p> 
+<p class="text-danger">Red text</p>
+<p class="fw-bold">Bold text</p>
+<p class="text-truncate">Truncated long text...</p>
