@@ -196,3 +196,13 @@ Interactive dropdowns:
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
+
+## 17: "Create modal dialogs"
+Advanced modal with scrolling:
+<div class="modal fade" id="advancedModal">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <!-- Modal content -->
+    </div>
+  </div>
+</div>
