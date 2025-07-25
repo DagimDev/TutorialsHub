@@ -240,3 +240,17 @@ Image carousel with controls:
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
+## 20: "Add toast notifications"
+Configurable toasts:
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div class="toast show" role="alert">
+    <div class="toast-header">
+      <strong class="me-auto">Notification</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      Your action was completed!
+    </div>
+  </div>
+</div>
