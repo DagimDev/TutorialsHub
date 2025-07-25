@@ -282,3 +282,11 @@ darkModeToggle.addEventListener('click', () => {
     background-color: var(--bs-dark) !important;
   }
 }
+
+## 23: "Add responsive embeds"
+Aspect ratio containers:
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/..." allowfullscreen></iframe>
+</div>
+
+Supported ratios: 1x1, 4x3, 16x9, 21x9
