@@ -307,3 +307,22 @@ module.exports = {
     })
   ]
 }
+
+
+## 25: "Deploy to production"
+Deployment checklist:
+1. Minify CSS/JS
+2. Optimize images
+3. Enable compression
+4. Set cache headers
+5. Test on all breakpoints
+
+Example .htaccess for Apache:
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+</IfModule>
