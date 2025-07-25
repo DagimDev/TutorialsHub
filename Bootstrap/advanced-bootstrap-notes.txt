@@ -55,3 +55,12 @@ $grid-breakpoints: (
     </div>
   </div>
 </nav>
+
+### Build custom cards
+.card-hover {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $box-shadow-lg;
+  }
+}
