@@ -21,3 +21,14 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1440px // Custom breakpoint
 );
+
+## 2. ADVANCED LAYOUTS
+
+### Implement CSS Grid integration
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
