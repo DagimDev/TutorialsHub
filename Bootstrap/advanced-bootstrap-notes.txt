@@ -32,3 +32,11 @@ $grid-breakpoints: (
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+### Create responsive aspect ratios
+.media-container {
+  @include aspect-ratio(16, 9);
+  iframe {
+    @extend .ratio;
+  }
+}
