@@ -254,3 +254,11 @@ Configurable toasts:
     </div>
   </div>
 </div>
+
+## 21: "Customize with Sass variables"
+Custom theme file (_variables.scss):
+$primary: #4f46e5; // Custom purple
+$enable-rounded: false;
+$body-bg: #f9fafb;
+
+@import "~bootstrap/scss/bootstrap";
