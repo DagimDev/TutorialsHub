@@ -183,3 +183,16 @@ Border control:
 <div class="border border-primary border-3 rounded-circle"></div>
 <div class="border-top border-success"></div>
 <div class="border-0"></div>
+
+## 16: "Add dropdown menus"
+Interactive dropdowns:
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+    Menu
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
