@@ -131,3 +131,15 @@ themeToggle.addEventListener('click', () => {
     "sidebar footer" auto / 250px 1fr;
   min-height: 100vh;
 }
+
+
+## 7. ACCESSIBILITY
+
+### Enhance component accessibility
+<nav aria-label="Main navigation">
+  <div role="navigation" aria-current="page">...</div>
+</nav>
+
+<button aria-expanded="false" aria-controls="dropdownMenu">
+  Toggle Menu
+</button>
