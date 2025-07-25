@@ -84,3 +84,23 @@ const imageObserver = new IntersectionObserver((entries) => {
 });
 lazyImages.forEach(img => imageObserver.observe(img));
 </script>
+
+## 5. DARK MODE SYSTEM
+
+### Implement theme switcher
+// JavaScript
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  document.documentElement.setAttribute('data-bs-theme', 
+    document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark');
+});
+
+// SCSS
+[data-bs-theme="dark"] {
+  --bs-body-color: #adb5bd;
+  --bs-body-bg: #212529;
+  
+  .navbar {
+    --bs-navbar-color: rgba(255, 255, 255, 0.75);
+  }
+}
