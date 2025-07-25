@@ -262,3 +262,23 @@ $enable-rounded: false;
 $body-bg: #f9fafb;
 
 @import "~bootstrap/scss/bootstrap";
+
+## 22: "Implement dark mode toggle"
+Complete dark mode implementation:
+// JavaScript
+const darkModeToggle = document.getElementById('darkToggle');
+const html = document.documentElement;
+
+darkModeToggle.addEventListener('click', () => {
+  html.setAttribute('data-bs-theme', 
+    html.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark');
+});
+
+// CSS
+[data-bs-theme="dark"] {
+  --bs-body-bg: #212529;
+  --bs-body-color: #f8f9fa;
+  .navbar {
+    background-color: var(--bs-dark) !important;
+  }
+}
