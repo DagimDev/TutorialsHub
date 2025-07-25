@@ -206,3 +206,18 @@ Advanced modal with scrolling:
     </div>
   </div>
 </div>
+
+## 18: "Implement tooltips/popovers"
+Tooltip initialization:
+<button class="btn btn-secondary" 
+        data-bs-toggle="tooltip" 
+        data-bs-placement="top"
+        title="Tooltip text">
+  Hover me
+</button>
+
+<script>
+// Enable tooltips everywhere
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el))
+</script>
