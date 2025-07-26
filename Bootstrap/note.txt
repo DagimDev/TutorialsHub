@@ -291,3 +291,34 @@ function showToast(message) {
   toast.show()
 }
 </script>
+
+## 15. DRAG AND DROP
+
+### 
+<div class="drag-container">
+  <div class="drag-item" draggable="true">
+    <div class="card">
+      <div class="card-body">Item 1</div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.drag-item').forEach(item => {
+  item.addEventListener('dragstart', handleDragStart)
+  item.addEventListener('dragover', handleDragOver)
+  item.addEventListener('drop', handleDrop)
+})
+
+function handleDragStart(e) {
+  e.dataTransfer.setData('text/plain', e.target.id)
+  e.target.classList.add('dragging')
+}
+</script>
+
+<style>
+.dragging {
+  opacity: 0.5;
+  border: 2px dashed var(--bs-primary);
+}
+</style>
