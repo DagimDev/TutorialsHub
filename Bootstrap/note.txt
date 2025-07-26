@@ -111,3 +111,19 @@ themeToggle.addEventListener('click', () => {
     transition: transform 0.3s ease;
   }
 }
+
+### Build dashboard layout
+<div class="dashboard-grid">
+  <aside class="sidebar">...</aside>
+  <main class="main-content">...</main>
+  <footer class="dashboard-footer">...</footer>
+</div>
+
+// SCSS
+.dashboard-grid {
+  display: grid;
+  grid-template:
+    "sidebar main" auto
+    "sidebar footer" auto / 250px 1fr;
+  min-height: 100vh;
+}
