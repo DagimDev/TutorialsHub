@@ -101,3 +101,13 @@ themeToggle.addEventListener('click', () => {
     --bs-navbar-color: rgba(255, 255, 255, 0.75);
   }
 }
+
+## 6. CUSTOM COMPONENTS
+
+### 
+.accordion-button:not(.collapsed) {
+  &::after {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease;
+  }
+}
