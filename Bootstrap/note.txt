@@ -213,3 +213,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
   })
 })
+
+## 12. STICKY NAVIGATION
+
+### 
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <!-- Nav content -->
+  </nav>
+</header>
+
+<style>
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+[data-bs-theme="dark"] .sticky-top {
+  background-color: rgba(33, 37, 41, 0.85);
+}
+</style>
