@@ -265,3 +265,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   }
 }
 </style>
+
+## 14. NOTIFICATION SYSTEM
+
+### 
+<div class="toast-container position-fixed top-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert">
+    <div class="toast-header">
+      <strong class="me-auto">System</strong>
+      <small>Just now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      Action completed successfully!
+    </div>
+  </div>
+</div>
+
+<script>
+// Programmatic control
+const toast = new bootstrap.Toast(document.getElementById('liveToast'))
+function showToast(message) {
+  const toastBody = document.querySelector('.toast-body')
+  toastBody.textContent = message
+  toast.show()
+}
+</script>
