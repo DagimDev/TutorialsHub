@@ -1,0 +1,11 @@
+## 1. CORE CONCEPTS
+
+// Install Bootstrap source
+npm install bootstrap @popperjs/core
+
+// Custom import (scss/main.scss)
+@import "../node_modules/bootstrap/scss/functions";
+@import "custom-variables"; // Your overrides
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
