@@ -158,3 +158,12 @@ module.exports = {
     })
   ]
 }
+
+## 9. DEPLOYMENT
+
+### 
+// package.json
+"scripts": {
+  "build": "sass scss/main.scss dist/css/main.min.css --style=compressed",
+  "postbuild": "postcss dist/css/main.min.css -o dist/css/main.min.css"
+}
