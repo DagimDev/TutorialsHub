@@ -347,3 +347,25 @@ function handleDragStart(e) {
   }
 }
 </style>
+
+## 17. OFFLINE CAPABILITIES
+
+### 
+// service-worker.js
+self.addEventListener('install', (event) => {
+  const urlsToCache = [
+    '/',
+    '/css/main.min.css',
+    '/js/app.min.js',
+    '/offline.html'
+  ]
+  event.waitUntil(
+    caches.open('v1').then((cache) => cache.addAll(urlsToCache))
+})
+
+// app.js
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+  })
+}
