@@ -38,3 +38,17 @@ $grid-breakpoints: (
     @extend .ratio;
   }
 }
+
+## 3. COMPONENT DEEP DIVE
+### 
+<nav class="navbar navbar-expand-xxl">
+  <div class="container-fluid">
+    <div class="dropdown-menu mega-menu">
+      <div class="row">
+        <div class="col-xxl-3">
+          <!-- Mega menu content -->
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
