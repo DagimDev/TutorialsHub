@@ -196,3 +196,20 @@ module.exports = {
   })
 })()
 </script>
+
+## 11. SMOOTH INTERACTIONS
+
+### 
+html {
+  scroll-behavior: smooth;
+}
+
+// For older browsers
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    })
+  })
+})
