@@ -236,3 +236,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   background-color: rgba(33, 37, 41, 0.85);
 }
 </style>
+
+## 13. DATA TABLES
+
+### 
+<div class="table-responsive-xxl">
+  <table class="table table-hover align-middle">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+.table-responsive-xxl {
+  @include media-breakpoint-down(xxl) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+</style>
