@@ -61,3 +61,23 @@ $grid-breakpoints: (
     box-shadow: $box-shadow-lg;
   }
 }
+
+## 4. PERFORMANCE OPTIMIZATION
+
+### 
+<img data-src="image.jpg" class="lazyload" alt="...">
+
+<script>
+// Using Intersection Observer API
+const lazyImages = document.querySelectorAll('.lazyload');
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      img.src = img.dataset.src;
+      imageObserver.unobserve(img);
+    }
+  });
+});
+lazyImages.forEach(img => imageObserver.observe(img));
+</script>
