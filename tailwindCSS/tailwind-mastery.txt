@@ -85,3 +85,19 @@ module.exports = {
     Submit
   </button>
 </form>
+
+## 5. ADVANCED TECHNIQUES
+
+### Create custom animations
+/* tailwind.config.js */
+module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
+    }
+  }
+}
+
+<div class="animate-spin-slow">🌀</div>
