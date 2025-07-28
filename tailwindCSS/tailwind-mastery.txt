@@ -177,3 +177,13 @@ theme: {
     }
   }
 }
+
+## 10. INTERACTIVE COMPONENTS
+
+### Build dropdown components
+<div class="relative group">
+  <button class="px-4 py-2">Menu</button>
+  <div class="hidden group-hover:block absolute z-10">
+    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Item 1</a>
+  </div>
+</div>
