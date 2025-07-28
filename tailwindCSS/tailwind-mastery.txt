@@ -146,3 +146,18 @@ plugins: [require('@tailwindcss/typography')]
   <h1>Article Title</h1>
   <p>Professional typography for content</p>
 </article>
+
+## 8. CUSTOM SPACING
+
+### Add custom spacing scale
+// tailwind.config.js
+theme: {
+  extend: {
+    spacing: {
+      '128': '32rem',
+      '144': '36rem',
+    }
+  }
+}
+
+<div class="mt-[32rem]">Custom spacing</div>
