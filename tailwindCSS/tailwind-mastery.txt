@@ -13,3 +13,15 @@ module.exports = {
   },
   plugins: [],
 }
+
+### Configure base styles
+/* src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+}
