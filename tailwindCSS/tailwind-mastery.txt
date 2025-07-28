@@ -74,3 +74,14 @@ module.exports = {
 <button class="border border-blue-500 text-blue-500 hover:bg-blue-50 px-4 py-2 rounded">
   Outline Button
 </button>
+
+### Add form elements
+<form class="space-y-4">
+  <input type="text" class="border rounded p-2 w-full" placeholder="Username">
+  <select class="border rounded p-2 w-full">
+    <option>Option 1</option>
+  </select>
+  <button type="submit" class="bg-blue-500 text-white p-2 rounded w-full">
+    Submit
+  </button>
+</form>
