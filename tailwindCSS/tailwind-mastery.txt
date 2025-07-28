@@ -236,3 +236,13 @@ function showToast() {
 <div class="aspect-w-16 aspect-h-9">
   <iframe src="https://www.youtube.com/embed/..."></iframe>
 </div>
+
+## 13. COMPLEX COMPONENTS
+
+### Build tabbed interfaces
+<div x-data="{ activeTab: 1 }">
+  <div class="flex border-b">
+    <button @click="activeTab = 1" :class="{ 'border-b-2 border-blue-500': activeTab === 1 }">Tab 1</button>
+  </div>
+  <div x-show="activeTab === 1">Content 1</div>
+</div>
