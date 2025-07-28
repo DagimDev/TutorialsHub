@@ -161,3 +161,19 @@ theme: {
 }
 
 <div class="mt-[32rem]">Custom spacing</div>
+
+## 9. GRADIENT BACKGROUNDS
+
+### Create gradient backgrounds
+<div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+  Rainbow gradient
+</div>
+
+// Custom gradient via config
+theme: {
+  extend: {
+    backgroundImage: {
+      'custom-gradient': 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+    }
+  }
+}
