@@ -195,3 +195,21 @@ theme: {
     <div class="modal-content">Content</div>
   </div>
 </div>
+
+## 11. NOTIFICATION SYSTEM
+
+### Implement toast notifications
+<div x-data="{ show: false }" 
+     x-show="show" 
+     x-transition
+     class="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded">
+  Success!
+</div>
+
+<script>
+function showToast() {
+  const toast = document.querySelector('[x-data]')
+  toast._x_dataStack[0].show = true
+  setTimeout(() => toast._x_dataStack[0].show = false, 3000)
+}
+</script>
