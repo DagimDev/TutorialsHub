@@ -25,3 +25,10 @@ module.exports = {
     @apply text-4xl font-bold;
   }
 }
+
+## 2. CORE UTILITIES
+
+### Implement responsive design
+<div class="w-full md:w-1/2 lg:w-1/3">
+  <!-- Responsive width -->
+</div>
