@@ -187,3 +187,11 @@ theme: {
     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Item 1</a>
   </div>
 </div>
+
+### Add modal dialogs
+<div x-data="{ open: false }">
+  <button @click="open = true">Open</button>
+  <div x-show="open" @click.away="open = false" class="fixed inset-0 z-50">
+    <div class="modal-content">Content</div>
+  </div>
+</div>
