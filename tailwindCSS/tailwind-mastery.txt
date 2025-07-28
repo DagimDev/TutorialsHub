@@ -42,3 +42,16 @@ module.exports = {
 <div class="bg-white dark:bg-gray-800">
   <h1 class="text-gray-900 dark:text-white">Title</h1>
 </div>
+
+
+## 3. LAYOUT COMPONENTS
+
+### Build responsive navbar
+<nav class="flex flex-wrap items-center justify-between p-4">
+  <div class="flex items-center">
+    <a href="#" class="text-xl font-bold">Logo</a>
+  </div>
+  <div class="hidden md:block">
+    <a href="#" class="px-4 hover:text-blue-500">Home</a>
+  </div>
+</nav>
