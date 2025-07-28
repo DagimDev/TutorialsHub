@@ -246,3 +246,12 @@ function showToast() {
   </div>
   <div x-show="activeTab === 1">Content 1</div>
 </div>
+
+### 21: Create accordion components
+<div x-data="{ open: false }">
+  <button @click="open = !open" class="flex justify-between w-full">
+    <span>Title</span>
+    <span x-text="open ? '−' : '+'"></span>
+  </button>
+  <div x-show="open" x-collapse>Content</div>
+</div>
