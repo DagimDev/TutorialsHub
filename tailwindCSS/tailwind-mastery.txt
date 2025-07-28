@@ -119,3 +119,17 @@ module.exports = {
 }
 
 <div class="bg-brand-500 text-brand-100">Brand colors</div>
+
+## 6. PERFORMANCE OPTIMIZATION
+
+### Configure PurgeCSS
+// tailwind.config.js
+module.exports = {
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.html'],
+    options: {
+      safelist: ['bg-red-500', 'px-4'],
+    }
+  }
+}
