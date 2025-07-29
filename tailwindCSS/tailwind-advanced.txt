@@ -22,3 +22,6 @@ hover:(bg-gray-100 scale-105)
 
 [8/25] @layer Directives
 @layer components { .btn { ... } }
+
+[9/25] Custom Animations
+animation: { 'bounce-slow': 'bounce 3s' }
