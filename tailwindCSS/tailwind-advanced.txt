@@ -7,3 +7,6 @@ Add custom colors via tailwind.config.js
 [3/25] Arbitrary Values
 Use square brackets for one-offs:
 class="top-[117px]"
+
+[4/25] Important Selectors
+config: { important: '#app' }
