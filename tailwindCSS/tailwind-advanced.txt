@@ -34,3 +34,6 @@ snap-x mandatory for carousels
 
 [12/25] Backdrop Filters
 backdrop-blur-lg for glass effects
+
+[13/25] CSS Variables
+[--my-var: #fff] then bg-[var(--my-var)]
