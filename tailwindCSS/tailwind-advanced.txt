@@ -10,3 +10,6 @@ class="top-[117px]"
 
 [4/25] Important Selectors
 config: { important: '#app' }
+
+[5/25] CSS Grid Templates
+grid-cols-[repeat(auto-fit,minmax(300px,1fr))]
