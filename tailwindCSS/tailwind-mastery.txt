@@ -272,3 +272,18 @@ theme: {
 <div class="transition-all duration-300 hover:scale-105">
   Hover me
 </div>
+
+## 15. DRAG AND DROP
+
+### Implement drag and drop
+<div 
+  x-data="{ dragged: null }"
+  @dragstart.self="dragged = $event.target"
+  @dragover.prevent="$event.target.classList.add('bg-gray-100')"
+  @dragleave.prevent="$event.target.classList.remove('bg-gray-100')"
+  @drop.prevent="
+    $event.target.classList.remove('bg-gray-100');
+    $event.target.appendChild(dragged);
+  ">
+  <div draggable="true">Item</div>
+</div>
