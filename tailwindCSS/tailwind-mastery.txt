@@ -320,3 +320,7 @@ module.exports = {
   'bg-red-500': error,
   'bg-green-500': success,
 }"></div>
+
+2. Important Selectors:
+// tailwind.config.js
+important: '#app'
