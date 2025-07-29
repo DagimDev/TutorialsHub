@@ -13,3 +13,6 @@ config: { important: '#app' }
 
 [5/25] CSS Grid Templates
 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]
+
+[6/25] Aspect Ratios
+aspect-w-16 aspect-h-9 for video embeds
