@@ -255,3 +255,20 @@ function showToast() {
   </button>
   <div x-show="open" x-collapse>Content</div>
 </div>
+
+## 14. ANIMATIONS & TRANSITIONS
+
+### Add custom transitions
+// tailwind.config.js
+theme: {
+  extend: {
+    transitionProperty: {
+      'height': 'height',
+      'width': 'width',
+    }
+  }
+}
+
+<div class="transition-all duration-300 hover:scale-105">
+  Hover me
+</div>
