@@ -332,3 +332,9 @@ variants: {
     backgroundColor: ['active'],
   }
 }
+
+4. Custom Screens:
+// tailwind.config.js
+screens: {
+  '3xl': '1920px',
+}
