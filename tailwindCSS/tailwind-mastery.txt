@@ -314,3 +314,9 @@ module.exports = {
 "scripts": {
   "build": "NODE_ENV=production postcss src/styles.css -o dist/styles.css"
 }
+
+1. Dynamic Class Binding:
+<div :class="{
+  'bg-red-500': error,
+  'bg-green-500': success,
+}"></div>
