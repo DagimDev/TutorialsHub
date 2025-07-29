@@ -324,3 +324,11 @@ module.exports = {
 2. Important Selectors:
 // tailwind.config.js
 important: '#app'
+
+3. Variant Order Control:
+// tailwind.config.js
+variants: {
+  extend: {
+    backgroundColor: ['active'],
+  }
+}
