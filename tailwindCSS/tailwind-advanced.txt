@@ -25,3 +25,6 @@ hover:(bg-gray-100 scale-105)
 
 [9/25] Custom Animations
 animation: { 'bounce-slow': 'bounce 3s' }
+
+[10/25] Multi-Column Layouts
+columns-3 gap-8 for magazine layouts
