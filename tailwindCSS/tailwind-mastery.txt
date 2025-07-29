@@ -287,3 +287,13 @@ theme: {
   ">
   <div draggable="true">Item</div>
 </div>
+
+## 16. PERFORMANCE
+
+### Configure JIT mode
+// tailwind.config.js
+module.exports = {
+  mode: 'jit',
+  purge: ['./src/**/*.{html,js}'],
+  // ...
+}
