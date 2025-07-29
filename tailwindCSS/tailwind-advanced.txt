@@ -1,0 +1,2 @@
+[1/25] JIT Mode Setup
+mode: 'jit' in config enables just-in-time compiler
