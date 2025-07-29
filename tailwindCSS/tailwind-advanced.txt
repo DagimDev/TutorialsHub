@@ -3,3 +3,7 @@ mode: 'jit' in config enables just-in-time compiler
 
 [2/25] Extended Color Palette
 Add custom colors via tailwind.config.js
+
+[3/25] Arbitrary Values
+Use square brackets for one-offs:
+class="top-[117px]"
