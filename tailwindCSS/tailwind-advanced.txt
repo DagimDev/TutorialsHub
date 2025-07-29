@@ -1,2 +1,5 @@
 [1/25] JIT Mode Setup
 mode: 'jit' in config enables just-in-time compiler
+
+[2/25] Extended Color Palette
+Add custom colors via tailwind.config.js
