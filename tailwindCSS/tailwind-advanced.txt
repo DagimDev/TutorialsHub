@@ -28,3 +28,6 @@ animation: { 'bounce-slow': 'bounce 3s' }
 
 [10/25] Multi-Column Layouts
 columns-3 gap-8 for magazine layouts
+
+[11/25] Scroll Snap
+snap-x mandatory for carousels
