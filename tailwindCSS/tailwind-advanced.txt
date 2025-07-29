@@ -19,3 +19,6 @@ aspect-w-16 aspect-h-9 for video embeds
 
 [7/25] Transition Groups
 hover:(bg-gray-100 scale-105)
+
+[8/25] @layer Directives
+@layer components { .btn { ... } }
