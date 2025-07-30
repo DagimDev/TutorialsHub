@@ -58,3 +58,6 @@ print:text-black for print optimization
 
 [20/25] Gradient Text
 bg-clip-text text-transparent
+
+[21/25] Transform Origins
+origin-top-left for custom pivots
