@@ -37,3 +37,6 @@ backdrop-blur-lg for glass effects
 
 [13/25] CSS Variables
 [--my-var: #fff] then bg-[var(--my-var)]
+
+[14/25] Dynamic Breakpoints
+min-[800px]:text-xl for custom media queries
