@@ -46,3 +46,6 @@ min-[800px]:text-xl for custom media queries
 
 [16/25] Advanced Selectors
 [&:nth-child(3)]:underline
+
+[17/25] Masking Effects
+mask-type: alpha via [mask-type:alpha]
