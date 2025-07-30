@@ -70,3 +70,6 @@ ring-2 ring-offset-4 for outline spacing
 
 [24/25] CSS Filters
 drop-shadow-xl for depth effects
+
+[25/25] Optimization
+cssnano for production builds
