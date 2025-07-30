@@ -1,0 +1,10 @@
+SASS/CSS MASTERY GUIDE
+=====================
+
+[1/25] SASS Setup
+Install: npm install sass
+File structure:
+styles/
+  ├── main.scss
+  ├── _variables.scss
+  ├── _mixins.scss
