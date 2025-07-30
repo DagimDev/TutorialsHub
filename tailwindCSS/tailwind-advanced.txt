@@ -43,3 +43,6 @@ min-[800px]:text-xl for custom media queries
 
 [15/25] Container Queries
 @container and @lg:text-xl
+
+[16/25] Advanced Selectors
+[&:nth-child(3)]:underline
