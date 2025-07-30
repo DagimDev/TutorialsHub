@@ -40,3 +40,6 @@ backdrop-blur-lg for glass effects
 
 [14/25] Dynamic Breakpoints
 min-[800px]:text-xl for custom media queries
+
+[15/25] Container Queries
+@container and @lg:text-xl
