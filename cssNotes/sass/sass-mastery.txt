@@ -29,3 +29,11 @@ $spacing-unit: 1rem;
   justify-content: center;
   align-items: center;
 }
+
+[6/25] Extend/Inheritance
+%message-shared {
+  border: 1px solid #ccc;
+}
+.success {
+  @extend %message-shared;
+}
