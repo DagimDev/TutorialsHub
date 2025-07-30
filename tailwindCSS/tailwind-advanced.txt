@@ -49,3 +49,6 @@ min-[800px]:text-xl for custom media queries
 
 [17/25] Masking Effects
 mask-type: alpha via [mask-type:alpha]
+
+[18/25] Scroll Behavior
+scroll-smooth for anchor links
