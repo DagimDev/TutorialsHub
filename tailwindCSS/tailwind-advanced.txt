@@ -67,3 +67,6 @@ ordinal slashed-zero for numeric formatting
 
 [23/25] Ring Offsets
 ring-2 ring-offset-4 for outline spacing
+
+[24/25] CSS Filters
+drop-shadow-xl for depth effects
