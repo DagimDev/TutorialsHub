@@ -12,3 +12,9 @@ styles/
 [2/25] Variables
 $primary-color: #3498db;
 $spacing-unit: 1rem;
+
+[3/25] Nesting
+.nav {
+  ul { margin: 0; }
+  li { display: inline-block; }
+}
