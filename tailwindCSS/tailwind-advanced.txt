@@ -64,3 +64,6 @@ origin-top-left for custom pivots
 
 [22/25] Font Variants
 ordinal slashed-zero for numeric formatting
+
+[23/25] Ring Offsets
+ring-2 ring-offset-4 for outline spacing
