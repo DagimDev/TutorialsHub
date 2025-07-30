@@ -61,3 +61,6 @@ bg-clip-text text-transparent
 
 [21/25] Transform Origins
 origin-top-left for custom pivots
+
+[22/25] Font Variants
+ordinal slashed-zero for numeric formatting
