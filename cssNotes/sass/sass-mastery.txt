@@ -18,3 +18,7 @@ $spacing-unit: 1rem;
   ul { margin: 0; }
   li { display: inline-block; }
 }
+
+[4/25] Partials
+@use 'variables';
+@use 'mixins';
