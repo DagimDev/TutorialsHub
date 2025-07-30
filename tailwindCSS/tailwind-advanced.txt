@@ -52,3 +52,6 @@ mask-type: alpha via [mask-type:alpha]
 
 [18/25] Scroll Behavior
 scroll-smooth for anchor links
+
+[19/25] Print Styles
+print:text-black for print optimization
