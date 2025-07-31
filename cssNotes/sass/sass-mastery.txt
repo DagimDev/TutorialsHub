@@ -67,3 +67,7 @@ $colors: (
 [12/25] BEM Methodology
 .block__element--modifier { }
 
+[13/25] Responsive Mixin
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) { @content; }
+}
