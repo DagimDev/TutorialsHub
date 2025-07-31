@@ -106,3 +106,5 @@ base/ components/ layout/ pages/ themes/ utils/ vendors/
 @debug $primary-color;
 @warn "Deprecated mixin";
 
+[22/25] Source Maps
+sass --watch --source-map
