@@ -126,3 +126,8 @@ CSS Custom Properties
 :root {
   --primary: #{$primary-color};
 }
+
+Utility Classes
+@each $size in 1, 2, 3 {
+  .p-#{$size} { padding: #{$size}rem; }
+}
