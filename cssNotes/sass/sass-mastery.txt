@@ -71,3 +71,7 @@ $colors: (
 @mixin respond-to($breakpoint) {
   @media (min-width: $breakpoint) { @content; }
 }
+
+[14/25] Color Functions
+background: darken($primary-color, 10%);
+
