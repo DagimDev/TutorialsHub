@@ -83,3 +83,8 @@ background: darken($primary-color, 10%);
 @each $size in 1, 2, 3 {
   .p-#{$size} { padding: #{$size}rem; }
 }
+
+[17/25] Animation System
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
