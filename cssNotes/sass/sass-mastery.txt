@@ -75,3 +75,7 @@ $colors: (
 [14/25] Color Functions
 background: darken($primary-color, 10%);
 
+[15/25] CSS Custom Properties
+:root {
+  --primary: #{$primary-color};
+}
