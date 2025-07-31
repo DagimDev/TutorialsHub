@@ -98,3 +98,6 @@ background: darken($primary-color, 10%);
 7-1 Pattern:
 base/ components/ layout/ pages/ themes/ utils/ vendors/
 
+[20/25] Performance
+@charset "UTF-8";
+@use 'variables' as v;
