@@ -136,3 +136,8 @@ Animation System
 @keyframes fadeIn {
   from { opacity: 0; }
 }
+
+Theming
+[data-theme="dark"] {
+  background: #111;
+}
