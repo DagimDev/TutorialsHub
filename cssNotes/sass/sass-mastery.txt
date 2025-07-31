@@ -157,3 +157,7 @@ Debugging
 
 Source Maps
 sass --watch --source-map
+
+Critical CSS
+@import 'critical/base';
+@import 'critical/layout';
