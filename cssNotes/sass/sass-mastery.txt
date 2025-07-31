@@ -141,3 +141,7 @@ Theming
 [data-theme="dark"] {
   background: #111;
 }
+
+Architecture
+7-1 Pattern:
+base/ components/ layout/ pages/ themes/ utils/ vendors/
