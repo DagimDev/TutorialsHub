@@ -108,3 +108,8 @@ base/ components/ layout/ pages/ themes/ utils/ vendors/
 
 [22/25] Source Maps
 sass --watch --source-map
+
+
+[23/25] Critical CSS
+@import 'critical/base';
+@import 'critical/layout';
