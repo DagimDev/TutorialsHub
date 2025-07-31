@@ -57,3 +57,9 @@ $spacing-unit: 1rem;
 @mixin theme($dark: false) {
   @if $dark { background: #000; }
 }
+
+[11/25] Maps
+$colors: (
+  primary: #3498db,
+  secondary: #2ecc71
+);
