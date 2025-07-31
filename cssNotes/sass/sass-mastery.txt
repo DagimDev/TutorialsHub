@@ -153,3 +153,7 @@ Performance
 Debugging
 @debug $primary-color;
 @warn "Deprecated mixin";
+
+
+Source Maps
+sass --watch --source-map
