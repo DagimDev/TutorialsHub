@@ -116,3 +116,7 @@ sass --watch --source-map
 
 [24/25] PostCSS Integration
 npm install postcss-sass autoprefixer
+
+
+[25/25] Production Build
+sass --style=compressed --no-source-map
