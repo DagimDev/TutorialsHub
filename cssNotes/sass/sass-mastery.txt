@@ -131,3 +131,8 @@ Utility Classes
 @each $size in 1, 2, 3 {
   .p-#{$size} { padding: #{$size}rem; }
 }
+
+Animation System
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
