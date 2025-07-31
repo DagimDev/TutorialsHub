@@ -63,3 +63,7 @@ $colors: (
   primary: #3498db,
   secondary: #2ecc71
 );
+
+[12/25] BEM Methodology
+.block__element--modifier { }
+
