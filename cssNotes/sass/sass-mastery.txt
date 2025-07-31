@@ -101,3 +101,8 @@ base/ components/ layout/ pages/ themes/ utils/ vendors/
 [20/25] Performance
 @charset "UTF-8";
 @use 'variables' as v;
+
+[21/25] Debugging
+@debug $primary-color;
+@warn "Deprecated mixin";
+
