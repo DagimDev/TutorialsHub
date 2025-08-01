@@ -68,3 +68,9 @@ $design-system: (
 @mixin debug($color: red) {
   outline: 1px solid $color;
 }
+
+[12/25] Performance Optimization
+@charset "UTF-8";
+@use 'abstracts/variables' as v with (
+  $spacing-unit: 0.5rem !global
+);
