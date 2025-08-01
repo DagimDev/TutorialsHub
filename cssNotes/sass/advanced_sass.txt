@@ -113,3 +113,14 @@ npm install stylelint stylelint-config-standard-scss --save-dev
 @mixin fluid-text($min-size, $max-size) {
   font-size: clamp(#{$min-size}, #{$max-size - $min-size} + 2vw, #{$max-size});
 }
+
+[21/25] CSS Nesting
+.card {
+  & > .title {
+    font-weight: bold;
+    
+    @media (width >= 768px) {
+      font-size: 1.5rem;
+    }
+  }
+}
