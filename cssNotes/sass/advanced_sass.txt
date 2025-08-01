@@ -29,3 +29,9 @@ $design-system: (
     }
   }
 }
+
+[5/25] BEM + Utility Patterns
+.c-card {
+  &__title { font-size: 1.2rem; }
+  &--featured { @include mix.respond-above(md); }
+}
