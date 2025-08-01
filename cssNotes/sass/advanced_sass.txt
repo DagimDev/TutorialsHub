@@ -63,3 +63,8 @@ $design-system: (
   animation: $name $duration ease-out;
   @keyframes #{$name} { /* ... */ }
 }
+
+[11/25] Debug Utilities
+@mixin debug($color: red) {
+  outline: 1px solid $color;
+}
