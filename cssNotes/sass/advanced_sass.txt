@@ -52,3 +52,8 @@ $design-system: (
   background: adjust-hue(vars.$primary, 15deg);
   border-color: transparentize(vars.$primary, 0.2);
 }
+
+[9/25] Dynamic Utilities
+@each $name, $value in map-get(vars.$design-system, 'colors') {
+  .bg-#{$name} { background: $value; }
+}
