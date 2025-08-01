@@ -57,3 +57,9 @@ $design-system: (
 @each $name, $value in map-get(vars.$design-system, 'colors') {
   .bg-#{$name} { background: $value; }
 }
+
+[10/25] Animation System
+@mixin animate($name, $duration: 300ms) {
+  animation: $name $duration ease-out;
+  @keyframes #{$name} { /* ... */ }
+}
