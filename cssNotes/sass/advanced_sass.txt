@@ -35,3 +35,8 @@ $design-system: (
   &__title { font-size: 1.2rem; }
   &--featured { @include mix.respond-above(md); }
 }
+
+[6/25] Advanced Theming
+[data-theme="dark"] {
+  --bg-color: #{map-get(map-get(vars.$design-system, 'colors'), 'secondary')};
+}
