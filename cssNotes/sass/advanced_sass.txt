@@ -74,3 +74,8 @@ $design-system: (
 @use 'abstracts/variables' as v with (
   $spacing-unit: 0.5rem !global
 );
+
+[13/25] Source Maps
+Build command:
+sass --watch src/scss:dist/css --embed-source-map
+
