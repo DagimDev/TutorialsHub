@@ -143,3 +143,7 @@ $design-system: (
   ),
   breakpoints: (sm: 576px, md: 768px)
 );
+
+[3/25] Namespaced Imports
+@use 'abstracts/variables' as vars;
+@use 'abstracts/mixins' as mix;
