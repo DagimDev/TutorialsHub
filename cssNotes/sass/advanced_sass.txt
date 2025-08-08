@@ -147,3 +147,11 @@ $design-system: (
 [3/25] Namespaced Imports
 @use 'abstracts/variables' as vars;
 @use 'abstracts/mixins' as mix;
+[4/25] Responsive Mixins
+@mixin respond-above($breakpoint) {
+  @if map-has-key(vars.$design-system, $breakpoint) {
+    @media (min-width: map-get(vars.$design-system, $breakpoint)) {
+      @content;
+    }
+  }
+}
