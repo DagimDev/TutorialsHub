@@ -124,3 +124,13 @@ npm install stylelint stylelint-config-standard-scss --save-dev
     }
   }
 }
+
+[1/25] Advanced Project Setup
+Install: npm install sass --save-dev
+File structure:
+src/
+  ├── scss/
+  │   ├── abstracts/ (_variables.scss, _mixins.scss)
+  │   ├── base/
+  │   ├── components/
+  │   └── main.scss
