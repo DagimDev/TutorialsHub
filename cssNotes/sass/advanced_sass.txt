@@ -237,3 +237,9 @@ npm install stylelint stylelint-config-standard-scss --save-dev
     @content;
   }
 }
+
+
+[20/25] Modern Fluid Typography
+@mixin fluid-text($min-size, $max-size) {
+  font-size: clamp(#{$min-size}, #{$max-size - $min-size} + 2vw, #{$max-size});
+}
