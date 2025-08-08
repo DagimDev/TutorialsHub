@@ -268,3 +268,8 @@ npm install stylelint stylelint-config-standard-scss --save-dev
   "dev": "sass --watch src/scss:dist/css --embed-source-map",
   "build": "sass src/scss:dist/css --no-source-map --style=compressed"
 }
+
+[25/25] Documentation
+/// Creates a responsive grid
+/// @param {number} $columns - Number of columns
+@mixin grid($columns) { /* ... */ }
