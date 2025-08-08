@@ -216,3 +216,7 @@ sass --watch src/scss:dist/css --embed-source-map
 [15/25] PostCSS Integration
 npm install postcss postcss-preset-env --save-dev
 
+[16/25] Production Build
+Build command:
+sass src/scss:dist/css --no-source-map --style=compressed
+
