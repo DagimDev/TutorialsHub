@@ -222,3 +222,11 @@ sass src/scss:dist/css --no-source-map --style=compressed
 
 [17/25] Linting Setup
 npm install stylelint stylelint-config-standard-scss --save-dev
+
+
+[18/25] Accessibility Mixins
+@mixin focus-visible {
+  &:focus-visible {
+    outline: 2px solid vars.$primary;
+  }
+}
