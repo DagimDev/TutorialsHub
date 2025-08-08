@@ -134,3 +134,12 @@ src/
   │   ├── base/
   │   ├── components/
   │   └── main.scss
+
+[2/25] Design Tokens
+$design-system: (
+  colors: (
+    primary: #3498db,
+    secondary: #2ecc71
+  ),
+  breakpoints: (sm: 576px, md: 768px)
+);
