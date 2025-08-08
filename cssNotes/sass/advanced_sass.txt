@@ -172,3 +172,10 @@ $design-system: (
   --spacing-unit: #{vars.$spacing-unit};
   --primary-rgb: #{red(vars.$primary), green(vars.$primary), blue(vars.$primary)};
 }
+
+[8/25] Color Manipulation
+.button {
+  background: adjust-hue(vars.$primary, 15deg);
+  border-color: transparentize(vars.$primary, 0.2);
+}
+
