@@ -259,3 +259,7 @@ npm install stylelint stylelint-config-standard-scss --save-dev
 [class^="icon-"] {
   /* Targets all classes starting with "icon-" */
 }
+
+[23/25] Cascade Layers
+@layer base, components, utilities;
+
