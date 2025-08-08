@@ -254,3 +254,8 @@ npm install stylelint stylelint-config-standard-scss --save-dev
     }
   }
 }
+
+[22/25] Advanced Selectors
+[class^="icon-"] {
+  /* Targets all classes starting with "icon-" */
+}
