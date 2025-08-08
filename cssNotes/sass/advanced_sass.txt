@@ -179,3 +179,7 @@ $design-system: (
   border-color: transparentize(vars.$primary, 0.2);
 }
 
+[9/25] Dynamic Utilities
+@each $name, $value in map-get(vars.$design-system, 'colors') {
+  .bg-#{$name} { background: $value; }
+}
