@@ -205,3 +205,10 @@ $design-system: (
 [13/25] Source Maps
 Build command:
 sass --watch src/scss:dist/css --embed-source-map
+
+
+[14/25] Critical CSS
+@layer critical {
+  body { font-family: sans-serif; }
+  .header { position: sticky; }
+}
