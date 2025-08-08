@@ -263,3 +263,8 @@ npm install stylelint stylelint-config-standard-scss --save-dev
 [23/25] Cascade Layers
 @layer base, components, utilities;
 
+[24/25] Build Automation
+"scripts": {
+  "dev": "sass --watch src/scss:dist/css --embed-source-map",
+  "build": "sass src/scss:dist/css --no-source-map --style=compressed"
+}
