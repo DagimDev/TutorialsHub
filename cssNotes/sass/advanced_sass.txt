@@ -166,3 +166,9 @@ $design-system: (
 [data-theme="dark"] {
   --bg-color: #{map-get(map-get(vars.$design-system, 'colors'), 'secondary')};
 }
+
+[7/25] CSS Custom Properties
+:root {
+  --spacing-unit: #{vars.$spacing-unit};
+  --primary-rgb: #{red(vars.$primary), green(vars.$primary), blue(vars.$primary)};
+}
