@@ -220,3 +220,5 @@ npm install postcss postcss-preset-env --save-dev
 Build command:
 sass src/scss:dist/css --no-source-map --style=compressed
 
+[17/25] Linting Setup
+npm install stylelint stylelint-config-standard-scss --save-dev
