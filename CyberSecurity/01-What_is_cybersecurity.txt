@@ -19,3 +19,10 @@ They are designed to damage systems, steal data, or spy on users. Installing tru
 Phishing is a social engineering technique where attackers send fake emails or messages pretending to be trusted sources (like banks or companies).
 Their goal is to trick users into revealing passwords, credit card numbers, or downloading malware.
 Always check the sender address and avoid clicking suspicious links.
+
+4. Firewall
+
+A firewall acts like a security gate between your computer/network and the internet.
+It filters traffic — allowing trusted data in and blocking suspicious activity.
+There are hardware and software firewalls; both help control access to protect systems.
+
