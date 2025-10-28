@@ -3,3 +3,7 @@ At its core, cybersecurity is the practice of protecting systems, networks, prog
 
 Think of it as the digital equivalent of home security. You have locks on your doors (passwords), a fence around your yard (firewall), and an alarm system (intrusion detection) to protect your physical belongings and family. Cybersecurity does the same for your digital assets.
 
+1. Cybersecurity
+
+Cybersecurity is the practice of protecting computers, servers, networks, and data from digital attacks. Its goal is to ensure information remains confidential, accurate, and available to authorized users only.
+These attacks often aim to access, change, or destroy sensitive information or interrupt normal business processes.
