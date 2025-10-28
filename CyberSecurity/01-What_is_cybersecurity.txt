@@ -1,0 +1,5 @@
+A Simple Definition
+At its core, cybersecurity is the practice of protecting systems, networks, programs, and data from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.
+
+Think of it as the digital equivalent of home security. You have locks on your doors (passwords), a fence around your yard (firewall), and an alarm system (intrusion detection) to protect your physical belongings and family. Cybersecurity does the same for your digital assets.
+
