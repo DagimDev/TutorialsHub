@@ -14,3 +14,8 @@ These attacks often aim to access, change, or destroy sensitive information or i
 Malware stands for malicious software. It includes viruses, worms, trojans, spyware, ransomware, and adware.
 They are designed to damage systems, steal data, or spy on users. Installing trusted antivirus software and keeping systems updated helps prevent malware infections.
 
+3. Phishing
+
+Phishing is a social engineering technique where attackers send fake emails or messages pretending to be trusted sources (like banks or companies).
+Their goal is to trick users into revealing passwords, credit card numbers, or downloading malware.
+Always check the sender address and avoid clicking suspicious links.
