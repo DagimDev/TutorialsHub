@@ -26,3 +26,4 @@ A firewall acts like a security gate between your computer/network and the inter
 It filters traffic — allowing trusted data in and blocking suspicious activity.
 There are hardware and software firewalls; both help control access to protect systems.
 
+are sera
