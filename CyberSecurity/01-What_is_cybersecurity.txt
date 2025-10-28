@@ -7,3 +7,10 @@ Think of it as the digital equivalent of home security. You have locks on your d
 
 Cybersecurity is the practice of protecting computers, servers, networks, and data from digital attacks. Its goal is to ensure information remains confidential, accurate, and available to authorized users only.
 These attacks often aim to access, change, or destroy sensitive information or interrupt normal business processes.
+
+
+2. Malware
+
+Malware stands for malicious software. It includes viruses, worms, trojans, spyware, ransomware, and adware.
+They are designed to damage systems, steal data, or spy on users. Installing trusted antivirus software and keeping systems updated helps prevent malware infections.
+
