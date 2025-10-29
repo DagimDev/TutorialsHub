@@ -103,3 +103,8 @@ A digital footprint is the trail of data you leave online — like posts, search
 It can be active (you post it) or passive (collected automatically).
 Managing your footprint is key to protecting your privacy.
 
+19. Ransomware
+
+Ransomware is malware that locks or encrypts your files and demands money to restore access.
+Never pay the ransom — instead, restore from backups and improve security measures.
+
