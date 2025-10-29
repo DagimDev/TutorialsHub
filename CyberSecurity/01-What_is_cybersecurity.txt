@@ -37,3 +37,9 @@ Used in secure messaging, HTTPS websites, and digital banking.
 Decryption is the reverse of encryption — converting encrypted data back to its original readable form using a secret key.
 Authorized users or systems perform decryption to access the actual information.
 
+7. Authentication
+
+Authentication verifies who you are.
+Examples include passwords, fingerprints, facial recognition, or one-time codes.
+It’s the first step of securing systems before granting access to resources.
+
