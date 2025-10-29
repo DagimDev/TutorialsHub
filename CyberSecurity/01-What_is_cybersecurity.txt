@@ -70,3 +70,8 @@ Social engineering is manipulating people into revealing confidential data.
 Instead of attacking computers, hackers exploit human psychology.
 Example: pretending to be tech support to get a password.
 
+13. DDoS (Distributed Denial of Service)
+
+A DDoS attack floods a target (like a website or server) with massive traffic from many sources, causing it to crash or become slow.
+Companies use traffic filters and CDNs to defend against such attacks.
+
