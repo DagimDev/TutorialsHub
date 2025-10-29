@@ -48,3 +48,9 @@ It’s the first step of securing systems before granting access to resources.
 After authentication, authorization decides what you can do.
 For example, a regular user may view files but only an admin can edit or delete them.
 Together, authentication and authorization ensure layered security.
+
+9. Vulnerability
+
+A vulnerability is a weakness in software, hardware, or processes that attackers can exploit.
+Regular updates and security audits help find and fix vulnerabilities before hackers do.
+
