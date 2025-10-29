@@ -64,3 +64,9 @@ For example, using a buffer overflow exploit to gain system access.
 A threat actor is anyone or anything that poses a security risk — from individuals to entire organizations.
 Types include hackers, cybercriminals, hacktivists, insider threats, and nation-state actors.
 
+12. Social Engineering
+
+Social engineering is manipulating people into revealing confidential data.
+Instead of attacking computers, hackers exploit human psychology.
+Example: pretending to be tech support to get a password.
+
