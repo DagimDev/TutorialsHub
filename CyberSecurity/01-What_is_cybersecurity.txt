@@ -32,3 +32,8 @@ Encryption converts readable data into unreadable code using algorithms and keys
 It ensures that even if someone intercepts the data, they cannot understand it without the correct key.
 Used in secure messaging, HTTPS websites, and digital banking.
 
+6. Decryption
+
+Decryption is the reverse of encryption — converting encrypted data back to its original readable form using a secret key.
+Authorized users or systems perform decryption to access the actual information.
+
