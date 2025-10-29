@@ -80,3 +80,8 @@ Companies use traffic filters and CDNs to defend against such attacks.
 Patch management involves updating software regularly to fix security holes and bugs.
 Hackers often exploit unpatched systems, so keeping software updated is crucial.
 
+15. Zero-Day Attack
+
+A zero-day attack happens when hackers exploit a vulnerability before the developer releases a patch.
+Because no fix exists yet, it’s one of the most dangerous types of attacks.
+
