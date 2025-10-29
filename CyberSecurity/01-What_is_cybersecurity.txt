@@ -85,3 +85,9 @@ Hackers often exploit unpatched systems, so keeping software updated is crucial.
 A zero-day attack happens when hackers exploit a vulnerability before the developer releases a patch.
 Because no fix exists yet, it’s one of the most dangerous types of attacks.
 
+16. Intrusion Detection System (IDS)
+
+An IDS monitors network or system activity for suspicious behavior and potential threats.
+It alerts administrators when unusual activity is detected.
+IDS can be host-based (HIDS) or network-based (NIDS).
+
