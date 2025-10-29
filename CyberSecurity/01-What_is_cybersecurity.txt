@@ -97,3 +97,9 @@ A data breach happens when sensitive data (like passwords or credit card info) i
 Causes include weak passwords, insider leaks, or malware.
 Prevention includes encryption, monitoring, and strong access control.
 
+18. Digital Footprint
+
+A digital footprint is the trail of data you leave online — like posts, searches, or login activity.
+It can be active (you post it) or passive (collected automatically).
+Managing your footprint is key to protecting your privacy.
+
