@@ -75,3 +75,8 @@ Example: pretending to be tech support to get a password.
 A DDoS attack floods a target (like a website or server) with massive traffic from many sources, causing it to crash or become slow.
 Companies use traffic filters and CDNs to defend against such attacks.
 
+14. Patch Management
+
+Patch management involves updating software regularly to fix security holes and bugs.
+Hackers often exploit unpatched systems, so keeping software updated is crucial.
+
