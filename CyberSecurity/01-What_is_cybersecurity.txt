@@ -91,3 +91,9 @@ An IDS monitors network or system activity for suspicious behavior and potential
 It alerts administrators when unusual activity is detected.
 IDS can be host-based (HIDS) or network-based (NIDS).
 
+17. Data Breach
+
+A data breach happens when sensitive data (like passwords or credit card info) is accessed without authorization.
+Causes include weak passwords, insider leaks, or malware.
+Prevention includes encryption, monitoring, and strong access control.
+
