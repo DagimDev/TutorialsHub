@@ -58,3 +58,9 @@ Regular updates and security audits help find and fix vulnerabilities before hac
 
 An exploit is the actual method or tool that attackers use to take advantage of a vulnerability.
 For example, using a buffer overflow exploit to gain system access.
+
+11. Threat Actor
+
+A threat actor is anyone or anything that poses a security risk — from individuals to entire organizations.
+Types include hackers, cybercriminals, hacktivists, insider threats, and nation-state actors.
+
