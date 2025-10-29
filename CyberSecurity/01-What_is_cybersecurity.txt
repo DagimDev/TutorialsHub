@@ -43,3 +43,8 @@ Authentication verifies who you are.
 Examples include passwords, fingerprints, facial recognition, or one-time codes.
 It’s the first step of securing systems before granting access to resources.
 
+8. Authorization
+
+After authentication, authorization decides what you can do.
+For example, a regular user may view files but only an admin can edit or delete them.
+Together, authentication and authorization ensure layered security.
