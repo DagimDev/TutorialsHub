@@ -26,4 +26,9 @@ A firewall acts like a security gate between your computer/network and the inter
 It filters traffic — allowing trusted data in and blocking suspicious activity.
 There are hardware and software firewalls; both help control access to protect systems.
 
-are sera
+5. Encryption
+
+Encryption converts readable data into unreadable code using algorithms and keys.
+It ensures that even if someone intercepts the data, they cannot understand it without the correct key.
+Used in secure messaging, HTTPS websites, and digital banking.
+
