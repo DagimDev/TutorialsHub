@@ -54,3 +54,7 @@ Together, authentication and authorization ensure layered security.
 A vulnerability is a weakness in software, hardware, or processes that attackers can exploit.
 Regular updates and security audits help find and fix vulnerabilities before hackers do.
 
+10. Exploit
+
+An exploit is the actual method or tool that attackers use to take advantage of a vulnerability.
+For example, using a buffer overflow exploit to gain system access.
