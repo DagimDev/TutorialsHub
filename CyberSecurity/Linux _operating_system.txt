@@ -134,3 +134,22 @@ mkdir projects  # Creates a folder named 'projects'
 
 Why it’s powerful:
 You can automate tasks, write scripts, and manage entire systems with just text commands — no mouse needed.
+
+8. Basic Linux Commands
+| Command | Description             |
+| ------- | ----------------------- |
+| `pwd`   | Print working directory |
+| `ls`    | List files and folders  |
+| `cd`    | Change directory        |
+| `mkdir` | Create a folder         |
+| `rm`    | Remove file/folder      |
+| `cp`    | Copy file               |
+| `mv`    | Move or rename file     |
+| `cat`   | View file content       |
+| `chmod` | Change file permissions |
+| `sudo`  | Run command as admin    |
+Example:
+
+sudo apt update && sudo apt upgrade
+
+Updates all installed software (Ubuntu/Debian systems).
