@@ -93,3 +93,27 @@ CentOS / RHEL: Used in enterprise servers
 Example:
 If you’re learning ethical hacking — use Kali Linux.
 If you’re learning programming — use Ubuntu.
+
+6. Linux File System Structure
+
+Explanation:
+Linux organizes files in a tree structure, starting from the root directory /.
+Everything — files, folders, even devices — is treated as a file.
+
+Important directories:
+| Directory | Description                            |
+| --------- | -------------------------------------- |
+| `/`       | Root directory (base of the system)    |
+| `/home`   | User personal files                    |
+| `/bin`    | Basic commands (like `ls`, `cp`, `mv`) |
+| `/etc`    | Configuration files                    |
+| `/var`    | Variable files like logs               |
+| `/usr`    | Installed software and utilities       |
+| `/dev`    | Device files (USB, drives)             |
+Example:
+
+cd /home/dagim
+ls
+
+
+→ Navigates to your home folder and lists your personal files.
