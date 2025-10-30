@@ -9,3 +9,19 @@ While Windows hides most system details from users, Linux gives you full control
 
 Real-life example:
 If you use an Android phone — you’re already using Linux! Android runs on a Linux kernel.
+
+2. What Makes Linux Different?
+
+Explanation:
+Linux is open-source, meaning anyone can view, modify, or share its code.
+This makes it highly secure, stable, and transparent.
+It’s widely used in servers, cybersecurity, IoT devices, and programming.
+
+Key differences from Windows:
+| Feature       | Windows  | Linux               |
+| ------------- | -------- | ------------------- |
+| Cost          | Paid     | Free                |
+| Source Code   | Closed   | Open                |
+| Security      | Moderate | Very strong         |
+| Customization | Limited  | Highly customizable |
+| Command Line  | Optional | Core feature        |
