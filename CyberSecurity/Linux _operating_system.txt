@@ -25,3 +25,24 @@ Key differences from Windows:
 | Security      | Moderate | Very strong         |
 | Customization | Limited  | Highly customizable |
 | Command Line  | Optional | Core feature        |
+
+3. Linux Architecture
+
+Linux is made up of 4 main layers:
+
+Kernel: The heart of Linux. Manages memory, CPU, and hardware communication.
+
+System Libraries: Provide functions and system calls for applications.
+
+System Utilities: Basic tools for system maintenance and operations.
+
+User Space: Where users interact with the system through shells or GUI.
+
+Example:
+When you type a command like ls:
+
+The shell sends it to the kernel
+
+The kernel accesses the filesystem
+
+It returns the list of files to your terminal
