@@ -190,3 +190,20 @@ Others can only read
 Change permissions:
 
 chmod 755 script.sh
+
+10. Package Management
+
+Explanation:
+Package managers make installing and updating software easy.
+
+Common package managers:
+| Distro        | Package Manager | Example Command            |
+| ------------- | --------------- | -------------------------- |
+| Ubuntu/Debian | `apt`           | `sudo apt install firefox` |
+| Fedora        | `dnf`           | `sudo dnf install nginx`   |
+| Arch Linux    | `pacman`        | `sudo pacman -S vlc`       |
+
+Example:
+To remove a program:
+
+sudo apt remove gimp
