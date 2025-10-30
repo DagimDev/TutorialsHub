@@ -1,0 +1,11 @@
+1. What Is Linux?
+
+Explanation:
+Linux is an open-source operating system (OS) based on the Unix architecture.
+It manages your computer’s hardware and software — just like Windows or macOS — but it’s known for being secure, customizable, and free.
+
+Key idea:
+While Windows hides most system details from users, Linux gives you full control of the machine — perfect for developers, ethical hackers, and system admins.
+
+Real-life example:
+If you use an Android phone — you’re already using Linux! Android runs on a Linux kernel.
