@@ -70,3 +70,26 @@ uname -r
 
 
 This shows your Linux kernel version.
+
+5. Linux Distributions (Distros)
+
+Explanation:
+A distribution (distro) is a complete Linux package — kernel + software + tools — customized for different purposes.
+
+Popular Linux Distros:
+
+Ubuntu: Beginner-friendly (good for learners)
+
+Kali Linux: Used for cybersecurity & penetration testing
+
+Debian: Known for stability
+
+Fedora: Focused on innovation
+
+Arch Linux: For advanced users who want full control
+
+CentOS / RHEL: Used in enterprise servers
+
+Example:
+If you’re learning ethical hacking — use Kali Linux.
+If you’re learning programming — use Ubuntu.
