@@ -117,3 +117,20 @@ ls
 
 
 → Navigates to your home folder and lists your personal files.
+
+7. The Linux Shell
+
+Explanation:
+A shell is the command-line interface (CLI) that lets you communicate with the OS.
+The most common one is Bash (Bourne Again SHell).
+
+Example commands:
+
+pwd     # Shows current directory
+ls      # Lists files
+cd ..   # Goes one directory up
+mkdir projects  # Creates a folder named 'projects'
+
+
+Why it’s powerful:
+You can automate tasks, write scripts, and manage entire systems with just text commands — no mouse needed.
