@@ -153,3 +153,40 @@ Example:
 sudo apt update && sudo apt upgrade
 
 Updates all installed software (Ubuntu/Debian systems).
+
+
+9. Users and Permissions
+
+Explanation:
+Linux is a multi-user system.
+Each user has permissions that define what they can read, write, or execute.
+
+Three types of permissions:
+
+Read (r): View content
+
+Write (w): Modify content
+
+Execute (x): Run the file
+
+Example:
+
+ls -l
+
+
+Might show:
+
+-rwxr-xr--
+
+
+This means:
+
+Owner can read, write, execute
+
+Group can read and execute
+
+Others can only read
+
+Change permissions:
+
+chmod 755 script.sh
