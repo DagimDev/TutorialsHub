@@ -228,3 +228,24 @@ kill 2734
 
 
 Ends the process with ID 2734.
+
+12. Networking in Linux
+
+Explanation:
+Linux gives you full control over network configuration and testing.
+
+Useful commands:
+| Command              | Description                           |
+| -------------------- | ------------------------------------- |
+| `ifconfig` or `ip a` | View network interfaces               |
+| `ping`               | Test network connection               |
+| `netstat`            | Show network connections              |
+| `curl`               | Test APIs or download data            |
+| `scp`                | Securely copy files between computers |
+
+Example:
+
+ping google.com
+
+
+Checks if your computer is connected to the internet.
