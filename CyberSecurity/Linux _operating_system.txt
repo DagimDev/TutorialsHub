@@ -46,3 +46,27 @@ The shell sends it to the kernel
 The kernel accesses the filesystem
 
 It returns the list of files to your terminal
+
+4. The Linux Kernel
+
+Explanation:
+The kernel is the core component of Linux. It controls:
+
+Process management (CPU usage)
+
+Memory management
+
+Device drivers (keyboard, mouse, etc.)
+
+System calls and security
+
+Example:
+If you open 5 programs, the kernel decides how much CPU and memory each gets.
+That’s why Linux is stable even under heavy load — the kernel handles tasks efficiently.
+
+Command Example:
+
+uname -r
+
+
+This shows your Linux kernel version.
