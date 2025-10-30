@@ -207,3 +207,24 @@ Example:
 To remove a program:
 
 sudo apt remove gimp
+
+11. Linux Processes
+
+Explanation:
+Every running task (like Chrome, VS Code, or background jobs) is a process.
+Linux manages them efficiently through process IDs (PIDs).
+
+Commands:
+
+ps aux      # Show all running processes
+top         # Real-time system monitor
+kill <PID>  # Stop a process
+
+
+Example:
+If a program freezes:
+
+kill 2734
+
+
+Ends the process with ID 2734.
