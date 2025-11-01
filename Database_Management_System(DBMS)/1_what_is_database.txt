@@ -1,0 +1,5 @@
+What is a Database?
+○ A database is an organized collection of structured information or
+data. This information is typically stored electronically within a
+computer system. Databases are designed to efficiently manage,
+retrieve, and update data.
