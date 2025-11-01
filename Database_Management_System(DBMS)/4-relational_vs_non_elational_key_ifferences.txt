@@ -1,0 +1,19 @@
+Relational vs. Non-Relational: Key Differences
+○ Structural Variance:
+■ Relational databases rely on tables with predefined structures and
+    relationships.
+■ Non-relational databases operate on flexible structures, using
+    varied formats like key-value pairs or document-based storage.
+○ Data Modeling Philosophy:
+■ Relational databases follow the ACID (Atomicity, Consistency,
+    Isolation, Durability) principles, ensuring strong data
+    consistency.
+■ Non-relational databases focus on BASE (Basically Available,
+    Soft state, Eventually consistent) principles, emphasizing
+    scalability and availability over strict consistency.
+    Choosing the Right Fit
+    The selection between relational and non-relational databases often hinges
+    on the nature of the data and the requirements of the application. Relational
+    databases excel in scenarios requiring structured data and complex queries,
+    while non-relational databases offer scalability and flexibility for
+    unstructured or evolving data models.
