@@ -1,0 +1,22 @@
+Relational Databases (SQL DB)
+○ Definition:
+■ Relational databases, often referred to as SQL databases, are
+    structured around multiple tables that interrelate with each other.
+    The structure is akin to an organized set of spreadsheets where
+    each table holds specific types of data. For instance, if you're
+    dealing with an e-commerce platform, there might be a table for
+    customers, another for orders, and so on. This structure allows
+    for efficient management and retrieval of related data. A classic
+    example of a relational database is MySQL.
+○ Table Structure and Relationships:
+■ Each table contains data specific to a particular domain or
+    category, maintaining clear boundaries between different types of
+    information.
+■ Tables are intricately linked or related based on primary key
+    and foreign key.
+● A primary key is a unique identifier within a table, ensuring
+    each record has a distinct value. It uniquely identifies each
+    row and enforces data integrity by preventing duplicate or
+    null values.
+● A foreign key establishes a link between two tables,
+    referencing the primary key of another table.
