@@ -7,7 +7,7 @@ GET Method: Retrieving Data
 POST Method: Creating New Data
 ○ When using the POST method, Node.js can create new data in the
     database. It's akin to adding a new book to the library's collection.
-    
+
 PUT and PATCH Methods: Updating Existing Data
 ○ PUT Method: Complete Replacement
 ■ With PUT, Node.js updates existing data by completely replacing
@@ -21,3 +21,7 @@ PUT and PATCH Methods: Updating Existing Data
     section without rewriting the whole content.
 ■ Here, the client sends specific changes to be applied to the
     resource rather than the entire updated data.
+
+DELETE: Removing Data
+○ The DELETE method removes data from the database, similar to
+    removing a book permanently from the library's shelves.
