@@ -4,3 +4,6 @@ GET Method: Retrieving Data
 ○ The GET method in Node.js allows the retrieval of data from a
     database. It's like browsing a library to find and read specific
     information without altering anything.
+POST Method: Creating New Data
+○ When using the POST method, Node.js can create new data in the
+    database. It's akin to adding a new book to the library's collection.
