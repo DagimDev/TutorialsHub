@@ -1,0 +1,48 @@
+Non-Relational Databases (NoSQL DB)
+○ Definition:
+■ Non-relational databases, often termed NoSQL databases,
+    diverge from the table-based structure. Instead, they primarily
+    operate around objects or documents. There are no fixed table
+    structures or rigid relationships between tables. One common
+    format in NoSQL databases is the key-value pair model, similar
+    to JSON (JavaScript Object Notation). An example of a
+    non-relational database is MongoDB.
+○ Object-Oriented Approach:
+■ NoSQL databases work with collections of objects rather than
+    structured tables.
+■ They typically adopt a more flexible schema, allowing for easier
+    scalability and adaptability.
+
+
+Why Use NoSQL?
+
+NoSQL databases are designed for:
+    Scalability (handle massive amounts of data)
+    Flexibility (no fixed schema)
+    Speed (optimized for specific data access patterns)
+    Handling unstructured or semi-structured data (like JSON, text, images, logs)
+    📌 Used widely in modern web apps, IoT, big data, and real-time analytics (e.g., Facebook, Netflix, 
+    Amazon).
+
+NoSQL (MongoDB) Example
+{
+  "_id": 1,
+  "name": "Alice",
+  "age": 21,
+  "course": "Math"
+}
+
+8. Advantages of NoSQL
+
+✅ High performance on large-scale data
+✅ Flexible and easy to change schema
+✅ Scales horizontally across servers
+✅ Ideal for real-time analytics or content management
+✅ Can handle unstructured data (like images, logs, or JSON)
+
+⚠️ 9. Disadvantages of NoSQL
+
+❌ Weaker consistency (eventual consistency model)
+❌ Complex transactions are harder
+❌ Different query languages (less standard)
+❌ May require more data duplication
