@@ -290,3 +290,11 @@ sudo ufw status
 
 
 Enables and checks your firewall.
+
+15. Why Use Linux?
+
+✅ Free & Open Source – no licensing costs
+✅ Fast & Lightweight – great for older machines
+✅ Secure – less vulnerable to malware
+✅ Powerful CLI – full control over the system
+✅ Learning & Career – widely used in cybersecurity, DevOps, and servers
