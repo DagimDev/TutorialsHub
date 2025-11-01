@@ -3,3 +3,37 @@ What is a Database?
 data. This information is typically stored electronically within a
 computer system. Databases are designed to efficiently manage,
 retrieve, and update data.
+
+What is a Database Management System (DBMS)?
+○ Definition:
+■ A DBMS is software designed to facilitate easy, efficient, and
+    reliable data processing and management within databases.
+■ Databases are usually controlled by a Database Management
+    System (DBMS).
+
+What is a Database Management System (DBMS)?
+○ Definition:
+■ A DBMS is software designed to facilitate easy, efficient, and
+    reliable data processing and management within databases.
+■ Databases are usually controlled by a Database Management
+    System (DBMS).
+○ Functions of a DBMS:
+■ Creation of a Database: DBMS helps in designing and creating
+    databases as per defined schemas and structures.
+■ Storage of Data/Information: It manages the storage of various
+    types of data within the database.
+■ Retrieval of Information: Enables users to efficiently retrieve
+    specific data from the database using queries and commands.
+■ Updating the Database: Allows for adding, modifying, or
+    deleting data within the database.
+■ Control of Redundancy and Inconsistency: Helps in
+    minimizing data duplication and ensuring data consistency.
+■ Efficient Memory Management: Optimizes the utilization of
+    memory resources for data storage and retrieval.
+    
+■ Access Control and Security: Implement security measures to
+    control access to the database and ensure data integrity.
+    All in all, the comprehensive database system encompasses both the data,
+    the Database Management System (DBMS), and their associated
+    applications, collectively forming the foundational components referred to
+    as a database system, often shortened to just Database.
