@@ -298,3 +298,15 @@ Enables and checks your firewall.
 ✅ Secure – less vulnerable to malware
 ✅ Powerful CLI – full control over the system
 ✅ Learning & Career – widely used in cybersecurity, DevOps, and servers
+
+16. Summary
+
+Linux is:
+
+A free, open-source operating system
+
+Built for power, security, and flexibility
+
+Used in servers, hacking, programming, and everyday computing
+
+If you master Linux, you unlock the world of servers, cybersecurity, DevOps, and automation.
