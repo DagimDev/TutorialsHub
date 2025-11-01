@@ -1,0 +1,22 @@
+SQL (Structured Query Language)
+○ SQL serves as the universal language for interacting with databases,
+    including MySQL. It offers a standardized approach to performing
+    various operations within a database.
+SQL Statements: Managing Database Actions
+
+
+CREATE: This SQL statement creates a new table within your
+    database. It's like setting up the blueprint for a new section in your
+    library to categorize books.
+○ INSERT: When you use INSERT, you're adding new data to a table
+    within your database. Think of it as placing a new book onto a shelf
+    in your library.
+○ SELECT: SELECT retrieves data from a table within your database.
+    It's similar to browsing the library catalog to find specific books
+    based on certain criteria.
+○ UPDATE: UPDATE alters existing data in a table within your
+    database. It's like correcting the details of a book's entry in the
+    library catalog.
+○ DELETE: DELETE removes data from a table within your
+    database. It's akin to removing a book permanently from the library's
+    collection
