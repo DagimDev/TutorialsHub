@@ -267,3 +267,26 @@ To run it:
 
 chmod +x backup.sh
 ./backup.sh
+
+14. Linux Security Basics
+
+Explanation:
+Linux is secure by design, but users can harden it further:
+
+Use strong passwords
+
+Keep software updated
+
+Use firewalls (ufw, iptables)
+
+Avoid running as root
+
+Regularly check logs (/var/log)
+
+Example:
+
+sudo ufw enable
+sudo ufw status
+
+
+Enables and checks your firewall.
