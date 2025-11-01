@@ -1,0 +1,6 @@
+Working with Databases using NodeJS
+
+GET Method: Retrieving Data
+○ The GET method in Node.js allows the retrieval of data from a
+    database. It's like browsing a library to find and read specific
+    information without altering anything.
