@@ -249,3 +249,21 @@ ping google.com
 
 
 Checks if your computer is connected to the internet.
+
+13. Scripting in Linux (Bash Scripting)
+
+Explanation:
+You can automate repetitive tasks using bash scripts.
+
+Example script:
+
+#!/bin/bash
+echo "Backing up files..."
+tar -czf backup.tar.gz /home/dagim/documents
+echo "Backup complete!"
+
+
+To run it:
+
+chmod +x backup.sh
+./backup.sh
