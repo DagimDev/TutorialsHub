@@ -7,3 +7,17 @@ GET Method: Retrieving Data
 POST Method: Creating New Data
 ○ When using the POST method, Node.js can create new data in the
     database. It's akin to adding a new book to the library's collection.
+    
+PUT and PATCH Methods: Updating Existing Data
+○ PUT Method: Complete Replacement
+■ With PUT, Node.js updates existing data by completely replacing
+    it with a new representation. Imagine swapping an entire book
+    with a new edition in the library's catalog.
+■ The client sends the entire updated data representation to the
+    server.
+○ PATCH Method: Partial Updates
+■ The PATCH method updates data only if it exists and does so
+    partially. It's like adding a new chapter to a book or modifying a
+    section without rewriting the whole content.
+■ Here, the client sends specific changes to be applied to the
+    resource rather than the entire updated data.
