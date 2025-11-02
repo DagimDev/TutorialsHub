@@ -1,0 +1,4 @@
+MySQL Overview: MySQL is a widely used Relational Database
+    Management System (RDBMS). It's renowned for being free,
+    open-source, and suitable for applications of various scales, ranging
+    from small projects to large enterprise-level systems.
