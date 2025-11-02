@@ -2,3 +2,11 @@ MySQL Overview: MySQL is a widely used Relational Database
     Management System (RDBMS). It's renowned for being free,
     open-source, and suitable for applications of various scales, ranging
     from small projects to large enterprise-level systems.
+    
+Node.js and MySQL: Powering Database Operations
+    With Node.js, you can leverage SQL queries to interact with a MySQL
+    database seamlessly. These SQL statements enable the execution of specific
+    actions like creating tables, inserting data, retrieving information, updating
+    existing records, and deleting entries. By integrating Node.js with MySQL,
+    you gain a powerful toolset to manage your database efficiently within your
+    applications.
