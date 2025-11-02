@@ -2,7 +2,7 @@ MySQL Overview: MySQL is a widely used Relational Database
     Management System (RDBMS). It's renowned for being free,
     open-source, and suitable for applications of various scales, ranging
     from small projects to large enterprise-level systems.
-    
+
 Node.js and MySQL: Powering Database Operations
     With Node.js, you can leverage SQL queries to interact with a MySQL
     database seamlessly. These SQL statements enable the execution of specific
@@ -10,3 +10,16 @@ Node.js and MySQL: Powering Database Operations
     existing records, and deleting entries. By integrating Node.js with MySQL,
     you gain a powerful toolset to manage your database efficiently within your
     applications.
+    
+    Working with databases using NodeJS: MySQL driver and
+    connecting with MySQL database using Node
+● MySQL Driver: Bridging MySQL with Node.js
+○ A MySQL driver serves as a crucial intermediary, allowing seamless
+    communication between a MySQL database and a Node.js
+    application. Typically, developers rely on third-party modules
+    installed via npm to establish this connection.
+○ npm Module for MySQL: npm i mysql2
+● Connecting to MySQL Database from Node.js
+○ 1. MySQL Configuration:
+■ In MySQL using phpMyAdmin, first create a database and set up
+    user credentials (username and password)
