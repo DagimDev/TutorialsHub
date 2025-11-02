@@ -10,7 +10,7 @@ Node.js and MySQL: Powering Database Operations
     existing records, and deleting entries. By integrating Node.js with MySQL,
     you gain a powerful toolset to manage your database efficiently within your
     applications.
-    
+
     Working with databases using NodeJS: MySQL driver and
     connecting with MySQL database using Node
 ● MySQL Driver: Bridging MySQL with Node.js
@@ -23,3 +23,7 @@ Node.js and MySQL: Powering Database Operations
 ○ 1. MySQL Configuration:
 ■ In MySQL using phpMyAdmin, first create a database and set up
     user credentials (username and password)
+
+2. Install and Import MySQL Module:
+    ■ Use “npm install mysql2” to install the MySQL driver.
+    ■ Import the MySQL module within your Node.js application.
