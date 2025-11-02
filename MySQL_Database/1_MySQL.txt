@@ -32,3 +32,27 @@ Node.js and MySQL: Powering Database Operations
 ■ Utilize the “createConnection” method provided by the MySQL
     module. Pass the database credentials (such as host, user,
     password, and database name) as an object
+
+4. Connect to the Database:
+■ Employ the “connect” method to establish the connection
+    between your Node.js application and the MySQL database.
+const express = require("express");
+const app = express();
+// STEP - 2 : Import mysql2 after installation
+const mysql = require("mysql2");
+// STEP - 3 : Pass Credentials to the createConnection method
+const connection = mysql.createConnection({
+host: "localhost",
+user:
+"Exact-Info-You-Used-When-Creating-The-User&DB",
+password:
+"Exact-Info-You-Used-When-Creating-The-User&DB",
+database:
+"Exact-Info-You-Used-When-Creating-The-User&DB",
+});
+// STEP - 4 : Connect to MySQL DB
+connection.connect((err) => {
+if (err) console.log(err);
+else console.log("Connected to MySQL");
+});
+app.listen(3001, () => console.log("listening on port 3001"));
