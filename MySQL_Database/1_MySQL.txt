@@ -56,3 +56,42 @@ if (err) console.log(err);
 else console.log("Connected to MySQL");
 });
 app.listen(3001, () => console.log("listening on port 3001"));
+
+
+Creating Tables in a Database: Using SQL's CREATE Statement
+    The “CREATE” statement in SQL is fundamental for establishing a new
+    table within a database. It defines the table's structure, including its
+    columns and their respective data types.
+● CREATE Statement Syntax:
+○ The syntax for creating a table using the “CREATE TABLE”
+    statement involves specifying the table name, its columns, and their data types.
+○ Syntax:
+    ● CREATE TABLE table_name (
+    ● column1 datatype,
+    ● column2 datatype,
+    ● column3 datatype,
+    ● ...
+    ●
+    ● );
+○ Example:
+■ Suppose you're creating a table to store information about users
+    in a database:
+    CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE
+    );
+
+Explanation:
+    ● “CREATE TABLE” initiates the creation process of a newtable.
+    ● “users” is the name of the table being created.
+    ● Columns are defined within parentheses:
+○ “user_id”: An integer column designated as the
+    primary key and set to auto-increment for unique
+    identification.
+○ “username”: A column for storing usernames,
+    restricted to 50 characters and cannot be empty (NOT
+    NULL).
+○ “email”: A column for storing email addresses, limited
+    00 characters and ensuring uniqueness (UNIQUE).
+
