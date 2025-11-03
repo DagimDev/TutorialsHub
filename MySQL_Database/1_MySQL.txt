@@ -201,3 +201,7 @@ from a table.
 ○ DELETE removes records based on specified conditions.
 ○ Syntax:
 DELETE FROM table_name WHERE condition;
+
+HTTP Method for Deleting Data in Node.js:
+○ For removing data in Node.js, the corresponding HTTP method is
+○ “DELETE”
