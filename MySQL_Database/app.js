@@ -1,9 +1,12 @@
 const mysql = require("mysql");
 const express = require("express");
+const bodyparser = require("body-parser");
 
 const app = express();
 
 app.listen(3002, () => console.log("Listening to port: 3002"));
+
+app.use(bodyparser.urlencoded({ extended: true }));
 
 const mysqlConnection = mysql.createConnection({
   host: "localhost", // or i can use 127.0.0.1
@@ -50,7 +53,6 @@ app.get("/install", (req, res) => {
     Products(product_id)
     )`;
 
-    
   mysqlConnection.query(createProducts, (err, result) => {
     if (err) throw err;
     console.log("Table 'users' created");
@@ -63,4 +65,30 @@ app.get("/install", (req, res) => {
   });
 
   res.end("Table created");
+});
+
+// Insert data
+app.post("/addiphones", (req, res) => {
+  console.log(req.body);
+  let Id = req.body.iphoneId;
+  let img = req.body.imgPath;
+  let Url = req.body.iphoneLink;
+  let Title = req.body.iphoneTitle;
+  let Brief = req.body.briefDescription;
+  let StartPrice = req.body.StartPrice;
+  let PriceRange = req.body.priceRange;
+  let Description = req.body.fullDescription;
+
+  let sqlAddToProducts =
+    "INSERT INTO Products (product_url, product_name) VALUES ('" +
+    Id +
+    "', '" +
+    Title +
+    "' )";
+
+  mysqlConnection.query(sqlAddToProducts, function (err, result) {
+    if (err) throw err;
+    console.log("1 record inserted");
+  });
+  res.end("seraaaaa");
 });
