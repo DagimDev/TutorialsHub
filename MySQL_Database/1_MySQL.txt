@@ -190,3 +190,7 @@ based on a condition.
 UPDATE table_name
 SET column1 = value1, column2 = value2, …
 WHERE condition;
+
+HTTP Method for Modifying Data in Node.js:
+○ The HTTP method commonly associated with updating data in
+Node.js is “PUT”
