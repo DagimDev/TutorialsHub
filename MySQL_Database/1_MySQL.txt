@@ -144,3 +144,16 @@ HTTP Method for Data Retrieval in Node.js:
 ○ In Node.js, the HTTP method primarily used for data retrieval is
 “GET”. This method is employed to request data from a specified
 resource, making it suitable for fetching data from databases.
+
+
+Selecting Primary Keys and Using Them as Foreign Keys in
+another table:
+○ If you are inserting data into multiple tables, you need to utilize
+primary keys and foreign keys, since that’s how the tables are
+connected. Therefore, you have to select the primary key for the
+inserted data and pass it to the other table so it can be inserted as a
+foreign key.
+○ The following 3 steps explain how you can effectively retrieve the
+primary key value and use it as a foreign key in other tables,
+enabling relationships between different entities within your
+database
