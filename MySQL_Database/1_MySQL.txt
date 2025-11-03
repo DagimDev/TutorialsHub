@@ -169,3 +169,11 @@ named rows) in your code to access the primary key value.
 accessed through the first index of the returned array or object.
 ■ Store this primary key value in a variable within your Node.js
 application.
+
+3. Insert as Foreign Key:
+■ Use this stored variable (the primary key value) to insert it as a
+foreign key into another table.
+■ Remember that in MySQL, all values need to be treated as
+strings, so ensure the primary key value is surrounded by
+quotation marks to be interpreted as a string when inserting it
+into the other table.
