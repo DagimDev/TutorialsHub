@@ -177,3 +177,16 @@ foreign key into another table.
 strings, so ensure the primary key value is surrounded by
 quotation marks to be interpreted as a string when inserting it
 into the other table.
+
+
+Managing Database Operations in Node.js: SQL Queries for
+Update and Delete
+● UPDATE SQL Statement: Modifying Data
+○ The “UPDATE” statement in SQL is utilized to modify existing data
+within tables.
+○ Use the “UPDATE” statement to set new values to specific columns
+based on a condition.
+○ Syntax:
+UPDATE table_name
+SET column1 = value1, column2 = value2, …
+WHERE condition;
