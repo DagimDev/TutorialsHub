@@ -194,3 +194,10 @@ WHERE condition;
 HTTP Method for Modifying Data in Node.js:
 ○ The HTTP method commonly associated with updating data in
 Node.js is “PUT”
+
+DELETE SQL Statement: Removing Data
+○ The “DELETE” statement in SQL is used to eliminate specific data
+from a table.
+○ DELETE removes records based on specified conditions.
+○ Syntax:
+DELETE FROM table_name WHERE condition;
