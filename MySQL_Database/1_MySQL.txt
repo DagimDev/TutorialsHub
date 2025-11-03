@@ -139,3 +139,8 @@ columns you want to fetch from a specific table.
 ○ Syntax:
 SELECT * FROM table_name;
 ■ The * signifies selecting all columns from the specified table.
+
+HTTP Method for Data Retrieval in Node.js:
+○ In Node.js, the HTTP method primarily used for data retrieval is
+“GET”. This method is employed to request data from a specified
+resource, making it suitable for fetching data from databases.
