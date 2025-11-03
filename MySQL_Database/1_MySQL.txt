@@ -130,3 +130,12 @@ backend.
     By creating this frontend interface and ensuring proper communication
     between the HTML form and the Node.js backend, our app users can input
     data seamlessly into the database.
+Retrieving Data from Tables using SQL's SELECT Statement
+The “SELECT” SQL statement is essential for fetching data from tables
+within a database.
+● SELECT Statement Syntax:
+○ To retrieve data, you use the “SELECT” statement followed by the
+columns you want to fetch from a specific table.
+○ Syntax:
+SELECT * FROM table_name;
+■ The * signifies selecting all columns from the specified table.
