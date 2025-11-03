@@ -92,3 +92,21 @@ app.post("/addiphones", (req, res) => {
   });
   res.end("seraaaaa");
 });
+
+
+// const tableName = 'users'; // replace with your table name
+// const sql = `SELECT * FROM \`${tableName}\`;`;
+
+
+const sql = `SELECT * FROM Products`;
+// Execute the query
+mysqlConnection.query(sql, (err, results, fields) => {
+  if (err) {
+    console.error('Error executing query:', err);
+    return;
+  }
+  console.log('Query results:', results);
+  // Optional: log column names
+  console.log('Fields:', fields.map(f => f.name));
+});
+
