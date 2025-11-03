@@ -95,3 +95,38 @@ Explanation:
 ○ “email”: A column for storing email addresses, limited
     00 characters and ensuring uniqueness (UNIQUE).
 
+Inserting Data into Tables using SQL's INSERT Statement
+    The “INSERT” SQL statement is crucial for adding new data entries into
+    existing tables within a database.
+● INSERT Statement Syntax:
+○ To insert data into a table, you use the “INSERT INTO” statement,
+    specifying the table name and the columns where you want to insert
+    data, followed by the “V ALUES” keyword with the actual values to
+    be inserted.
+○ Syntax:
+    INSERT INTO table_name (column1, column2, column3, ...)
+    VALUES (value1, value2, value3, ...);
+● HTTP Method for Data Insertion in Node.js:
+    ○ In Node.js, the HTTP method typically used for data insertion is
+    “POST”. This method is employed to send data to the server to
+    create or update resources, making it suitable for inserting data into
+    databases.
+● Enabling Data Insertion for the app:
+○ 1. Create a Frontend Interface:
+■ Design an HTML page featuring a form that interacts with the
+backend.
+■ Use the “<form>” tag within the HTML page to collect user input.
+○ 2. Form Attributes:
+■ Set the form's “action” attribute to the route in your Node.js
+    backend responsible for handling data insertion (“POST”
+    method).
+■ Use the method="post" attribute to specify the HTTP method as POST.
+○ 3. Retrieving Data in Node.js:
+■ Utilize middleware in your Node.js application to handle
+    incoming form data (“req.body”).
+○ 4. Executing the SQL:
+■ Pass the incoming data received from the frontend with the help
+    of “req.body” to the appropriate “INSERT” sql statement.
+    By creating this frontend interface and ensuring proper communication
+    between the HTML form and the Node.js backend, our app users can input
+    data seamlessly into the database.
