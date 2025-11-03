@@ -157,3 +157,9 @@ foreign key.
 primary key value and use it as a foreign key in other tables,
 enabling relationships between different entities within your
 database
+
+1. Retrieve Primary Key:
+■ Use the “SELECT * FROM <table name>” statement to
+retrieve data from the main table.
+■ Target the primary key using the appropriate parameter (usually
+named rows) in your code to access the primary key value.
