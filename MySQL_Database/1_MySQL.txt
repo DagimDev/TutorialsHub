@@ -163,3 +163,9 @@ database
 retrieve data from the main table.
 ■ Target the primary key using the appropriate parameter (usually
 named rows) in your code to access the primary key value.
+
+2. Assign Primary Key Value:
+■ Extract the primary key value from the retrieved data, often
+accessed through the first index of the returned array or object.
+■ Store this primary key value in a variable within your Node.js
+application.
