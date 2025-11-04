@@ -1,0 +1,51 @@
+Introduction: Why are we learning ReactJS?
+● Why we learn ReactJS
+▪ The main reason this course targets React is because a beginner level
+    programmer has a much higher percentage of success rate to
+    penetrate the market if they know about React.
+▪ React is not that hard to learn.
+▪ There is a high demand for React developers now. It is a relatively
+    new technology, and most people, including developers, do not
+    know about it yet.
+▪ Note: Everything we have learned so far was laying the groundwork
+    to become a React developer. The combination of the above reasons
+    gives you a better chance of being a competitor in the market if you
+    become a decent React developer
+● Why is React in demand? There are so many open-source platforms
+    for making the front-end web application development easier, like
+    Angular. There are multiple reasons why everyone is shifting to the
+    React.js library. Below are some of the main reasons:
+▪ Simplicity: React’s component-based approach, well-defined
+    lifecycle, and use of just plain JavaScript make React very simple to
+    learn, build a professional web (and mobile applications), and
+    support. React uses a special syntax called JSX, which allows you to
+    mix HTML with JavaScript. This is not a requirement; the
+    Developer can still write in plain JavaScript, but JSX is much easier
+    to use.
+▪ Performance: React allows developers to create large web
+    applications that can alter data on the browser in a more
+    performance-efficient way. This better performance is due to React’s
+    faster DOM manipulation. We know that extensive DOM
+    manipulation slows performance because the entire DOM object is
+    updated for a simple change in part of the DOM. React solved this
+    using a virtual DOM and by updating only the part of the
+    ReactDOM that has changed, not the entire DOM.
+▪ Reusability of code: React allows us to create reusable UI
+    components. Reusing components will save time for developers as
+    they do not have to write various codes for the same features.
+▪ Speed: Better speed in the development process because different
+    developers can write individual parts on both client-side and the
+    server-side.
+▪ Integration with other libraries: React can be used with a
+    combination of other JavaScript frameworks and libraries because it
+    conveniently integrates with them.
+▪ Simple to learn: React is less complicated to learn (specifically
+    when compared to Angular.js).
+▪ Native Approach: React can be used to create mobile applications
+    (using React Native). React is now upgraded and can be used for
+    developing mobile native applications for both Android & iOS
+    platforms.
+▪ Testability: ReactJS applications are super easy to test. React views
+    can be treated as functions of the state, so we can manipulate the
+    state we pass to the ReactJS view and look at the output and
+    triggered actions, events, functions, etc.
