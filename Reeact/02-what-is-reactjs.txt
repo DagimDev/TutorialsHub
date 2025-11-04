@@ -1,0 +1,9 @@
+What is React.js?
+▪ Definition 1: React. js is a JavaScript library that is used for building
+    part of a website/app that the user interacts with, also known as a
+    user interface. This means that React is used for front-end
+    development and runs in the browser. 
+▪ Definition 2: React is a JavaScript library that aims to increase the
+    performance of applications and simplify the development of visual
+    interfaces. React.js is used for handling the view layer of the full
+    MVC stack for web and mobile apps.
