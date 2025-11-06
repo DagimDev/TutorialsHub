@@ -259,3 +259,23 @@ Leverage polymorphism for flexible, maintainable code
 
 Remember hoisting differences between functions and classes
 
+Quick Reference
+Prototypal Inheritance
+javascript
+function Parent() {}
+function Child() {}
+Child.prototype = Object.create(Parent.prototype);
+Child.prototype.constructor = Child;
+Class Inheritance
+javascript
+class Parent {}
+class Child extends Parent {}
+Key Methods
+Object.create(proto)
+
+Object.getPrototypeOf(obj)
+
+super() in constructors
+
+instanceof for type checking
+
