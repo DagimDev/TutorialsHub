@@ -93,3 +93,23 @@ Key Methods
 Object.create(): Creates new object with specified prototype
 
 Constructor.call(): Inherits parent properties in child context
+
+ES6 Class-Based Inheritance
+Class Declaration Syntax
+javascript
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Method
+    getName() {
+        return `${this.name}, ${this.age}`;
+    }
+    
+    // Static method
+    static describe() {
+        return "This is a Person class";
+    }
+}
