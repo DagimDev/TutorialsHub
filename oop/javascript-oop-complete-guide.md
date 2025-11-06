@@ -222,3 +222,40 @@ class Person2 {
         this.age = age;
     }
 }
+
+Encapsulation with Private Fields (ES2022)
+javascript
+class BankAccount {
+    #balance = 0; // Private field
+    
+    constructor(initialBalance) {
+        this.#balance = initialBalance;
+    }
+    
+    deposit(amount) {
+        if (amount > 0) {
+            this.#balance += amount;
+        }
+    }
+    
+    getBalance() {
+        return this.#balance;
+    }
+}
+
+const account = new BankAccount(100);
+// account.#balance; // SyntaxError - private field
+console.log(account.getBalance()); // 100
+Best Practices
+Use ES6 classes for new projects - cleaner syntax
+
+Understand prototypes for debugging and advanced scenarios
+
+Follow naming conventions: PascalCase for classes
+
+Use private fields for true encapsulation
+
+Leverage polymorphism for flexible, maintainable code
+
+Remember hoisting differences between functions and classes
+
