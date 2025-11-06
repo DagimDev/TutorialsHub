@@ -136,3 +136,89 @@ class Student extends Person {
 const student = new Student("Charlie", 18, "B");
 console.log(student.getName()); // "Charlie, 18, Grade: B"
 console.log(Person.describe()); // "This is a Person class"
+
+Complete Shape Example (Polymorphism)
+javascript
+// Base class
+class Shape {
+    constructor(name) {
+        this.name = name;
+    }
+    
+    // Abstract method (to be overridden)
+    calculatePerimeter() {
+        throw new Error("Method 'calculatePerimeter()' must be implemented.");
+    }
+    
+    describe() {
+        return `This is a ${this.name}`;
+    }
+}
+
+// Derived classes
+class Circle extends Shape {
+    constructor(radius) {
+        super("Circle");
+        this.radius = radius;
+    }
+    
+    calculatePerimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+}
+
+class Square extends Shape {
+    constructor(side) {
+        super("Square");
+        this.side = side;
+    }
+    
+    calculatePerimeter() {
+        return 4 * this.side;
+    }
+}
+
+class Rectangle extends Shape {
+    constructor(length, width) {
+        super("Rectangle");
+        this.length = length;
+        this.width = width;
+    }
+    
+    calculatePerimeter() {
+        return 2 * (this.length + this.width);
+    }
+}
+
+// Polymorphism in action
+const shapes = [
+    new Circle(5),
+    new Square(4),
+    new Rectangle(3, 6)
+];
+
+shapes.forEach(shape => {
+    console.log(`${shape.describe()}: Perimeter = ${shape.calculatePerimeter()}`);
+});
+Key Differences & Important Notes
+Hoisting Behavior
+javascript
+// Function Declaration - HOISTED
+const person1 = new Person("John", 25); // Works
+console.log(person1.age);
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Class Declaration - NOT HOISTED
+const person2 = new Person2("Jane", 30); // ReferenceError
+console.log(person2.age);
+
+class Person2 {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
