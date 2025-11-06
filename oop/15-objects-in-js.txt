@@ -1,0 +1,14 @@
+Objects in JavaScript: In JavaScript everything (including array) is an object except for
+    the primitive data types (Boolean, number and string, and undefined). Thus, if you master
+    objects in JavaScript, think as if you mastered a lot.
+
+Ways to initialize/create an object in JS : There are different ways to create
+    an object in JavaScript
+▪ Initializing an object literal: The object literal initializes the object with curly
+    brackets. Example: const objectLiteral = {};
+● Note: Creating an object using object literal method is very limiting
+    because it creates only one object at a time.
+     let myPerson= {
+        name: “Abebe”,
+        Age: 13
+     };
