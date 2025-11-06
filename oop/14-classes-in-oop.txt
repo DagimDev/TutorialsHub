@@ -1,0 +1,4 @@
+Classes in OOP: Classes are blueprints used to create more specific, concrete objects that
+    share same attributes inherited from the blueprint class. Classes often represent broad
+    categories, like Person and define attributes like age and gender. Classes can also have
+    functions as their attributes called methods
