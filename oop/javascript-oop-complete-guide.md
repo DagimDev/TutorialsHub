@@ -113,3 +113,26 @@ class Person {
         return "This is a Person class";
     }
 }
+Class Inheritance with extends
+javascript
+class Student extends Person {
+    constructor(name, age, grade) {
+        super(name, age); // Call parent constructor
+        this.grade = grade;
+    }
+    
+    // Method overriding
+    getName() {
+        return `${this.name}, ${this.age}, Grade: ${this.grade}`;
+    }
+    
+    // Child-specific method
+    getGrade() {
+        return this.grade;
+    }
+}
+
+// Usage
+const student = new Student("Charlie", 18, "B");
+console.log(student.getName()); // "Charlie, 18, Grade: B"
+console.log(Person.describe()); // "This is a Person class"
