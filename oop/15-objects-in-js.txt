@@ -12,3 +12,36 @@ Ways to initialize/create an object in JS : There are different ways to create
         name: “Abebe”,
         Age: 13
      };
+
+Initializing object constructor function with new object: The object
+    constructor initializes the object with the new keyword. Constructor function is
+    the blueprint that creates a new object and set values for any existing object
+    properties.. Unlike object literal, constructor function allows us to create as many
+    objects (of similar type) as we want. 
+
+Example: let objectConstuctor = new Object();
+
+    ● Note: To separate a regular function from an object constructor function,
+        we always have to use uppercase when giving it a name.
+    ● Note: In a constructor function this does not have a value. It is a
+        substitute for the new object. The value of this will become the new
+        object when a new object is created.
+    ● Note: Below, function Person() is an object constructor function that we
+        can use to create objects of the same type by calling the constructor
+    function with the new keyword.
+
+     function Person (name, age) {
+        this.name = name,
+        this.age = age
+     }
+
+// Creating 2 objects using the same constructor above
+    const myPerson = new Person (“Hana”, 43);
+    const herPerson = new Person (“Kibrom”, 43);
+    ● The “this” keyword in JS: the keyword has different meanings in JavaScript:
+    o In object constructor function: “this” refers to the future object
+        that will be created with the constructor. In the above example, if
+        you console.log(this) within the constructor function, it will print
+        the two objects (myPerson and herPerson)
+    o Alone or when in a function: “this” refers to the global Object
+    o In events: “this” refers to the element receiving the event

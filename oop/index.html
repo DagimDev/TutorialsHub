@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object oriented programming in JavaScript</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Object oriented programming in JavaScript</h1>
 
+    <script>
+      function Person(name, age) {
+        (this.name = name), (this.age = age);
+      }
+
+      const myPerson = new Person("Hana", 43);
+      const herPerson = new Person("Kibrom", 43);
+      console.log(myPerson)
+      console.log(herPerson)
+    </script>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
