@@ -88,3 +88,53 @@ Nested array destructuring: In the example below, because the third element of
           getProfile();
           console.log(pro3); // prints red
      console.log(pro7); // prints Gray
+
+Swapping values of variables using destructuring: The array destructuring
+makes it easy to swap values of variables without using a temporary variable.
+Example:
+● Swapping variables using temporary variable: Swapping variables
+     using a temporary variable is classic. As the name suggests, this
+     approach requires an additional temporary variable.
+           let alem = 10,
+           balcha = 20;
+           console.log(alem); // 10
+           console.log(balcha); // 20
+           let tempVar = alem;
+           alem = balcha;
+           balcha = tempVar;
+           console.log(alem); // 20
+           console.log(balcha); // 10
+● Swapping variables values using destrcuturing: Knowing how to
+     destructure an array, it's easy to use it for swapping variables. This
+     approach let us write cleaner and shorter code.
+          let alem = 10,
+          balcha = 20;
+          console.log(alem); // 10
+          console.log(balcha); // 20
+          [alem, balcha] = [balcha, alem];
+          console.log(alem); // 20
+          console.log(balcha); // 10
+▪ Swapping values of an array with array destructuring:
+● Swapping values of an array with temporary variable: Introduce a
+     new variable and let it hold one of the two array values which are willing
+     to swap. The array value which we let the temporary variable hold is
+     reassigned by the second array value. Finally, (second variable) is given
+     the value of temp which is a.
+      Example:
+      let array = [0, "first", 2, "third", 4];
+          console.log(array[1]); // prints first
+          console.log(array[2]); // prints 2
+      // temporary variable to swap array elements
+          let tempVar = array[1];
+          array[1] = array[2];
+          array[2] = tempVar;
+          console.log(array[1]); // prints 2
+          console.log(array[2]); // prints first
+      Swapping values of an array with array destructuring:
+          let array = [0, "first", 2, "third", 4];
+          console.log(array[1]); // prints first
+          console.log(array[2]); // prints 2
+// destructure to swap 2nd indexed element with 3rd
+     [array[1], array[2]] = [array[2], array[1]];
+     console.log(array[1]); // prints 2
+     console.log(array[2]); // prints first
