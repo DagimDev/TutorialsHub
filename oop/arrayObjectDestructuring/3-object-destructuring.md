@@ -86,3 +86,41 @@ Destructuring for nested objects: Often objects can be nested in other objects.
             console.log(theAge); // prints 22
             console.log(theGender); // prints male
 
+▪ Using the "rest" syntax in object destructuring: The rest syntax is useful to
+    collect the remaining properties after the destructuring. For instance, in the below
+    example, you can see that we put “theRemainingProperties” variable during
+    destructuring to hold the remaining properties (theAge, theGender and theMood)
+
+     Syntax: const { identifier, ...restOfProperties } = expression;
+     Example:
+            let students = {
+                theName: "Haile",
+                theAge: 22,
+                theGender: "Male",
+                theMood: "Happy",
+            };
+            let { theName, ...theRemainingProperties } = students;
+            console.log(theName); // prints Haile
+            //the below prints an object {theAge: 22, theGender: 'Male', theMood: 'Happy'}
+                 console.log(theRemainingProperties);
+                 console.log(theRemainingProperties.theMood); // prints happy
+
+▪ Destructing an object inside a function parameter: This is basically to allow
+    functions to accept an object as their parameter so that the object’s property
+    values can be extracted and used in the body of the function
+
+    ● Before ES6:
+        function myFunc(myparam) {
+            var name = myparam.name;
+            var age = myparam.age;
+            return name + " " + age;
+        }
+        console.log(myFunc({ name: "John", age: 25 })); // prints John 25
+
+● After ES6 (using object destructuring): The above function can be
+        rewritten using object destructuring like this:
+             function myFunc({ name, age }) {
+                return name + " " + age;
+             }
+             console.log(myFunc({ name: "John", age: 25 }));
+             // prints John 25
