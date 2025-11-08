@@ -57,7 +57,7 @@ Object Destructuring: The object destructuring is a useful JavaScript feature to
     example, let us assume you want to create the “theName” property name to
     studentName. To do so, look at the example below.
         ▪ Example:
-        
+
                  let students = {
                     theName: "Haile",
                     theAge: 22,
@@ -67,3 +67,22 @@ Object Destructuring: The object destructuring is a useful JavaScript feature to
                  console.log(studentName); // prints Haile
                  console.log(theAge); // prints 22
                  console.log(theName); // prints theName is not defined
+
+Destructuring for nested objects: Often objects can be nested in other objects.
+    In other words, some properties of an object can contain objects.
+     Syntax:
+        const { nestedObjectProp: { identifier } } = expression;
+            let students = {
+                theName: "Haile",
+                theAge: 22,
+                theGenderAndHeight: {
+                    theGender: "Male",
+                    theHeight: 133,
+                },
+            };
+
+        let {theName,theAge,theGenderAndHeight: { theGender, theHeight }} = students;
+            console.log(theName); // prints Haile
+            console.log(theAge); // prints 22
+            console.log(theGender); // prints male
+
