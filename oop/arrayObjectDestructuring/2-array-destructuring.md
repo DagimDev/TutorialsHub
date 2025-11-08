@@ -75,3 +75,16 @@ comma as a placeholder for that element.
         }
         const [ad, ...args] = calculate();
     console.log(calculate(24, 8)); // prints [32, 16, 192, 3]
+
+Nested array destructuring: In the example below, because the third element of
+     the returned array is another array, you need to use the nested array destructuring
+     syntax to destructure it. The same for the array containing "Yellow", "Gray" elements. 
+     Example:
+     function getProfile() {
+          return ["John", "Doe", ["Red", "Green", "Blue",
+          ["Yellow","Gray"]]];
+          }
+          let [pro1, pro2, [pro3, pro4, pro5, [pro6, pro7]]] =
+          getProfile();
+          console.log(pro3); // prints red
+     console.log(pro7); // prints Gray
