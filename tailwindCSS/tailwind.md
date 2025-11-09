@@ -28,3 +28,9 @@ Explanation: This commit establishes visual hierarchy and consistent spacing:
     Implementing consistent vertical rhythm with spacing: space-y-4, space-x-6
     Establishing color hierarchy for text: text-gray-800, text-gray-600, text-gray-400
     Using margin and padding utilities to create balanced layouts: p-4, m-6, mx-auto
+
+Explanation: This commit focuses on code maintainability and reducing repetition:
+    Extracting commonly repeated utility patterns using @apply in CSS
+    Creating custom component classes for frequently used element styles
+    Removing redundant class combinations that appear multiple times
+    Organizing utility classes in a more logical, maintainable structure
