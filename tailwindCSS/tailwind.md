@@ -34,3 +34,9 @@ Explanation: This commit focuses on code maintainability and reducing repetition
     Creating custom component classes for frequently used element styles
     Removing redundant class combinations that appear multiple times
     Organizing utility classes in a more logical, maintainable structure
+
+Explanation: This commit adds dark/light theme support using Tailwind's built-in dark mode:
+    Configuring dark mode in tailwind.config.js: darkMode: 'class' or darkMode: 'media'
+    Implementing dark variant classes: dark:bg-gray-900 dark:text-white
+    Adding theme toggle functionality with JavaScript
+    Ensuring all components have appropriate dark mode styling
