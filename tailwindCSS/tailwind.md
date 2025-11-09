@@ -15,3 +15,10 @@ Explanation: This commit focuses on creating flexible, responsive layouts using 
     Using flexbox utilities for alignment: flex justify-center items-center
     Implementing breakpoint-specific layouts that adapt from mobile to desktop
     Creating card layouts and component arrangements that reflow based on screen size
+
+Explanation: This commit enhances user interaction by adding state-based styling:
+
+    Implementing hover effects: hover:bg-blue-600 hover:text-white hover:scale-105
+    Adding focus states for keyboard navigation accessibility
+    Creating smooth transitions between states: transition-all duration-300 ease-in-out
+    Building interactive buttons, cards, and navigation elements that respond to user actions
