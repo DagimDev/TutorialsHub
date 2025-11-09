@@ -9,3 +9,9 @@ Setting up the tailwind.config.js file to define custom colors, fonts, and break
 Configuring PostCSS to process Tailwind's utility classes
 
 Importing Tailwind directives in CSS: @tailwind base; @tailwind components; @tailwind utilities;
+
+Explanation: This commit focuses on creating flexible, responsive layouts using Tailwind's grid utilities:
+    Building responsive grids with classes like grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+    Using flexbox utilities for alignment: flex justify-center items-center
+    Implementing breakpoint-specific layouts that adapt from mobile to desktop
+    Creating card layouts and component arrangements that reflow based on screen size
