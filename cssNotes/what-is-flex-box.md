@@ -13,13 +13,12 @@ Main axis — the primary axis along which flex items are laid out (row or colum
 Cross axis — axis perpendicular to the main axis.
 
 3. Setting up a Flex Container
-.container {
-display: flex; /* or inline-flex */
-flex-direction: row; /* row | row-reverse | column | column-reverse */
-flex-wrap: nowrap; /* nowrap | wrap | wrap-reverse */
-gap: 16px; /* spacing between items (modern, simpler than margins) */
-}
-
+   .container {
+   display: flex; /_ or inline-flex _/
+   flex-direction: row; /_ row | row-reverse | column | column-reverse _/
+   flex-wrap: nowrap; /_ nowrap | wrap | wrap-reverse _/
+   gap: 16px; /_ spacing between items (modern, simpler than margins) _/
+   }
 
 4. Key Container Properties
 
@@ -50,12 +49,12 @@ flex — shorthand: flex: [grow] [shrink] [basis] (e.g., flex: 1 1 0% or flex: 1
 align-self — override container's align-items for a single item.
 
 6. Common Patterns & Recipes
-Center content horizontally & vertically
+   Center content horizontally & vertically
 
 .container {
 display: flex;
-justify-content: center; /* horizontal */
-align-items: center; /* vertical */
+justify-content: center; /_ horizontal _/
+align-items: center; /_ vertical _/
 }
 
 Responsive horizontal menu with wrapping
@@ -92,3 +91,14 @@ Use browser devtools: toggle display:flex on an element to inspect axes and alig
 If alignment seems off, check for height/align-items/align-self conflicts.
 
 Collapsing items? Check flex-basis, flex-shrink, and min-width/min-height.
+
+9. Short Example (complete)
+<div class="toolbar">
+<div class="logo">Logo</div>
+<nav class="menu">...</nav>
+<div class="actions">Buttons</div>
+</div>
+.toolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px; }
+.logo { flex: 0 0 auto; }
+.menu { flex: 1 1 auto; }
+.actions { display:flex; gap:8px; }
