@@ -84,3 +84,11 @@ Prefer gap instead of margin hacks for consistent spacing.
 Use min-width/min-height to prevent content from shrinking too small.
 
 Test on small screens and with zoom to ensure items wrap/readability.
+
+Debugging Tips
+
+Use browser devtools: toggle display:flex on an element to inspect axes and alignment helpers.
+
+If alignment seems off, check for height/align-items/align-self conflicts.
+
+Collapsing items? Check flex-basis, flex-shrink, and min-width/min-height.
