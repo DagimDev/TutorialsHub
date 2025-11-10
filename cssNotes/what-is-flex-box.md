@@ -34,3 +34,17 @@ align-items — alignment along the cross axis for all items (stretch, start, ce
 align-content — alignment of lines along the cross axis (works when there are multiple lines due to wrapping).
 
 gap — row and column gaps between items.
+
+5. Key Item Properties
+
+order — numeric value to change the visual order of items (default 0).
+
+flex-grow — how much the item will grow relative to others when extra space exists.
+
+flex-shrink — how much the item will shrink relative to others when space is lacking.
+
+flex-basis — initial main size of the item (before growing/shrinking).
+
+flex — shorthand: flex: [grow] [shrink] [basis] (e.g., flex: 1 1 0% or flex: 1).
+
+align-self — override container's align-items for a single item.
