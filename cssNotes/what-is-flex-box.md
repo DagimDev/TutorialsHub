@@ -48,3 +48,12 @@ flex-basis — initial main size of the item (before growing/shrinking).
 flex — shorthand: flex: [grow] [shrink] [basis] (e.g., flex: 1 1 0% or flex: 1).
 
 align-self — override container's align-items for a single item.
+
+6. Common Patterns & Recipes
+Center content horizontally & vertically
+
+.container {
+display: flex;
+justify-content: center; /* horizontal */
+align-items: center; /* vertical */
+}
