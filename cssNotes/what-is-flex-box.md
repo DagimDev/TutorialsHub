@@ -74,3 +74,13 @@ Two-column layout with flexible right column
 .row { display: flex; gap: 20px; }
 .sidebar { flex: 0 0 240px; }
 .content { flex: 1 1 auto; }
+
+7. Accessibility & Best Practices
+
+Keep keyboard focus order in mind: order changes visual order but not DOM focus order — avoid confusing keyboard users.
+
+Prefer gap instead of margin hacks for consistent spacing.
+
+Use min-width/min-height to prevent content from shrinking too small.
+
+Test on small screens and with zoom to ensure items wrap/readability.
