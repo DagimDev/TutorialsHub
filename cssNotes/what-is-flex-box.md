@@ -19,3 +19,18 @@ flex-direction: row; /* row | row-reverse | column | column-reverse */
 flex-wrap: nowrap; /* nowrap | wrap | wrap-reverse */
 gap: 16px; /* spacing between items (modern, simpler than margins) */
 }
+
+
+4. Key Container Properties
+
+flex-direction — direction of the main axis.
+
+flex-wrap — controls wrapping of items when space is limited.
+
+justify-content — alignment along the main axis (start, center, end, space-between, space-around, space-evenly).
+
+align-items — alignment along the cross axis for all items (stretch, start, center, end, baseline).
+
+align-content — alignment of lines along the cross axis (works when there are multiple lines due to wrapping).
+
+gap — row and column gaps between items.
