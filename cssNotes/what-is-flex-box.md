@@ -62,3 +62,9 @@ Responsive horizontal menu with wrapping
 
 .nav { display: flex; flex-wrap: wrap; gap: 12px; }
 .nav-item { flex: 0 1 auto; }
+
+Sticky footer (flex column layout)
+html, body { height: 100%; }
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+.main { flex: 1 0 auto; }
+.footer { flex-shrink: 0; }
