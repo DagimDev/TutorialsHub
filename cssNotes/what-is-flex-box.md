@@ -57,3 +57,8 @@ display: flex;
 justify-content: center; /* horizontal */
 align-items: center; /* vertical */
 }
+
+Responsive horizontal menu with wrapping
+
+.nav { display: flex; flex-wrap: wrap; gap: 12px; }
+.nav-item { flex: 0 1 auto; }
