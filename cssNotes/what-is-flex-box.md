@@ -68,3 +68,9 @@ html, body { height: 100%; }
 .app { display: flex; flex-direction: column; min-height: 100vh; }
 .main { flex: 1 0 auto; }
 .footer { flex-shrink: 0; }
+
+Two-column layout with flexible right column
+
+.row { display: flex; gap: 20px; }
+.sidebar { flex: 0 0 240px; }
+.content { flex: 1 1 auto; }
