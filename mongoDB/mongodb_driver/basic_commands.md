@@ -96,3 +96,12 @@ db.<collectionName>.<command>
               - db.users.deleteMany({ age: 12 })
                 Delete all documents that matches the filter object
                 - Delete all users with an age of 12
+
+
+# Complex Filter Object
+    - Any combination of the below can be use inside a filter object to make complex queries
+
+# $eq
+      - db.users.find({ name: { $eq: “Kyle” } })
+        Check for equality
+        - Get all users with the name Kyle
