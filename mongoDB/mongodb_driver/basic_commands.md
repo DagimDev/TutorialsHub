@@ -129,3 +129,10 @@ db.<collectionName>.<command>
       - db.users.find({ name: { $nin: [“Kyle”, “Mike”] } })
         Check if a value is none of many values
        - Get all users that do not have the name Kyle or Mike
+
+# $and
+      - db.users.find({ $and: [{ age: 12 }, { name: “Kyle” }] })
+        db.users.find({ age: 12, name: “Kyle” })
+        Check that multiple conditions are all true
+        - Get all users that have an age of 12 and the name Kyle
+        - This is an alternative way to do the same thing. Generally you do not need $and
