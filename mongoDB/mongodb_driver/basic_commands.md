@@ -60,3 +60,8 @@ db.<collectionName>.<command>
                     Return the count of the documents that match the filter
                     object passed to it
                   - Get the number of users with the name Kyle
+
+
+# Update
+        - Each of these commands is run on a specific collection
+          db.<collectionName>.<command>
