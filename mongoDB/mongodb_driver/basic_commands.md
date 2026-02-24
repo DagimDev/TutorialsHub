@@ -136,3 +136,6 @@ db.<collectionName>.<command>
         Check that multiple conditions are all true
         - Get all users that have an age of 12 and the name Kyle
         - This is an alternative way to do the same thing. Generally you do not need $and
+# $or
+  - db.users.find({ $or: [{ age: 12 }, { name: “Kyle” }] })
+    - Check that one of multiple conditions is true
