@@ -7,3 +7,5 @@
                 use myDatabase
 # db 
     - Show current database name
+# show collections 
+                    - Show all collections in the current database
