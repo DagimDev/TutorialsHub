@@ -77,3 +77,10 @@ db.<collectionName>.<command>
             data passed into the second parameter which is the update
             object
           - Update all users with an age of 12 by adding 3 to their age
+# replaceOne
+          - db.users.replaceOne({ age: 12 }, { age: 13 })
+            Replace the first document that matches the filter object
+            with the exact object passed as the second parameter. This
+            will completely overwrite the entire object and not just
+            update individual fields.
+            - Replace the first user with an age of 12 with an object that has the age of 13 as its only field
