@@ -71,3 +71,9 @@ db.<collectionName>.<command>
             with the data passed into the second parameter which is the
             update object
           - Update the first user with an age of 20 to the age of 21
+# updateMany
+          - db.users.updateMany({ age: 12 }, { $inc: { age: 3 } })
+            Update all documents that matches the filter object with the
+            data passed into the second parameter which is the update
+            object
+          - Update all users with an age of 12 by adding 3 to their age
