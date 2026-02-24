@@ -105,3 +105,8 @@ db.<collectionName>.<command>
       - db.users.find({ name: { $eq: “Kyle” } })
         Check for equality
         - Get all users with the name Kyle
+
+# $ne
+      - db.users.find({ name: { $ne: “Kyle” } })
+        Check for not equal
+        - Get all users with a name other than Kyle
