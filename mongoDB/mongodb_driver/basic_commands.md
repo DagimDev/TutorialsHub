@@ -5,3 +5,5 @@
 # use <dbname>
             - Switch to the database provided by dbname
                 use myDatabase
+# db 
+    - Show current database name
