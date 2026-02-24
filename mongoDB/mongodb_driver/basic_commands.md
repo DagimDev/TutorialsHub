@@ -110,3 +110,9 @@ db.<collectionName>.<command>
       - db.users.find({ name: { $ne: “Kyle” } })
         Check for not equal
         - Get all users with a name other than Kyle
+# $gt / $gte
+          - db.users.find({ age: { $gt: 12 } })
+            db.users.find({ age: { $gte: 15 } })
+            Check for greater than and greater than or equal to
+            - Get all users with an age greater than 12
+            - Get all users with an age greater than or equal to 15
