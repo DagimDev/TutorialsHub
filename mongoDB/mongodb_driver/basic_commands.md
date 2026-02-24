@@ -139,3 +139,7 @@ db.<collectionName>.<command>
 # $or
   - db.users.find({ $or: [{ age: 12 }, { name: “Kyle” }] })
     - Check that one of multiple conditions is true
+
+# $not
+      - db.users.find({ name: { $not: { $eq: “Kyle” } } })
+        - Negate the filter inside of $not
