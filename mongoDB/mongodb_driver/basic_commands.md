@@ -116,3 +116,9 @@ db.<collectionName>.<command>
             Check for greater than and greater than or equal to
             - Get all users with an age greater than 12
             - Get all users with an age greater than or equal to 15
+# $lt / $lte
+          - db.users.find({ age: { $lt: 12 } })
+            db.users.find({ age: { $lte: 15 } })
+            Check for less than and less than or equal to
+            - Get all users with an age less than 12
+            - Get all users with an age less than or equal to 15
