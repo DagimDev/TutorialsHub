@@ -88,3 +88,7 @@ db.<collectionName>.<command>
 # Delete
         - Each of these commands is run on a specific collection
           db.<collectionName>.<command>
+# deleteOne
+          - db.users.deleteOne({ age: 20 })
+            Delete the first document that matches the filter object
+            - Delete the first user with an age of 20
