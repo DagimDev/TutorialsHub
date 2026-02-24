@@ -84,3 +84,7 @@ db.<collectionName>.<command>
             will completely overwrite the entire object and not just
             update individual fields.
             - Replace the first user with an age of 12 with an object that has the age of 13 as its only field
+
+# Delete
+        - Each of these commands is run on a specific collection
+          db.<collectionName>.<command>
