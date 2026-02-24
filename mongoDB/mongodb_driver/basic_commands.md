@@ -65,3 +65,9 @@ db.<collectionName>.<command>
 # Update
         - Each of these commands is run on a specific collection
           db.<collectionName>.<command>
+# updateOne
+          - db.users.updateOne({ age: 20 }, { $set: { age: 21 } })
+            Update the first document that matches the filter object
+            with the data passed into the second parameter which is the
+            update object
+          - Update the first user with an age of 20 to the age of 21
