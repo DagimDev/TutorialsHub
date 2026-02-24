@@ -125,3 +125,7 @@ db.<collectionName>.<command>
 # $in
        - db.users.find({ name: { $in: [“Kyle”, “Mike”] } })
        - Check if a value is one of many values
+# $nin
+      - db.users.find({ name: { $nin: [“Kyle”, “Mike”] } })
+        Check if a value is none of many values
+       - Get all users that do not have the name Kyle or Mike
