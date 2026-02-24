@@ -122,3 +122,6 @@ db.<collectionName>.<command>
             Check for less than and less than or equal to
             - Get all users with an age less than 12
             - Get all users with an age less than or equal to 15
+# $in
+       - db.users.find({ name: { $in: [“Kyle”, “Mike”] } })
+       - Check if a value is one of many values
