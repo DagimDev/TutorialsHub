@@ -9,3 +9,5 @@
     - Show current database name
 # show collections 
                     - Show all collections in the current database
+# db.dropDatabase() 
+                    - Delete the current database
