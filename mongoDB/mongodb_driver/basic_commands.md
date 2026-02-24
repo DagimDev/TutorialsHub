@@ -92,3 +92,7 @@ db.<collectionName>.<command>
           - db.users.deleteOne({ age: 20 })
             Delete the first document that matches the filter object
             - Delete the first user with an age of 20
+# deleteMany
+              - db.users.deleteMany({ age: 12 })
+                Delete all documents that matches the filter object
+                - Delete all users with an age of 12
