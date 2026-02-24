@@ -11,3 +11,5 @@
                     - Show all collections in the current database
 # db.dropDatabase() 
                     - Delete the current database
+# exit 
+        - Exit the mongosh session
