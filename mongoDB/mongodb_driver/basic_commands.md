@@ -161,3 +161,8 @@ db.<collectionName>.<command>
         Update only the fields passed to $set. This will not affect
         any fields not passed to $set.
         - Update the name of the first user with the age of 12 to the value H
+
+# $inc
+      - db.users.updateOne({ age: 12 }, { $inc: { age: 2 } })
+        Increment the value of the field by the amount given
+        - Add 2 to the age of the first user with the age of 12
