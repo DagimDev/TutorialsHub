@@ -1,9 +1,15 @@
 const express = require("express");
 const { MongoClient } = require("mongodb");
+const cors = require('cors')
 require("dotenv").config();
+
 
 const port = process.env.PORT || 3000;
 const app = express();
+
+// Middleware
+app.use(cors())
+app.use(express.json())
 
 // Global database reference
 let db;
