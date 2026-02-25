@@ -174,3 +174,7 @@ db.<collectionName>.<command>
         - db.users.updateOne({ age: 12 }, { $unset: { age: “” } })
           Remove a field
           - Remove the age field from the first user with an age of 12
+# $push
+      - db.users.updateMany({}, { $push: { friends: “John” } })
+        Add a value to an array field
+        - Add John to the friends array for all users
