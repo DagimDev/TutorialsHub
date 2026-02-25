@@ -170,3 +170,7 @@ db.<collectionName>.<command>
           - db.users.updateMany({}, { $rename: { age: “years” } })
             Rename a field
             - Rename the field age to years for all users
+# $unset
+        - db.users.updateOne({ age: 12 }, { $unset: { age: “” } })
+          Remove a field
+          - Remove the age field from the first user with an age of 12
