@@ -192,3 +192,9 @@ db.<collectionName>.<command>
 # limit
         - db.users.find().limit(2)
         - Only return a set number of documents
+
+# skip
+    - db.users.find().skip(4)
+      Skip a set number of documents from the beginning
+      - Skip the first 4 users when returning results. This is great for pagination when
+        combined with limit.
