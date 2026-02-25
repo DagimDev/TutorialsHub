@@ -36,3 +36,11 @@ SQL (Tables):                    MongoDB (Collections):
                                   │   age: 25     │  ← Different fields!
                                   │ }             │
                                   └───────────────┘
+
+
+# Common Use Cases:
+    - User profiles (different users have different fields)
+    - Product catalogs (different products have different attributes)
+    - Real-time data
+    - Content management systems
+    - Mobile apps
