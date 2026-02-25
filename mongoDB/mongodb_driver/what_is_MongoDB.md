@@ -19,3 +19,20 @@ How MongoDB Stores Data:
   }
 }
 ```
+
+MongoDB vs SQL (Relational):
+
+SQL (Tables):                    MongoDB (Collections):
+┌───────────────┐                ┌───────────────┐
+│ users         │                │ users         │
+├───────┬───────┤                ├───────────────┤
+│ id    │ name  │                │ {             │
+│ 1     │ Alice │                │   _id: 1,     │
+│ 2     │ Bob   │                │   name: "Alice"│
+└───────┴───────┘                │ }             │
+                                  │ {             │
+                                  │   _id: 2,     │
+                                  │   name: "Bob",│
+                                  │   age: 25     │  ← Different fields!
+                                  │ }             │
+                                  └───────────────┘
