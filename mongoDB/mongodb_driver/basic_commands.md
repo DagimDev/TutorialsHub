@@ -148,3 +148,8 @@ db.<collectionName>.<command>
         - db.users.find({ name: { $exists: true } })
           Check if a field exists
           - Get all users that have a name field
+
+# $expr
+      - db.users.find({ $expr: { $gt: [“$balance”, “$debt”] } })
+        Do comparisons between different fields
+        - Get all users that have a balance that is greater than their deb
