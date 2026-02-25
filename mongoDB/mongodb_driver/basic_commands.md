@@ -182,3 +182,11 @@ db.<collectionName>.<command>
       - db.users.updateMany({}, { $pull: { friends: “Mike” } })
         Remove a value from an array field
         - Remove Mike from the friends array for all users
+
+## Read Modifiers
+                  - Any combination of the below can be added to the end of any read operation
+# sort
+      - db.users.find().sort({ name: 1, age: -1 })
+        Sort the results of a find by the given fields
+        - Get all users sorted by name in alphabetical order and then if any names are the same sort by age in reverse order
+ 
