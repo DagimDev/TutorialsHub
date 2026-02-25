@@ -177,4 +177,8 @@ db.<collectionName>.<command>
 # $push
       - db.users.updateMany({}, { $push: { friends: “John” } })
         Add a value to an array field
-        - Add John to the friends array for all users
+        - Add John to the friends array for all 
+# $pull
+      - db.users.updateMany({}, { $pull: { friends: “Mike” } })
+        Remove a value from an array field
+        - Remove Mike from the friends array for all users
