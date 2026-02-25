@@ -166,3 +166,7 @@ db.<collectionName>.<command>
       - db.users.updateOne({ age: 12 }, { $inc: { age: 2 } })
         Increment the value of the field by the amount given
         - Add 2 to the age of the first user with the age of 12
+# $rename
+          - db.users.updateMany({}, { $rename: { age: “years” } })
+            Rename a field
+            - Rename the field age to years for all users
