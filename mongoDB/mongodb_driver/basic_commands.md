@@ -153,3 +153,11 @@ db.<collectionName>.<command>
       - db.users.find({ $expr: { $gt: [“$balance”, “$debt”] } })
         Do comparisons between different fields
         - Get all users that have a balance that is greater than their deb
+
+## Complex Update Object
+                          - Any combination of the below can be use inside an update object to make complex updates
+# $set
+      - db.users.updateOne({ age: 12 }, { $set: { name: “Hi” } })
+        Update only the fields passed to $set. This will not affect
+        any fields not passed to $set.
+        - Update the name of the first user with the age of 12 to the value H
