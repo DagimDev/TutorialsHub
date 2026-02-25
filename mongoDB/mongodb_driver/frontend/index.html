@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Test - POST Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 MongoDB Test - POST Data</h1>
+        
+        <div class="info-box">
+            <strong>🔌 Connected to:</strong> MongoDB Atlas<br>
+            <strong>📁 Database:</strong> myFirstDatabase<br>
+            <strong>📂 Collection:</strong> myFirstCollection<br>
+            <small>Make sure your server.js is running on port 3000!</small>
+        </div>
+        
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="e.g., John Doe">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="e.g., john@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="e.g., 25">
+            </div>
+            
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="e.g., New York">
+            </div>
+            
+            <div class="form-group">
+                <label for="interests">Interests (comma separated)</label>
+                <input type="text" id="interests" name="interests" placeholder="e.g., coding, hiking, reading">
+                <div class="field-hint">Separate multiple interests with commas</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" placeholder="Any additional information..."></textarea>
+            </div>
+            
+            <button type="submit" id="submitBtn">📤 Send Data to MongoDB</button>
+        </form>
+        
+        <div class="loading" id="loading">Sending data to MongoDB</div>
+        
+        <div class="result" id="result"></div>
+    </div>
+</body>
+</html>
