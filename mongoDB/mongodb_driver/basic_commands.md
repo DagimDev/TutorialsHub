@@ -143,3 +143,8 @@ db.<collectionName>.<command>
 # $not
       - db.users.find({ name: { $not: { $eq: “Kyle” } } })
         - Negate the filter inside of $not
+
+# $exists
+        - db.users.find({ name: { $exists: true } })
+          Check if a field exists
+          - Get all users that have a name field
