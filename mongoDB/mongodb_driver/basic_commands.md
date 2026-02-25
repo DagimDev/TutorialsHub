@@ -189,4 +189,6 @@ db.<collectionName>.<command>
       - db.users.find().sort({ name: 1, age: -1 })
         Sort the results of a find by the given fields
         - Get all users sorted by name in alphabetical order and then if any names are the same sort by age in reverse order
- 
+# limit
+        - db.users.find().limit(2)
+        - Only return a set number of documents
