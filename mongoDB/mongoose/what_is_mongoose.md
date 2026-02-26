@@ -69,3 +69,17 @@ This means:
     - name must be a String
     - age must be a Number
     - email must be a String
+
+
+# 🏗 3️⃣ What Is a Model?
+
+A model is created from a schema.
+```js
+const User = mongoose.model("User", userSchema);
+```
+Now User is what you use to:
+
+    - Create data
+    - Read data
+    - Update data
+    - Delete data
