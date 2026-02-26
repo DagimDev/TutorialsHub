@@ -1,4 +1,4 @@
-1️⃣ Custom Validators
+# 1️⃣ Custom Validators
 What they do: Custom validation logic beyond built-in validators (required, min, max).
 
 Example: Validate email domain and password strength
@@ -45,4 +45,20 @@ const user = new User({
 });
 
 await user.save(); // Throws validation error!
+```
+
+# Custom validator for array fields:
+```js
+const productSchema = new mongoose.Schema({
+    tags: [{
+        type: String,
+        validate: {
+            validator: function(tags) {
+                // Max 3 tags, each lowercase
+                return tags.length <= 3 && tags.every(t => t === t.toLowerCase());
+            },
+            message: 'Max 3 tags, all must be lowercase'
+        }
+    }]
+});
 ```
