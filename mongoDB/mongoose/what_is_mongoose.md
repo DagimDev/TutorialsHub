@@ -49,3 +49,23 @@ mongoose.connect("mongodb://127.0.0.1:27017/mydatabase")
 .catch(err => console.log(err));
 ```
 - If using MongoDB Atlas, the connection string will be different.
+
+## 📦 2️⃣ What Is a Schema?
+
+- A schema defines the structure of your data.
+
+Example:
+```js
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    email: String
+});
+```
+This means:
+
+    - name must be a String
+    - age must be a Number
+    - email must be a String
