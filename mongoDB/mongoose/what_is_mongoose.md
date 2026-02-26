@@ -33,3 +33,19 @@ That means you can insert:
     - Clean structure
 
 That’s where Mongoose helps.
+
+## 🔌 1️⃣ Connecting Mongoose to MongoDB
+
+* First install:
+```bash
+npm install mongoose
+```
+* Then connect:
+```js
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://127.0.0.1:27017/mydatabase")
+.then(() => console.log("Connected to MongoDB"))
+.catch(err => console.log(err));
+```
+- If using MongoDB Atlas, the connection string will be different.
