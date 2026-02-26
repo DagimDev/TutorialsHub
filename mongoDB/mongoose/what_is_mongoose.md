@@ -83,3 +83,15 @@ Now User is what you use to:
     - Read data
     - Update data
     - Delete data
+
+## ✍️ 4️⃣ Creating Data
+```js
+const newUser = new User({
+    name: "Dagim",
+    age: 22,
+    email: "dagim@gmail.com"
+});
+
+await newUser.save();
+```
+That saves the document into MongoDB.
