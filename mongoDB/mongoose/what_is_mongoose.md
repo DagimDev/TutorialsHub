@@ -95,3 +95,31 @@ const newUser = new User({
 await newUser.save();
 ```
 That saves the document into MongoDB.
+
+5️⃣ Adding Validation 
+
+Example:
+```js
+const userSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    age: {
+        type: Number,
+        min: 18
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    }
+});
+```
+Now Mongoose will:
+
+    - Prevent missing name
+    - Prevent age below 18
+    - Prevent duplicate emails
+
+This is powerful.
