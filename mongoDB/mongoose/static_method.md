@@ -51,3 +51,37 @@ const stats = await User.getStats();
 console.log(stats);
 // Output: { totalUsers: 150, averageAge: 32.5 }
 ```
+
+```js 
+// STATIC METHODS (work on the whole collection)
+userSchema.statics = {
+    // 'this' is the User model
+    async getAllNames() {
+        const users = await this.find({});
+        return users.map(u => u.name);
+    },
+    
+    async getAgeStats() {
+        const stats = await this.aggregate([
+            { $group: {
+                _id: null,
+                minAge: { $min: "$age" },
+                maxAge: { $max: "$age" },
+                avgAge: { $avg: "$age" }
+            }}
+        ]);
+        return stats[0];
+    }
+};
+
+const User = mongoose.model('User', userSchema);
+
+// USING IT
+
+// ✅ Static method - called on the Model
+const allNames = await User.getAllNames();
+console.log("All users:", allNames);
+
+const stats = await User.getAgeStats();
+console.log("Age stats:", stats);
+```
