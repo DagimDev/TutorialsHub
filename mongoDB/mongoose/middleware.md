@@ -8,3 +8,12 @@
 * Pre-bake hook: Preheat the oven, grease the pan (things you do BEFORE baking)
 * Post-bake hook: Let it cool, add frosting (things you do AFTER baking)
 * The operation: Actually baking the cake
+
+## 📋 Types of Middleware
+
+Mongoose has 4 types of middleware:
+
+1. Document middleware - Runs on init, validate, save, remove
+2. Query middleware - Runs on count, find, findOne, updateOne, deleteOne
+3. Aggregate middleware - Runs on aggregate
+4. Model middleware - Runs on insertMany
