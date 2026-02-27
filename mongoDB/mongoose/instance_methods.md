@@ -35,3 +35,31 @@ const john = new User({
 console.log(john.sayHello()); 
 // Output: "Hello, my name is John!"
 ```
+
+# Another Instance Method Example:
+```js
+// Add multiple methods
+userSchema.methods = {
+    getFullInfo: function() {
+        return `${this.name} (${this.email}) - Age: ${this.age}`;
+    },
+    
+    isAdult: function() {
+        return this.age >= 18;
+    },
+    
+    updateEmail: function(newEmail) {
+        this.email = newEmail;
+        return this.save(); // Save to database
+    }
+};
+
+// Using the methods
+const jane = await User.findOne({ name: "Jane" });
+
+console.log(jane.getFullInfo()); // "Jane (jane@email.com) - Age: 22"
+console.log(jane.isAdult() ? "Adult" : "Minor"); // "Adult"
+
+await jane.updateEmail("jane.new@email.com");
+console.log("Email updated!");
+```
