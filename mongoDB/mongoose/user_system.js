@@ -126,3 +126,15 @@ userSchema.post('updateOne', function(result, next) {
     
     next();
 });
+
+
+// ============ INSTANCE METHODS ============
+userSchema.methods.comparePassword = async function(candidatePassword) {
+    return await bcrypt.compare(candidatePassword, this.password);
+};
+
+userSchema.methods.softDelete = async function() {
+    this.isDeleted = true;
+    this.deletedAt = new Date();
+    return this.save();
+};
