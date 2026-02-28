@@ -79,3 +79,20 @@ userSchema.pre('findOne', function(next) {
     this.where({ isDeleted: { $ne: true } });
     next();
 });
+
+
+// ============ POST MIDDLEWARE ============
+
+// 1. Log after successful save
+userSchema.post('save', function(doc, next) {
+    console.log(`✅ [POST-SAVE] User ${doc.name} (${doc.email}) saved successfully`);
+    console.log(`   ID: ${doc._id}`);
+    
+    // Send welcome email for new users
+    if (doc.wasNew) {
+        console.log(`📧 Welcome email sent to ${doc.email}`);
+        // sendWelcomeEmail(doc.email);
+    }
+    
+    next();
+});
