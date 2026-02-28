@@ -52,3 +52,16 @@ userSchema.pre('save', function(next) {
     
     next();
 });
+
+// 3. Don't allow saving if account is locked
+userSchema.pre('save', function(next) {
+    console.log('🔒 [PRE-SAVE] Checking lock status...');
+    
+    if (this.isLocked && this.loginAttempts > 5) {
+        const error = new Error('Account is locked. Cannot save changes.');
+        console.log('❌ Account locked, preventing save');
+        return next(error);
+    }
+    
+    next();
+});
