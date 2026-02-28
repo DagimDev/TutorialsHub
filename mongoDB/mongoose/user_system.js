@@ -148,3 +148,60 @@ userSchema.statics.findActive = function() {
 
 // Create the model
 const User = mongoose.model('User', userSchema);
+
+
+// ============ TESTING THE MIDDLEWARE ============
+
+async function testMiddleware() {
+    try {
+        console.log('🚀 TESTING USER MIDDLEWARE\n');
+        
+        // 1. CREATE a new user
+        console.log('📝 CREATING NEW USER:');
+        const user = new User({
+            name: "Dagim",
+            email: "dagim@test.com",
+            password: "mypassword123"
+        });
+        
+        await user.save();
+        console.log('---\n');
+        
+        // 2. FIND users
+        console.log('🔍 FINDING ALL USERS:');
+        const users = await User.find();
+        console.log('---\n');
+        
+        // 3. FIND one user
+        console.log('🔍 FINDING ONE USER:');
+        const found = await User.findOne({ name: "Dagim" });
+        console.log('---\n');
+        
+        // 4. UPDATE user (not password)
+        console.log('📝 UPDATING USER:');
+        found.name = "Dagim Updated";
+        await found.save();
+        console.log('---\n');
+        
+        // 5. TEST PASSWORD
+        console.log('🔐 TESTING PASSWORD:');
+        const isValid = await found.comparePassword("mypassword123");
+        console.log(`Password valid: ${isValid}`);
+        console.log('---\n');
+        
+        // 6. SOFT DELETE
+        console.log('🗑️ SOFT DELETING USER:');
+        await found.softDelete();
+        console.log('---\n');
+        
+        // 7. FIND AFTER DELETE (should be excluded)
+        console.log('🔍 FINDING AFTER DELETE:');
+        const afterDelete = await User.find();
+        console.log(`Users after delete: ${afterDelete.length}`);
+        
+    } catch (error) {
+        console.log('❌ ERROR:', error.message);
+    }
+}
+
+testMiddleware();
