@@ -138,3 +138,9 @@ userSchema.methods.softDelete = async function() {
     this.deletedAt = new Date();
     return this.save();
 };
+
+
+// ============ STATIC METHODS ============
+userSchema.statics.findActive = function() {
+    return this.find({ isDeleted: false });
+};
