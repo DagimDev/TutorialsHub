@@ -114,3 +114,15 @@ userSchema.post('findOne', function(doc, next) {
     }
     next();
 });
+
+
+// 3. Track when users are deleted (soft delete)
+userSchema.post('updateOne', function(result, next) {
+    console.log('🗑️ [POST-UPDATEONE] User soft delete tracked');
+    
+    if (result.isDeleted) {
+        console.log(`   Deleted at: ${result.deletedAt}`);
+    }
+    
+    next();
+});
