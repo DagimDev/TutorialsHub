@@ -144,3 +144,7 @@ userSchema.methods.softDelete = async function() {
 userSchema.statics.findActive = function() {
     return this.find({ isDeleted: false });
 };
+
+
+// Create the model
+const User = mongoose.model('User', userSchema);
