@@ -96,3 +96,21 @@ userSchema.post('save', function(doc, next) {
     
     next();
 });
+
+// 2. Log after find operations
+userSchema.post('find', function(docs, next) {
+    console.log(`📊 [POST-FIND] Found ${docs.length} users`);
+    docs.forEach(doc => {
+        console.log(`   - ${doc.name} (${doc.email})`);
+    });
+    next();
+});
+
+userSchema.post('findOne', function(doc, next) {
+    if (doc) {
+        console.log(`✅ [POST-FINDONE] Found: ${doc.name}`);
+    } else {
+        console.log('❌ [POST-FINDONE] User not found');
+    }
+    next();
+});
