@@ -28,3 +28,40 @@ schema.pre("operation", async function (next) {
   next(); // Continue to the operation
 });
 ```
+# Simple Example - Timestamps
+```js
+const userSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    createdAt: Date,
+    updatedAt: Date
+});
+
+// PRE-SAVE hook - runs BEFORE saving
+userSchema.pre('save', function(next) {
+    console.log('⏳ About to save a user...');
+    
+    const now = new Date();
+    
+    // If it's a new user, set createdAt
+    if (!this.createdAt) {
+        this.createdAt = now;
+    }
+    
+    // Always update the updatedAt timestamp
+    this.updatedAt = now;
+    
+    console.log('✅ Timestamps set!');
+    next(); // Now continue with the save operation
+});
+
+const User = mongoose.model('User', userSchema);
+
+// When you save...
+const user = new User({ name: "Dagim", email: "dagim@test.com" });
+await user.save(); 
+// Output:
+// ⏳ About to save a user...
+// ✅ Timestamps set!
+// (Then the user is saved to database)
+```
