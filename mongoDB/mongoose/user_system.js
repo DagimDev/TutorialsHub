@@ -65,3 +65,17 @@ userSchema.pre('save', function(next) {
     
     next();
 });
+
+// 4. Always exclude deleted users from queries
+userSchema.pre('find', function(next) {
+    console.log('🔍 [PRE-FIND] Excluding deleted users');
+    this.where({ isDeleted: { $ne: true } });
+    next();
+});
+
+
+userSchema.pre('findOne', function(next) {
+    console.log('🔍 [PRE-FINDONE] Excluding deleted users');
+    this.where({ isDeleted: { $ne: true } });
+    next();
+});
