@@ -35,3 +35,20 @@ userSchema.pre('save', async function(next) {
         next(error);
     }
 });
+
+// 2. Set timestamps before saving
+userSchema.pre('save', function(next) {
+    console.log('⏰ [PRE-SAVE] Setting timestamps...');
+    
+    const now = new Date();
+    
+    if (!this.createdAt) {
+        this.createdAt = now;
+        console.log('📅 CreatedAt set');
+    }
+    
+    this.updatedAt = now;
+    console.log('📅 UpdatedAt set');
+    
+    next();
+});
