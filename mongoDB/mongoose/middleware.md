@@ -172,3 +172,41 @@ schema.post('operation', function(doc, next) {
     next(); // Continue
 });
 ```
+
+# Simple Example - Logging
+```js
+userSchema.post('save', function(doc, next) {
+    console.log(`✅ User saved successfully! ID: ${doc._id}`);
+    console.log(`📧 Email: ${doc.email}`);
+    
+    // You could send a welcome email here
+    sendWelcomeEmail(doc.email);
+    
+    next();
+});
+
+userSchema.post('findOne', function(doc, next) {
+    if (doc) {
+        console.log(`🔍 User found: ${doc.name}`);
+        // Track who viewed what
+        analytics.track('user.viewed', { userId: doc._id });
+    } else {
+        console.log('🔍 User not found');
+    }
+    next();
+});
+
+const User = mongoose.model('User', userSchema);
+
+// When you save:
+const user = await User.create({ name: "Dagim", email: "dagim@test.com" });
+// Output:
+// ✅ User saved successfully! ID: 65f1a2b3c4d5e6f7a8b9c0d1
+// 📧 Email: dagim@test.com
+// (Welcome email sent in background)
+
+// When you find:
+const found = await User.findOne({ name: "Dagim" });
+// Output:
+// 🔍 User found: Dagim
+```
