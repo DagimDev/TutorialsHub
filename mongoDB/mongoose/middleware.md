@@ -17,3 +17,14 @@ Mongoose has 4 types of middleware:
 2. Query middleware - Runs on count, find, findOne, updateOne, deleteOne
 3. Aggregate middleware - Runs on aggregate
 4. Model middleware - Runs on insertMany
+
+## Pre Middleware (Before)
+
+Pre hooks run BEFORE a certain operation happens.
+
+```js
+schema.pre("operation", async function (next) {
+  // Do something before the operation
+  next(); // Continue to the operation
+});
+```
