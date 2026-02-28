@@ -162,3 +162,13 @@ await user.save();
 // 3️⃣ Third pre-save hook
 // (Then document is saved)
 ```
+
+
+# Post Middleware (After)
+* Post hooks run AFTER an operation completes.
+```js
+schema.post('operation', function(doc, next) {
+    // Do something after the operation
+    next(); // Continue
+});
+```
