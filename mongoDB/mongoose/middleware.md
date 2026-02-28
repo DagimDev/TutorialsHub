@@ -210,3 +210,51 @@ const found = await User.findOne({ name: "Dagim" });
 // Output:
 // 🔍 User found: Dagim
 ```
+
+# Query Middleware
+* Pre and post hooks also work on queries like find, findOne, updateOne, etc.
+```js
+// PRE-FIND hook - runs BEFORE any find operation
+userSchema.pre('find', function(next) {
+    console.log('🔍 About to search for users...');
+    
+    // Automatically exclude deleted users from all finds
+    this.where({ isDeleted: { $ne: true } });
+    
+    console.log('📋 Filter applied: exclude deleted');
+    next();
+});
+
+// PRE-FINDONE hook
+userSchema.pre('findOne', function(next) {
+    console.log('🔍 About to find one user...');
+    
+    // Populate references automatically
+    this.populate('posts');
+    
+    next();
+});
+
+// POST-FIND hook
+userSchema.post('find', function(docs, next) {
+    console.log(`📊 Found ${docs.length} users`);
+    
+    docs.forEach(doc => {
+        console.log(`   - ${doc.name}`);
+    });
+    
+    next();
+});
+
+const User = mongoose.model('User', userSchema);
+
+// When you run any find:
+const users = await User.find({ age: { $gt: 18 } });
+// Output:
+// 🔍 About to search for users...
+// 📋 Filter applied: exclude deleted
+// 📊 Found 5 users
+//    - Dagim
+//    - Alice
+//    - Bob
+```
