@@ -65,3 +65,68 @@ await user.save();
 // ✅ Timestamps set!
 // (Then the user is saved to database)
 ```
+
+
+# Real-World Example - Password Hashing
+* This is the most common use of pre middleware:
+```js
+const bcrypt = require('bcrypt');
+const userSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    password: String,
+    role: { type: String, default: 'user' }
+});
+
+// PRE-SAVE: Hash password before saving
+userSchema.pre('save', async function(next) {
+    console.log('🔐 Checking password...');
+    
+    // Only hash if password was modified (not on every save)
+    if (!this.isModified('password')) {
+        console.log('📝 Password not changed, skipping hash');
+        return next();
+    }
+    
+    try {
+        console.log('🔨 Hashing password...');
+        
+        // Generate salt and hash password
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(this.password, salt);
+        
+        // Replace plain password with hashed one
+        this.password = hashedPassword;
+        
+        console.log('✅ Password hashed successfully!');
+        next();
+    } catch (error) {
+        console.log('❌ Error hashing password:', error);
+        next(error);
+    }
+});
+
+const User = mongoose.model('User', userSchema);
+
+// When creating a new user
+const user = new User({
+    name: "Dagim",
+    email: "dagim@test.com",
+    password: "mypassword123" // Plain text
+});
+
+await user.save();
+// Output:
+// 🔐 Checking password...
+// 🔨 Hashing password...
+// ✅ Password hashed successfully!
+// (User saved with hashed password)
+
+// When updating something else (not password)
+user.name = "Dagim Updated";
+await user.save();
+// Output:
+// 🔐 Checking password...
+// 📝 Password not changed, skipping hash
+// (Name updated, password remains hashed)
+```
