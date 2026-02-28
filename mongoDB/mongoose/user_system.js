@@ -14,3 +14,24 @@ const userSchema = new mongoose.Schema({
     updatedAt: Date,
     deletedAt: Date
 });
+
+// ============ PRE MIDDLEWARE ============
+
+// 1. Hash password before saving
+userSchema.pre('save', async function(next) {
+    console.log('🔐 [PRE-SAVE] Checking password...');
+    
+    if (!this.isModified('password')) {
+        console.log('📝 Password unchanged, skipping hash');
+        return next();
+    }
+    
+    try {
+        const salt = await bcrypt.genSalt(10);
+        this.password = await bcrypt.hash(this.password, salt);
+        console.log('✅ Password hashed');
+        next();
+    } catch (error) {
+        next(error);
+    }
+});
