@@ -130,3 +130,35 @@ await user.save();
 // 📝 Password not changed, skipping hash
 // (Name updated, password remains hashed)
 ```
+
+# Multiple Pre Hooks
+* You can have multiple pre hooks - they run in order:
+```js
+userSchema.pre('save', function(next) {
+    console.log('1️⃣ First pre-save hook');
+    this.lastModified = new Date();
+    next();
+});
+
+userSchema.pre('save', function(next) {
+    console.log('2️⃣ Second pre-save hook');
+    if (!this.username && this.email) {
+        this.username = this.email.split('@')[0];
+    }
+    next();
+});
+
+userSchema.pre('save', function(next) {
+    console.log('3️⃣ Third pre-save hook');
+    this.apiCalls = this.apiCalls || 0;
+    next();
+});
+
+// When you save:
+await user.save();
+// Output:
+// 1️⃣ First pre-save hook
+// 2️⃣ Second pre-save hook
+// 3️⃣ Third pre-save hook
+// (Then document is saved)
+```
