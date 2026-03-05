@@ -84,3 +84,15 @@ const nested = [[1], [2], [3]];
 const flattened = nested.reduceRight((acc, curr) => acc.concat(curr), []);
 console.log(flattened); // [3, 2, 1]
 ```
+
+# findLast (ES2023)
+Returns the last element that satisfies the testing function.
+
+```js
+const arr = [5, 12, 8, 130, 44];
+const lastLarge = arr.findLast(num => num > 10);
+console.log(lastLarge); // 44 (last element > 10, not first)
+
+const lastIndex = arr.findLastIndex(num => num > 10);
+console.log(lastIndex); // 4 (index of 44)
+```
