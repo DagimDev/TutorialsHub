@@ -41,3 +41,13 @@ const reversed = arr.toReversed();
 console.log(reversed); // [3, 2, 1]
 console.log(arr);      // [1, 2, 3] (original unchanged)
 ```
+
+# toSpliced (ES2023)
+- Returns a new array with elements added/removed (non-mutating version of splice).
+
+```js
+const arr = [1, 2, 3, 4];
+const spliced = arr.toSpliced(1, 2, 99, 100);
+console.log(spliced); // [1, 99, 100, 4]
+console.log(arr);     // [1, 2, 3, 4] (original unchanged)
+```
