@@ -61,3 +61,12 @@ const sorted = arr.toSorted();
 console.log(sorted); // [1, 2, 3, 4]
 console.log(arr);    // [3, 1, 4, 2] (original unchanged)
 ```
+
+# flat
+- Creates a new array with sub-array elements concatenated up to specified depth.
+
+```js
+const arr = [1, [2, [3, [4]]]];
+console.log(arr.flat(2));     // [1, 2, 3, [4]]
+console.log(arr.flat(Infinity)); // [1, 2, 3, 4]
+```
