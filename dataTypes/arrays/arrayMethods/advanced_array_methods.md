@@ -23,3 +23,11 @@ const newArr = arr.with(2, 99); // Replace index 2 with 99
 console.log(newArr); // [1, 2, 99, 4]
 console.log(arr); // [1, 2, 3, 4] (original unchanged)
 ```
+# fill
+- Changes all elements in an array to a static value.
+
+```js
+const arr = [1, 2, 3, 4];
+arr.fill(0, 1, 3);  // Fill with 0 from index 1 to 3 (exclusive)
+console.log(arr); // [1, 0, 0, 4]
+```
