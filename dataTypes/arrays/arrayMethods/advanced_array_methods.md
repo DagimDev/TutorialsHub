@@ -70,3 +70,17 @@ const arr = [1, [2, [3, [4]]]];
 console.log(arr.flat(2));     // [1, 2, 3, [4]]
 console.log(arr.flat(Infinity)); // [1, 2, 3, 4]
 ```
+
+# reduceRight
+- Works like reduce but processes array from right-to-left.
+
+```js
+const arr = ["a", "b", "c"];
+const result = arr.reduceRight((acc, curr) => acc + curr);
+console.log(result); // "cba" (starts from 'c', then 'b', then 'a')
+
+// Useful for right-to-left operations
+const nested = [[1], [2], [3]];
+const flattened = nested.reduceRight((acc, curr) => acc.concat(curr), []);
+console.log(flattened); // [3, 2, 1]
+```
