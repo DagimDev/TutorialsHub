@@ -51,3 +51,13 @@ const spliced = arr.toSpliced(1, 2, 99, 100);
 console.log(spliced); // [1, 99, 100, 4]
 console.log(arr);     // [1, 2, 3, 4] (original unchanged)
 ```
+
+# toSorted (ES2023)
+- Returns a new sorted array (non-mutating version of sort).
+
+```js
+const arr = [3, 1, 4, 2];
+const sorted = arr.toSorted();
+console.log(sorted); // [1, 2, 3, 4]
+console.log(arr);    // [3, 1, 4, 2] (original unchanged)
+```
