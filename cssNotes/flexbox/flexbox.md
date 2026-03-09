@@ -262,3 +262,17 @@ If:
 - items total = 500px
 
 Flexbox shrinks them.
+
+# flex-basis
+
+Defines initial size of an item.
+```css
+.item {
+  flex-basis: 200px;
+}
+```
+Meaning:
+
+start size = 200px
+
+Then grow/shrink can apply.
