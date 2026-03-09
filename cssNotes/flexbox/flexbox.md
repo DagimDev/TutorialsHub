@@ -127,3 +127,33 @@ Result:
 A
 B
 C
+
+
+# justify-content
+
+Controls alignment along the main axis.
+```css
+.container {
+  justify-content: center;
+}
+```
+Options:
+
+- flex-start
+- flex-end
+- center
+- space-between
+- space-around
+- space-evenly
+
+Example:
+
+space-between
+
+[A       B       C]
+
+Example:
+
+center
+
+    [A B C]
