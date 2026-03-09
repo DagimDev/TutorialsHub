@@ -64,3 +64,33 @@ If direction changes:
 - [3]
 
 Now the main axis becomes vertical.
+
+# 3. Turning an Element into Flex
+```css
+.container {
+  display: flex;
+}
+```
+Immediately:
+
+- children become flex items
+- layout becomes flex layout
+- items appear in a row
+
+Example:
+```html
+<div class="container">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+</div>
+```
+Without flex:
+
+A
+B
+C
+
+With flex:
+
+A B C
