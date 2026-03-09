@@ -157,3 +157,28 @@ Example:
 center
 
     [A B C]
+
+
+# align-items
+
+Controls alignment on the cross axis.
+```css
+.container {
+  align-items: center;
+}
+
+Example:
+
++-------------------+
+|                   |
+|     A B C         |
+|                   |
++-------------------+
+
+Options:
+
+- stretch (default)
+- flex-start
+- flex-end
+- center
+- baseline
