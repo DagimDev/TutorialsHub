@@ -276,3 +276,23 @@ Meaning:
 start size = 200px
 
 Then grow/shrink can apply.
+
+# flex (shorthand)
+
+Instead of writing:
+
+- flex-grow: 1;
+- flex-shrink: 1;
+- flex-basis: 0;
+
+You can write:
+
+flex: 1;
+
+Example:
+```css
+.item {
+  flex: 1;
+}
+```
+All items share space equally.
