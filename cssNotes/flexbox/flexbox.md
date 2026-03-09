@@ -296,3 +296,18 @@ Example:
 }
 ```
 All items share space equally.
+
+
+# align-self (override align-items)
+
+Individual item alignment.
+```css
+.item {
+  align-self: flex-end;
+}
+```
+Even if container has:
+
+- align-items: center
+
+This item moves differently.
