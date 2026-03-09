@@ -42,3 +42,25 @@ When you add:
 display: flex;
 ```
 The children automatically become flex items.
+
+# Main Axis vs Cross Axis
+
+Flexbox works using two directions.
+
+- Main Axis   → primary direction
+- Cross Axis  → perpendicular direction
+Default direction
+- Main axis:  left → right
+- Cross axis: top → bottom
+
+Example:
+
+- [1] [2] [3]
+
+If direction changes:
+
+- [1]
+- [2]
+- [3]
+
+Now the main axis becomes vertical.
