@@ -205,3 +205,16 @@ Options:
 nowrap (default)
 wrap
 wrap-reverse
+
+# gap (Modern way)
+
+Adds space between items.
+```css
+.container {
+  gap: 20px;
+}
+```
+Instead of:
+
+- margin-right
+- margin-left
