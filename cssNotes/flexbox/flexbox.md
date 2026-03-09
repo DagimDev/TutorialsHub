@@ -218,3 +218,32 @@ Instead of:
 
 - margin-right
 - margin-left
+
+
+# Flex Item Properties
+
+These control individual items.
+
+# flex-grow
+
+Controls how much an item grows.
+```css
+.item {
+  flex-grow: 1;
+}
+```
+Example:
+
+Item1  Item2  Item3
+ 1      1      1
+
+They grow equally.
+
+Example:
+```css
+.item1 { flex-grow: 1 }
+.item2 { flex-grow: 2 }
+```
+Result:
+
+Item2 becomes twice bigger than Item1
