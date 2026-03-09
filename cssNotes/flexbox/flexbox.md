@@ -166,7 +166,7 @@ Controls alignment on the cross axis.
 .container {
   align-items: center;
 }
-
+```
 Example:
 
 +-------------------+
@@ -182,3 +182,26 @@ Options:
 - flex-end
 - center
 - baseline
+
+# flex-wrap
+
+By default flex tries to fit items in one line.
+
+[A B C D E F]
+
+If items overflow you can wrap them.
+```css
+.container {
+  flex-wrap: wrap;
+}
+```
+Result:
+
+[A B C]
+[D E F]
+
+Options:
+
+nowrap (default)
+wrap
+wrap-reverse
