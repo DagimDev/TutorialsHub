@@ -94,3 +94,36 @@ C
 With flex:
 
 A B C
+
+
+# Flex Container Properties
+
+These control how items are arranged.
+
+# flex-direction
+
+Controls the main axis direction.
+```css
+.container {
+  flex-direction: row;
+}
+```
+Options:
+
+row             → left to right (default)
+row-reverse     → right to left
+column          → top to bottom
+column-reverse  → bottom to top
+
+Example:
+```css
+.container {
+  display: flex;
+  flex-direction: column;
+}
+```
+Result:
+
+A
+B
+C
