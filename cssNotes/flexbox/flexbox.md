@@ -247,3 +247,18 @@ Example:
 Result:
 
 Item2 becomes twice bigger than Item1
+
+# flex-shrink
+
+Controls how items shrink when space is small.
+```css
+.item {
+  flex-shrink: 1;
+}
+```
+If:
+
+- container width = 300px
+- items total = 500px
+
+Flexbox shrinks them.
