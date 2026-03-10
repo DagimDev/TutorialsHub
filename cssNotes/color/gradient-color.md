@@ -99,3 +99,23 @@ Meaning:
 Example:
 
 - background: linear-gradient(red 0%, yellow 50%, blue 100%);
+
+# Radial Gradient
+A radial gradient spreads colors from a center point outward.
+
+Example:
+- background: radial-gradient(red, blue);
+
+Result:
+
+- center = red
+- edges = blue
+
+Example:
+- background: radial-gradient(circle, yellow, orange, red);
+
+Common use:
+
+- spotlight effects
+- glowing backgrounds
+- cards
