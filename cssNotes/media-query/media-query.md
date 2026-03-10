@@ -178,3 +178,20 @@ Examples:
 - Bootstrap
 - Material UI
 
+7. Combining Conditions
+
+You can combine conditions using and.
+
+Example:
+```css
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    background: purple;
+  }
+}
+```
+Meaning:
+
+600px → 900px only
+
+This range targets tablets.
