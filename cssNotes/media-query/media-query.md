@@ -59,3 +59,94 @@ Applies styles above a size.
 ```
 Meaning:
 - 600px and larger
+
+3. Breakpoints (Very Important)
+- Breakpoints are screen sizes where layout changes.
+
+Common modern breakpoints:
+
+- 320px  → small phones
+- 480px  → phones
+- 768px  → tablets
+- 1024px → small laptops
+- 1280px → desktops
+- 1536px → large screens
+
+Example:
+```css
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+```
+Meaning:
+
+Hide menu on tablets and phones
+4. Example: Responsive Layout
+
+HTML
+```html
+<div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+</div>
+```
+CSS
+```css
+.container {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+}
+```
+Desktop result:
+
+[1] [2] [3]
+
+Now add media query:
+```css
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+```
+Phone result:
+
+[1]
+[2]
+[3]
+
+This is responsive design.
+
+5. Multiple Media Queries
+
+You can combine multiple screen rules.
+
+Example:
+```css
+/* phones */
+@media (max-width: 600px) {
+  body {
+    background: pink;
+  }
+}
+
+/* tablets */
+@media (max-width: 900px) {
+  body {
+    background: orange;
+  }
+}
+
+/* desktops */
+@media (min-width: 901px) {
+  body {
+    background: blue;
+  }
+}
+```
