@@ -150,3 +150,31 @@ Example:
   }
 }
 ```
+
+6. Mobile-First Approach (Modern Method)
+
+Professional developers write CSS starting from mobile.
+
+Example:
+```css
+.container {
+  flex-direction: column;
+}
+```
+Then adjust for larger screens.
+```css
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+```
+This is called Mobile-First Design.
+
+Most frameworks use it.
+
+Examples:
+- Tailwind
+- Bootstrap
+- Material UI
+
