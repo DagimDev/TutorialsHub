@@ -119,3 +119,17 @@ Common use:
 - spotlight effects
 - glowing backgrounds
 - cards
+
+# Conic Gradient
+* A conic gradient rotates colors around a center point.
+Example:
+- background: conic-gradient(red, yellow, green, blue);
+
+It creates a circular color wheel.
+
+Used for:
+
+- charts
+- color wheels
+- loaders
+- modern effects
