@@ -54,3 +54,52 @@ Real-world use: Preventing long URLs from breaking layout:
   overflow-wrap: break-word;
 }
 ```
+
+# word-break
+What it does: More aggressive control over line breaking than overflow-wrap.
+
+```css
+.container {
+  width: 150px;
+}
+```
+normal (default)
+
+```css
+word-break: normal;
+```
+Follows language-specific rules. English words typically don't break.
+
+break-all
+
+```css
+word-break: break-all;
+```
+Any character can be a break point. Very aggressive:
+
+text
+Before: "HelloWorld"
+After:  "HelloW" (break)
+        "orld"
+keep-all
+
+```css
+word-break: keep-all;
+```
+No breaks allowed. Primarily for Chinese/Japanese/Korean text.
+
+break-word (deprecated)
+Similar to overflow-wrap: break-word.
+
+Comparison example:
+
+/* Text: "Pneumonoultramicroscopicsilicovolcanoconiosis" */
+```css
+.aggressive {
+  word-break: break-all;  /* Breaks anywhere, looks messy */
+}
+
+.gentle {
+  overflow-wrap: break-word;  /* Breaks only at word boundaries if needed */
+}
+```
