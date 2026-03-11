@@ -152,3 +152,41 @@ normal:    "Hello World This is text"
 nowrap:    "Hello    World   \n   This is text" (no wrap, maybe overflow)
 pre:       "Hello    World   \n   This is text" (no wrap)
 pre-wrap:  "Hello    World   \n   This is text" (wrapped if needed)
+
+# text-overflow
+- What it does: Shows a visual cue when text overflows. Requires:
+overflow: hidden
+white-space: nowrap
+```css
+.text {
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+```
+clip (default)
+
+```css
+text-overflow: clip;
+```
+Just cuts off text abruptly: "This is a long..."
+ellipsis
+```css
+text-overflow: ellipsis;
+```
+Shows "...": "This is a lo..."
+Custom string (limited support)
+```css
+text-overflow: "[...]";
+```
+Shows custom indicator (not widely supported)
+
+Common pattern:
+```css
+.truncate {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+```
