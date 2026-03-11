@@ -190,3 +190,19 @@ Common pattern:
   text-overflow: ellipsis;
 }
 ```
+
+# -webkit-line-clamp
+- What it does: Limits text to specific number of lines (multi-line truncation). Requires a specific combination:
+
+```css
+.multiline-truncate {
+  display: -webkit-box;           /* Required */
+  -webkit-line-clamp: 3;          /* Show only 3 lines */
+  -webkit-box-orient: vertical;   /* Required */
+  overflow: hidden;
+}
+```
+Why it's special:
+It's the only native way to do multi-line text truncation
+Originally WebKit-only (-webkit- prefix)
+Now works in all major browsers (but keeps the prefix)
