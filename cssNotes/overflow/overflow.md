@@ -103,3 +103,52 @@ Comparison example:
   overflow-wrap: break-word;  /* Breaks only at word boundaries if needed */
 }
 ```
+
+# white-space
+- What it does: Controls how whitespace (spaces, tabs, newlines) is handled.
+normal (default)
+```css
+white-space: normal;
+```
+Multiple spaces collapse to one
+Text wraps normally
+Line breaks are treated as spaces
+nowrap
+```css
+white-space: nowrap;
+```
+No wrapping! All text on one line
+Great for navigation bars or preventing text from wrapping
+pre
+```css
+white-space: pre;
+```
+Preserves all whitespace (like <pre> tag)
+No wrapping unless explicit <br> or newline
+Text can overflow horizontally
+pre-wrap
+```css
+white-space: pre-wrap;
+```
+Preserves whitespace
+But wraps text when needed (best of both worlds)
+pre-line
+```css
+white-space: pre-line;
+```
+Collapses spaces (like normal)
+But preserves line breaks (like pre)
+break-spaces (newer)
+```css
+white-space: break-spaces;
+```
+Like pre-wrap but more consistent wrapping
+Preserves spaces at line ends
+
+Visual example:
+HTML: "Hello    World   \n   This is text"
+
+normal:    "Hello World This is text"
+nowrap:    "Hello    World   \n   This is text" (no wrap, maybe overflow)
+pre:       "Hello    World   \n   This is text" (no wrap)
+pre-wrap:  "Hello    World   \n   This is text" (wrapped if needed)
