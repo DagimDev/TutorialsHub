@@ -34,7 +34,7 @@ Pseudo-classes and Pseudo-elements
   background: blue;
 
   &:hover {
-    background:  darkblue;
+    background: darkblue;
   }
 
   &::before {
@@ -44,15 +44,16 @@ Pseudo-classes and Pseudo-elements
 ```
 
 # Element Combinations
+
 ```css
 .card {
   border: 1px solid gray;
-  
+
   /* Target elements with both classes */
   &.featured {
     border-color: gold;
   }
-  
+
   /* Target elements with the class AND a specific element type */
   h2 & {
     font-size: 2em;
@@ -61,16 +62,35 @@ Pseudo-classes and Pseudo-elements
 ```
 
 # Chaining Selectors
+
 ```css
 .nav {
   background: black;
-  
+
   &-item {
-    color: white;  /* Creates .nav-item */
+    color: white; /* Creates .nav-item */
   }
-  
+
   &-link {
-    text-decoration: none;  /* Creates .nav-link */
+    text-decoration: none; /* Creates .nav-link */
+  }
+}
+```
+
+# Media Queries
+
+```css
+.container {
+  width: 100%;
+  background-color: red;
+  height: 100px;
+
+  @media (min-width: 768px) {
+    width: 750px;
+
+    @media (min-width: 1024px) {
+      width: 1000px;
+    }
   }
 }
 ```
