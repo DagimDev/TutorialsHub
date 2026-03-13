@@ -110,3 +110,17 @@ ul li::marker {
   color: orange;
 }
 ```
+
+# 7. ::backdrop
+Styles the backdrop area of fullscreen or dialog elements.
+
+```css
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+}
+
+video::backdrop {
+  background: black;
+}
+```
