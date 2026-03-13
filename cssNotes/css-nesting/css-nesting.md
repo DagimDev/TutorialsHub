@@ -59,3 +59,18 @@ Pseudo-classes and Pseudo-elements
   }
 }
 ```
+
+# Chaining Selectors
+```css
+.nav {
+  background: black;
+  
+  &-item {
+    color: white;  /* Creates .nav-item */
+  }
+  
+  &-link {
+    text-decoration: none;  /* Creates .nav-link */
+  }
+}
+```
