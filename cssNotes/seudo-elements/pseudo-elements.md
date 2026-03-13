@@ -58,3 +58,17 @@ p::first-letter {
   line-height: 1;
 }
 ```
+# 4. ::selection
+Styles the portion of text selected by the user.
+```css
+::selection {
+  background: hotpink;
+  color: white;
+}
+
+/* Specific element selection */
+.card p::selection {
+  background: gold;
+  color: black;
+}
+```
