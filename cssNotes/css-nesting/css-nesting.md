@@ -117,3 +117,20 @@ Pseudo-classes and Pseudo-elements
   }
 }
 ```
+
+# Combinators
+```css
+.list {
+  > .item {
+    border-bottom: 1px solid gray;
+  }
+  
+  + .next {
+    margin-top: 1rem;
+  }
+  
+  ~ .siblings {
+    display: none;
+  }
+}
+```
