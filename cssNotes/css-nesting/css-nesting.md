@@ -42,3 +42,20 @@ Pseudo-classes and Pseudo-elements
   }
 }
 ```
+
+# Element Combinations
+```css
+.card {
+  border: 1px solid gray;
+  
+  /* Target elements with both classes */
+  &.featured {
+    border-color: gold;
+  }
+  
+  /* Target elements with the class AND a specific element type */
+  h2 & {
+    font-size: 2em;
+  }
+}
+```
