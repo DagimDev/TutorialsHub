@@ -72,3 +72,24 @@ Styles the portion of text selected by the user.
   color: black;
 }
 ```
+
+# 5. ::placeholder
+Styles placeholder text in form inputs.
+
+```css
+input::placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1; /* Firefox reduces opacity by default */
+}
+
+/* Different browsers need different prefixes */
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+  opacity: 1;
+}
+```
