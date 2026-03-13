@@ -17,3 +17,19 @@ selector:pseudo-element {
   property: value;
 }
 ```
+
+# Common Pseudo-elements
+# 1. ::before and ::after
+Create virtual elements inside an element, before or after its content.
+
+```css
+.element::before {
+  content: "★ ";
+  color: gold;
+}
+
+.element::after {
+  content: " ✓";
+  color: green;
+}
+```
