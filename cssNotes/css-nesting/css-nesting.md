@@ -94,3 +94,26 @@ Pseudo-classes and Pseudo-elements
   }
 }
 ```
+# Multiple Levels
+``` css
+.article {
+  padding: 1rem;
+  
+  .title {
+    font-size: 2rem;
+    
+    a {
+      color: blue;
+      
+      &:hover {
+        color: darkblue;
+      }
+    }
+  }
+  
+  .meta {
+    color: gray;
+    font-size: 0.9rem;
+  }
+}
+```
