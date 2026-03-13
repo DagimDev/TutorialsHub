@@ -33,3 +33,14 @@ Create virtual elements inside an element, before or after its content.
   color: green;
 }
 ```
+
+# 2. ::first-line
+Styles the first line of a block-level element.
+
+```css
+p::first-line {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: navy;
+}
+```
