@@ -124,3 +124,20 @@ video::backdrop {
   background: black;
 }
 ```
+
+# 8. ::file-selector-button
+Styles the button in file input elements.
+
+```css
+input[type="file"]::file-selector-button {
+  background: linear-gradient(to bottom, #f0f0f0, #ccc);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: linear-gradient(to bottom, #e0e0e0, #bbb);
+}
+```
