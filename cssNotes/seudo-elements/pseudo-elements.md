@@ -44,3 +44,17 @@ p::first-line {
   color: navy;
 }
 ```
+
+# 3. ::first-letter
+Styles the first letter of a block-level element.
+
+```css
+p::first-letter {
+  font-size: 3em;
+  font-weight: bold;
+  color: crimson;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+}
+```
