@@ -93,3 +93,20 @@ input::-moz-placeholder { /* Firefox 19+ */
   opacity: 1;
 }
 ```
+
+# 6. ::marker
+Styles the marker of list items.
+
+```css
+li::marker {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Custom bullet points */
+ul li::marker {
+  content: "▶ ";
+  color: orange;
+}
+```
